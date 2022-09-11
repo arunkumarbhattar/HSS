@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/cmake-build-debug",
+  "command": "/usr/bin/clang++-12 -DDataflowPass_EXPORTS -I/usr/lib/llvm-12/include -I/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/include -std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti -fno-limit-debug-info -g -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -g -std=gnu++14 -o DivZero/CMakeFiles/DataflowPass.dir/src/DataflowAnalysis.cpp.o -c /home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/DataflowAnalysis.cpp",
+  "file": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/DataflowAnalysis.cpp"
+},
+{
+  "directory": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/cmake-build-debug",
+  "command": "/usr/bin/clang++-12 -DDataflowPass_EXPORTS -I/usr/lib/llvm-12/include -I/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/include -std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti -fno-limit-debug-info -g -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -g -std=gnu++14 -o DivZero/CMakeFiles/DataflowPass.dir/src/DivZeroAnalysis.cpp.o -c /home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/DivZeroAnalysis.cpp",
+  "file": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/DivZeroAnalysis.cpp"
+},
+{
+  "directory": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/cmake-build-debug",
+  "command": "/usr/bin/clang++-12 -DDataflowPass_EXPORTS -I/usr/lib/llvm-12/include -I/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/include -std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti -fno-limit-debug-info -g -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -g -std=gnu++14 -o DivZero/CMakeFiles/DataflowPass.dir/src/Domain.cpp.o -c /home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/Domain.cpp",
+  "file": "/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/DivZero/src/Domain.cpp"
+}
+]
