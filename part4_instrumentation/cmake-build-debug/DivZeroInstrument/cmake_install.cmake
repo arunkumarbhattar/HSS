@@ -1,4 +1,4 @@
-# Install script for directory: /home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument
+# Install script for directory: /home/arun/TakeDownHSS/part4_instrumentation/DivZeroInstrument
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-12")
 endif()
 

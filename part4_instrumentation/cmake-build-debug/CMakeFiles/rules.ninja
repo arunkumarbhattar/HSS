@@ -44,7 +44,7 @@ rule CXX_MODULE_LIBRARY_LINKER__InstrumentPass_Debug
 rule C_COMPILER__runtime_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang-12 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -52,7 +52,7 @@ rule C_COMPILER__runtime_Debug
 # Rule for linking C shared module.
 
 rule C_MODULE_LIBRARY_LINKER__runtime_Debug
-  command = $PRE_LINK && /usr/bin/cc -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang-12 -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C shared module $TARGET_FILE
   restat = $RESTAT
 
@@ -61,7 +61,7 @@ rule C_MODULE_LIBRARY_LINKER__runtime_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/204/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/arun/ass/LLVMPlayground/part4_instrumentation -B/home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug
+  command = /snap/clion/204/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/arun/TakeDownHSS/part4_instrumentation -B/home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

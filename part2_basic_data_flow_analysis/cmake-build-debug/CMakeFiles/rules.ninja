@@ -42,7 +42,7 @@ rule CXX_MODULE_LIBRARY_LINKER__DataflowPass_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/204/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis -B/home/arun/ass/LLVMPlayground/part2_basic_data_flow_analysis/cmake-build-debug
+  command = /snap/clion/204/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/arun/TakeDownHSS/part2_basic_data_flow_analysis -B/home/arun/TakeDownHSS/part2_basic_data_flow_analysis/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

@@ -126,8 +126,10 @@ Domain *evalPhiNode(PHINode *PHI, const Memory *Mem)
             else
                 V = new Domain(Domain::NonZero);
         }
-        else
+        else if (Mem->find(variable(PHI->getIncomingValue(i))) != Mem->end())
             V = Mem->at(variable(PHI->getIncomingValue(i)));
+        else
+            V = new Domain(Domain::Uninit);
         /*
          *
          */
@@ -290,7 +292,7 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
 //                  DstVarName,DomainAtEntryPoint)); //Propagate the Memory received at Entry
       }
                NOut->insert(std::pair<std::string, Domain *>(
-               variable(BranInst),new Domain(Domain::NonZero))); //Propagate the Memory received at Entry
+               variable(BranInst),new Domain(Domain::Uninit))); //Propagate the Memory received at Entry
   }
   else if(BitCastInst)
   {
@@ -487,6 +489,12 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
               Op2Domain = new Domain(Domain::NonZero);
       }
 
+      if (Op1Domain == NULL)
+          Op1Domain = new Domain(Domain::Uninit);
+
+      if (Op2Domain == NULL)
+          Op2Domain = new Domain(Domain::Uninit);
+
       switch (BinOpIns->getOpcode()) {
           // Check that integer arithmetic operators are only used with
           // integral operands.
@@ -609,7 +617,7 @@ bool DivZeroAnalysis::check(Instruction *I) {
               else
               {
                   Domain* DenominatorDom = CurrInstructionInMem->at(SecondaryOpVarName);
-                  if (DenominatorDom->Value == Domain::Zero || DenominatorDom->Value == Domain::MaybeZero)
+                  if (DenominatorDom->Value == Domain::Zero )//|| DenominatorDom->Value == Domain::MaybeZero) //<-- This has been done to reduce false negatives
                       return true;
               }
           }

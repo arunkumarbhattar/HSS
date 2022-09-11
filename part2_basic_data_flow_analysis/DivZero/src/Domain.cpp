@@ -118,11 +118,11 @@ dataflow::Domain *dataflow::Domain::div(dataflow::Domain *E1, dataflow::Domain *
     if ((E1->Value == Uninit) && (E2->Value == Uninit))
         return new Domain(Uninit);
     else if ((E1->Value == Uninit) && (E2->Value == Zero))
-        return new Domain(Uninit);
+        return new Domain(NonZero);
     else if ((E1->Value == Uninit) && (E2->Value == NonZero))
-        return new Domain(Uninit);
+        return new Domain(MaybeZero);
     else if((E1->Value == Uninit) && (E2->Value == MaybeZero))
-        return new Domain(Uninit);
+        return new Domain(MaybeZero);
     else if((E1->Value == NonZero) && (E2->Value == Uninit))
         return new Domain(Uninit);
     else if((E1->Value == NonZero) && (E2->Value == NonZero))
@@ -154,11 +154,11 @@ dataflow::Domain *dataflow::Domain::join(dataflow::Domain *E1, dataflow::Domain 
     if ((E1->Value == Uninit) && (E2->Value == Uninit))
         return new Domain(Uninit);
     else if ((E1->Value == Uninit) && (E2->Value == Zero))
-        return new Domain(Uninit);
+        return new Domain(MaybeZero);
     else if ((E1->Value == Uninit) && (E2->Value == NonZero))
         return new Domain(Uninit);
     else if((E1->Value == Uninit) && (E2->Value == MaybeZero))
-        return new Domain(Uninit);
+        return new Domain(MaybeZero);
     else if((E1->Value == NonZero) && (E2->Value == Uninit))
         return new Domain(Uninit);
     else if((E1->Value == NonZero) && (E2->Value == NonZero))
@@ -168,7 +168,7 @@ dataflow::Domain *dataflow::Domain::join(dataflow::Domain *E1, dataflow::Domain 
     else if((E1->Value == NonZero) && (E2->Value == MaybeZero))
         return new Domain(MaybeZero);
     else if((E1->Value == Zero) && (E2->Value == Uninit))
-        return new Domain(Uninit);
+        return new Domain(MaybeZero);
     else if((E1->Value == Zero) && (E2->Value == NonZero))
         return new Domain(Zero);
     else if((E1->Value == Zero) && (E2->Value == Zero))

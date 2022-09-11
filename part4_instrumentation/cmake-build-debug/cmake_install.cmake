@@ -1,4 +1,4 @@
-# Install script for directory: /home/arun/ass/LLVMPlayground/part4_instrumentation
+# Install script for directory: /home/arun/TakeDownHSS/part4_instrumentation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-12")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug/DivZeroInstrument/cmake_install.cmake")
+  include("/home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug/DivZeroInstrument/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
