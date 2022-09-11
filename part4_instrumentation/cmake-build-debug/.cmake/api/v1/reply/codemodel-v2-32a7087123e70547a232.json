@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "DivZeroInstrument",
+					"jsonFile" : "directory-DivZeroInstrument-Debug-321d54ef9763aac8b71b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "DivZeroInstrument",
+					"targetIndexes" : 
+					[
+						0,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "data-flow-analysis",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "InstrumentPass::@b92d87e1263e78ecfc73",
+					"jsonFile" : "target-InstrumentPass-Debug-3d236c0ac391d3aebf87.json",
+					"name" : "InstrumentPass",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "acc_gen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-acc_gen-Debug-681e11f3bf7d8f0c3cd5.json",
+					"name" : "acc_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "intrinsics_gen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-intrinsics_gen-Debug-bd3a090479210db24b2b.json",
+					"name" : "intrinsics_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omp_gen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omp_gen-Debug-700b0cda25b3c10b92c8.json",
+					"name" : "omp_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "runtime::@b92d87e1263e78ecfc73",
+					"jsonFile" : "target-runtime-Debug-80589e4ddb1065ff4563.json",
+					"name" : "runtime",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug",
+		"source" : "/home/arun/ass/LLVMPlayground/part4_instrumentation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

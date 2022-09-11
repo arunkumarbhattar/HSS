@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/arun/ass/LLVMPlayground/part4_instrumentation/build/DivZeroInstrument",
+  "command": "/usr/bin/clang-12 -Druntime_EXPORTS -I/usr/lib/llvm-12/include -I/home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/include  -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/runtime.dir/lib/runtime.c.o   -c /home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/lib/runtime.c",
+  "file": "/home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/lib/runtime.c"
+},
+{
+  "directory": "/home/arun/ass/LLVMPlayground/part4_instrumentation/build/DivZeroInstrument",
+  "command": "/usr/bin/clang++-12  -DInstrumentPass_EXPORTS -I/usr/lib/llvm-12/include -I/home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/include  -std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O3 -fno-rtti -fno-limit-debug-info -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -g -std=gnu++14 -o CMakeFiles/InstrumentPass.dir/src/Instrument.cpp.o -c /home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/src/Instrument.cpp",
+  "file": "/home/arun/ass/LLVMPlayground/part4_instrumentation/DivZeroInstrument/src/Instrument.cpp"
+}
+]

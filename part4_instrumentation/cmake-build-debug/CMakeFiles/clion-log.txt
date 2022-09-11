@@ -1,0 +1,15 @@
+/snap/clion/204/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/204/bin/ninja/linux/ninja -DUSE_REFERENCE=OFF -G Ninja -S /home/arun/ass/LLVMPlayground/part4_instrumentation -B /home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:6 (cmake_policy):
+  The OLD behavior for policy CMP0074 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arun/ass/LLVMPlayground/part4_instrumentation/cmake-build-debug

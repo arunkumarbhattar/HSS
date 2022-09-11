@@ -1,0 +1,1 @@
+/usr/bin/clang-12 -fPIC   -shared  -o libruntime.so CMakeFiles/runtime.dir/lib/runtime.c.o 
