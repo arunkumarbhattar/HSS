@@ -17,7 +17,7 @@ class PointerAnalysis {
 public:
   PointerAnalysis(Function &F);
   bool alias(std::string &Ptr1, std::string &Ptr2) const;
-
+  PointsToInfo fetchPointsTo();
 private:
   PointsToInfo PointsTo;
 };

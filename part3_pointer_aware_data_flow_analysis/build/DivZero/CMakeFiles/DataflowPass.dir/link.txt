@@ -1,0 +1,1 @@
+/usr/bin/clang++-12 -fPIC -std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti -fno-limit-debug-info  -shared  -o libDataflowPass.so CMakeFiles/DataflowPass.dir/src/DataflowAnalysis.cpp.o CMakeFiles/DataflowPass.dir/src/PointerAnalysis.cpp.o CMakeFiles/DataflowPass.dir/src/DivZeroAnalysis.cpp.o CMakeFiles/DataflowPass.dir/src/Domain.cpp.o 

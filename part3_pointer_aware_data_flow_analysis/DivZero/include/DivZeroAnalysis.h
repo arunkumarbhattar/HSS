@@ -14,7 +14,7 @@ protected:
 
   void doAnalysis(Function &F, PointerAnalysis *PA) override;
 
-  void flowIn(Instruction *I, Memory *In);
+  void flowIn(Instruction *I, Memory *In, Function& function);
 
   void flowOut(Instruction *I, Memory *In, Memory *NOut,  SetVector <Instruction *> &);
 

@@ -17,8 +17,12 @@ namespace dataflow {
 class Domain {
 public:
   enum Element { Uninit, NonZero, Zero, MaybeZero };
-  Domain();
-  Domain(Element V);
+    Domain(){
+
+    };
+    Domain(Element V){
+        Value = V;
+    };
   Element Value;
 
   static Domain *add(Domain *E1, Domain *E2);

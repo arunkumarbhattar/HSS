@@ -1,6 +1,7 @@
 option(USE_REFERENCE "Build with reference solution" OFF)
 
 include_directories(include)
+link_directories(${LLVM_LIBRARY_DIRS} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/reference)
 
 if (USE_REFERENCE)
   message(STATUS "Use reference solution")

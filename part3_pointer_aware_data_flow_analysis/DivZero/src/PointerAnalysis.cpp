@@ -100,4 +100,8 @@ bool PointerAnalysis::alias(std::string &Ptr1, std::string &Ptr2) const {
   return !Inter.empty();
 }
 
+    PointsToInfo PointerAnalysis::fetchPointsTo() {
+        return this->PointsTo;
+    }
+
 }; // namespace dataflow
