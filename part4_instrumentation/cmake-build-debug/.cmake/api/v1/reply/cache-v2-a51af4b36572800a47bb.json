@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/arun/TakeDownHSS/part3_pointer_aware_data_flow_analysis/cmake-build-debug"
+			"value" : "/home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/204/bin/cmake/linux/bin/cmake"
+			"value" : "/snap/clion/206/bin/cmake/linux/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/204/bin/cmake/linux/bin/cpack"
+			"value" : "/snap/clion/206/bin/cmake/linux/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/204/bin/cmake/linux/bin/ctest"
+			"value" : "/snap/clion/206/bin/cmake/linux/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -427,7 +427,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/204/bin/cmake/linux/bin/ccmake"
+			"value" : "/snap/clion/206/bin/cmake/linux/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -607,7 +607,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/arun/TakeDownHSS/part3_pointer_aware_data_flow_analysis"
+			"value" : "/home/arun/TakeDownHSS/part4_instrumentation"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "pointer-aware-data-flow-analysis"
+			"value" : "data-flow-analysis"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -895,7 +895,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/204/bin/cmake/linux/share/cmake-3.23"
+			"value" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1144,6 +1144,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/lib/x86_64-linux-gnu/libxml2.so][/usr/include/libxml2][v2.9.10()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_ZLIB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding ZLIB"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/lib/x86_64-linux-gnu/libz.so][/usr/include][v1.2.11()]"
 		},
 		{
 			"name" : "LIBXML2_INCLUDE_DIR",
@@ -1682,18 +1694,6 @@
 			"value" : "/usr/bin/pkg-config"
 		},
 		{
-			"name" : "USE_REFERENCE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Build with reference solution"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "ZLIB_INCLUDE_DIR",
 			"properties" : 
 			[
@@ -1707,7 +1707,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "ZLIB_INCLUDE_DIR-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "ZLIB_LIBRARY_DEBUG",
@@ -1739,7 +1739,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "ZLIB_LIBRARY_RELEASE-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libz.so"
 		},
 		{
 			"name" : "__pkg_config_arguments_PC_LIBXML",
@@ -1766,6 +1766,42 @@
 			"value" : "1"
 		},
 		{
+			"name" : "data-flow-analysis_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug"
+		},
+		{
+			"name" : "data-flow-analysis_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "data-flow-analysis_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/arun/TakeDownHSS/part4_instrumentation"
+		},
+		{
 			"name" : "pkgcfg_lib_PC_LIBXML_xml2",
 			"properties" : 
 			[
@@ -1780,42 +1816,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libxml2.so"
-		},
-		{
-			"name" : "pointer-aware-data-flow-analysis_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/arun/TakeDownHSS/part3_pointer_aware_data_flow_analysis/cmake-build-debug"
-		},
-		{
-			"name" : "pointer-aware-data-flow-analysis_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "pointer-aware-data-flow-analysis_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/arun/TakeDownHSS/part3_pointer_aware_data_flow_analysis"
 		},
 		{
 			"name" : "prefix_result",

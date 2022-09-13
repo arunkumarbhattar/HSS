@@ -36,16 +36,21 @@ Memory* join(Memory *M1, Memory *M2) {
     }
     for (auto entry2 : *M2)
     {
-        Result->insert(std::pair<std::string, Domain *>(entry2.first, entry2.second));
+        // If the entry that you are joining, already inserted, then you do a Domain Join and erase and Insert
+        if (Result->find(entry2.first) != Result->end())
+        {
+            auto PreDom = Result->at(entry2.first);
+            auto PostDom = entry2.second;
+            if (PreDom->Value == PostDom->Value)
+                continue;
+            auto ResultantDomain = Domain::join(PreDom, PostDom);
+            Result->erase(entry2.first);
+            Result->insert(std::pair<std::string, Domain *>(entry2.first, ResultantDomain));
+        }
+        else
+            Result->insert(std::pair<std::string, Domain *>(entry2.first, entry2.second));
     }
-  return Result;
-}
-template <typename Map>
-bool map_compare (Map const &lhs, Map const &rhs) {
-    // No predicate needed because there is operator== for pairs already.
-    return lhs.size() == rhs.size()
-           && std::equal(lhs.begin(), lhs.end(),
-                         rhs.begin());
+    return Result;
 }
 
 bool equal(Memory *M1, Memory *M2) {
@@ -67,9 +72,7 @@ bool equal(Memory *M1, Memory *M2) {
           return false;
   }
   return true;
-
 }
-
 
 void DivZeroAnalysis::flowIn(Instruction *I, Memory *In) {
   /* Add your code here
@@ -85,7 +88,6 @@ void DivZeroAnalysis::flowIn(Instruction *I, Memory *In) {
   for (auto IncomingFlow : IncomingFlows)
   {
       Memory* MemOfIncomingFlow = OutMap[IncomingFlow];
-      std::string tmp = variable(IncomingFlow);
 //      llvm::outs()<<"Unionizing Memory of Instruction"
 //      << IncomingFlow->getName()<<" that bears string "
 //      << MemOfIncomingFlow->operator[](tmp) <<"\n";
@@ -93,8 +95,12 @@ void DivZeroAnalysis::flowIn(Instruction *I, Memory *In) {
       {
           UnionizedMemory = MemOfIncomingFlow;
       }
+      else
+      {
+        UnionizedMemory = join(UnionizedMemory, MemOfIncomingFlow);;
+      }
 
-      UnionizedMemory = join(UnionizedMemory, MemOfIncomingFlow);
+      UnionizedMemory = join(UnionizedMemory, In);
   }
   InMap[I] = UnionizedMemory;
   return;
@@ -108,7 +114,6 @@ Domain *evalPhiNode(PHINode *PHI, const Memory *Mem)
         // Find the Domain of this value
         std::string ValName = variable(cv);
         return Mem->at(ValName);
-
     }
 
     unsigned int n = PHI->getNumIncomingValues();
@@ -141,17 +146,12 @@ Domain *evalPhiNode(PHINode *PHI, const Memory *Mem)
     return joined;
 }
 void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
-    errs()<< "Entered transfer function with Instruction: ";
-    I->print(errs());
-    errs() <<"\n";
+//    errs()<< "Entered transfer function with Instruction: ";
+//    I->print(errs());
+//    errs() <<"\n";
 
+// First Open up the Instruction
 
-  // First Open up the Instruction
-  /*
-   * Important: Every Instruction Ever must be handled.
-   * Thats Cuz, every instruction results in a variable name that will be used somewhere and you gotta propagate the
-   * Domain memory without breaking in middle.
-   */
   BinaryOperator* BinOpIns = dyn_cast<BinaryOperator>(I);
   CmpInst* ICompareInst  = dyn_cast<CmpInst>(I);
   ConstantInt* ConstantInst = dyn_cast<ConstantInt>(I);
@@ -168,19 +168,18 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
       NOut->erase(nameOfVar);
       NOut->insert(std::pair<std::string, Domain*>(nameOfVar, MaybeZero));
   }
+  else if (RetInst)
+  {
+      NOut->insert(std::pair<std::string, Domain *>(
+              variable(RetInst),new Domain(Domain::Uninit)));
+  }
   else if (BranInst)
   {
+      // We finna gon do nothing in here
+      /*
       Value* condition;
       Value* false_dst;
       Value* true_dst;
-      Domain* DomainAtEntryPoint = NULL;
-      if (In!= NULL && In->find(variable(BranInst)) != In->end())
-          DomainAtEntryPoint =  In->at(variable(BranInst));
-      else if (BranInst->getPrevNonDebugInstruction() != NULL)
-          DomainAtEntryPoint = In->at(variable(BranInst->getPrevNonDebugInstruction()));
-      else
-          DomainAtEntryPoint = new Domain(Domain::NonZero);
-      Domain* ResultantDomain = new Domain(Domain::Uninit);
       auto successorsOfBranch = getSuccessors(BranInst);
       if ( BranInst->isConditional())
       {
@@ -197,102 +196,14 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
           llvm::outs() << "True Destination of Branch Instr: "
                        <<TrueDstVarName <<"\n";
 
-          //Fetch the Domain for the condition
-          /*
-           * Evaluate the condition
-           */
-          auto FirstOpConst = dyn_cast<ConstantInt>(condition);
-          Domain* ConditionDomain = NULL;
-          if (!FirstOpConst)
-          {
-              ConditionDomain = In->at(ConditionVarName);
-          }
-          else{
-              auto ConditionConst = FirstOpConst->getSExtValue();
-              if (ConditionConst == 0)
-                  ConditionDomain = new Domain(Domain::Zero);
-              else
-                  ConditionDomain = new Domain(Domain::NonZero);
-          }
-
-          // If the Branch condition has One "always unreachable branch
-          // That is, Zero or NonZero, then the OutMap memory for that
-          // particular branch successor will be marked NULL;
-
-          std::string VarNameOfFalseLabelInst = variable(successorsOfBranch[1]);
-          std::string VarNameOfTrueLabelInst = variable(successorsOfBranch[0]);
-          if (ConditionDomain->Value == Domain::Zero)
-          {
-              //Condition is always false. Hence OutMap Memory for all Instructions in the True BB must be Uninit
-              std::string trueConditionBBName = true_dst->getName().str();
-              if (trueConditionBBName.find("if.end", 0 ) == std::string::npos)
-              {
-                  auto FirstInstructionOfUnReachableBB = successorsOfBranch[0];
-                  NOut->erase(variable(FirstInstructionOfUnReachableBB));
-                  NOut->insert(std::pair<std::string, Domain *>(
-                          variable(FirstInstructionOfUnReachableBB),new Domain(Domain::Uninit)));
-                  outs() << "Instruction is Unreachable: "
-                         << variable(FirstInstructionOfUnReachableBB)<<"\n";
-                  auto ListOfUnreachableInsts = getSuccessors(FirstInstructionOfUnReachableBB);
-                  for (auto UnreachableInst : ListOfUnreachableInsts)
-                  {
-                      outs() << "Instruction is Unreachable: "
-                             << variable(UnreachableInst)<<"\n";
-
-                      NOut->erase(variable(UnreachableInst));
-                      NOut->insert(std::pair<std::string, Domain *>(
-                              variable(UnreachableInst),new Domain(Domain::Uninit)));
-                  }
-              }
-              outs() << "Successor Of Branch That is always reachable: "
-                     << VarNameOfFalseLabelInst<<"\n";
-              return;
-          }
-          else if (ConditionDomain->Value == Domain::NonZero)
-          {
-              //Condition is always True. Hence OutMap Memory for False label must be Uninit
-              std::string falseConditionBBName = false_dst->getName().str();
-              if (falseConditionBBName.find("if.end", 0) == std::string::npos)
-              {
-                  auto FirstInstructionOfUnReachableBB = successorsOfBranch[1];
-                  NOut->erase(variable(FirstInstructionOfUnReachableBB));
-                  NOut->insert(std::pair<std::string, Domain *>(
-                          variable(FirstInstructionOfUnReachableBB),new Domain(Domain::Uninit)));
-                  outs() << "Instruction is Unreachable: "
-                         << variable(FirstInstructionOfUnReachableBB)<<"\n";
-                  auto ListOfUnreachableInsts = getSuccessors(FirstInstructionOfUnReachableBB);
-                  for (auto UnreachableInst : ListOfUnreachableInsts)
-                  {
-                      outs() << "Instruction is Unreachable: "
-                             << variable(UnreachableInst)<<"\n";
-
-                      NOut->erase(variable(UnreachableInst));
-                      NOut->insert(std::pair<std::string, Domain *>(
-                              variable(UnreachableInst),new Domain(Domain::Uninit)));
-                  }
-                  outs() << "Successor Of Branch is Unreachable: "
-                         << VarNameOfFalseLabelInst<<"\n";
-              }
-              /*
-               * Now enforce the Condition onto the True branch (REACHABLE)
-               */
-              outs() << "Successor Of Branch That is always reachable: "
-                     << VarNameOfTrueLabelInst<<"\n";
-              return;
-          }
-          // Enforce the Domain of the Condition to the TrueLabel
-          //EvaluateConditionEffectOnVariable(condition, NOut, VarNameOfTrueLabelInst);
-            *NOut = *In;
       } else {
           std::string DstVarName = variable(successorsOfBranch[0]);
           llvm::outs() << "Destination of Unconditional Branch Instr: "
                        <<DstVarName <<"\n";
-//          NOut->erase(DstVarName);
-//          NOut->insert(std::pair<std::string, Domain *>(
-//                  DstVarName,DomainAtEntryPoint)); //Propagate the Memory received at Entry
       }
-               NOut->insert(std::pair<std::string, Domain *>(
-               variable(BranInst),new Domain(Domain::Uninit))); //Propagate the Memory received at Entry
+       */
+      if(In)
+        *NOut = *In;
   }
   else if(BitCastInst)
   {
@@ -329,11 +240,18 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
       Domain* Op2Domain = NULL;
       if(In != NULL)
       {
-          auto Op1DomainEntry =In->find(Op1VarName);
-          auto Op2DomainEntry = In->find(Op2VarName);
-          Op1Domain = Op1DomainEntry->second;
-          Op2Domain = Op2DomainEntry->second;
+          if(In->find(Op1VarName) != In->end()){
+              auto Op1DomainEntry =In->at(Op1VarName);
+              Op1Domain = Op1DomainEntry;
+          }
+
+          if (In->find(Op2VarName) != In->end())
+          {
+              auto Op2DomainEntry = In->at(Op2VarName);
+              Op2Domain = Op2DomainEntry;
+          }
       }
+
       std::string CompareInstName = variable(ICompareInst);
       Domain* NonZero =  new Domain(Domain::NonZero);
       Domain* Zero =  new Domain(Domain::Zero);
@@ -427,7 +345,7 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
       }
       // If the Domain of both the Operands if Zero and the operation is eq, even then resultant
       //domain is Zero
-      if ((Op1Domain->Value == Domain::Zero) && ((Op2Domain->Value == Domain::Zero))
+      if ((Op1Domain && Op1Domain->Value == Domain::Zero) && ((Op2Domain && Op2Domain->Value == Domain::Zero))
       && ICompareInst->getPredicate() == llvm::CmpInst::ICMP_EQ)
       {
           NOut->erase(CompareInstName);
@@ -526,38 +444,64 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut) {
       NOut->erase(ResultantName);
       NOut->insert(std::pair<std::string, Domain *>(ResultantName, ResultantDomain));
   }
+  else if(RetInst)
+  {
+      *NOut = *In;
+  }
+
 
   // As of Now I shall treat all other instructions as NOP on Out Memory State
   }
 
-void DivZeroAnalysis::flowOut(Instruction *I, Memory *Pre, Memory *Post,  SetVector <Instruction *> &WorkSet) {
+void DivZeroAnalysis::flowOut(Instruction *I, Memory *Pre, Memory *Post,  SetVector <Instruction *> &WorkSet, bool &flagPhiSetChanged) {
   /* Add your code here */
   /*
    * Context: Perform the flowOut Operation by updating the WorkSet accordingly.
    * The current Instruction's successors should be added only if the OUT set was changed by the transfer function.
    */
   auto successors = getSuccessors(I);
-  if(!equal(Pre, Post))
+  // The current Instruction's Successors must be added, NOT the current Instruction
+  auto temp = join(Pre, Post);
+  *Post = *temp;
+  if(!equal(Pre, temp))
   {
+      /*
+       * Phy Type instructions can be changed throughout the program
+       * within while loops. Hence if there is a change in Pre and Post of a Phi Instruction.
+       * This very Phi Instruction Must be recalculated
+       *
+       */
+      auto isPhyNode = isa<PHINode>(I);
+      if(isPhyNode)
+      {
+          InMap[I] = temp;
+          WorkSet.insert(I);
+          /*
+           * You may not have a succeeding Phi dependency instruction.
+           * So the instruction that depends on the updated result of Phi May never be reached.
+           * Hence, all instructions are reworked with updated In and Out maps
+           */
+          flagPhiSetChanged = true;
+      }
       for (auto SuccessiveInst : successors)
       {
           WorkSet.insert(SuccessiveInst);
       }
-    // The current Instruction's Successors must be added, NOT the current Instruction
-    auto temp = join(Pre, Post);
-    *Post = *temp;
   }
 }
 
 void DivZeroAnalysis::doAnalysis(Function &F) {
     SetVector<Instruction *> WorkSet;
+    SetVector<Instruction *> OriginalWorkSet;
     for (inst_iterator I = inst_begin(F), E = inst_end(F); I != E; ++I) {
         WorkSet.insert(&(*I));
     }
-
+    OriginalWorkSet = WorkSet;
+    bool flagPhiSetChanged = false;
     //iterate through the Workset --> Instructions that need additional work
     do {
         SetVector<Instruction*>SampleWorkSet;
+        flagPhiSetChanged = false;
         for (auto InstructionThatNeedsWork: WorkSet) {
             /* Add your code here */
             /* Basic Workflow-
@@ -568,19 +512,18 @@ void DivZeroAnalysis::doAnalysis(Function &F) {
                    flow the memory set appropriately to all successors of I and update WorkSet accordingly
             */
 
-            //Step 1: Perform flowIn Operation
             flowIn(InstructionThatNeedsWork, /*Join on all OUT sets of incoming flows must be saved to InMap[Instr]*/
                    InMap[InstructionThatNeedsWork]);
-
             //Step 2: Apply Transfer function to populate OUT set for Instruction --> InstructionThatNeedsWork
             Memory *OutMem = new Memory;
             transfer(InstructionThatNeedsWork, InMap[InstructionThatNeedsWork], OutMem);
-            //flowOut(InstructionThatNeedsWork, OutMap[InstructionThatNeedsWork], OutMem, SampleWorkSet);
-            flowOut(InstructionThatNeedsWork, InMap[InstructionThatNeedsWork], OutMem, SampleWorkSet);
+            flowOut(InstructionThatNeedsWork, InMap[InstructionThatNeedsWork], OutMem, SampleWorkSet, flagPhiSetChanged);
             OutMap[InstructionThatNeedsWork] = OutMem;
-            llvm::outs()<<"WorkSet Size "<< WorkSet.size()<<"\n";
         }
-        WorkSet = SampleWorkSet;
+        if (flagPhiSetChanged)
+            WorkSet = OriginalWorkSet;
+        else
+            WorkSet = SampleWorkSet;
     } while (WorkSet.size() != 0);
 }
 bool DivZeroAnalysis::check(Instruction *I) {
@@ -596,12 +539,6 @@ bool DivZeroAnalysis::check(Instruction *I) {
       {
           std::string InstructionName = variable(BinOp);
           auto CurrInstructionInMem = InMap[BinOp];
-          auto CurrInstructionOutMem = OutMap[BinOp];
-          Domain* ResultantDom = CurrInstructionOutMem->at(InstructionName);
-          // if ResultantDomain is Uninitialized, then bail out (this instruction is unreachable)
-          if (ResultantDom->Value == Domain::Uninit)
-              return false;
-          else
           {
               // Now check if the second operand instruction is Zero Domain -->
               std::string SecondaryOpVarName = variable(BinOp->getOperand(1));
@@ -617,7 +554,7 @@ bool DivZeroAnalysis::check(Instruction *I) {
               else
               {
                   Domain* DenominatorDom = CurrInstructionInMem->at(SecondaryOpVarName);
-                  if (DenominatorDom->Value == Domain::Zero )//|| DenominatorDom->Value == Domain::MaybeZero) //<-- This has been done to reduce false negatives
+                  if (DenominatorDom->Value == Domain::Zero || DenominatorDom->Value == Domain::MaybeZero) //<-- Flow insensitive, thats why we are allowing MaybeZero also
                       return true;
               }
           }

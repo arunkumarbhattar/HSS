@@ -116,13 +116,13 @@ bool Instrument::runOnFunction(Function &F) {
    * div Operation
    */
     SetVector<Instruction *> WorkSet;
-    outs() << "Running " << "LLVM DivSan Pass" << " on " << F.getName() << "\n";
+//    outs() << "Running " << "LLVM DivSan Pass" << " on " << F.getName() << "\n";
     for (auto &BB:F) {
         for(auto &Instruction: BB)
         {
-            outs() << "Dealing with Instruction \n" <<"\n";
-            Instruction.print(outs());
-            outs() <<"\n";
+//            outs() << "Dealing with Instruction \n" <<"\n";
+//            Instruction.print(outs());
+//            outs() <<"\n";
 
             //Step 1 --> Insert Coverage (Literally every Function gets it)-->
             instrumentCoverage(F.getParent(), F, &Instruction);

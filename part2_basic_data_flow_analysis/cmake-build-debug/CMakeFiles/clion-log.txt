@@ -1,10 +1,4 @@
-/snap/clion/204/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/204/bin/ninja/linux/ninja -DCMAKE_BUILD_TYPE=DEBUG "  " "-DCMAKE_C_FLAGS_DEBUG=-g -O0" "  " "-DCMAKE_CXX_FLAGS_DEBUG=-g -O0" -G Ninja -S /home/arun/TakeDownHSS/part2_basic_data_flow_analysis -B /home/arun/TakeDownHSS/part2_basic_data_flow_analysis/cmake-build-debug
-CMake Warning:
-  Ignoring extra path from command line:
-
-   "/home/arun/TakeDownHSS/part2_basic_data_flow_analysis/cmake-build-debug/  "
-
-
+/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=DEBUG "-DCMAKE_C_FLAGS_DEBUG=-g -O0" "-DCMAKE_CXX_FLAGS_DEBUG=-g -O0" -S /home/arun/TakeDownHSS/part2_basic_data_flow_analysis -B /home/arun/TakeDownHSS/part2_basic_data_flow_analysis/cmake-build-debug
 CMake Deprecation Warning at CMakeLists.txt:6 (cmake_policy):
   The OLD behavior for policy CMP0074 will be removed from a future version
   of CMake.
@@ -15,7 +9,6 @@ CMake Deprecation Warning at CMakeLists.txt:6 (cmake_policy):
   behavior and not rely on setting a policy to OLD.
 
 
--- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/arun/TakeDownHSS/part2_basic_data_flow_analysis/cmake-build-debug

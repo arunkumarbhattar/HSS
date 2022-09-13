@@ -1,4 +1,4 @@
-/snap/clion/204/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/204/bin/ninja/linux/ninja -G Ninja -S /home/arun/TakeDownHSS/part4_instrumentation -B /home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug
+/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=DEBUG "-DCMAKE_C_FLAGS_DEBUG=-g -O0" "-DCMAKE_CXX_FLAGS_DEBUG=-g -O0" -S /home/arun/TakeDownHSS/part4_instrumentation -B /home/arun/TakeDownHSS/part4_instrumentation/cmake-build-debug
 -- The C compiler identification is Clang 12.0.1
 -- The CXX compiler identification is Clang 12.0.1
 -- Detecting C compiler ABI info
@@ -21,7 +21,7 @@ CMake Deprecation Warning at CMakeLists.txt:6 (cmake_policy):
   behavior and not rely on setting a policy to OLD.
 
 
--- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
 -- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.10") 
 -- Linker detection: GNU ld
 -- Configuring done

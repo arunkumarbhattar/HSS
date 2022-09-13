@@ -15,7 +15,7 @@ protected:
 
   void flowIn(Instruction *I, Memory *In);
 
-  void flowOut(Instruction *I, Memory *In, Memory *NOut,  SetVector <Instruction *> &);
+  void flowOut(Instruction *I, Memory *In, Memory *NOut,  SetVector <Instruction *> &, bool&);
 
   bool check(Instruction *I) override;
 
