@@ -292,93 +292,13 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut,
         // Step 4 --> Update the Mmeory map of current assignment with joined abstract value
         NOut->erase(StoreDstName);
         NOut->insert(std::pair<std::string, Domain *>(StoreDstName,SrcDomain));
-        /*
-         * Now We determine if we need to resolve this Domain change to other pointers.
-         * A Domain change affects other Pointers Only if the Src and Destination, Both are pointers.
-         * In this case, you are doing a nasty Pointer assignment. And you may need to effect, this domain
-         * to a whole bunch of pointers.
-         */
 
-        /*
-         * The Whole complexity of Aliasing Only comes into Picture, if Pointers are being stored into
-         * Pointers. So Determine that first.
-         */
-//        if (StoreSrc->getType()->isPointerTy() && StoreDst->getType()->isPointerTy())
-//        {
-//            // This means, your assignment Instruction is Doing some Pointer Shit.
-//            // Step 1: We need to iterate through the PointerSet
-//
-//            // Step 2: Check if Pointer Aliasing Applies
-//            auto PointsToObj = PA->fetchPointsTo();
-//            // Now for this Store Destination, fetch the PointsToSet
-//            auto PointsToSetOfDest = PointsToObj[StoreDstName];
-//
-//            // Now iterate through the all the variables, whose address, this variable points to,
-//            // and do a domain Join
-//            for (auto VariableAddressStoreDstPointsTo : PointsToSetOfDest)
-//            {
-//                // Step 1: Check if the
-//            }
-//            if (PA->alias(StoreSrcName, StoreDstName))
-//            {
-//                //
-//            }
-//
-//        }
-        /*
-         * You need to determine if Pointer Aliasing May apply and accordingly
-         * Call APIs to fetch Domain and Write Domain.
-         *
-         */
-
-        /*
-         * To Determine if Pointer Aliasing may apply, we may take the types of both the
-         * Operands.
-         *
-         * TODO: If Both the Operands are of Pointer Types, then it means that
-         * TODO: You are Pointing One Pointer (of SomeData) To The Pointer of (AnotherData)
-         * TODO: In this case, the Pointer will carry same Domain as the Src
-         */
-
-        /*
-         * Consider this Store Instruction -->
-         * store i32* %a, i32** %c, align 4 --> we Are store Pointer at %a into variable %c (PointerToPointer)
-         *
-         * If Some further Instruction updates the value of %a, we Not only need to update the abstract value of %c, but also
-         * consider updating the abstract value of other pointers that Point to %a.
-         *
-         * TODO: Hence If address of %a changes (may it be by some other handle) (*c = 0), Then the domain of all the
-         * Pointers that Point to %a needs to change.
-         */
-
-        /*
-         * To Resolve this case, We use PointsTo Graph constructed in Pointer Analysis. .
-         * ------------->>>>>>>>>>>>We need to Iterate through the provided PointerSet.
-         * ------------->>>>>>>>>>>>If we find an alias between any two pointers (PA->isAlias() is true) --> It means there is an edge that connects the pointer values
-         * between the two variables.
-         * Now we need to get abstract values of aliased pointers (same address 2 variables), and join them together using Domain::join().
-         * This Resultant Domain will be assigned to a.) "Current Assignment and b.) All May-aliased assignments.
-         *
-         * This ensures all pointers references are in-sync.-+
-         *
-         *
-         */
     }
     else if (BranInst)
     {
         Value* condition;
         Value* false_dst;
         Value* true_dst;
-        Domain* DomainAtEntryPoint = NULL;
-        if (In!= NULL && In->find(variable(BranInst)) != In->end())
-            DomainAtEntryPoint =  In->at(variable(BranInst));
-        else if ((BranInst->getPrevNonDebugInstruction() != NULL)
-        && (In->find(variable(BranInst->getPrevNonDebugInstruction()) )!= In->end()))
-            DomainAtEntryPoint = In->at(variable(BranInst->getPrevNonDebugInstruction()));
-        else
-            DomainAtEntryPoint = new Domain(Domain::NonZero);
-
-        Domain* ResultantDomain = new Domain(Domain::Uninit);
         auto successorsOfBranch = getSuccessors(BranInst);
         if ( BranInst->isConditional())
         {
@@ -395,102 +315,11 @@ void DivZeroAnalysis::transfer(Instruction *I, const Memory *In, Memory *NOut,
             llvm::outs() << "True Destination of Branch Instr: "
                          <<TrueDstVarName <<"\n";
 
-            //Fetch the Domain for the condition
-            /*
-             * Evaluate the condition
-             */
-            auto FirstOpConst = dyn_cast<ConstantInt>(condition);
-            Domain* ConditionDomain = NULL;
-            if (!FirstOpConst)
-            {
-                ConditionDomain = In->at(ConditionVarName);
-            }
-            else{
-                auto ConditionConst = FirstOpConst->getSExtValue();
-                if (ConditionConst == 0)
-                    ConditionDomain = new Domain(Domain::Zero);
-                else
-                    ConditionDomain = new Domain(Domain::NonZero);
-            }
-
-            // If the Branch condition has One "always unreachable branch
-            // That is, Zero or NonZero, then the OutMap memory for that
-            // particular branch successor will be marked NULL;
-
-            std::string VarNameOfFalseLabelInst = variable(successorsOfBranch[1]);
-            std::string VarNameOfTrueLabelInst = variable(successorsOfBranch[0]);
-            if (ConditionDomain->Value == Domain::Zero)
-            {
-                //Condition is always false. Hence OutMap Memory for all Instructions in the True BB must be Uninit
-                std::string trueConditionBBName = true_dst->getName().str();
-                if (trueConditionBBName.find("if.end", 0 ) == std::string::npos)
-                {
-                    auto FirstInstructionOfUnReachableBB = successorsOfBranch[0];
-                    NOut->erase(variable(FirstInstructionOfUnReachableBB));
-                    NOut->insert(std::pair<std::string, Domain *>(
-                            variable(FirstInstructionOfUnReachableBB),new Domain(Domain::Uninit)));
-                    outs() << "Instruction is Unreachable: "
-                           << variable(FirstInstructionOfUnReachableBB)<<"\n";
-                    auto ListOfUnreachableInsts = getSuccessors(FirstInstructionOfUnReachableBB);
-                    for (auto UnreachableInst : ListOfUnreachableInsts)
-                    {
-                        outs() << "Instruction is Unreachable: "
-                               << variable(UnreachableInst)<<"\n";
-
-                        NOut->erase(variable(UnreachableInst));
-                        NOut->insert(std::pair<std::string, Domain *>(
-                                variable(UnreachableInst),new Domain(Domain::Uninit)));
-                    }
-                }
-                outs() << "Successor Of Branch That is always reachable: "
-                       << VarNameOfFalseLabelInst<<"\n";
-                return;
-            }
-            else if (ConditionDomain->Value == Domain::NonZero)
-            {
-                //Condition is always True. Hence OutMap Memory for False label must be Uninit
-                std::string falseConditionBBName = false_dst->getName().str();
-                if (falseConditionBBName.find("if.end", 0) == std::string::npos)
-                {
-                    auto FirstInstructionOfUnReachableBB = successorsOfBranch[1];
-                    NOut->erase(variable(FirstInstructionOfUnReachableBB));
-                    NOut->insert(std::pair<std::string, Domain *>(
-                            variable(FirstInstructionOfUnReachableBB),new Domain(Domain::Uninit)));
-                    outs() << "Instruction is Unreachable: "
-                           << variable(FirstInstructionOfUnReachableBB)<<"\n";
-                    auto ListOfUnreachableInsts = getSuccessors(FirstInstructionOfUnReachableBB);
-                    for (auto UnreachableInst : ListOfUnreachableInsts)
-                    {
-                        outs() << "Instruction is Unreachable: "
-                               << variable(UnreachableInst)<<"\n";
-
-                        NOut->erase(variable(UnreachableInst));
-                        NOut->insert(std::pair<std::string, Domain *>(
-                                variable(UnreachableInst),new Domain(Domain::Uninit)));
-                    }
-                    outs() << "Successor Of Branch is Unreachable: "
-                           << VarNameOfFalseLabelInst<<"\n";
-                }
-                /*
-                 * Now enforce the Condition onto the True branch (REACHABLE)
-                 */
-                outs() << "Successor Of Branch That is always reachable: "
-                       << VarNameOfTrueLabelInst<<"\n";
-                return;
-            }
-            // Enforce the Domain of the Condition to the TrueLabel
-            //EvaluateConditionEffectOnVariable(condition, NOut, VarNameOfTrueLabelInst);
-            *NOut = *In;
         } else {
             std::string DstVarName = variable(successorsOfBranch[0]);
             llvm::outs() << "Destination of Unconditional Branch Instr: "
                          <<DstVarName <<"\n";
-//          NOut->erase(DstVarName);
-//          NOut->insert(std::pair<std::string, Domain *>(
-//                  DstVarName,DomainAtEntryPoint)); //Propagate the Memory received at Entry
         }
-        NOut->insert(std::pair<std::string, Domain *>(
-                variable(BranInst),new Domain(Domain::Uninit))); //Propagate the Memory received at Entry
     }
     else if(BitCastInst)
     {
