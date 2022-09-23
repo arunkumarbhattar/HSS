@@ -108,6 +108,9 @@ bool test(std::string &Target, std::string &Input, std::string &OutDir) {
   case 127:
     fprintf(stderr, "%s not found\n", Target.c_str());
     exit(1);
+  default:
+    fprintf(stderr, "Invalid exit code %d\n", ReturnCode);
+    exit(1);
   }
 }
 
