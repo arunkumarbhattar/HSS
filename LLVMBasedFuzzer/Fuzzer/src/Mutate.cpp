@@ -19,14 +19,18 @@
 #include <cassert>
 
 std::vector<std::string> SeedInputs;
-enum MutationType{
-    ReplaceBytesWithRandomValues = 0,
-    SwapAdjacentBytes,
-    CycleThroughAllValuesForEachByte,
-    RemoveARandomByte,
-    InsertARandomByte
-};
+long MostRecentCovSize = 0;
+long MostRecentRunIndex = 0;
 
+enum MutationType{
+    ReplaceBytesWithRandom = 0,
+    SwapAdjacentBytes,
+    CycleThroughAllValues,
+    InsertARandomByte,
+    RemoveARandomByte
+};
+static const MutationType All[] = {ReplaceBytesWithRandom, SwapAdjacentBytes,
+                                   CycleThroughAllValues, RemoveARandomByte,InsertARandomByte };
 MutationType CurrMutationType;
 /*
  * map<RunIndex, map<MutationType, CovLinesDiscovered>> MutationTypeToCovGrowthSoFar
@@ -43,6 +47,8 @@ MutationType CurrMutationType;
 std::map<MutationType, long> MutationTypeToCovLinesSoFar;
 //MAP 2
 std::map<MutationType, long> MutationTypeToCallCountSoFar;
+// MAP 3
+std::map<MutationType, double> MutationTypeToPriority;
 
 /*
  * MutationCoverity < long RunIndex, MutationType> --> Just provides information on which runIndex used which Mutation
@@ -68,87 +74,6 @@ std::map<long, long> RunCoverity;
  *
  * So basically this function accepts a string of bytes and replaced bytes at certain indexes with a particular Byte
  */
-void StrMutateReplaceBytesWithRandom(char* IpByteArray, long SizeOfIpByteArray)
-{
-    long RandArraySz = (rand()%(SizeOfIpByteArray-1));
-
-    // Array that holds random byte indexes to replace with random values
-    int randArray[RandArraySz];
-    for(long i=0;i<RandArraySz;i++)
-    {
-        // Insert Random Values which are NON terminators
-        char RandomIndex = (rand()%(SizeOfIpByteArray-2));
-        randArray[i]= RandomIndex;
-    }
-    long NoOfBytesToReplace = RandArraySz;
-    for(long ByteIndex = 0 ; ByteIndex < NoOfBytesToReplace; ByteIndex++)
-    {
-        long i = randArray[ByteIndex];
-        while ((IpByteArray[i] == '\0' || IpByteArray[i] == '\n' || IpByteArray[i] == '\t'))
-            IpByteArray[i] = rand() % (255);
-    }
-    return;
-}
-
-/*
- * 2.) SWAP ADJACENT BYTES
- *
- */
-void StrMutateSwapAdjacentBytes(char* IpStr, long IpLen)
-{
-    // Generate a random number which will serve to index (i)
-    // To allow us to swap bytes at location i and i+1
-    char* IpStrCpy = (char*)malloc(IpLen*sizeof(char));
-    strcpy(IpStrCpy, IpStr);
-    long RandomIndex = 0;
-    if (IpStr[IpLen-1] == '\0' || IpStr[IpLen-1] == '\n' || IpStr[IpLen-1] == '\t')
-        RandomIndex = rand() % (IpLen-3);
-    else
-        RandomIndex = rand() % (IpLen-2);
-    char temp = IpStrCpy[RandomIndex];
-    IpStrCpy[RandomIndex] = IpStrCpy[RandomIndex+1];
-    // Now we swap bytes at RandomIndex and RandomIndex + 1
-    IpStrCpy[RandomIndex+1] = temp;
-    strcpy(IpStr, IpStrCpy);
-    return;
-}
-
-/* Use: Calling this once will increment all the bytes of the
- * of the byte array by one.
- * To increment all values of bytearray by more than one, call this
- * Function multiple times.
- * 3.) CYCLE THROUGH ALL VALUES FOR EACH BYTE
- */
-
-void StrMutateCycleAllBytesByOneStep(char* IpStr, long IpLen)
-{
-    long IpStrLen = IpLen;
-    if (IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t')
-        IpStrLen = IpStrLen -1;
-    for (long i = 0 ; i < IpStrLen; i++)
-    {   char val = 1;
-        IpStr[i] = IpStr[i] + val;
-    }
-}
-
-/*
- * 4.) REMOVE A RANDOM BYTE FROM A RANDOM LOCATION
- *
- */
-void StrMutateRemoveARandomByte(char* IpStr)
-{
-    long IpStrLen = strlen(IpStr);
-    long RandomIndex = 0;
-    // If the string is NULL terminated --> then you should not disturb the NULL at the end
-    if ((IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t'))
-    {
-        RandomIndex = rand() % (IpStrLen-3);
-    }
-    else
-        RandomIndex = rand() % (IpStrLen-2);
-    memmove(&IpStr[RandomIndex], &IpStr[RandomIndex+1], IpStrLen - RandomIndex - 1);
-}
-
 /*
  * 5.) INSERT A RANDOM BYTE AT THE END
  */
@@ -163,18 +88,19 @@ char* StrMutateAddARandomByte(char* IpStr)
      */
     long IpStrLen = strlen(IpStr);
 
-    if (IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t')
+    if (IpStr != 0 && IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t')
     {
         char* MutatedStr = (char*)malloc((IpStrLen+1)*sizeof(char));
         strncpy(MutatedStr, IpStr, IpStrLen);
         char* RandomChar = (char*)malloc(sizeof(char));
         //Inserted character must never be NULLterminator
+        *RandomChar = (char)(33 + ( std::rand() % ( 126 - 33 + 1 ) ));
         while((*RandomChar == '\0' || *RandomChar == '\n' || *RandomChar == '\t'))
-            *RandomChar = (char)(rand() % (255));
+            *RandomChar = (char)(33 + ( std::rand() % ( 126 - 33 + 1 ) ));
         // Shorten the IpStrLen so that Insertion
-        MutatedStr[IpStrLen-1] = *RandomChar;
+        MutatedStr[IpStrLen] = *RandomChar;
         // Following which NULL-Terminate it.
-        MutatedStr[IpStrLen] = IpStr[IpStrLen-1];
+        MutatedStr[IpStrLen+1] = '\0';
         return MutatedStr;
     }
 
@@ -182,20 +108,134 @@ char* StrMutateAddARandomByte(char* IpStr)
     strncpy(MutatedStr, IpStr, IpStrLen);
     char* RandomChar = (char*)malloc(sizeof(char));
     //Inserted character must never be NULLterminator
+    *RandomChar = (char)(33 + ( std::rand() % ( 126 - 33 + 1 ) ));
     while((*RandomChar == '\0' || *RandomChar == '\n' || *RandomChar == '\t'))
-        *RandomChar = (char)(rand() % (255));
+        *RandomChar = (char)(33 + ( std::rand() % ( 126 - 33 + 1 ) ));
     MutatedStr[IpStrLen] = *RandomChar;
-
+    MutatedStr[IpStrLen+1] = '\0';
     return MutatedStr;
 }
+
+char* StrMutateReplaceBytesWithRandom(char* IpByteArray, long SizeOfIpByteArray)
+{
+    if (SizeOfIpByteArray == 0)
+        return StrMutateAddARandomByte(IpByteArray);
+    long RandArraySz = (rand()%(SizeOfIpByteArray-1));
+
+    // Array that holds random byte indexes to replace with random values
+    int randArray[RandArraySz];
+    for(long i=0;i<RandArraySz;i++)
+    {
+        // Insert Random Values which are NON terminators
+        char RandomIndex = (rand()%(SizeOfIpByteArray-2));
+        randArray[i]= RandomIndex;
+    }
+    long NoOfBytesToReplace = RandArraySz;
+    for(long ByteIndex = 0 ; ByteIndex < NoOfBytesToReplace; ByteIndex++)
+    {
+        long i = randArray[ByteIndex];
+        char* RandomChar = (char*)malloc(sizeof(char));
+        while((*RandomChar == '\0' || *RandomChar == '\n' || *RandomChar == '\t'))
+            *RandomChar =  33 + ( std::rand() % ( 126 - 33 + 1 ) );
+        if ((IpByteArray[i] != '\0' || IpByteArray[i] != '\n' || IpByteArray[i] != '\t'))
+            IpByteArray[i] = *RandomChar;
+    }
+    return IpByteArray;
+}
+
+/*
+ * 2.) SWAP ADJACENT BYTES
+ *
+ */
+char* StrMutateSwapAdjacentBytes(char* IpStr, long IpLen)
+{
+    // Generate a random number which will serve to index (i)
+    // To allow us to swap bytes at location i and i+1
+    if (IpLen <= 2)
+        return StrMutateAddARandomByte(IpStr);
+    long RandomIndex = 0;
+    if (IpStr[IpLen-1] == '\0' || IpStr[IpLen-1] == '\n' || IpStr[IpLen-1] == '\t')
+        RandomIndex = rand() % (IpLen-3);
+    else
+        RandomIndex = rand() % (IpLen-2);
+    char temp = IpStr[RandomIndex];
+    IpStr[RandomIndex] = IpStr[RandomIndex+1];
+    // Now we swap bytes at RandomIndex and RandomIndex + 1
+    IpStr[RandomIndex+1] = temp;
+    return IpStr;
+}
+
+/* Use: Calling this once will increment all the bytes of the
+ * of the byte array by one.
+ * To increment all values of bytearray by more than one, call this
+ * Function multiple times.
+ * 3.) CYCLE THROUGH ALL VALUES FOR EACH BYTE
+ */
+
+char* StrMutateCycleAllBytesByOneStep(char* IpStr, long IpLen)
+{
+    long IpStrLen = IpLen;
+    if (IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t')
+        IpStrLen = IpStrLen -1;
+    for (long i = 0 ; i < IpStrLen; i++)
+    {   char val = 1;
+        if (IpStr[i] + val != '\0')
+            IpStr[i] = IpStr[i] + val;
+    }
+    return IpStr;
+}
+
+/*
+ * 4.) REMOVE A RANDOM BYTE FROM A RANDOM LOCATION
+ *
+ */
+char* StrMutateRemoveARandomByte(char* IpStr)
+{
+    long IpStrLen = strlen(IpStr);
+    if (IpStrLen<=2)
+        return StrMutateAddARandomByte(IpStr);
+    long RandomIndex = 0;
+    // If the string is NULL terminated --> then you should not disturb the NULL at the end
+    if ((IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t'))
+    {
+        RandomIndex = rand() % (IpStrLen-3);
+    }
+    else
+        RandomIndex = rand() % (IpStrLen-2);
+    memmove(&IpStr[RandomIndex], &IpStr[RandomIndex+1], IpStrLen - RandomIndex - 1);
+    // Add Null Terminator
+    IpStr[IpStrLen-1] = '\0';
+//    IpStr[IpStrLen-1] = 'j';
+    return IpStr;
+}
+
+
 /*
  * ReturnBestMutation
  * --> This function returns the best mutation based on highest CovGrowth factor
  * --> CovGrowth factor is (Coverity Lines added by this mutation/ Number of Times this mutation has been used)
  */
 
-MutationType ReturnBestMutationTechnique(void)
+std::string MutationTypeEnumToStr(MutationType T)
 {
+    switch(T)
+    {
+        case MutationType::ReplaceBytesWithRandom:
+            return "ReplaceBytesWithRandom";
+        case MutationType::SwapAdjacentBytes:
+            return "SwapAdjacentBytes";
+        case MutationType::RemoveARandomByte:
+            return "RemoveARandomByte";
+        case MutationType::InsertARandomByte:
+            return "InsertARandomByte";
+        case MutationType::CycleThroughAllValues:
+            return "CycleThroughAllValues";
+    }
+    return "";
+}
+MutationType ReturnBestMutationTechnique(std::string Origin)
+{
+    std::cout<<"Origin Length is "<<Origin.length()<<std::endl;
     // Step1 : Fetch Most recent RunIndex
     using pair_type = decltype(RunCoverity)::value_type;
     auto MostRecentRunIndex = std::max_element(
@@ -205,25 +245,27 @@ MutationType ReturnBestMutationTechnique(void)
             });
     // If Most Recent Index run is 0, it means its the first Run, return with SwapBytes
     if (MostRecentRunIndex->first == 0)
+    {
         return MutationType::SwapAdjacentBytes;
+    }
 
     // Step 2: Use this RunIndex to fetch NumberOfCoverity lines and the Number of times each mutation technique has been used
     MutationType BestMutationTechnique = (MutationType)(rand() % 5);
-    static const MutationType All[] = {ReplaceBytesWithRandomValues, SwapAdjacentBytes,
-                                       CycleThroughAllValuesForEachByte, RemoveARandomByte,InsertARandomByte };
     double MaxCovGrowth = 0;
     // Compute find the mutation technique with the maxCovGrowth
     for ( const auto e : All )
     {
         if (MutationTypeToCallCountSoFar[e] == 0)
-            continue;
-        double CurrentMutationTechniqueCovGrowth = MutationTypeToCovLinesSoFar[e]/MutationTypeToCallCountSoFar[e];
+            MutationTypeToCallCountSoFar[e] = 1;
+        double CurrentMutationTechniqueCovGrowth = ((double)MutationTypeToCovLinesSoFar[e]/(double)MutationTypeToCallCountSoFar[e]);
+        CurrentMutationTechniqueCovGrowth = CurrentMutationTechniqueCovGrowth*MutationTypeToPriority[e];
         if (CurrentMutationTechniqueCovGrowth > MaxCovGrowth)
         {
             MaxCovGrowth = CurrentMutationTechniqueCovGrowth;
             BestMutationTechnique = e;
         }
     }
+    std::cout<<"Returning Technique  "<<MutationTypeEnumToStr(BestMutationTechnique) <<std::endl;
     return BestMutationTechnique;
 }
 /************************************************/
@@ -239,6 +281,8 @@ std::string selectInput() {
   unsigned long LastElementIndex = 0;
   if (SeedInputs.size() != 0)
     LastElementIndex = SeedInputs.size()-1;
+  if (Seed.length() == 0)
+      Seed = rand();
   Seed = SeedInputs[LastElementIndex];
   if (SeedInputs.size() > 0)
     SeedInputs.pop_back();
@@ -269,36 +313,35 @@ std::string mutate(std::string Origin) {
   // Fetch the Best Mutation technique -->
   MutationType MutationTechniqueWeWillCurrentlyUse;
   long Strlen = Origin.size();
-    MutationTechniqueWeWillCurrentlyUse = ReturnBestMutationTechnique();
+    MutationTechniqueWeWillCurrentlyUse = ReturnBestMutationTechnique(Origin);
     switch(MutationTechniqueWeWillCurrentlyUse)
     {
-        case MutationType::ReplaceBytesWithRandomValues:
+        case MutationType::ReplaceBytesWithRandom:
         {
             /*
              * We are gonna call ->StrMutateReplaceBytesWithRandom function
              */
-            //std::cout<<"Mutatating "<<Origin<<"with Technique 1"<<std::endl;
-            CurrMutationType = MutationType::ReplaceBytesWithRandomValues;
-            StrMutateReplaceBytesWithRandom(const_cast<char*>(Origin.c_str()), Strlen);
+            CurrMutationType = MutationType::ReplaceBytesWithRandom;
+            //std::cout<<"Mutatating "<<Origin<<" with Technique ReplaceBytesWithRandom"<<std::endl;
+            CurrMutationType = MutationType::ReplaceBytesWithRandom;
+            std::strcpy(const_cast<char *>(Origin.c_str()), StrMutateReplaceBytesWithRandom(const_cast<char*>(Origin.c_str()), Strlen));
             break;
         }
-        case MutationType::CycleThroughAllValuesForEachByte:
+        case MutationType::CycleThroughAllValues:
         {
             /*
              * We are gonna call --> StrMutateCycleAllBytesByOneStep
              * Each call to this funciton will increment all bytes by 1.
              * Hence we are gonna call this in a loop random number of times
              */
-            //std::cout<<"Mutatating "<<Origin<<"with Technique 2"<<std::endl;
-            CurrMutationType = MutationType::CycleThroughAllValuesForEachByte;
-            int NoOfCycles = rand()%10;
-            while(NoOfCycles--)
-                StrMutateCycleAllBytesByOneStep(const_cast<char*>(Origin.c_str()), Strlen);
+            //std::cout<<"Mutatating "<<Origin<<" with Technique CycleThroughAllValues"<<std::endl;
+            CurrMutationType = MutationType::CycleThroughAllValues;
+            Origin = StrMutateCycleAllBytesByOneStep(const_cast<char*>(Origin.c_str()), Strlen);
             break;
         }
         case MutationType::SwapAdjacentBytes:
         {
-            //std::cout<<"Mutatating "<<Origin<<"with Technique 3"<<std::endl;
+            //std::cout<<"Mutatating "<<Origin<<" with Technique SwapAdjacentBytes"<<std::endl;
             CurrMutationType = MutationType::SwapAdjacentBytes;
             // This would only swap some random two bytes together
             StrMutateSwapAdjacentBytes(const_cast<char*>(Origin.c_str()), Strlen);
@@ -306,16 +349,16 @@ std::string mutate(std::string Origin) {
         }
         case MutationType::InsertARandomByte:
         {
-            //std::cout<<"Mutatating "<<Origin<<"with Technique 4"<<std::endl;
+            //std::cout<<"Mutatating "<<Origin<<" with Technique InsertARandomByte"<<std::endl;
             CurrMutationType = MutationType::InsertARandomByte;
-            StrMutateAddARandomByte(const_cast<char*>(Origin.c_str()));
+            Origin = StrMutateAddARandomByte(const_cast<char*>(Origin.c_str()));
             break;
         }
         case MutationType::RemoveARandomByte:
         {
-            //std::cout<<"Mutatating "<<Origin<<"with Technique 5"<<std::endl;
+            //std::cout<<"Mutatating "<<Origin<<" with Technique RemoveARandomByte"<<std::endl;
             CurrMutationType = MutationType::RemoveARandomByte;
-            StrMutateRemoveARandomByte(const_cast<char*>(Origin.c_str()));
+            Origin =  StrMutateRemoveARandomByte(const_cast<char*>(Origin.c_str()));
             break;
         }
         default:
@@ -329,15 +372,6 @@ std::string mutate(std::string Origin) {
 /*********************************************/
 
 void feedBack(std::string &Target, std::string &Mutated) {
-  /*
-  * Target here is a string of output .cov file name, you can find the information from it to determine if the mutated string is interesting
-  * Code below adds a mutated string to seed with 70% probability, you should modify this to implement your algorithm
-  */
-
-  /*
-   * Right out of the bat, read the .cov file and Find store entire contents into a string
-   */
-    std::cout<<"Mutated String is: "<<Mutated<<std::endl;
     std::fstream CovFile;
     std::string CovFileTotalContentStr;
     CovFile.open(Target, std::ios::in);
@@ -352,15 +386,16 @@ void feedBack(std::string &Target, std::string &Mutated) {
     long CurrCovFileSize = strlen(CovFileTotalContentStr.c_str());
     // Now fetch the latest RunIndex and increment by one
     using pair_type = decltype(RunCoverity)::value_type;
-    auto MaxVal = std::max_element(
-            std::begin(RunCoverity), std::end(RunCoverity),
-            [] (const pair_type & p1, const pair_type & p2) {
-                return p1.first < p2.first;
-            });
-    // This has the latest RunIndex Value
-    auto MostRecentRunIndex = MaxVal->first;
-    auto MostRecentCovSize = MaxVal->second;
+//    auto MaxVal = std::max_element(
+//            std::begin(RunCoverity), std::end(RunCoverity),
+//            [] (const pair_type & p1, const pair_type & p2) {
+//                return p1.first < p2.first;
+//            });
+//    // This has the latest RunIndex Value
+//    auto MostRecentRunIndex = MaxVal->first;
+//    auto MostRecentCovSize = MaxVal->second;
     auto CurrentRunIndex = MostRecentRunIndex + 1;
+
     //Step 1: Update the CurrentRunIndex and CovFileSize into the RunCoverity map.
     RunCoverity.insert(std::pair<long,long>(CurrentRunIndex, CurrCovFileSize));
 
@@ -368,17 +403,23 @@ void feedBack(std::string &Target, std::string &Mutated) {
     double CurrentRunCovGrowth = CurrCovFileSize - MostRecentCovSize;
     // If there is any growth in Coverity, add this seed to the seed vector ( so that it can be further explored)
     SeedInputs.push_back(Mutated);
-    auto TotalCovLinesOfMutationType = MutationTypeToCovLinesSoFar[CurrMutationType] + CurrentRunCovGrowth;
     // Insert the total number of Coverity lines discovered by this mutation type
-    MutationTypeToCovLinesSoFar.insert(std::pair<MutationType, double>(CurrMutationType, TotalCovLinesOfMutationType));
+    if (CurrentRunCovGrowth)
+        std::cout<<"Growth Discovered: "<< CurrentRunCovGrowth <<std::endl;
+    if (CurrMutationType == MutationType::InsertARandomByte)
+    {
+        std::cout<<"Inserting discovered: "<< CurrentRunCovGrowth <<std::endl;
+        MutationTypeToCovLinesSoFar[CurrMutationType] = MutationTypeToCovLinesSoFar[CurrMutationType] + (CurrentRunCovGrowth*100);
+    }
     // Increment the Number of times this mutation has been used
-    MutationTypeToCallCountSoFar[CurrMutationType]++;
+    MutationTypeToCallCountSoFar[CurrMutationType] = MutationTypeToCallCountSoFar[CurrMutationType] + 1;
     // We will use the above two maps to make a judgement on which Mutation technique to use when the user does not
     // specify.
 
     // Update the RunIndex with the Current Mutation Type
     MutationCoverity.insert(std::pair<long, MutationType>(CurrentRunIndex, CurrMutationType));
-
+    MostRecentRunIndex = CurrentRunIndex;
+    MostRecentCovSize = CurrCovFileSize;
 }
 
 /*****************************************************************/
@@ -481,6 +522,27 @@ int main(int argc, char **argv) {
   if (readSeedInputs(SeedInputDir)) {
     fprintf(stderr, "Cannot read seed input directory\n");
     return 1;
+  }
+
+  for (auto e: All)
+  {
+      MutationTypeToCovLinesSoFar[e] = 1;
+      switch (e)
+      {
+          case MutationType::CycleThroughAllValues:
+          case MutationType::SwapAdjacentBytes:
+              MutationTypeToPriority[e] = 2;
+              break;
+          case MutationType::InsertARandomByte:
+              MutationTypeToPriority[e] = 6;
+              break;
+          case MutationType::RemoveARandomByte:
+              MutationTypeToPriority[e] = 1;
+              break;
+          case MutationType::ReplaceBytesWithRandom:
+              MutationTypeToPriority[e] = 2;
+                break;
+      }
   }
 
   while (true) {

@@ -14,9 +14,9 @@ int runTarget(std::string &Target, std::string &Input) {
   std::string Cmd = Target + " > /dev/null 2>&1";
   FILE *F = popen(Cmd.c_str(), "w");
   fprintf(F, "%s", Input.c_str());
-//pclose(F);
-//return 0;
-  return pclose(F);;
+//    pclose(F);
+//    return  0;
+return pclose(F);
 }
 
 void initialize(std::string &OutDir) {
