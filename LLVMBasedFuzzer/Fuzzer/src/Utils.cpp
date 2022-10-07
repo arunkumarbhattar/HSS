@@ -16,7 +16,7 @@ int runTarget(std::string &Target, std::string &Input) {
   fprintf(F, "%s", Input.c_str());
 //    pclose(F);
 //    return  0;
-return pclose(F);
+    return pclose(F);
 }
 
 void initialize(std::string &OutDir) {
