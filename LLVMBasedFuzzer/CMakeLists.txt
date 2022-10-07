@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_CXX_STANDARD 14)
 if(CMAKE_BUILD_TYPE MATCHES "Debug")
-    set(CMAKE_CXX_FLAGS "-std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti")
+    set(CMAKE_CXX_FLAGS "-std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O0 -fno-rtti ")
 else()
     set(CMAKE_CXX_FLAGS "-std=c++14 -D__GLIBCXX_USE_CXX11_ABI=0 -O3 -fno-rtti")
 endif()

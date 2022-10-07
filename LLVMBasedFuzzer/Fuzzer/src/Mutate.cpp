@@ -46,27 +46,16 @@ char* StrMutateAddARandomByte(char* IpStr)
 {
     long IpStrLen = strlen(IpStr);
 
-    if (IpStrLen>245)
+    if (IpStrLen>345)
     {
-        // Since 255 is the char* limit --> we stop adding bits at this size
-        // As Fuzzer starts spending more time, I want more time to be spent shuffling bytes instead of growing bytes.
-        MutationTypeToPriority[InsertARandomByte] = 0.99*MutationTypeToPriority[InsertARandomByte];
-        MutationTypeToPriority[RemoveARandomByte] = 1.09*MutationTypeToPriority[RemoveARandomByte];
-        return IpStr;
+        //I dont want an input explosion. Hence, as the string size keeps increasing, I slow down the rate
+        // of growth of string (dont worry, if something interesting pops up, I scale that technique alpha)
+        MutationTypeToPriority[RemoveARandomByte] = 1.01*MutationTypeToPriority[InsertARandomByte] ;
     }
-//    if (IpStr != 0 && IpStr[IpStrLen] == '\0' || IpStr[IpStrLen] == '\n' || IpStr[IpStrLen] == '\t')
-//    {
-//        char* MutatedStr = (char*)malloc((IpStrLen+2)*sizeof(char));
-//        strncpy(MutatedStr, IpStr, IpStrLen);
-//        char* RandomChar = (char*)malloc(sizeof(char));
-//        *RandomChar =  65 + ( std::rand() % ( 90 - 65 + 1 ) ); //*RandomChar =  33 + ( std::rand() % ( 126 - 33 + 1 ) );
-//        while((*RandomChar == '\0' || *RandomChar == '\n' || *RandomChar == '\t'))
-//            *RandomChar =  65 + ( std::rand() % ( 90 - 65 + 1 ) ); //*RandomChar =  33 + ( std::rand() % ( 126 - 33 + 1 ) );
-//        MutatedStr[IpStrLen] = *RandomChar;
-//        MutatedStr[IpStrLen+1] = '\0';
-//        return MutatedStr;
-//    }
 
+    /*
+     * All what I do to add 1 byte to a string and properly Null Terminate it
+     */
     char* MutatedStr = (char*)malloc((IpStrLen+2)*sizeof(char));
     strncpy(MutatedStr, IpStr, IpStrLen);
     char* RandomChar = (char*)malloc(sizeof(char));
@@ -80,37 +69,49 @@ char* StrMutateAddARandomByte(char* IpStr)
 
 char* StrMutateReplaceBytesWithRandom(char* IpByteArray, long SizeOfIpByteArray)
 {
-    if (SizeOfIpByteArray < 3)
-    {
-        MutationTypeToPriority[InsertARandomByte] = 1.01*MutationTypeToPriority[RemoveARandomByte];
+    if (SizeOfIpByteArray < 4)
+    {   /*
+            The IpByteArray String is too small to perform any respectable byte replacement, lets shoot its length up!!
+        */
+        MutationTypeToPriority[InsertARandomByte] = 1.1*MutationTypeToPriority[InsertARandomByte];
         return StrMutateAddARandomByte(IpByteArray);
     }
-    long RandArraySz = (rand()%(SizeOfIpByteArray-1));
+    // Below logic generates a "random" number of "random" indexes (within the length of string) to be
+    // replaced with random bytes.
 
+    long RandArraySz = (rand()%(SizeOfIpByteArray-2));
     int randArray[RandArraySz];
     for(long i=0;i<RandArraySz;i++)
     {
-        char RandomIndex = (rand()%(SizeOfIpByteArray-2));
-        randArray[i]= RandomIndex;
+        randArray[i]= (rand()%(SizeOfIpByteArray-2));
     }
     long NoOfBytesToReplace = RandArraySz;
+    /*
+     * Generate a copy string to manipulate (directly manipulating IpByteArray causes problems lot of variable problems
+     * , especially with the way the C++ destructor deals with freeing.
+     */
+    char* MutatedStr = (char*)malloc((SizeOfIpByteArray)*sizeof(char));
+    strncpy(MutatedStr, IpByteArray, SizeOfIpByteArray);
     for(long ByteIndex = 0 ; ByteIndex < NoOfBytesToReplace; ByteIndex++)
     {
         long i = randArray[ByteIndex];
         char* RandomChar = (char*)malloc(sizeof(char));
         while((*RandomChar == '\0' || *RandomChar == '\n' || *RandomChar == '\t'))
             *RandomChar =  65 + ( std::rand() % ( 90 - 65 + 1 ) ); //*RandomChar =  33 + ( std::rand() % ( 126 - 33 + 1 ) );
-        if ((IpByteArray[i] != '\0' || IpByteArray[i] != '\n' || IpByteArray[i] != '\t'))
-            IpByteArray[i] = *RandomChar;
+        if ((MutatedStr[i] != '\0' && MutatedStr[i] != '\n' && MutatedStr[i] != '\t'))
+            MutatedStr[i] = *RandomChar;
     }
-    return IpByteArray;
+    return MutatedStr;
 }
 
 char* StrMutateSwapAdjacentBytes(char* IpStr, long IpLen)
 {
+    /*
+     * Swap adjacent bytes, nothing fancy.
+     */
     if (IpLen <= 3)
     {
-        MutationTypeToPriority[InsertARandomByte] = 1.01*MutationTypeToPriority[InsertARandomByte];
+        MutationTypeToPriority[InsertARandomByte] = 1.1*MutationTypeToPriority[RemoveARandomByte];
         return StrMutateAddARandomByte(IpStr);
     }
     long RandomIndex = 0;
@@ -126,6 +127,9 @@ char* StrMutateSwapAdjacentBytes(char* IpStr, long IpLen)
 
 char* StrMutateCycleAllBytesByOneStep(char* IpStr, long IpLen)
 {
+    /*
+     * Cycle through all bytes just by one step
+     */
     long IpStrLen = IpLen;
     if (IpStr[IpStrLen-1] == '\0' || IpStr[IpStrLen-1] == '\n' || IpStr[IpStrLen-1] == '\t')
         IpStrLen = IpStrLen -1;
@@ -142,7 +146,7 @@ char* StrMutateRemoveARandomByte(char* IpStr)
     long IpStrLen = strlen(IpStr);
     if (IpStrLen<=3)
     {
-        MutationTypeToPriority[InsertARandomByte] = 1.01*MutationTypeToPriority[RemoveARandomByte];
+        MutationTypeToPriority[InsertARandomByte] = 1.1*MutationTypeToPriority[RemoveARandomByte];
         return StrMutateAddARandomByte(IpStr);
     }
     long RandomIndex = 0;
@@ -178,8 +182,12 @@ std::string MutationTypeEnumToStr(MutationType T)
 
 MutationType ReturnBestMutationTechnique(std::string Origin)
 {
+    /*
+     * Return the best Mutation Technique at the moment
+     */
     if (MostRecentRunIndex == 0)
     {
+        /* Patient Zero*/
         return MutationType::SwapAdjacentBytes;
     }
 
@@ -289,17 +297,34 @@ void feedBack(std::string &Target, std::string &Mutated) {
         CovFile.close();
     }
     CurrCovFileSize = strlen(CovFileTotalContentStr.c_str());
+    // Run Tracker
     auto CurrentRunIndex = MostRecentRunIndex + 1;
 
+    // How much of a coverity growth has this Mutation Technique resulted in.
     double CurrentRunCovGrowth = CurrCovFileSize - MostRecentCovSize;
     SeedInputs.push_back(Mutated);
     if (CurrMutationType == MutationType::InsertARandomByte)
     {
+        // Special treatment for insertion (only cuz of the short time limit of 15-25 mins)
         //std::cout<<"Inserting discovered: "<< CurrentRunCovGrowth <<std::endl;
         MutationTypeToCovLinesSoFar[CurrMutationType] = MutationTypeToCovLinesSoFar[CurrMutationType] + (CurrentRunCovGrowth*800);
     }
+
+    if (CurrentRunCovGrowth > 0)
+    {
+        /*
+         * If you found an interesting output, stay and shuffle the shit out of it, to extract the as many
+         * failed test cases as possible.
+         */
+        MutationTypeToPriority[CycleThroughAllValues] = 1.3*MutationTypeToPriority[CycleThroughAllValues];
+        MutationTypeToPriority[SwapAdjacentBytes] = 1.3*MutationTypeToPriority[SwapAdjacentBytes];
+        MutationTypeToPriority[ReplaceBytesWithRandom] = 1.3*MutationTypeToPriority[ReplaceBytesWithRandom];
+    }
     MutationTypeToCallCountSoFar[CurrMutationType] = MutationTypeToCallCountSoFar[CurrMutationType] + 1;
-    MostRecentRunIndex = CurrentRunIndex;
+    // Every 80000 runs, I boost the Insertion by 10% (cuz i dont want no stagnation as limit is 15-25 mins)
+    if (CurrentRunIndex %80000 == 0)
+        MutationTypeToPriority[InsertARandomByte] = 1.01* MutationTypeToPriority[InsertARandomByte];
+        MostRecentRunIndex = CurrentRunIndex;
     MostRecentCovSize = CurrCovFileSize;
 }
 
@@ -410,6 +435,9 @@ int main(int argc, char **argv) {
       MutationTypeToCovLinesSoFar[e] = 1;
       switch (e)
       {
+          /*
+           * This is my bias-->
+           */
           case MutationType::CycleThroughAllValues:
           case MutationType::SwapAdjacentBytes:
               MutationTypeToPriority[e] = 8;
