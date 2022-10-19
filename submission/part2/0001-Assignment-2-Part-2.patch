@@ -1,0 +1,390 @@
+From eea882daa6eea6f980f9fa03147f70f5d1bc56f0 Mon Sep 17 00:00:00 2001
+From: twinturbo <bhattar1@purdue.edu>
+Date: Fri, 7 Oct 2022 19:13:22 -0400
+Subject: [PATCH] Assignment 2 Part 2
+
+---
+ include/afl-fuzz.h    |   1 +
+ include/debug.h       |  27 +++++++++
+ include/forkserver.h  |   7 ++-
+ src/afl-forkserver.c  | 135 ++++++++++++++++++++++++++++++++++++++----
+ src/afl-fuzz-bitmap.c |  14 ++++-
+ src/afl-fuzz.c        |  39 +++++++++++-
+ 6 files changed, 206 insertions(+), 17 deletions(-)
+
+diff --git a/include/afl-fuzz.h b/include/afl-fuzz.h
+index 23c20cc4..1ad41f31 100644
+--- a/include/afl-fuzz.h
++++ b/include/afl-fuzz.h
+@@ -766,6 +766,7 @@ typedef struct afl_state {
+   u32   bitsmap_size;
+ #endif
+ 
++  u32 NumberOfFiles;
+ } afl_state_t;
+ 
+ struct custom_mutator {
+diff --git a/include/debug.h b/include/debug.h
+index 566b1d00..3474987c 100644
+--- a/include/debug.h
++++ b/include/debug.h
+@@ -392,6 +392,33 @@ static inline const char *colorfilter(const char *x) {
+                                                                               \
+   } while (0)
+ 
++#define ck_write_multi(_fds, bufs, len, lens, fns, num) {                     \
++  if (len <= 0)                                                               \
++    return;                                                                   \
++  /* Repeat this block n times */                                             \
++  for (int FileCount = 0; FileCount < num; FileCount++) {                     \
++    s32 _written = 0, _off = 0, _len = (s32)(lens[FileCount]);                \
++    do {                                                                      \
++      s32 _res = write(_fds[FileCount], (bufs)[FileCount] + _off, _len);      \
++      if (_res != _len && (_res > 0 && _written + _res != _len)) {            \
++        if (_res > 0) {                                                       \
++          _written += _res;                                                   \
++          _len -= _res;                                                       \
++          _off += _res;                                                       \
++        } else {                                                              \
++          RPFATAL(_res, "Short write to %s, fd %d (%d of %d bytes)",          \
++                fns[FileCount], _fds[FileCount], _res, _len);                 \
++          assert(false);                                                      \
++        }                                                                     \
++      } else {                                                                \
++        break;                                                                \
++      }                                                                       \
++    } while (1);                                                              \
++  }                                                                           \
++}
++
++
++
+ #define ck_read(fd, buf, len, fn)                              \
+   do {                                                         \
+                                                                \
+diff --git a/include/forkserver.h b/include/forkserver.h
+index 59ce0ee7..e9f5c310 100644
+--- a/include/forkserver.h
++++ b/include/forkserver.h
+@@ -94,7 +94,7 @@ typedef struct afl_forkserver {
+       dev_null_fd,                      /* Persistent fd for /dev/null      */
+       fsrv_ctl_fd,                      /* Fork server control pipe (write) */
+       fsrv_st_fd;                       /* Fork server status pipe (read)   */
+-
++  s32* out_fd_multi;                    /* Persistent FDs for Multi-IP Fuzzing*/
+   u32 exec_tmout;                       /* Configurable exec timeout (ms)   */
+   u32 init_tmout;                       /* Configurable init timeout (ms)   */
+   u32 map_size;                         /* map size used by the target      */
+@@ -106,7 +106,10 @@ typedef struct afl_forkserver {
+ 
+   u8 *out_file,                         /* File to fuzz, if any             */
+       *target_path;                     /* Path of the target               */
+-
++  bool isMultiInput;                    /* Flag for Multi-IP Fuzzing        */
++  u32 NumOfFiles;                       /* No Of Ips for Multi-IP Fuzzing   */
++  u8 **multi_out_file;                  /* Ip File names for Multi-IP Fuzzing */
++  s32* IpLenArray;                      /* Array Length per IP in Multi-IP F  */
+   FILE *plot_file;                      /* Gnuplot output file              */
+ 
+   /* Note: last_run_timed_out is u32 to send it to the child as 4 byte array */
+diff --git a/src/afl-forkserver.c b/src/afl-forkserver.c
+index 628ff590..0c8b9db2 100644
+--- a/src/afl-forkserver.c
++++ b/src/afl-forkserver.c
+@@ -74,7 +74,6 @@ static void fsrv_exec_child(afl_forkserver_t *fsrv, char **argv) {
+ /* Initializes the struct */
+ 
+ void afl_fsrv_init(afl_forkserver_t *fsrv) {
+-
+ #ifdef __linux__
+   fsrv->nyx_handlers = NULL;
+   fsrv->out_dir_path = NULL;
+@@ -92,7 +91,8 @@ void afl_fsrv_init(afl_forkserver_t *fsrv) {
+   fsrv->out_dir_fd = -1;
+   fsrv->dev_null_fd = -1;
+   fsrv->dev_urandom_fd = -1;
+-
++  fsrv->NumOfFiles = 0;
++  fsrv->isMultiInput = false;
+   /* Settings */
+   fsrv->use_stdin = true;
+   fsrv->no_unlink = false;
+@@ -131,6 +131,7 @@ void afl_fsrv_init_dup(afl_forkserver_t *fsrv_to, afl_forkserver_t *from) {
+   fsrv_to->out_file = from->out_file;
+   fsrv_to->dev_urandom_fd = from->dev_urandom_fd;
+   fsrv_to->out_fd = from->out_fd;  // not sure this is a good idea
++  fsrv_to->out_fd_multi = from->out_fd_multi;
+   fsrv_to->no_unlink = from->no_unlink;
+   fsrv_to->uses_crash_exitcode = from->uses_crash_exitcode;
+   fsrv_to->crash_exitcode = from->crash_exitcode;
+@@ -658,6 +659,12 @@ void afl_fsrv_start(afl_forkserver_t *fsrv, char **argv,
+     } else {
+ 
+       dup2(fsrv->out_fd, 0);
++      int NumFiles = fsrv->NumOfFiles;
++      // Close the remnant file descriptors
++      while(NumFiles--)
++      {
++        close(fsrv->out_fd_multi[NumFiles]);
++      }
+       close(fsrv->out_fd);
+ 
+     }
+@@ -1277,6 +1284,63 @@ u32 afl_fsrv_get_mapsize(afl_forkserver_t *fsrv, char **argv,
+ 
+ }
+ 
++char** afl_fsrv_break_input(afl_forkserver_t *fsrv, char* str, int PartCount, int lens[PartCount])
++{
++  int str_size = strlen(str);
++  int part_size = 0;
++  char** RetVal = (char**)malloc( (PartCount)*sizeof(char*));
++  // Check if string can be divided in
++  // n equal parts. If not we just duplicate same data across three char*'s
++  // Calculate the size of parts to
++  // find the division points
++
++  part_size = str_size / PartCount;
++  if (part_size == 0)
++    part_size = str_size;
++
++  for (int i = 0 ;i < PartCount;i++)
++    lens[i] = 0;
++  int PartCounter = 0;
++  for (int i = 0; i < str_size; i++) {
++    if (i % part_size == 0)
++    {
++      RetVal[PartCounter] = (char*)malloc(part_size*sizeof(char));
++      lens[PartCounter] = part_size;
++      (fsrv->IpLenArray)[PartCounter] = part_size;
++      PartCounter = PartCounter + 1;
++    }
++    RetVal[PartCounter-1][i % part_size ] = str[i];
++  }
++  return RetVal;
++}
++//void ck_write_multi(s32* _fds, u8** bufs, s32 len, const s32* lens, u8** fns, s32 num) {
++//    if (len <= 0)
++//      return;
++//    /* Repeat this block n times */
++//    for (int FileCount = 0; FileCount < num; FileCount++) {
++//      s32 _written = 0, _off = 0, _len = (s32)(lens[FileCount]);
++//      do {
++//        s32 _res = write(_fds[FileCount], (bufs)[FileCount] + _off, _len);
++//        if (_res != _len && (_res > 0 && _written + _res != _len)) {
++//          if (_res > 0) {
++//            _written += _res;
++//            _len -= _res;
++//            _off += _res;
++//          } else {
++//            //RPFATAL(_res, "Short write to %s, fd %d (%d of %d bytes)",
++//            //      fns[FileCount], _fds[FileCount], _res, _len);
++//            assert(false);
++//          }
++//        } else {
++//          break;
++//        }
++//      } while (1);
++//    }
++//
++////    while(num--)
++////      free(bufs[num]);
++//}
++
+ /* Delete the current testcase and write the buf to the testcase file */
+ 
+ void __attribute__((hot))
+@@ -1345,7 +1409,7 @@ afl_fsrv_write_to_testcase(afl_forkserver_t *fsrv, u8 *buf, size_t len) {
+   } else {
+ 
+     s32 fd = fsrv->out_fd;
+-
++    s32* fds = fsrv->out_fd_multi;
+     if (!fsrv->use_stdin && fsrv->out_file) {
+ 
+       if (unlikely(fsrv->no_unlink)) {
+@@ -1354,14 +1418,37 @@ afl_fsrv_write_to_testcase(afl_forkserver_t *fsrv, u8 *buf, size_t len) {
+                   DEFAULT_PERMISSION);
+ 
+       } else {
+-
+-        unlink(fsrv->out_file);                           /* Ignore errors. */
+-        fd = open(fsrv->out_file, O_WRONLY | O_CREAT | O_EXCL,
+-                  DEFAULT_PERMISSION);
+-
++        /*
++         * if (afl->fsrv.NumOfFiles) is NonZero, it means that -b option has been specified.
++         * Hence we open all files in the list
++         */
++        int NumOfFiles = fsrv->NumOfFiles;
++        if (fsrv->isMultiInput) {
++          while (NumOfFiles--) {
++            unlink((fsrv->multi_out_file)[NumOfFiles]);
++            fds[NumOfFiles] = open((fsrv->multi_out_file)[NumOfFiles],
++                      O_WRONLY | O_CREAT | O_EXCL, DEFAULT_PERMISSION);
++          }
++        }
++        else
++        {
++          unlink(fsrv->out_file);                           /* Ignore errors. */
++          fd = open(fsrv->out_file, O_WRONLY | O_CREAT | O_EXCL,
++                    DEFAULT_PERMISSION);
++        }
+       }
+ 
+-      if (fd < 0) { PFATAL("Unable to create '%s'", fsrv->out_file); }
++      if (fsrv->isMultiInput)
++      {
++        int NumOfFiles = fsrv->NumOfFiles;
++        while (NumOfFiles--) {
++          if (fds[NumOfFiles] < 0) { PFATAL("Unable to create '%s'",(fsrv->multi_out_file)[NumOfFiles]); }
++        }
++      }
++      else
++      {
++        if (fd < 0) { PFATAL("Unable to create '%s'", fsrv->out_file); }
++      }
+ 
+     } else if (unlikely(fd <= 0)) {
+ 
+@@ -1378,7 +1465,24 @@ afl_fsrv_write_to_testcase(afl_forkserver_t *fsrv, u8 *buf, size_t len) {
+     }
+ 
+     // fprintf(stderr, "WRITE %d %u\n", fd, len);
+-    ck_write(fd, buf, len, fsrv->out_file);
++    /*
++     * Now all we gon do is take the input and split it into (write into) "b" number of files
++     */
++
++    int NumOfIps = fsrv->NumOfFiles;
++    if (NumOfIps>1)
++    {
++      int lens[NumOfIps];
++      fsrv->IpLenArray = (int*)calloc(0, NumOfIps*sizeof(int));
++      char** ListOfBufs;
++      /*
++       * buf is empty here, you read from the files and write into into listOfBufs
++       */
++      ListOfBufs = afl_fsrv_break_input(fsrv, buf, NumOfIps, lens);
++      ck_write_multi(fds, ListOfBufs, len, lens, fsrv->multi_out_file,NumOfIps);
++    }
++    else
++      ck_write(fd, buf, len, fsrv->out_file);
+ 
+     if (fsrv->use_stdin) {
+ 
+@@ -1386,8 +1490,15 @@ afl_fsrv_write_to_testcase(afl_forkserver_t *fsrv, u8 *buf, size_t len) {
+       lseek(fd, 0, SEEK_SET);
+ 
+     } else {
+-
+-      close(fd);
++      if (fsrv->isMultiInput)
++      {
++        int NumOfFiles = fsrv->NumOfFiles;
++        while (NumOfFiles--) {
++          close(fds[NumOfFiles]);
++        }
++      }
++      else
++        close(fd);
+ 
+     }
+ 
+diff --git a/src/afl-fuzz-bitmap.c b/src/afl-fuzz-bitmap.c
+index b3a10bb7..a7f42637 100644
+--- a/src/afl-fuzz-bitmap.c
++++ b/src/afl-fuzz-bitmap.c
+@@ -806,13 +806,23 @@ save_if_interesting(afl_state_t *afl, void *mem, u32 len, u8 fault) {
+       return keeping;
+ 
+   }
++  int MultiInputConcatenatedTestCaseLength = len;
++
++  if (afl->fsrv.isMultiInput)
++  {
++    int NoOfIps = afl->fsrv.NumOfFiles;
++    MultiInputConcatenatedTestCaseLength = 0;
++    while(NoOfIps--)
++    {
++      MultiInputConcatenatedTestCaseLength += (afl->fsrv.IpLenArray)[NoOfIps];
++    }
++  }
+ 
+   /* If we're here, we apparently want to save the crash or hang
+      test case, too. */
+-
+   fd = open(fn, O_WRONLY | O_CREAT | O_EXCL, DEFAULT_PERMISSION);
+   if (unlikely(fd < 0)) { PFATAL("Unable to create '%s'", fn); }
+-  ck_write(fd, mem, len, fn);
++  ck_write(fd, mem, MultiInputConcatenatedTestCaseLength, fn);
+   close(fd);
+ 
+ #ifdef __linux__
+diff --git a/src/afl-fuzz.c b/src/afl-fuzz.c
+index 294c42f6..34a99c07 100644
+--- a/src/afl-fuzz.c
++++ b/src/afl-fuzz.c
+@@ -545,7 +545,7 @@ int main(int argc, char **argv_orig, char **envp) {
+   while (
+       (opt = getopt(
+            argc, argv,
+-           "+Ab:B:c:CdDe:E:hi:I:f:F:g:G:l:L:m:M:nNOo:p:RQs:S:t:T:UV:WXx:YZ")) >
++           "+Ab:B:c:CdDe:E:hi:I:f:F:g:G:k:l:L:m:M:nNOo:p:RQs:S:t:T:UV:WXx:YZ")) >
+       0) {
+ 
+     switch (opt) {
+@@ -597,6 +597,13 @@ int main(int argc, char **argv_orig, char **envp) {
+ 
+       }
+ 
++      case 'k': {
++        afl->fsrv.isMultiInput = true;
++        if (sscanf(optarg, "%d", &afl->NumberOfFiles) < 0) {
++          FATAL("Bad syntax used for -b");
++        }
++        break;
++      }
+       case 'p':                                           /* Power schedule */
+ 
+         if (!stricmp(optarg, "fast")) {
+@@ -794,6 +801,36 @@ int main(int argc, char **argv_orig, char **envp) {
+         if (afl->fsrv.out_file) { FATAL("Multiple -f options not supported"); }
+ 
+         afl->fsrv.out_file = ck_strdup(optarg);
++        /*
++         * Generate -b number of additional file inputs and store it into the
++         * multi_out_file
++         *
++         */
++
++        // Initializing Multi File --> File Descriptor
++        int MultiFileCount = afl->NumberOfFiles;
++        if (afl->fsrv.isMultiInput) {
++          afl->fsrv.out_fd_multi = (s32 *)malloc(MultiFileCount * sizeof(s32));
++          while (MultiFileCount--) {
++            afl->fsrv.out_fd_multi[MultiFileCount] = -1;
++          }
++        }
++        afl->fsrv.NumOfFiles = afl->NumberOfFiles;
++        afl->fsrv.multi_out_file = (char*)malloc((afl->NumberOfFiles)*sizeof(char*));
++        int outFileLen = strlen(afl->fsrv.out_file);
++        //Im hoping suffix will be a max of 255 (hence im allocating 3 extra characters + 1(NULL)
++        outFileLen = outFileLen + 4;
++        for (int i = 0 ; i < afl->NumberOfFiles ; i++)
++        {
++          char* number;
++          char FileNameBuf[outFileLen];
++          asprintf(&number, "%d", i);
++          strcat(strcpy(FileNameBuf,optarg), number);
++          if (i != 0)
++            (afl->fsrv.multi_out_file)[i] = ck_strdup(FileNameBuf);
++          else
++            (afl->fsrv.multi_out_file)[i] = optarg;
++        }
+         afl->fsrv.use_stdin = 0;
+         break;
+ 
+-- 
+2.25.1
+

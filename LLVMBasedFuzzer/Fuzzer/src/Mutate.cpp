@@ -50,7 +50,7 @@ char* StrMutateAddARandomByte(char* IpStr)
     {
         //I dont want an input explosion. Hence, as the string size keeps increasing, I slow down the rate
         // of growth of string (dont worry, if something interesting pops up, I scale that technique alpha)
-        MutationTypeToPriority[RemoveARandomByte] = 1.01*MutationTypeToPriority[InsertARandomByte] ;
+        MutationTypeToPriority[RemoveARandomByte] = 1.1*MutationTypeToPriority[InsertARandomByte] ;
     }
 
     /*
@@ -73,7 +73,7 @@ char* StrMutateReplaceBytesWithRandom(char* IpByteArray, long SizeOfIpByteArray)
     {   /*
             The IpByteArray String is too small to perform any respectable byte replacement, lets shoot its length up!!
         */
-        MutationTypeToPriority[InsertARandomByte] = 1.1*MutationTypeToPriority[InsertARandomByte];
+        MutationTypeToPriority[InsertARandomByte] = 1.1*MutationTypeToPriority[RemoveARandomByte];
         return StrMutateAddARandomByte(IpByteArray);
     }
     // Below logic generates a "random" number of "random" indexes (within the length of string) to be
@@ -323,7 +323,7 @@ void feedBack(std::string &Target, std::string &Mutated) {
     MutationTypeToCallCountSoFar[CurrMutationType] = MutationTypeToCallCountSoFar[CurrMutationType] + 1;
     // Every 80000 runs, I boost the Insertion by 10% (cuz i dont want no stagnation as limit is 15-25 mins)
     if (CurrentRunIndex %80000 == 0)
-        MutationTypeToPriority[InsertARandomByte] = 1.01* MutationTypeToPriority[InsertARandomByte];
+        MutationTypeToPriority[InsertARandomByte] = 1.01* MutationTypeToPriority[RemoveARandomByte];
         MostRecentRunIndex = CurrentRunIndex;
     MostRecentCovSize = CurrCovFileSize;
 }
@@ -449,7 +449,7 @@ int main(int argc, char **argv) {
               MutationTypeToPriority[e] = 1;
               break;
           case MutationType::ReplaceBytesWithRandom:
-              MutationTypeToPriority[e] = 8;
+              MutationTypeToPriority[e] = 2;
                 break;
       }
   }
