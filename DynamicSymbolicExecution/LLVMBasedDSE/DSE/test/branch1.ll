@@ -1,5 +1,5 @@
-; ModuleID = 'simple0.ll'
-source_filename = "simple0.c"
+; ModuleID = 'branch1.c'
+source_filename = "branch1.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-linux-gnu"
 
@@ -12,20 +12,29 @@ entry:
   %z = alloca i32, align 4
   store i32 0, i32* %retval, align 4
   call void @__DSE_Input__(i32* %x, i32 0)
+  call void @__DSE_Input__(i32* %y, i32 1)
+  call void @__DSE_Input__(i32* %z, i32 2)
   %0 = load i32, i32* %x, align 4
-  store i32 %0, i32* %y, align 4
   %1 = load i32, i32* %y, align 4
-  %cmp = icmp eq i32 %1, 1024
-  br i1 %cmp, label %if.then, label %if.end
+  %cmp = icmp eq i32 %0, %1
+  br i1 %cmp, label %land.lhs.true, label %if.end
 
-if.then:                                          ; preds = %entry
+land.lhs.true:                                    ; preds = %entry
   %2 = load i32, i32* %y, align 4
-  %sub = sub nsw i32 %2, 1024
-  %div = sdiv i32 4, %sub
-  store i32 %div, i32* %z, align 4
+  %3 = load i32, i32* %z, align 4
+  %cmp1 = icmp eq i32 %2, %3
+  br i1 %cmp1, label %if.then, label %if.end
+
+if.then:                                          ; preds = %land.lhs.true
+  %4 = load i32, i32* %x, align 4
+  %5 = load i32, i32* %y, align 4
+  %6 = load i32, i32* %z, align 4
+  %sub = sub nsw i32 %5, %6
+  %div = sdiv i32 %4, %sub
+  store i32 %div, i32* %x, align 4
   br label %if.end
 
-if.end:                                           ; preds = %if.then, %entry
+if.end:                                           ; preds = %if.then, %land.lhs.true, %entry
   ret i32 0
 }
 
