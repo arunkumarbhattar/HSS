@@ -1,0 +1,1151 @@
+# Serbian translation of `a2ps'.
+# Copyright © 2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+# Aleksandar Jelenak <jelenak@netlinkplus.net>, 2004.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011–2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps-4.14.92\n"
+"Report-Msgid-Bugs-To: bug-a2ps@gnu.org\n"
+"POT-Creation-Date: 2022-08-11 16:45+0200\n"
+"PO-Revision-Date: 2022-08-17 04:59+0200\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <(nothing)>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/delegate.c:110 liba2ps/encoding.c:569 liba2ps/encoding.c:615
+#: liba2ps/encoding.c:657 liba2ps/output.c:282 liba2ps/pair_ht.c:312
+#: liba2ps/prolog.c:137
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "недостаје аргумент за „%s“"
+
+#: src/delegate.c:233 liba2ps/routines.c:136 liba2ps/xbackupfile.c:171
+#: liba2ps/xbackupfile.c:196 liba2ps/xbackupfile.c:204
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "не могу да створим датотеку „%s“"
+
+#: src/delegate.c:242 src/select.c:188 liba2ps/routines.c:163
+#: liba2ps/routines.c:169
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "не могу да отворим спојку на „%s“"
+
+#: src/delegate.c:362
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Преузео „%s“, од „%s“ ка „%s“\n"
+
+#: src/delegate.c:380 src/delegate.c:400
+msgid "Applications configured for delegation"
+msgstr "Програми подешени за преузимање обраде"
+
+#: src/generate.c:82
+#, c-format
+msgid "`%s' is a directory"
+msgstr "„%s“ је директоријум"
+
+#: src/generate.c:90 src/main.c:550 src/main.c:572 liba2ps/routines.c:130
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "не могу да отворим датотеку „%s“"
+
+#: src/generate.c:95 liba2ps/xbackupfile.c:147
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "не могу да добавим податке о датотеци „%s“"
+
+#: src/generate.c:160
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 страна на 1 листу]\n"
+
+#: src/generate.c:166
+#, c-format
+msgid "[%s (%s): %zu pages on 1 sheet]\n"
+msgstr "[%s (%s): %zu стране/а на 1 листу]\n"
+
+#: src/generate.c:173
+#, c-format
+msgid "[%s (%s): %zu pages on %zu sheets]\n"
+msgstr "[%s (%s): %zu стране/а на %zu листа/ова]\n"
+
+#: src/generate.c:200
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Укупно: 1 страна на 1 листу] %s\n"
+
+#: src/generate.c:204
+#, c-format
+msgid "[Total: %zu pages on 1 sheet] %s\n"
+msgstr "[Укупно: %zu стране/а на 1 листу] %s\n"
+
+#: src/generate.c:209
+#, c-format
+msgid "[Total: %zu pages on %zu sheets] %s\n"
+msgstr "[Укупно: %zu стране/а на %zu листа/ова] %s\n"
+
+#: src/generate.c:218
+msgid "[1 line wrapped]\n"
+msgstr "[1 ред је преломљен]\n"
+
+#: src/generate.c:221
+#, c-format
+msgid "[%zu lines wrapped]\n"
+msgstr "[%zu реда је преломљено]\n"
+
+#: src/generate.c:232
+msgid "[No output produced]\n"
+msgstr "[Излаз није произведен]\n"
+
+#: src/generate.c:304
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, преузео %s"
+
+#: src/generate.c:312
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): неуспешно. Занемарено]\n"
+
+#: src/generate.c:320
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (није за штампање): занемарено]\n"
+
+#: src/generate.c:329
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (бинарно): занемарено]\n"
+
+#: src/generate.c:350
+msgid "plain"
+msgstr "обичан"
+
+#: src/lexssh.l:353
+msgid "end-of-line in string constant"
+msgstr "знак за крај реда у ниски"
+
+#: src/lexssh.l:420 src/sheets-map.l:159 src/sheets-map.l:198
+#, c-format
+msgid "end of line inside a %s"
+msgstr "крај реда унутар %s"
+
+#: src/main.c:197
+#, c-format
+msgid "received SIG%s"
+msgstr "примих СИГ%s"
+
+#: src/main.c:236
+msgid "heavy"
+msgstr "свеобухватан"
+
+#: src/main.c:240
+msgid "normal"
+msgstr "уобичајен"
+
+#: src/main.c:244
+msgid "none"
+msgstr "никакав"
+
+#: src/main.c:318 src/main.c:322
+msgid "yes"
+msgstr "да"
+
+#: src/main.c:319 src/main.c:322 src/main.c:360
+msgid "no"
+msgstr "не"
+
+#: src/main.c:328
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Стање подешавања за %s %s\n"
+
+#: src/main.c:332 src/main.c:680
+msgid "Sheets:\n"
+msgstr "Физичке странице:\n"
+
+#: src/main.c:333
+#, c-format
+msgid ""
+"  medium          = %s, %s\n"
+"  page layout     = %zu x %zu, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %u\n"
+msgstr ""
+"  медијум           = %s, %s\n"
+"  изглед стране     = %zu x %zu, %s\n"
+"  оивичење          = %s\n"
+"  равнање датотека  = %s\n"
+"  унутрашња маргина = %u\n"
+
+#: src/main.c:340
+msgid "portrait"
+msgstr "портрет"
+
+#: src/main.c:340
+msgid "landscape"
+msgstr "пејзажно"
+
+#: src/main.c:349
+#, c-format
+msgid "%u characters per line"
+msgstr "%u знак(а/ова) у реду"
+
+#: src/main.c:352
+#, c-format
+msgid "%u lines per page"
+msgstr "%u ред(а/ова) на страници"
+
+#: src/main.c:355
+#, c-format
+msgid "font size is %gpt"
+msgstr "величина писма је %gpt"
+
+#: src/main.c:364
+msgid "each line"
+msgstr "сваки ред"
+
+#: src/main.c:368
+#, c-format
+msgid "each %u lines"
+msgstr "свак(а/их) %u ред(а/ова)"
+
+#: src/main.c:371 src/main.c:701
+msgid "Virtual pages:\n"
+msgstr "Виртуалне странице:\n"
+
+#: src/main.c:372
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %u\n"
+"  non printable format = %s\n"
+msgstr ""
+"  побројавање редова           = %s\n"
+"  формат                       = %s\n"
+"  износ табулације             = %u\n"
+"  формат за нештампарске знаке = %s\n"
+
+#: src/main.c:383
+msgid "Headers:\n"
+msgstr "Заглавља:\n"
+
+#: src/main.c:384
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  заглавље        = %s\n"
+"  лево подножје   = %s\n"
+"  подножје        = %s\n"
+"  десно подножје  = %s\n"
+"  леви наслов     = %s\n"
+"  средњи наслов   = %s\n"
+"  десни наслов    = %s\n"
+"  позадина        = %s\n"
+
+#: src/main.c:403 src/main.c:730
+msgid "Input:\n"
+msgstr "Улаз:\n"
+
+#: src/main.c:404
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  одсецање редова   = %s\n"
+"  тумачење          = %s\n"
+"  крај реда         = %s\n"
+"  кодирање          = %s\n"
+"  наслов документа  = %s\n"
+"  пролог            = %s\n"
+"  обавезно штампање = %s\n"
+"  прослеђивање      = %s\n"
+
+#: src/main.c:429 src/main.c:494
+msgid "selected automatically"
+msgstr "аутоматски изабрано"
+
+#: src/main.c:432 src/main.c:749
+msgid "Pretty-printing:\n"
+msgstr "Улепшано штампање:\n"
+
+#: src/main.c:433
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  стил              = %s\n"
+"  ниво наглашавања  = %s\n"
+"  ниво огољивања    = %d\n"
+
+#: src/main.c:453
+msgid "never make backups"
+msgstr "не прави никад резерве"
+
+#: src/main.c:457
+msgid "simple backups of every file"
+msgstr "обичне резервне сваке датотеке"
+
+#: src/main.c:462
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"означене резерве датотека су већ одређене бројем,\n"
+"                            и обичне за остале"
+
+#: src/main.c:467
+msgid "numbered backups of every file"
+msgstr "бројем означене резерве сваке датотеке"
+
+#: src/main.c:471 src/main.c:758
+msgid "Output:\n"
+msgstr "Излаз:\n"
+
+#: src/main.c:472
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  одредиште               = %s\n"
+"  управљање верзијама     = %s\n"
+"  суфикс резервни         = %s\n"
+
+#: src/main.c:484 src/main.c:769
+msgid "PostScript:\n"
+msgstr "ПостСкрипт:\n"
+
+#: src/main.c:485
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %u\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  магични број                = %s\n"
+"  опис штампача (PPD)         = %s\n"
+"  подразумевани ППД           = %s\n"
+"  формат ознаке стране        = %s\n"
+"  број умножака               = %u\n"
+"  страна по листу             = %s\n"
+"  дефиниције уређаја странице = "
+
+#: src/main.c:505
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  одреднице речника стања   = "
+
+#: src/main.c:508
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  предслање стране          = %s\n"
+
+#: src/main.c:517
+msgid "Internals:\n"
+msgstr "Програм:\n"
+
+#: src/main.c:518
+#, c-format
+msgid ""
+"  verbosity level     = %u\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  ниво обавештавања    = %u\n"
+"  наредба за датотеке  = %s\n"
+"  путања за библиотеке = \n"
+
+#: src/main.c:636
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with `*' require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Употреба: %s [ОПЦИЈА]... [ДАТОТЕКА]...\n"
+"\n"
+"Претворите ДАТОТЕКУ(е) или стандардни улаз у ПостСкрипт. По основи, излаз\n"
+"се шаље на основни штампач.  Излазна датотека може бити наведена опцијом „-o“.\n"
+"\n"
+"Обавезни аргументи дугих опција су такође обавезни и за кратке опције.\n"
+"Дуге опције означене са „*“ захтевају „да/не“ аргумент, одговарајуће\n"
+"кратке опције подразумевају „да“.\n"
+
+#: src/main.c:651
+msgid "Tasks:\n"
+msgstr "Задаци:\n"
+
+#: src/main.c:652
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        приказује издање\n"
+"  --help           приказује ово објашњење\n"
+"  --guess          извештава погођене врсте ДАТОТЕКА\n"
+"  --which          извештава целу путању датотека библиотеке под називом ДАТОТЕКЕ\n"
+"  --glob           извештава целу путању датотека библиотеке које се\n"
+"                   поклапају са ДАТОТЕКЕ\n"
+"  --list=defaults  приказује основна подешавања и параметре\n"
+"  --list=ТЕМА      опширан списак за ТЕМА („delegations“, „encodings“, „features“,\n"
+"                   „variables“, „media“, „ppd“, „printers“, „prologues“, „style-sheets“,\n"
+"                   „user-options“)\n"
+
+#: src/main.c:663
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Након завршеног задатка, излази успешно. Опширнији спискови могу да\n"
+"обезбеде додатно објашњење о појединим могућностима.\n"
+
+#: src/main.c:671
+msgid "Global:\n"
+msgstr "Општа подешавања:\n"
+
+#: src/main.c:672
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent        врло тихо извршавање\n"
+"  -v, --verbose[=НИВО]         извештавање је укључено, или подешено на НИВО\n"
+"  -=, --user-option=ОПЦИЈА     користити корисникову скраћеницу ОПЦИЈА\n"
+"      --debug                  укључује функцију уклањања грешака\n"
+"  -D, --define=КЉУЧ[:ВРЕДНОСТ] уклања промељиву КЉУЧ или јој задаје ВРЕДНОСТ\n"
+
+#: src/main.c:681
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=НАЗИВ     користи папир НАЗИВ\n"
+"  -r, --landscape        пејзажно штампање\n"
+"  -R, --portrait         портретно штампање\n"
+"      --columns=БРОЈ     број колона на листу папира\n"
+"      --rows=БРОЈ        број редова на листу папира\n"
+"      --major=ПРАВАЦ     правац попуњавања (ПРАВАЦ=) „rows“, или „columns“\n"
+"  -1, -2, ..., -9        унапред одређени распореди и величине писма од 1.. 9 виртуелно\n"
+"  -A, --file-align=МОД   поредак различитих датотека је МОД („fill“, „rank“\n"
+"                         „page“, „sheet“, или „number“)\n"
+"  -j, --borders*         штампа оквир око ступаца\n"
+"      --margin[=БРОЈ]    величина унутрашње маргине је БРОЈ\n"
+
+#: src/main.c:694
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Задавањем опција -1.. -9 мења се неколико основних подешавања да би се\n"
+"постигао унапред задат изглед стране са 80 знакова по реду. Због овога\n"
+"редослед је битан: „-R -f40 -2“ је исто што и „-2“; правилно је „-2Rf40“,\n"
+"или треба користити основне опције („--columns“, „--font-size“, итд.).\n"
+
+#: src/main.c:702
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=БРОЈ    нека сваком БРОЈ линија претходи редни број\n"
+"  -C                         алијас за „--line-numbers=5“\n"
+"  -f, --font-size=ВЕЛИЧИНА   ВЕЛИЧИНА фонта (float) за тело текстатекста\n"
+"  -L, --lines-per-page=БРОЈ  прилагођава величину писма да би се добио БРОЈ\n"
+"                             редова по виртуелној страници\n"
+"  -l, --chars-per-line=БРОЈ  прилагођава величину писма да би се добио БРОЈ\n"
+"                             колона на виртуелној страници\n"
+"  -m, --catman               обрађује ДАТОТЕКУ страницу упутства (исто што и „-L66“)\n"
+"  -T, --tabsize=БРОЈ         вредност табулације је БРОЈ\n"
+"  --non-printable-format=ФМТ формат за штампање нештампарских знакова \n"
+
+#: src/main.c:713
+msgid "Headings:\n"
+msgstr "Заглавља:\n"
+
+#: src/main.c:715
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        без икаквих заглавља странице\n"
+"  -b, --header[=ТЕКСТ]   поставља заглавље странице\n"
+"  -u, --underlay[=ТЕКСТ] штампа ТЕКСТ као позадину свакој страници\n"
+"  --center-title[=ТЕКСТ] поставаља наслов странице на НАСЛОВ\n"
+"  --left-title[=ТЕКСТ]   ТЕКСТ за леви и десни наслов странице\n"
+"  --right-title[=ТЕКСТ]\n"
+"  --left-footer[=ТЕКСТ]  поставља подножје странице на ТЕКСТ\n"
+"  --footer[=ТЕКСТ]\n"
+"  --right-footer[=ТЕКСТ]\n"
+
+#: src/main.c:726
+msgid "The TEXTs may use special escapes.\n"
+msgstr "ТЕКСТови могу да садрже посебне дословне знакове.\n"
+
+#: src/main.c:731
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=ОПСЕГ]        бира странице за штампање\n"
+"  -c, --truncate-lines*      oдсеца дуге редове\n"
+"  -i, --interpret*           преводи „tab“, „bs“ и „ff“ знакове\n"
+"      --end-of-line=ЗНАК     ЗНАК за крај реда („r“, „n“, „nr“, „rn“, \n"
+"                             било шта друго)\n"
+"  -X, --encoding=ОЗНАКА      улазно кодирање је ОЗНАКА\n"
+"  -t, --title=НАЗИВ          поставља назив посла\n"
+"      --stdin=НАЗИВ          поставља назив стандардног улаза улазне датотеке\n"
+"      --print-anyway*        приморава бинарно штампање\n"
+"  -Z, --delegate*            прослеђуј датотеке другим програмима\n"
+"      --toc[=ТЕКСТ]          прави табелу садржаја\n"
+
+#: src/main.c:743
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Када је прослеђивање омогућено, а2пс може користити друге програме ради обраде\n"
+"датотека које не треба штампати у изворном облику, нпр. ХТМЛ, ПостСкрипт,\n"
+"ПДФ итд.\n"
+
+#: src/main.c:750
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=ЈЕЗИК] укључује прилично штампање (стил је ЈЕЗИК)\n"
+"  --highlight-level=НИВО     НИВО истицања приличног штампања\n"
+"                             НИВО може да буде „none“, „normal“ или „heavy“\n"
+"  -g                         алијас „--highlight-level=heavy“\n"
+"  --strip-level=БРОЈ         ниво уклањања коментара\n"
+
+#: src/main.c:759
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=ДАТОТЕКА      шаље излаз у датотеку ДАТОТЕКА.  Ако је\n"
+"                             ДАТОТЕКА „-“ шаље излаз на станд. излаз.\n"
+"  --version-control=РЕЧ      прескаче уобичајене контроле верзије\n"
+"  --suffix=СУФИКС            прескаче уобичајени суфикс резерве\n"
+"  -P, --printer=НАЗИВ        шаље излаз на штампач НАЗИВ\n"
+"  -d                         шаље излаз на основни штампач\n"
+"                             (ово је основно понашање)\n"
+
+#: src/main.c:770
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=ДАТОТЕКА    укључује ДАТОТЕКА.pro као ПостСкрипт пролог\n"
+"      --ppd[=КЉУЧ]           самостални ППД избор или поставља на КЉУЧ\n"
+"  -n, --copies=БРОЈ          штампа БРОЈ примерака сваке странице\n"
+"  -s, --sides=РЕЖИМ          РЕЖИМ штампања („1“ или „simplex“, „2“ или\n"
+"                             „duplex“, „tumble“)\n"
+"  -S, --setpagedevice=К[:В]  прослеђује одредницу уређаја странице на излаз\n"
+"      --statusdict=К[:[:]В]  прослеђује одредницу стања речника на излаз\n"
+"  -k, --page-prefeed         укључује предслање стране\n"
+"  -K, --no-page-prefeed      скључује предслање стране\n"
+
+#: src/main.c:784
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+msgstr ""
+"По основи а2пс је подешен да ради оно што ви желите, зато му верујте\n"
+"За прилично штампање садржаја изворног директоријума са садржајем, и\n"
+"за слање резултата на штампач „lw“,\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"За обрађивање датотека „primer.ps“ и „primer.html“ и приказ резултата,\n"
+"\n"
+"    $ a2ps -P display primer.ps primer.html\n"
+"\n"
+"За штампање поштанског сандучета са 4 странице на листу,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"За обострано штампање књижице на подразумеваном штампачу,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+
+#: src/main.c:1145
+msgid "Table of Content"
+msgstr "Садржај"
+
+#: src/parsessh.y:225
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "не могу дас обрадим „%s“ јер захтева а2пс издање %s"
+
+#: src/sheets-map.l:117
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "неочекиван знак „%c“"
+
+#: src/sheets-map.l:217 liba2ps/lexppd.l:212
+#, c-format
+msgid "too many includes"
+msgstr "исувише уметака"
+
+#: src/sheets-map.l:301 src/sheets-map.l:308
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "није одређен тастер за „%s“"
+
+#: src/select.c:119 src/ssheet.c:797 liba2ps/fonts.l:720 liba2ps/fonts.l:722
+#: liba2ps/fonts.l:724 liba2ps/pathwalk.c:315 liba2ps/pathwalk.c:400
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "не могу да пронађем датотеку „%s“"
+
+#: src/select.c:121
+#, c-format
+msgid "automatic style selection cancelled"
+msgstr "самостални избор стила је отказан"
+
+#: src/select.c:198
+#, c-format
+msgid "error running file(1)"
+msgstr "грешка покретања „file(1)“"
+
+#: src/ssheet.c:281
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "не могу да преведем регуларни израз „%s“: %s"
+
+#: src/ssheet.c:904 src/ssheet.c:925
+msgid "Known Style Sheets"
+msgstr "Подржане датотеке стилова"
+
+#: src/ssheet.c:1385
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "не могу да пронађем стил „%s“: користим прост стил"
+
+#: src/versions.c:128
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "неисправан број издања „%s“"
+
+#: liba2ps/caret.c:33
+msgid "space (i.e., ` ')"
+msgstr "размак (тј., „ “)"
+
+#: liba2ps/caret.c:35
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "октални број (одн. „\\001“ итд.)"
+
+#: liba2ps/caret.c:37
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "хексадецимални број (одн. „\\x0a“ итд.)"
+
+#: liba2ps/caret.c:39
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "карет (одн. „^C“, „M-^C“ итд.)"
+
+#: liba2ps/caret.c:41
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "емакс (одн. „C-c“, „M-C-c“ итд.)"
+
+#: liba2ps/caret.c:43
+msgid "question-mark (i.e., `?')"
+msgstr "знак питања (одн. „?“)"
+
+#: liba2ps/darray.c:83 liba2ps/darray.c:553
+#, c-format
+msgid "Dynamic array `%s':\n"
+msgstr "Динамички низ „%s“:\n"
+
+#: liba2ps/darray.c:84 liba2ps/dstring.c:72
+#, c-format
+msgid "\tload: %zu/%zu (%2.1f%%)\n"
+msgstr "\tучитано: %zu/%zu (%2.1f%%)\n"
+
+#: liba2ps/darray.c:102 liba2ps/dstring.c:87
+#, c-format
+msgid "\toriginal size: %zu, growth: %s %zu\n"
+msgstr "\tизворна величина: %zu, прираст: %s %zu\n"
+
+#: liba2ps/dstring.c:71
+#, c-format
+msgid "Dynamic string:\n"
+msgstr "Динамичка ниска:\n"
+
+#: liba2ps/encoding.c:737
+#, c-format
+msgid "too many slant fonts: `%s'"
+msgstr "превише искривљених слова: „%s“"
+
+#: liba2ps/encoding.c:743
+#, c-format
+msgid "invalid option `%s'"
+msgstr "неисправна опција „%s“"
+
+#: liba2ps/encoding.c:1270 liba2ps/encoding.c:1291
+msgid "Known Encodings"
+msgstr "Подржана кодовања"
+
+#: liba2ps/faces.c:148
+#, c-format
+msgid "incomplete knowledge of faces"
+msgstr "непотпуно познавање изгледа"
+
+#: liba2ps/filtdir.c:68
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "не могу да затворим директоријум „%s“"
+
+#: liba2ps/getnum.c:41 liba2ps/getnum.c:99 liba2ps/getnum.c:131
+#: liba2ps/getnum.c:200
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "неисправан аргумент „%s“ за „%s“"
+
+#: liba2ps/getnum.c:101
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Дозвољени аргументи су цели бројеви n такви да: %s\n"
+
+#: liba2ps/getnum.c:202
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Дозвољени аргументи су реални бројеви f такви да: %s\n"
+
+#: liba2ps/jobs.c:285
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "непознато кодирање „%s“"
+
+#: liba2ps/madir.c:51
+msgid "rows first"
+msgstr "прво редови"
+
+#: liba2ps/madir.c:54
+msgid "columns first"
+msgstr "прво колоне"
+
+#: liba2ps/media.c:138
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "непозната врста папира „%s“"
+
+#: liba2ps/media.c:166 liba2ps/media.c:193
+msgid "Known Media"
+msgstr "Подржане врсте папира"
+
+#: liba2ps/media.c:169
+msgid "Name"
+msgstr "Назив"
+
+#: liba2ps/media.c:170
+msgid "dimensions"
+msgstr "величина"
+
+#: liba2ps/metaseq.c:82 liba2ps/metaseq.c:91
+#, c-format
+msgid "Known Variables"
+msgstr "Подржане променљиве"
+
+#: liba2ps/metaseq.c:140 liba2ps/metaseq.c:509 liba2ps/metaseq.c:526
+#: liba2ps/metaseq.c:586 liba2ps/metaseq.c:931 liba2ps/metaseq.c:951
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: недостаје „%c“ за дословни знак „%s%c“"
+
+#: liba2ps/metaseq.c:266 liba2ps/metaseq.c:278
+#, c-format
+msgid "Printed by %s"
+msgstr "Штампао %s"
+
+#: liba2ps/metaseq.c:276
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Штампао %s користећи %s"
+
+#: liba2ps/metaseq.c:286 liba2ps/metaseq.c:304
+#, c-format
+msgid "cannot get current working directory"
+msgstr "не могу да сазнам тренутни радни директоријум"
+
+#: liba2ps/metaseq.c:317 liba2ps/metaseq.c:512 liba2ps/metaseq.c:541
+#: liba2ps/metaseq.c:630 liba2ps/metaseq.c:934 liba2ps/metaseq.c:966
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: предуг аргумент за дословни знак „%s“"
+
+#: liba2ps/metaseq.c:342 liba2ps/metaseq.c:655
+msgid "%b %d, %Y"
+msgstr "%e.%m.%Y."
+
+#: liba2ps/metaseq.c:351 liba2ps/metaseq.c:664
+msgid "%A %B %d, %Y"
+msgstr "%A, %e. %B %Y."
+
+#: liba2ps/metaseq.c:397 liba2ps/metaseq.c:426 liba2ps/metaseq.c:469
+#: liba2ps/metaseq.c:704 liba2ps/metaseq.c:788 liba2ps/metaseq.c:847
+#: liba2ps/metaseq.c:902 liba2ps/metaseq.c:1078 liba2ps/metaseq.c:1208
+#: liba2ps/metaseq.c:1219 liba2ps/metaseq.c:1262
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: непознат „%s“ дословни знак „%c“ (%d)"
+
+#: liba2ps/metaseq.c:404 liba2ps/metaseq.c:795
+#, c-format
+msgid "Page %zu"
+msgstr "Страна %zu"
+
+#: liba2ps/metaseq.c:409 liba2ps/metaseq.c:806
+#, c-format
+msgid "Page %zu/%c"
+msgstr "Страна %zu/%c"
+
+#: liba2ps/metaseq.c:571 liba2ps/metaseq.c:1000
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: неисправан раздвојник „%s%c“ за дословни знак „%s“"
+
+#: liba2ps/metaseq.c:579 liba2ps/metaseq.c:589
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: неисправан аргумент за дословни знак „%s%c“"
+
+#: liba2ps/metaseq.c:802
+#, c-format
+msgid "Page %zu/%zu"
+msgstr "Страна %zu/%zu"
+
+#: liba2ps/metaseq.c:1239
+msgid "output command"
+msgstr "излазна наредба"
+
+#: liba2ps/options.c:48
+msgid "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+msgstr "Ауторско право © 1988-2017. Free Software Foundation, Inc."
+
+#: liba2ps/options.c:290
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Пробајте „%s --help“ за више информација.\n"
+
+#: liba2ps/options.c:674
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "неисправан назив променљиве „%s“"
+
+#: liba2ps/output.c:428
+#, c-format
+msgid "invalid face `%s'"
+msgstr "неисправан изглед „%s“"
+
+#: liba2ps/output.c:499
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "„%s“ без подударања „%s“"
+
+#: liba2ps/ppd.c:83
+msgid "Known Fonts"
+msgstr "Подржана писма"
+
+#: liba2ps/ppd.c:86
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Ништа.\n"
+
+#: liba2ps/ppd.c:124 liba2ps/ppd.c:140
+msgid "Known PostScript Printer Descriptions"
+msgstr "Подржани описи ПостСкрипт штампача"
+
+#: liba2ps/prange.c:284 liba2ps/prange.c:302
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "неисправан распон „%s“"
+
+#: liba2ps/printers.c:41
+msgid "Default Printer"
+msgstr "Основни штампач"
+
+#: liba2ps/printers.c:42
+msgid "Unknown Printer"
+msgstr "Непознат штампач"
+
+#: liba2ps/printers.c:342 liba2ps/printers.c:359
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "нема наредбе за „%s“ (%s%s)"
+
+#: liba2ps/printers.c:375
+msgid "sent to the standard output"
+msgstr "послато на стандардни излаз"
+
+#: liba2ps/printers.c:376
+msgid "sent to the default printer"
+msgstr "послато подразумеваном штампачу"
+
+#: liba2ps/printers.c:381
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "сачувано у датотеци „%s“"
+
+#: liba2ps/printers.c:382
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "послато штампачу „%s“"
+
+#: liba2ps/printers.c:559 liba2ps/printers.c:567
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Подржани излази (штампачи, итд.)"
+
+#: liba2ps/prolog.c:84 liba2ps/prolog.c:169
+msgid "Known Prologues"
+msgstr "Подржани пролози"
+
+#: liba2ps/prolog.c:565
+#, c-format
+msgid "font %f too big"
+msgstr "писмо „%f“ је исувише велико"
+
+#: liba2ps/psgen.c:631
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "„%s“ је бинарна датотека, штампање је прекинуто"
+
+#: liba2ps/userdata.c:104
+msgid "user"
+msgstr "корисник"
+
+#: liba2ps/userdata.c:105
+msgid "Unknown User"
+msgstr "Непознати корисник"
+
+#: liba2ps/useropt.c:56
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "непозната корисничка опција „%s“"
+
+#: liba2ps/useropt.c:67 liba2ps/useropt.c:78
+msgid "Known User Options"
+msgstr "Подржане корисничке опције"
+
+#: liba2ps/xbackupfile.c:44
+#, c-format
+msgid "memory exhausted"
+msgstr "меморија је потрошена"
+
+#: liba2ps/xbackupfile.c:163 liba2ps/xbackupfile.c:175
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "не могу да преименујем датотеку „%s“ у „%s“"
+
+#: liba2ps/xbackupfile.c:178
+#, c-format
+msgid "restored file `%s'"
+msgstr "обновљена датотека „%s“"
+
+#~ msgid "any type"
+#~ msgstr "произвољне врсте"
+
+#~ msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+#~ msgstr "Новости, допуне и упутства: посетите http://www.gnu.org/software/a2ps/.\n"
+
+#~ msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+#~ msgstr "Пријавите грешаке на адресу <bug-a2ps@gnu.org>.\n"
+
+#~ msgid ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+#~ "Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+#~ msgstr ""
+#~ "Ауторско право © 1988-1993 Мигуел Сантана\n"
+#~ "Ауторско право © 1995-2000 Аким Демај, Мигуел Сантана\n"
+#~ "Ауторско право © 2007 Аким Демај, Мигуел Сантана и Масајуки Хата"
+
+#~ msgid "unknown encoding `%s', ignored"
+#~ msgstr "непознато кодирање „%s“, занемарено"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Написао је %s.\n"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+#~ msgstr ""
+#~ "Ово је слободан софтвер; погледајте извор за услове умножавања.\n"
+#~ "Нема НИКАКВЕ гаранције; чак ни ТРЖИШНЕ ВРЕДНОСТИ или ИСПУЊАВАЊЕ ОДРЕЂЕНЕ ПОТРЕБЕ.\n"
+
+#~ msgid "write error"
+#~ msgstr "грешка записивања"
+
+#~ msgid "invalid definition for printer `%s': %s"
+#~ msgstr "неисправна одредница штампача „%s“: %s"
+
+#~ msgid "obsolete `%s' entry.  Ignored"
+#~ msgstr "застарели унос „%s“. Занемарено"
+
+#~ msgid "Page %d/%d"
+#~ msgstr "Страна %d/%d"
+
+#~ msgid "`"
+#~ msgstr "„"
+
+#~ msgid "'"
+#~ msgstr "“"
+
+#~ msgid "invalid argument %s for `%s'"
+#~ msgstr "неисправан аргумент „%s“ за „%s“"
+
+#~ msgid "ambiguous argument %s for `%s'"
+#~ msgstr "нејасан аргумент „%s“ за „%s“"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Исправни аргументи су:"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Непозната системска грешка"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: опција „%s“ је нејасна\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: опција „--%s“ не дозвољава аргумент\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: опција „%c%s“ не дозвољава аргумент\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: опција „%s“ захтева аргумент\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: непозната опција „--%s“\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: непозната опција „%c%s“\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: недозвољена опција -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: погрешна опција -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: опција захтева аргумент -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: опција „-W %s“ је нејасна\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: опција „-W %s“ не дозвољава аргумент\n"

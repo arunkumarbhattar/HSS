@@ -1,0 +1,1159 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Hleb Valoska <el_globus@tut.by>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.13b\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 11:28+0800\n"
+"PO-Revision-Date: 2003-04-07 07:22+0300\n"
+"Last-Translator: Ales Nyakhaychyk <nab@mail.by>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: src/buffer.c:68
+msgid "any type"
+msgstr "любога тыпу"
+
+#: src/delegate.c:137 confg.gperf:168 lib/encoding.c:530 lib/encoding.c:576
+#: lib/encoding.c:616 lib/output.c:302 lib/pair_ht.c:296 lib/prolog.c:146
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "адсутнічае парамэтар для `%s'"
+
+#: src/delegate.c:260 lib/routines.c:160 lib/xbackupfile.c:248
+#: lib/xbackupfile.c:276 lib/xbackupfile.c:284
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "Немагчыма стварыць файл `%s'"
+
+#: src/delegate.c:269 src/select.c:193 lib/routines.c:190 lib/routines.c:196
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "Немагчыма стварыць канал абмену з `%s'"
+
+#: src/delegate.c:389
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Накіраваньне `%s' з %s у %s\n"
+
+#: src/delegate.c:408 src/delegate.c:430
+msgid "Applications configured for delegation"
+msgstr "Дастасаваньні, выбраныя для накіраваньня"
+
+#: src/generate.c:88
+#, c-format
+msgid "`%s' is a directory"
+msgstr "`%s' -- каталёг"
+
+#: src/generate.c:96 src/main.c:560 src/main.c:582 confg.gperf:192
+#: confg.gperf:355 lib/routines.c:154
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "Немагчыма адкрыць файл `%s'"
+
+#: src/generate.c:101 lib/xbackupfile.c:224
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "Немагчыма атрымаць зьвесткі аб файле `%s'"
+
+#: src/generate.c:168
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 старонка на 1 аркушы]\n"
+
+#: src/generate.c:174
+#, c-format
+msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgstr "[%s (%s): %d старон(ак/кі) на 1 аркушы]\n"
+
+#: src/generate.c:181
+#, c-format
+msgid "[%s (%s): %d pages on %d sheets]\n"
+msgstr "[%s (%s): %d старон(ак/кі) на %d аркушах]\n"
+
+#: src/generate.c:208
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Агулам: 1 старонка на 1 аркушы] %s\n"
+
+#: src/generate.c:212
+#, c-format
+msgid "[Total: %d pages on 1 sheet] %s\n"
+msgstr "[Агулам: %d старон(ак/кі) на 1 аркушы] %s\n"
+
+#: src/generate.c:217
+#, c-format
+msgid "[Total: %d pages on %d sheets] %s\n"
+msgstr "[Агулам: %d старон(ак/кі) на %d аркушах] %s\n"
+
+#: src/generate.c:226
+msgid "[1 line wrapped]\n"
+msgstr "[1 радок згорнуты]\n"
+
+#: src/generate.c:229
+#, c-format
+msgid "[%d lines wrapped]\n"
+msgstr "[%d зрадк(оў/і) згорнутыя]\n"
+
+#: src/generate.c:242
+msgid "[No output produced]\n"
+msgstr "[Нічога не атрымана на выхадзе]\n"
+
+#: src/generate.c:314
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s накіраваны да %s"
+
+#: src/generate.c:322
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): памылка. Праігнаравана]\n"
+
+#: src/generate.c:330
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (недрукавальнае): праігнаравана]\n"
+
+#: src/generate.c:339
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (двайковы): праігнаравана]\n"
+
+#: src/generate.c:360
+msgid "plain"
+msgstr "просты"
+
+#: lexssh.l:348
+msgid "end-of-line in string constant"
+msgstr "'канец радка' ў радковай канстанце"
+
+#: lexssh.l:415 src/sheets-map.l:153 src/sheets-map.l:192
+#, c-format
+msgid "end of line inside a %s"
+msgstr "канец радка ўнутры %s"
+
+#: src/main.c:203
+#, c-format
+msgid "received signal %d: %s"
+msgstr "атрыманы сыгнал %d: %s"
+
+#: src/main.c:242
+msgid "heavy"
+msgstr "вялікі"
+
+#: src/main.c:246
+msgid "normal"
+msgstr "нармальны"
+
+#: src/main.c:250
+msgid "none"
+msgstr "ніякі"
+
+#: src/main.c:324 src/main.c:328
+msgid "yes"
+msgstr "так"
+
+#: src/main.c:325 src/main.c:328 src/main.c:369
+msgid "no"
+msgstr "не"
+
+#: src/main.c:335
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Статус канфігурацыі %s %s\n"
+
+#: src/main.c:339 src/main.c:697
+msgid "Sheets:\n"
+msgstr "Аркушы:\n"
+
+#: src/main.c:340
+#, c-format
+msgid ""
+"  medium          = %s%s, %s\n"
+"  page layout     = %d x %d, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %d\n"
+msgstr ""
+"  даўнятая папера     = %s%s, %s\n"
+"  фармат старонкі     = %d x %d, %s\n"
+"  межы                = %s\n"
+"  выраўніваньне файла = %s\n"
+"  нутраныя палі       = %d\n"
+
+#: src/main.c:349
+msgid "portrait"
+msgstr "партрэтны"
+
+#: src/main.c:349
+msgid "landscape"
+msgstr "альбомны"
+
+#: src/main.c:358
+#, c-format
+msgid "%d characters per line"
+msgstr "%d знакаў на радок"
+
+#: src/main.c:361
+#, c-format
+msgid "%d lines per page"
+msgstr "%d радкоў на старонку"
+
+#: src/main.c:364
+#, c-format
+msgid "font size is %gpt"
+msgstr "памер шрыфта -- %gpt"
+
+#: src/main.c:373
+msgid "each line"
+msgstr "кожны радок"
+
+#: src/main.c:377
+#, c-format
+msgid "each %d lines"
+msgstr "кожныя %d радк(оў/і)"
+
+#: src/main.c:380 src/main.c:718
+msgid "Virtual pages:\n"
+msgstr "Віртуальныя старонкі:\n"
+
+#: src/main.c:381
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %d\n"
+"  non printable format = %s\n"
+msgstr ""
+"  нумары радкоў        = %s\n"
+"  фармат               = %s\n"
+"  памер табуляцыі      = %d\n"
+"  недрукавальны фармат = %s\n"
+
+#: src/main.c:392
+msgid "Headers:\n"
+msgstr "Загалоўкі:\n"
+
+#: src/main.c:393
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  верхі калянтытул    = %s\n"
+"  левы ніжні          = %s\n"
+"  ніжні калянтытул    = %s\n"
+"  правы ніжні         = %s\n"
+"  левы загаловак      = %s\n"
+"  асноўны загаловак   = %s\n"
+"  правы загаловак     = %s\n"
+"  падстаронкавы тэкст = %s\n"
+
+#: src/main.c:412 src/main.c:747
+msgid "Input:\n"
+msgstr "Крыніца:\n"
+
+#: src/main.c:413
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  згорнутыя радкі      = %s\n"
+"  інтэрпрэтаваньне     = %s\n"
+"  канец радка          = %s\n"
+"  кадзіроўка           = %s\n"
+"  загаловак дакуманта  = %s\n"
+"  уводная частка       = %s\n"
+"  усё адно надрукаваць = %s\n"
+"  накіраваньне         = %s\n"
+
+#: src/main.c:438 src/main.c:504
+msgid "selected automatically"
+msgstr "выбрана аўтаматычна"
+
+#: src/main.c:441 src/main.c:766
+msgid "Pretty-printing:\n"
+msgstr "Гожы друк:\n"
+
+#: src/main.c:442
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  тып стылю           = %s\n"
+"  узровень вылучэньня = %s\n"
+"  узровень згорткі    = %d\n"
+
+#: src/main.c:462
+msgid "never make backups"
+msgstr "ніколі не захоўваць рэзэрвовую копію"
+
+#: src/main.c:466
+msgid "simple backups of every file"
+msgstr "простыя рэзэрваваньні кожнага файла"
+
+#: src/main.c:471
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"нумараваныя копіі для ўжо пранумараваныя файлаў,\n"
+"                у простае рэзэрваваньне для іншых"
+
+#: src/main.c:476
+msgid "numbered backups of every file"
+msgstr "нумараваныя рэзэрваньні кожнага файла"
+
+#: src/main.c:480 src/main.c:775
+msgid "Output:\n"
+msgstr "Выхад:\n"
+
+#: src/main.c:481
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  атрымальнік         = %s\n"
+"  кантроль вэрсій     = %s\n"
+"  суфікс рэзэрваваньня = %s\n"
+
+#: src/main.c:494 src/main.c:786
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:495
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %d\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  ідэнтэфікатар               = %s\n"
+"  апісаньне друкаркі (АД)     = %s\n"
+"  даўнятае АД                 = %s\n"
+"  фармат меткі старонкі       = %s\n"
+"  колькасьць копій            = %d\n"
+"  колькасьць бакоў на аркушы  = %s\n"
+"  вызначэньне прылады паперы  = "
+
+#: src/main.c:515
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  вызначэньні statusdict      = "
+
+#: src/main.c:518
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  папярэдняя падача старонкі = %s\n"
+
+#: src/main.c:527
+msgid "Internals:\n"
+msgstr "Нутраныя парамэтры:\n"
+
+#: src/main.c:528
+#, c-format
+msgid ""
+"  verbosity level     = %d\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  узровень падрабязнасьці = %d\n"
+"  каманда file            = %s\n"
+"  шлях да бібліятэк       = \n"
+
+#: src/main.c:653
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with * require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Ужывай: %s [МОЖНАСЬЦІ] ... [ФАЙЛ]...\n"
+"\n"
+"Пераўтварае ФАЙЛ(ы) ці стандартны ўваход у PostScript.\n"
+"\n"
+"Парамэтры, абавязковыя для доўгіх можнасьцяў, абавязковыя й для кароткіх.\n"
+"Доўгія можнасьці, пазначаныя *, патрабуюць парамэтар yes ці no, адпаведныя\n"
+"кароткія можнасьці адпавядаюць `yes'\n"
+
+#: src/main.c:668
+msgid "Tasks:\n"
+msgstr "Задачы:\n"
+
+#: src/main.c:669
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        паказаць вэрсію\n"
+"  --help           паказаць гэтую даведку\n"
+"  --guess          паведаміць тыпы ФАЙЛАЎ, якія ўгадвае a2ps\n"
+"  --which          паведаміць поўны шлях бібліятэчных файлаў, названых\n"
+"                   ФАЙЛАМІ\n"
+"  --glob           паведаміць поўны шлях бібліятэчных файлаў, адпаведных\n"
+"                   ФАЙЛАМ\n"
+"  --list=defaults  паказаць даўнятыў ўсталёўкі й парамэтры \n"
+"  --list=ТЭМА      падрабязны сьпіс па тэме (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+
+#: src/main.c:680
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Па выкананьні задачы пасьпяхова скончыцца. Падрабязны сьпіс можа даць\n"
+"дадатковую дапамогу па канкрэтных магчымасьцях.\n"
+
+#: src/main.c:688
+msgid "Global:\n"
+msgstr "Глабальныя:\n"
+
+#: src/main.c:689
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent         нічога не паведамляць\n"
+"  -v, --verbose[=УЗРОВЕНЬ]      падрабязныя паведамленьні, ці ўстанавіць\n"
+"                                узровень падрабязнасьці\n"
+"  -=, --user-option=МОЖНАСЬЦЬ   ужываць карыстальніцкі скарот МОЖНАСЬЦІ\n"
+"      --debug                   задзейнічаць рэжым адладжваньня\n"
+"  -D, --define=КЛЮЧ[:ЗНАЧЭНЬНЕ] зьнішчыць КЛЮЧ ці надаць яму ЗНАЧЭНЬНЕ\n"
+
+#: src/main.c:698
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=ІМЯ       ужываць паперу, названую ІМЯ\n"
+"  -r, --landscape        друкаваць з альбомнай арыентацыяй\n"
+"  -R, --portrait         друкаваць з партрэтнай арыентацыяй\n"
+"      --columns=КОЛЬК    колькасьць слупкоў на старонцы\n"
+"      --rows=NUM         колькасьць радкоў на старонцы\n"
+"      --major=НАПРАМАК   спачатку запаўняць (НАПРАМАК=) радкоў (rows),\n"
+"                         ці слупкоў (columns)\n"
+"  -1, -2, ..., -9        прадвызначаныя памеры шрыфтоў і разьмяшчэньні\n"
+"                         старонак для 1.. 9 віртуалаў\n"
+"  -A, --file-align=РЭЖЫМ выраўняць асобныя файлы адпаведна РЭЖЫМУ (fill, rank\n"
+"                         page, sheet, ці лік)\n"
+"  -j, --borders*         друкаваць граніцы вакол слупкоў\n"
+"      --margin[=ЛІК]     вызначыць нутраныя палі роўныя ЛІКУ\n"
+
+#: src/main.c:711
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Можнасьці -1 .. -9 уплываюць на некаторыя базавыя парамэтры, каб устанавіць\n"
+"прадвызначаны фармат з 80 знакамі на старонцы. Т.ч., важны парадак:\n"
+"`-R -f40 -2' адпавядае `-2'. Каб зьмяніць фарматы ўжывай `-2Rf40', ці\n"
+"базавыя можнасьці (`--columns', `--font-size' і г.д.)\n"
+
+#: src/main.c:719
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=N       зьмяшчаць нумар радка праз кожныя N радкоў\n"
+"  -C                         скарот для --line-numbers=5\n"
+"  -f, --font-size=ПАМЕР      ужываць шрыфт зададзенага ПАМЕРУ для друку тэксту\n"
+"  -L, --lines-per-page=N     маштабаваць шрыфт, каб друкаваць N радкоў на\n"
+"                             віртуальнай старонцы\n"
+"  -l, --chars-per-line=N     маштабаваць шрыфт, каб друкаваць N слупкоў на\n"
+"                             віртуальнай старонцы\n"
+"  -m, --catman               апрацаваць ФАЙЛ як старонку man (роўнае -L66)\n"
+"  -T, --tabsize=N            устанавіць памер табулятара, роўным N\n"
+"  --non-printable-format=ФМТ вызначае фармат друку г.зв. недрукаваных знакаў\n"
+
+#: src/main.c:730
+msgid "Headings:\n"
+msgstr "Загалоўкі:\n"
+
+#: src/main.c:732
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        увогуле без загалоўкаў на старонцы\n"
+"  -b, --header[=ТЭКСТ]   вызначае загаловак старонкі\n"
+"  -u, --underlay[=ТЭКСТ] друкуе ТЭКСТ пад кожнай старонкай\n"
+"  --center-title[=ТЭКСТ] вызначае верхні калянтытул старонкі\n"
+"  --left-title[=ТЭКСТ]   вызначае левы верхні калянтытул\n"
+"  --right-title[=ТЭКСТ]  вызначае правы верхні калянтытул\n"
+"  --left-footer[=ТЭКСТ]  вызначае ніжні калянтытул старонкі\n"
+"  --footer[=ТЭКСТ]       вызначае левы ніжні калянтытул\n"
+"  --right-footer[=ТЭКСТ] вызначае правы ніжні калянтытул\n"
+
+#: src/main.c:743
+msgid "The TEXTs may use special escapes.\n"
+msgstr "ТЭКСТы могуць ужываць адмысловыя пазьбегі.\n"
+
+#: src/main.c:748
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=ДЫЯПАЗОН]     выбірае старонкі для друку\n"
+"  -c, --truncate-lines*      згортвае доўгія радкі\n"
+"  -i, --interpret*           інтэрпрэтаваць tab, bs і ff знакі\n"
+"      --end-of-line=TYPE     вызначае знак канца радка (r, n, nr, rn, any)\n"
+"  -X, --encoding=ЗНАКАЗБОР   вызначае ўваходны ЗНАКАЗБОР\n"
+"  -t, --title=ІМЯ            вызначае ІМЯ працы\n"
+"      --stdin=ІМЯ            вызначае імя ўваходнага файла `stdin'\n"
+"      --print-anyway*        прымусовы двайковы друк\n"
+"  -Z, --delegate*            накіраваць файлы да іншага дастасаваньня\n"
+"      --toc[=ТЭКСТ]          пабудаваць зьмест\n"
+
+#: src/main.c:760
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Калі задзейнічанае накіраваньне a2ps можа ўжываць іншыя дастасаваньні, каб\n"
+"апрацоўваць файлы, якія нельга друкаваць простым тэкстам, прыкладам HTML,\n"
+"PostScript, PDF etc.\n"
+
+#: src/main.c:767
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=СТЫЛЬ] гожы друк (устанаўлівае СТЫЛЬ)\n"
+"  --highlight-level=УЗРОВЕНЬ вызначыць УЗРОВЕНЬ вылучэньня пры\n"
+"                             гожым друку. УЗРОВЕНЬ можа быць:\n"
+"                             none, normal or heavy\n"
+"  -g                         скарот для --highlight-level=heavy\n"
+"  --strip-level=N            узровень абрэзкі камэнтароў\n"
+
+#: src/main.c:776
+#, fuzzy
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=ФАЙЛ          друкаваць у ФАЙЛ.  Калі ФАЙЛ `-', то \n"
+"                             друкаваць у стандартны выхад.\n"
+"  --version-control=СЛОВА    перавызначае вэрсію\n"
+"  --suffix=СУФІКС            перавызначае звычайны суфікс рэзэрвовых\n"
+"                             копій\n"
+"  -P, --printer=ДРУКАРКА     накіраваць атрыманае да ДРУКАРКІ\n"
+"  -d                         накіраваць атрыманае да даўнятай друкаркі\n"
+
+#: src/main.c:787
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=ФАЙЛ        улучыць ФАЙЛ.pro як уводзіны PostScript\n"
+"      --ppd[=КЛЮЧ]           аўтаматычны выбар АД ці ўстанавіць у КЛЮЧ\n"
+"  -n, --copies=КОЛЬКАСЬЦЬ    друкаваць КОЛЬКАСЬЦЬ копій кожнае старонкі\n"
+"  -s, --sides=РЭЖЫМ          устанавіць РЭЖЫМ друку (`1' ці `simplex',\n"
+"                             `2' ці `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  перадаць апісаньне прылады старонкі на выхад\n"
+"      --statusdict=K[:[:]V]  перадаць апісаньне statusdict на выхад\n"
+"  -k, --page-prefeed         дазволіць папярэднюю падачу старонкі\n"
+"  -K, --no-page-prefeed      забараніць папярэднюю падачу старонкі\n"
+
+#: src/main.c:801
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is Duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+msgstr ""
+"Даўнята a2ps наладжана рабіць тое, што табе патрэбна, таму даверся ёй. Каб\n"
+"гожа надрукаваць зьмесьціва каталёгу `src' і зьмест, а потым даслаць вынік\n"
+"да друкаркі `lw':\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Каб апрацаваць файлы `sample.ps' і `sample.html' і адлюстраваць вынік:\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"Каб апрацаваць паштовую сктрынку, зьмесьціўшы 4 старонкі на аркуш:\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Каб надрукаваць кніжкай на даўнятай друкарцы, якая падтрымлівае двухбаковы\n"
+"друк:\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+
+#: src/main.c:822
+#, fuzzy
+msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+msgstr "Навіны, абнаўленьні і дакумэнтацыя знаходзяцца тут: http://www.inf.enst.fr/~demaille/a2ps/.\n"
+
+#: src/main.c:824
+msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+msgstr "Паведамляй пра памылкі на адрас <bug-a2ps@gnu.org>.\n"
+
+#: src/main.c:942
+#, fuzzy
+msgid ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+msgstr ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana"
+
+#: src/main.c:1173
+msgid "Table of Content"
+msgstr "Зьмест"
+
+#: src/parsessh.y:236
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "немагчыма апрацаваць `%s', які патрабуе a2ps вэрсіі %s"
+
+#: src/sheets-map.l:111
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "Нечаканы знак `%c'"
+
+#: src/sheets-map.l:211 lexppd.l:211
+msgid "too many includes"
+msgstr "зашмат уключэньняў"
+
+#: src/sheets-map.l:296 src/sheets-map.l:303
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "ня вызначаны ключ для `%s'"
+
+#: src/select.c:122 src/ssheet.c:866 fonts.l:838 fonts.l:840 fonts.l:842
+#: lib/pathwalk.c:328 lib/pathwalk.c:414
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "немагчыма знайсьці файл `%s'"
+
+#: src/select.c:124
+msgid "automatic style selection cancelled"
+msgstr "аўтаматычнае вызначэньне стылю скасаванае"
+
+#: src/ssheet.c:295
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "немагчыма скампіляваць рэгулярны выраз `%s': %s"
+
+#: src/ssheet.c:974 src/ssheet.c:995
+msgid "Known Style Sheets"
+msgstr "Вядомыя наборы стыляў"
+
+#: src/ssheet.c:1461
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "немагчыма знайсьці стыль `%s': ужыты просты стыль"
+
+#: src/sshread.c:453
+#, c-format
+msgid "unknown encoding `%s', ignored"
+msgstr "невядомая кадзіроўка `%s', праігнараваная"
+
+#: src/version-etc.c:38
+msgid "Copyright (C) 1999 Free Software Foundation, Inc."
+msgstr "Copyright (C) 1999 Free Software Foundation, Inc."
+
+#: src/version-etc.c:60
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Напісанае %s.\n"
+
+#: src/version-etc.c:66
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Гэта вольнае праграмовае забесьпячэньне, глядзі ўмовы капіяваньня ў\n"
+"зыходным кодзе. Няма НІЯКАЕ гарантыі, нават гарантыі КАШТОЎНАСЬЦІ ці\n"
+"ПРЫДАТНАСЬЦІ ДЛЯ КАНКРЭТНАЕ МЭТЫ.\n"
+
+#: src/versions.c:133
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "няправільны нумар вэрсіі `%s'"
+
+#: lib/caret.c:43
+msgid "space (i.e., ` ')"
+msgstr "прабел, г.зн. ` '"
+
+#: lib/caret.c:45
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "васьмярковы лік, г.зн. `\\001' і г.д."
+
+#: lib/caret.c:47
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "шаснаццаткавы лік, г.зн. `\\x0a' і г.д."
+
+#: lib/caret.c:49
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "кіроўныя знакі, г.зн. `^C', `M-^C' і г.д."
+
+#: lib/caret.c:51
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs, г.зн. `C-c', `M-C-c' і г.д."
+
+#: lib/caret.c:53
+msgid "question-mark (i.e., `?')"
+msgstr "знак пытальніка, г.зн. `?'"
+
+#: lib/closeout.c:71 lib/closeout.c:73
+msgid "write error"
+msgstr "памылка запісу"
+
+#: confg.gperf:157 lib/encoding.c:638
+#, c-format
+msgid "invalid option `%s'"
+msgstr "няправільная можнасьць `%s'"
+
+#: confg.gperf:224 confg.gperf:231 confg.gperf:238
+#, c-format
+msgid "invalid definition for printer `%s': %s"
+msgstr "няправільнае вызначэньне друкаркі `%s': %s"
+
+#: confg.gperf:229 confg.gperf:232 lib/printers.c:47
+msgid "Unknown Printer"
+msgstr "Невядомая друкарка"
+
+#: confg.gperf:236 confg.gperf:239 lib/printers.c:46
+msgid "Default Printer"
+msgstr "Даўнятая друкарка"
+
+#: confg.gperf:292 lib/options.c:697
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "няправільны ідэнтэфікатар пераманнае `%s'"
+
+#: confg.gperf:321
+#, c-format
+msgid "obsolete `%s' entry.  Ignored"
+msgstr "састарэлы запіс `%s'. Праігнараваны"
+
+#: lib/encoding.c:1114 lib/encoding.c:1135
+msgid "Known Encodings"
+msgstr "Вядомыя Знаказборы"
+
+#: lib/faces.c:156
+msgid "incomplete knowledge of faces"
+msgstr "недастатковае веданьне выглядаў шрыфтоў"
+
+#: lib/filtdir.c:113
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "немагчыма закрыць каталёг `%s'"
+
+#: lib/getnum.c:63 lib/getnum.c:121 lib/getnum.c:153 lib/getnum.c:221
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "няправільны парамэтар `%s' для `%s'"
+
+#: lib/getnum.c:123
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Правільныя пармэтры -- цэлыя лікі n, такія як %s\n"
+
+#: lib/getnum.c:223
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Правільныя пармэтры -- рацыянальныя лікі n, такія як %s\n"
+
+#: lib/jobs.c:308
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "невядомая кадзіроўка `%s'"
+
+#: lib/madir.c:59
+msgid "rows first"
+msgstr "радкі спачатку"
+
+#: lib/madir.c:62
+msgid "columns first"
+msgstr "слупкі спачатку"
+
+#: lib/media.c:173
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "невядомы носьбіт `%s'"
+
+#: lib/media.c:208 lib/media.c:237
+msgid "Known Media"
+msgstr "Нядомыя носьбіты"
+
+#: lib/media.c:211
+msgid "Name"
+msgstr "Імя"
+
+#: lib/media.c:212
+msgid "dimensions"
+msgstr "памеры"
+
+#: lib/metaseq.c:104 lib/metaseq.c:113
+#, c-format
+msgid "Known Variables"
+msgstr "Вядомыя пераменныя"
+
+#: lib/metaseq.c:162 lib/metaseq.c:531 lib/metaseq.c:548 lib/metaseq.c:608
+#: lib/metaseq.c:951 lib/metaseq.c:972
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: адсутнічае `%c' у пазьбегу %s%c"
+
+#: lib/metaseq.c:288 lib/metaseq.c:300
+#, c-format
+msgid "Printed by %s"
+msgstr "Надрукавана %s"
+
+#: lib/metaseq.c:298
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Надрукавана %s ад %s"
+
+#: lib/metaseq.c:308 lib/metaseq.c:327
+msgid "cannot get current working directory"
+msgstr "немагчыма атрымаць імя бягучай працоўнага каталёгу"
+
+#: lib/metaseq.c:341 lib/metaseq.c:534 lib/metaseq.c:563 lib/metaseq.c:652
+#: lib/metaseq.c:954 lib/metaseq.c:987
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: задоўгі парамэтар для пазьбегу %s"
+
+#: lib/metaseq.c:364 lib/metaseq.c:675
+msgid "%b %d, %y"
+msgstr "%d %b %y"
+
+#: lib/metaseq.c:373 lib/metaseq.c:684
+msgid "%A %B %d, %Y"
+msgstr "%A %d %B %Y"
+
+#: lib/metaseq.c:419 lib/metaseq.c:448 lib/metaseq.c:491 lib/metaseq.c:724
+#: lib/metaseq.c:808 lib/metaseq.c:867 lib/metaseq.c:922 lib/metaseq.c:1099
+#: lib/metaseq.c:1234 lib/metaseq.c:1246 lib/metaseq.c:1289
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: невядомы `%s' пазьбег `%c' (%d)"
+
+#: lib/metaseq.c:426 lib/metaseq.c:815
+#, c-format
+msgid "Page %d"
+msgstr "Старонка %d"
+
+#: lib/metaseq.c:431 lib/metaseq.c:826
+#, c-format
+msgid "Page %d/%c"
+msgstr "Старонка %d/%c"
+
+#: lib/metaseq.c:593 lib/metaseq.c:1021
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: няправільны падзельнік `%s%c' у пазьбегу `%s'"
+
+#: lib/metaseq.c:601 lib/metaseq.c:611
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: няправільны парамэтар у пазьбегу %s%c"
+
+#: lib/metaseq.c:822
+#, c-format
+msgid "Page %d/%d"
+msgstr "Старонка %d/%d"
+
+#: lib/metaseq.c:1266
+msgid "output command"
+msgstr "каманда вываду"
+
+#: lib/options.c:302
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Паспрабуй `%s --help', каб атрымаць болей зьвестак.\n"
+
+#: lib/output.c:466
+#, c-format
+msgid "invalid face `%s'"
+msgstr "няправільны выгляд шрыфта `%s'"
+
+#: lib/output.c:538
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "`%s' без адпаведнага `%s'"
+
+#: lib/ppd.c:108
+msgid "Known Fonts"
+msgstr "Вядомыя шрыфты"
+
+#: lib/ppd.c:111
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Ніякіх.\n"
+
+#: lib/ppd.c:149 lib/ppd.c:165
+msgid "Known PostScript Printer Descriptions"
+msgstr "Вядомыя апсаньні друкаркі PostScript"
+
+#: lib/prange.c:305 lib/prange.c:323
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "Няправільны інтэрвал `%s'"
+
+#: lib/printers.c:396 lib/printers.c:413
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "няма каманды для `%s' (%s%s)"
+
+#: lib/printers.c:429
+msgid "sent to the standard output"
+msgstr "даслана ў стандартны выхад"
+
+#: lib/printers.c:430
+msgid "sent to the default printer"
+msgstr "даслана да даўнятай друкаркі"
+
+#: lib/printers.c:435
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "захавана ў файл `%s'"
+
+#: lib/printers.c:436
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "даслана да друкаркі `%s'"
+
+#: lib/printers.c:613 lib/printers.c:621
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Вядомыя Прылады Вываду (друкаркі, і г.д.)"
+
+#: lib/prolog.c:98 lib/prolog.c:181
+msgid "Known Prologues"
+msgstr "Вядомыя Ўводныя Часткі"
+
+#: lib/prolog.c:579
+#, c-format
+msgid "font %f too big"
+msgstr "завялікі шрыфт %f"
+
+#: lib/psgen.c:662
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "двайковы файл `%s', друкаваньне спынена"
+
+#: lib/quotearg.c:200
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:203
+msgid "'"
+msgstr "'"
+
+#: lib/userdata.c:129
+msgid "user"
+msgstr "карыстальнік"
+
+#: lib/userdata.c:130
+msgid "Unknown User"
+msgstr "Невядомы карыстальнік"
+
+#: lib/useropt.c:75
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "невядомая можнасьць карыстальніка `%s'"
+
+#: lib/useropt.c:86 lib/useropt.c:97
+msgid "Known User Options"
+msgstr "Вядомыя Можнасьці Карыстальніка"
+
+#: lib/xbackupfile.c:105 lib/xmalloc.c:66
+msgid "Memory exhausted"
+msgstr "Не стае памяці"
+
+#: lib/xbackupfile.c:240 lib/xbackupfile.c:252
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "немагчыма перайменаваць файл `%s' у `%s'"
+
+#: lib/xbackupfile.c:255
+#, c-format
+msgid "restored file `%s'"
+msgstr "адноўлены файл `%s'"
+
+#: lib/argmatch.c:159
+#, c-format
+msgid "invalid argument %s for `%s'"
+msgstr "няправільны парамэтар %s для `%s'"
+
+#: lib/argmatch.c:160
+#, c-format
+msgid "ambiguous argument %s for `%s'"
+msgstr "неадназначны парамэтар %s для `%s'"
+
+#: lib/argmatch.c:178
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Правільныя пармэтры:"
+
+#: lib/error.c:102
+msgid "Unknown system error"
+msgstr "Невядомая сыстэмная памылка"
+
+#: lib/getopt.c:675
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: двухсэнсоўная можнасьць `%s'\n"
+
+#: lib/getopt.c:700
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: можнасьць `--%s' ня мусіць мець парамэтараў\n"
+
+#: lib/getopt.c:705
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: можнасьць `%c%s' ня мусіць мець парамэтараў\n"
+
+#: lib/getopt.c:723 lib/getopt.c:896
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: можнасьць `%s' патрабуе парамэтар\n"
+
+#: lib/getopt.c:752
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: нераспазнаная можнасьць `--%s'\n"
+
+#: lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: нераспазнаная можнасьць `%c%s'\n"
+
+#: lib/getopt.c:782
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: няправільная можнасьць -- %c\n"
+
+#: lib/getopt.c:785
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: няправільная можнасьць -- %c\n"
+
+#: lib/getopt.c:815 lib/getopt.c:945
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: можнасьць патрабуе парамэтар -- %c\n"
+
+#: lib/getopt.c:862
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: двухсэнсоўная можнасьць `-W %s'\n"
+
+#: lib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: можнасьць `-W %s' ня мусіць мець парамэтраў\n"

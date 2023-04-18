@@ -1,0 +1,1160 @@
+# The Czech translation of the GNU a2ps.
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+#
+# Jiří Pavlovský <pavlovsk@ff.cuni.cz>, 1998.
+# Marek Černocký <marek@manet.cz>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 11:28+0800\n"
+"PO-Revision-Date: 2011-12-01 15:31+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
+"Language: cs\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: src/buffer.c:68
+msgid "any type"
+msgstr "jakýkoliv typ"
+
+#: src/delegate.c:137 confg.gperf:168 lib/encoding.c:530 lib/encoding.c:576
+#: lib/encoding.c:616 lib/output.c:302 lib/pair_ht.c:296 lib/prolog.c:146
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "chybí argument pro „%s“"
+
+#: src/delegate.c:260 lib/routines.c:160 lib/xbackupfile.c:248
+#: lib/xbackupfile.c:276 lib/xbackupfile.c:284
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "soubor „%s“ nelze vytvořit"
+
+#: src/delegate.c:269 src/select.c:193 lib/routines.c:190 lib/routines.c:196
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "rouru do „%s“ nelze otevřít"
+
+#: src/delegate.c:389
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Předání „%s“, od %s do %s\n"
+
+#: src/delegate.c:408 src/delegate.c:430
+msgid "Applications configured for delegation"
+msgstr "Aplikace určené k předávání úloh"
+
+#: src/generate.c:88
+#, c-format
+msgid "`%s' is a directory"
+msgstr "„%s“ je složka"
+
+#: src/generate.c:96 src/main.c:560 src/main.c:582 confg.gperf:192
+#: confg.gperf:355 lib/routines.c:154
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "soubor „%s“ nelze otevřít"
+
+#: src/generate.c:101 lib/xbackupfile.c:224
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "informace o souboru „%s“ nelze získat"
+
+#: src/generate.c:168
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): počet stran/listů: 1/1]\n"
+
+#: src/generate.c:174
+#, c-format
+msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgstr "[%s (%s): počet stran/listů: %d/1]\n"
+
+#: src/generate.c:181
+#, c-format
+msgid "[%s (%s): %d pages on %d sheets]\n"
+msgstr "[%s (%s): počet stran/listů: %d/%d]\n"
+
+#: src/generate.c:208
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Celkem: počet stran/listů: 1/1] %s\n"
+
+#: src/generate.c:212
+#, c-format
+msgid "[Total: %d pages on 1 sheet] %s\n"
+msgstr "[Celkem: počet stran/listů: %d/1] %s\n"
+
+#: src/generate.c:217
+#, c-format
+msgid "[Total: %d pages on %d sheets] %s\n"
+msgstr "[Celkem: počet stran/listů: %d/%d] %s\n"
+
+#: src/generate.c:226
+msgid "[1 line wrapped]\n"
+msgstr "[1 řádek zalomen]\n"
+
+#: src/generate.c:229
+#, c-format
+msgid "[%d lines wrapped]\n"
+msgstr "[zalomeno řádků: %d]\n"
+
+#: src/generate.c:242
+msgid "[No output produced]\n"
+msgstr "[Žádný výstup nebyl vytvořen]\n"
+
+#: src/generate.c:314
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, předáno ke zpracování %s"
+
+#: src/generate.c:322
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): neuspělo. Ignorováno]\n"
+
+#: src/generate.c:330
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (netisknutelné): ignorováno]\n"
+
+#: src/generate.c:339
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (binární data): ignorováno]\n"
+
+#: src/generate.c:360
+msgid "plain"
+msgstr "prostý text"
+
+#: lexssh.l:348
+msgid "end-of-line in string constant"
+msgstr "neukončená řetězcová konstanta"
+
+#: lexssh.l:415 src/sheets-map.l:153 src/sheets-map.l:192
+#, c-format
+msgid "end of line inside a %s"
+msgstr "neukončený výraz %s"
+
+#: src/main.c:203
+#, c-format
+msgid "received signal %d: %s"
+msgstr "obdržen signál %d: %s"
+
+#: src/main.c:242
+msgid "heavy"
+msgstr "maximální (heavy)"
+
+#: src/main.c:246
+msgid "normal"
+msgstr "běžná (normal)"
+
+#: src/main.c:250
+msgid "none"
+msgstr "žádná (none)"
+
+#: src/main.c:324 src/main.c:328
+msgid "yes"
+msgstr "ano"
+
+#: src/main.c:325 src/main.c:328 src/main.c:369
+msgid "no"
+msgstr "ne"
+
+#: src/main.c:335
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Aktuální nastavení %s %s\n"
+
+#: src/main.c:339 src/main.c:697
+msgid "Sheets:\n"
+msgstr "Listy:\n"
+
+#: src/main.c:340
+#, c-format
+msgid ""
+"  medium          = %s%s, %s\n"
+"  page layout     = %d x %d, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %d\n"
+msgstr ""
+"  médium                          = %s%s, %s\n"
+"  rozvržení stránky               = %d × %d, %s\n"
+"  rámečky                         = %s\n"
+"  tisk oddělených souborů         = %s\n"
+"  vnitřní okraj                   = %d\n"
+
+#: src/main.c:349
+msgid "portrait"
+msgstr "na výšku"
+
+#: src/main.c:349
+msgid "landscape"
+msgstr "na šířku"
+
+#: src/main.c:358
+#, c-format
+msgid "%d characters per line"
+msgstr "znaků na řádek: %d"
+
+#: src/main.c:361
+#, c-format
+msgid "%d lines per page"
+msgstr "řádků na stránku: %d"
+
+#: src/main.c:364
+#, c-format
+msgid "font size is %gpt"
+msgstr "velikost písma je %g pt"
+
+#: src/main.c:373
+msgid "each line"
+msgstr "každý řádek"
+
+#: src/main.c:377
+#, c-format
+msgid "each %d lines"
+msgstr "každý %d. řádek"
+
+#: src/main.c:380 src/main.c:718
+msgid "Virtual pages:\n"
+msgstr "Virtuální stránky:\n"
+
+#: src/main.c:381
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %d\n"
+"  non printable format = %s\n"
+msgstr ""
+"  číslování řádků                 = %s\n"
+"  formát                          = %s\n"
+"  velikost tabulátoru             = %d\n"
+"  netisknutelné znaky             = %s\n"
+
+#: src/main.c:392
+msgid "Headers:\n"
+msgstr "Hlavičky:\n"
+
+#: src/main.c:393
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  hlavička                        = %s\n"
+"  levá odrážka                    = %s\n"
+"  odrážka                         = %s\n"
+"  pravá odrážka                   = %s\n"
+"  levý titulek                    = %s\n"
+"  centrální titulek               = %s\n"
+"  pravý titulek                   = %s\n"
+"  zápatí                          = %s\n"
+
+#: src/main.c:412 src/main.c:747
+msgid "Input:\n"
+msgstr "Vstup:\n"
+
+#: src/main.c:413
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  ořezávání řádků                 = %s\n"
+"  interpret                       = %s\n"
+"  konec řádku                     = %s\n"
+"  kódování                        = %s\n"
+"  název dokumentu                 = %s\n"
+"  prolog                          = %s\n"
+"  tisk binárních dat              = %s\n"
+"  předávání úloh                  = %s\n"
+
+#: src/main.c:438 src/main.c:504
+msgid "selected automatically"
+msgstr "automatický výběr"
+
+#: src/main.c:441 src/main.c:766
+msgid "Pretty-printing:\n"
+msgstr "Tisk stylů:\n"
+
+#: src/main.c:442
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  styl                            = %s\n"
+"  úroveň zvýrazňování             = %s\n"
+"  úroveň ořezávání komentářů      = %d\n"
+
+#: src/main.c:462
+msgid "never make backups"
+msgstr "nevytvářet záložní kopie"
+
+#: src/main.c:466
+msgid "simple backups of every file"
+msgstr "jednoduché záložní kopie každého souboru"
+
+#: src/main.c:471
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"číslované záložní kopie číslovaných souborů\n"
+"                            a jednoduché ostatních"
+
+#: src/main.c:476
+msgid "numbered backups of every file"
+msgstr "číslované záložní kopie všech souborů"
+
+#: src/main.c:480 src/main.c:775
+msgid "Output:\n"
+msgstr "Výstup:\n"
+
+#: src/main.c:481
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  cíl                             = %s\n"
+"  kontrola verzí                  = %s\n"
+"  přípona záložních kopií         = %s\n"
+
+#: src/main.c:494 src/main.c:786
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:495
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %d\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  magické číslo                   = %s\n"
+"  popis tiskárny (PPD)            = %s\n"
+"  výchozí PPD                     = %s\n"
+"  formát čísla stránky            = %s\n"
+"  počet kopií                     = %d\n"
+"  stran na list                   = %s\n"
+"  nastavení stránkového zařízení  = "
+
+#: src/main.c:515
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  definice stavového slovníku     = "
+
+#: src/main.c:518
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  průběžný posun stránky          = %s\n"
+
+#: src/main.c:527
+msgid "Internals:\n"
+msgstr "Interní nastavení:\n"
+
+#: src/main.c:528
+#, c-format
+msgid ""
+"  verbosity level     = %d\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  podrobnost výpisu hlášek        = %d\n"
+"  řádkový příkaz „file“           = %s\n"
+"  cesta ke knihovnám              = \n"
+
+#: src/main.c:653
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with * require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Použití: %s [PŘEPÍNAČ]… [SOUBOR]…\n"
+"\n"
+"Převádí SOUBOR(y) nebo standardní vstup do PostScriptu. Jako výchozí je\n"
+"výstup posílán na výchozí tiskárnu. Místo toho je možné pomocí -o určit\n"
+"výstupní soubor.\n"
+"\n"
+"Povinné argumenty dlouhých přepínačů jsou povinné i pro odpovídající krátké\n"
+"přepínače. Dlouhé přepínače označené * vyžadují argument typu ano/ne,\n"
+"odpovídající krátké přepínače mají význam „ano“.\n"
+
+#: src/main.c:668
+msgid "Tasks:\n"
+msgstr "Úlohy:\n"
+
+#: src/main.c:669
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"      --version                vypsat označení verze programu\n"
+"      --help                   vypsat tuto nápovědu\n"
+"      --guess                  vypsat předpokládaný typ SOUBORŮ\n"
+"      --which                  vypsat úplnou cestu k zadaným knihovním\n"
+"                               SOUBORŮM\n"
+"      --glob                   vypsat úplnou cestu ke knihovním SOUBORŮM\n"
+"                               vyhovujícím vzoru\n"
+"      --list=defaults          vypsat výchozí nastavení a parametry\n"
+"      --list=TÉMA              vypsat informace o TÉMATU (delegations,\n"
+"                               encodings, features, variables, media, ppd\n"
+"                               printers, prologues, style-sheets, user-options\n"
+
+#: src/main.c:680
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Po provedení úlohy úspěšně skončí. Nápovědu ke konkrétním tématům poskytne\n"
+"podrobný výpis.\n"
+
+#: src/main.c:688
+msgid "Global:\n"
+msgstr "Globální:\n"
+
+#: src/main.c:689
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent        minimální informace o běhu programu\n"
+"  -v, --verbose[=ÚROVEŇ]       nastavit podrobný výpis na zapnuto nebo na ÚROVEŇ\n"
+"  -=, --user-option=ZKRATKA    použít uživatelem definovanou ZKRATKU\n"
+"      --debug                  použít ladicí funkce\n"
+"  -D, --define=KLÍČ[:HODNOTA]  zrušit nebo nastavit proměnnou KLÍČ na HODNOTA\n"
+
+#: src/main.c:698
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NÁZEV           použít výstupní médium NÁZEV\n"
+"  -r, --landscape              tisknout stránky na šířku\n"
+"  -R, --portrait               tisknout stránky na výšku\n"
+"      --columns=POČET          POČET (>0) sloupců na list\n"
+"      --rows=POČET             POČET (>0) řádků na list\n"
+"      --major=SMĚR             nejprve vyplní (SMĚR=) „rows“ (řádky) nebo\n"
+"                               „columns“ (sloupce)\n"
+"  -1, -2, ..., -9              předdefinované rozvržení stránek a velikost\n"
+"                               písma\n"
+"  -A, --file-align=ZPŮSOB      nastavit ZPŮSOB (fill, rank, page, sheet nebo\n"
+"                               number) tisku oddělených souborů\n"
+"  -j, --borders*               tisknout rámečky kolem sloupců\n"
+"      --margin[=VELIKOST]      nastavit VELIKOST vnitřních okrajů\n"
+
+#: src/main.c:711
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Přepínače -1…-9 ovlivňují několik základních parametrů tím, že nastaví\n"
+"předdefinované rozvržení s 80 sloupci. Proto je také „-R -f40 -2“ v tomto pořadí\n"
+"to stejné jako „-2“. Pro změnu rozvržení použijte „-2Rf40“ nebo sestavu\n"
+"základních přepínačů („--columns“, „--font-size“ atd.).\n"
+
+#: src/main.c:719
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=ČÍSLO     předřadí každému ČÍSLO. řádku jeho číslo\n"
+"  -C                           to stejné jako --line-numbers=5\n"
+"  -f, --font-size=VELIKOST     VELIKOST (reálné číslo) písma pro hlavní text\n"
+"  -L, --lines-per-page=POČET   přepočítá písmo, aby se tiskl POČET řádků na\n"
+"                               stránku\n"
+"  -l, --chars-per-line=POČET   přepočítá písmo, aby se tiskl POČET sloupců na\n"
+"                               stránku\n"
+"  -m, --catman                 zpracuje SOUBOR jako man (stejné jako -L66)\n"
+"  -T, --tabsize=VELIKOST       nastaví VELIKOST tabulátoru\n"
+"  --non-printable-format=FMT   nastaví způsob zpracování netisknutelných znaků\n"
+
+#: src/main.c:730
+msgid "Headings:\n"
+msgstr "Hlavičky:\n"
+
+#: src/main.c:732
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header              stránky bez hlaviček\n"
+"  -b, --header[=TEXT]          nastaví hlavičky na TEXT\n"
+"  -u, --underlay[=TEXT]        nastaví patičky na TEXT\n"
+"      --center-title[=TEXT]    nastaví titulek stránek na TEXT\n"
+"      --left-title[=TEXT]      nastaví levý a pravý titulek stránek na TEXT\n"
+"      --right-title[=TEXT]\n"
+"      --left-footer[=TEXT]     nastaví odrážky na TEXT\n"
+"      --footer[=TEXT]\n"
+"      --right-footer[=TEXT]\n"
+
+#: src/main.c:743
+msgid "The TEXTs may use special escapes.\n"
+msgstr "TEXTy mohou využívat speciální řídící znaky.\n"
+
+#: src/main.c:748
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=ROZSAH]         zvolit stránky k vytisknutí\n"
+"  -c, --truncate-lines*        ořezávat dlouhé řádky\n"
+"  -i, --interpret*             interpretace znaků tab, bs a ff\n"
+"      --end-of-line=TYP        nastavit zakončení řádku (TYP:r, n, nr, rn, any)\n"
+"  -X, --encoding=NÁZEV         použít vstupní kódování NÁZEV\n"
+"  -t, --title=NÁZEV            nastavit NÁZEV úlohy\n"
+"      --stdin=SOUBOR           číst SOUBOR ze standardního vstupu\n"
+"      --print-anyway*          tisknout i binární data\n"
+"  -Z, --delegate*              předat soubory ke zpracování jiné aplikaci\n"
+"      --toc[=TEXT]             vygenerovat obsah\n"
+
+#: src/main.c:760
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Pokud je zapnuto předávání úloh, pak a2ps může pro zpracování souborů,\n"
+"které nemají být vytištěny v přímém formátu (např. HTML, PostScript či PDF),\n"
+"použít jiné aplikace.\n"
+
+#: src/main.c:767
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=STYL]    zapnout tisk stylů (= STYL)\n"
+"      --highlight-level=ÚROVEŇ nastavit ÚROVEŇ zvýrazňování při tisku stylů\n"
+"                               ÚROVEŇ může být none, normal nebo heavy\n"
+"  -g                           to stejné jako --highlight-level=heavy\n"
+"      --strip-level=ÚROVEŇ     ÚROVEŇ ořezávání komentářů\n"
+
+#: src/main.c:776
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=SOUBOR          výstup do SOUBORu, pokud je SOUBOR „-“, pak\n"
+"                               na standardní výstup\n"
+"      --version-control=ZPŮSOB nastaví ZPŮSOB zálohování\n"
+"      --suffix=PŘÍPONA         nastaví příponu záložních kopií na PŘÍPONA\n"
+"  -P, --printer=NÁZEV          výstup na tiskárnu NÁZEV\n"
+"  -d                           výstup na výchozí tiskárnu\n"
+
+#: src/main.c:787
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=SOUBOR        vložit SOUBOR.pro jako PostScriptový prolog\n"
+"      --ppd[=KLÍČ]             automatická volba PPD nebo nastavit na KLÍČ\n"
+"  -n, --copies=POČET           vytisknout POČET kopií každé stránky\n"
+"  -s, --sides=REŽIM            počet stran papíru („1“ nebo „simplex“,\n"
+"                               „2“ nebo „duplex“, „tumble“)\n"
+"  -S, --setpagedevice=K[:V]    poslat na výstup nastavení stránkového\n"
+"                               zařízení\n"
+"      --statusdict=K[:[:]V]    poslat na výstup nastavení stavového slovníku\n"
+"  -k, --page-prefeed           zapnout průběžný posun stránky\n"
+"  -K, --no-page-prefeed        vypnout průběžný posun stránky\n"
+
+#: src/main.c:801
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is Duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+msgstr ""
+"Standardně je a2ps vyladěn tak, aby udělal přesně to, co chcete. Obsah složky\n"
+"„src“ spolu s obsahem za pomoci stylů vytisknete na tiskárně „lw“ pomocí:\n"
+"\n"
+"     a2ps -P lw --toc src/*\n"
+"\n"
+"Soubory „sample.ps“ a „sample.html“ zpracujete a výsledek zobrazíte pomocí:\n"
+"\n"
+"    a2ps -P display sample.ps sample.html\n"
+"\n"
+"Poštovní schránku zpracujete pomocí:\n"
+"\n"
+"    a2ps -=mail -4 mailbox\n"
+"\n"
+"Knihu na výchozí tiskárně s duplexem vytisknete pomocí:\n"
+"\n"
+"    a2ps -=book paper.dvi.gz -d\n"
+
+#  /
+#: src/main.c:822
+msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+msgstr "Novinky, aktualizace a dokumentace: http://www.inf.enst.fr/~demaille/a2ps/ (v angličtině)\n"
+
+#: src/main.c:824
+msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+msgstr "Chyby v programu hlaste na <bug-a2ps@gnu.org> (pouze anglicky).\n"
+
+#: src/main.c:942
+msgid ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+msgstr ""
+"Copyright © 1988 – 93 Miguel Santana\n"
+"Copyright © 1995 – 99 Akim Demaille, Miguel Santana\n"
+"Copyright © 2007 – Akim Demaille, Miguel Santana and Masayuki Hatta"
+
+#: src/main.c:1173
+msgid "Table of Content"
+msgstr "Obsah"
+
+#: src/parsessh.y:236
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "nelze zpracovat „%s“, protože vyžaduje a2ps verze %s"
+
+#: src/sheets-map.l:111
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "neočekávaný znak „%c“"
+
+#: src/sheets-map.l:211 lexppd.l:211
+msgid "too many includes"
+msgstr "příliš mnoho vložených souborů"
+
+#: src/sheets-map.l:296 src/sheets-map.l:303
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "pro „%s“ není definován žádný klíč"
+
+#: src/select.c:122 src/ssheet.c:866 fonts.l:838 fonts.l:840 fonts.l:842
+#: lib/pathwalk.c:328 lib/pathwalk.c:414
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "nelze najít soubor „%s“"
+
+#: src/select.c:124
+msgid "automatic style selection cancelled"
+msgstr "automatická volba stylů vypnuta"
+
+#: src/ssheet.c:295
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "regulární výraz „%s“ nelze zkompilovat: %s"
+
+#: src/ssheet.c:974 src/ssheet.c:995
+msgid "Known Style Sheets"
+msgstr "Připravené stylopisy"
+
+#: src/ssheet.c:1461
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "stylopis „%s“ nelze najít: použije se prostý styl"
+
+#: src/sshread.c:453
+#, c-format
+msgid "unknown encoding `%s', ignored"
+msgstr "neznámé kódování „%s“, ignorováno"
+
+#: src/version-etc.c:38
+msgid "Copyright (C) 1999 Free Software Foundation, Inc."
+msgstr "Copyright © 1999 Free Software Foundation, Inc."
+
+#: src/version-etc.c:60
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Napsal %s.\n"
+
+#: src/version-etc.c:66
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Toto je svobodný software. Podmínky kopírování a rozšiřování naleznete ve\n"
+"zdrojových textech. Tento program je BEZ JAKÉKOLIV ZÁRUKY; a to i bez\n"
+"záruky PRODEJNOSTI nebo VHODNOSTI PRO NĚJAKÝ KONKRÉTNÍ ÚČEL.\n"
+
+#: src/versions.c:133
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "neplatné číslo verze „%s“"
+
+#: lib/caret.c:43
+msgid "space (i.e., ` ')"
+msgstr "mezera (např. „ “)"
+
+#: lib/caret.c:45
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "osmičkově (např. „\\001“ atd.)"
+
+#: lib/caret.c:47
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "šestnáctkově (např. „\\x0a“ atd.)"
+
+#: lib/caret.c:49
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "kurzor (např. „^C“, „M-^C“ atd.)"
+
+#: lib/caret.c:51
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (např. „C-c“, „M-C-c“ atd.)"
+
+#: lib/caret.c:53
+msgid "question-mark (i.e., `?')"
+msgstr "otazník (např. „?“)"
+
+#: lib/closeout.c:71 lib/closeout.c:73
+msgid "write error"
+msgstr "chyba zápisu"
+
+#: confg.gperf:157 lib/encoding.c:638
+#, c-format
+msgid "invalid option `%s'"
+msgstr "neplatný přepínač „%s“"
+
+#: confg.gperf:224 confg.gperf:231 confg.gperf:238
+#, c-format
+msgid "invalid definition for printer `%s': %s"
+msgstr "neplatná definice pro tiskárnu „%s“: %s"
+
+#: confg.gperf:229 confg.gperf:232 lib/printers.c:47
+msgid "Unknown Printer"
+msgstr "Neznámá tiskárna"
+
+#: confg.gperf:236 confg.gperf:239 lib/printers.c:46
+msgid "Default Printer"
+msgstr "Výchozí tiskárna"
+
+#: confg.gperf:292 lib/options.c:697
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "neplatný identifikátor proměnné „%s“"
+
+#: confg.gperf:321
+#, c-format
+msgid "obsolete `%s' entry.  Ignored"
+msgstr "zastaralá volba „%s“. Ignorováno."
+
+#: lib/encoding.c:1114 lib/encoding.c:1135
+msgid "Known Encodings"
+msgstr "Připravená kódování"
+
+#: lib/faces.c:156
+msgid "incomplete knowledge of faces"
+msgstr "neúplná znalost vzhledu"
+
+#: lib/filtdir.c:113
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "nelze zavřít složku „%s“"
+
+#: lib/getnum.c:63 lib/getnum.c:121 lib/getnum.c:153 lib/getnum.c:221
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "neplatný argument „%s“ pro přepínač „%s“"
+
+#: lib/getnum.c:123
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Platnými argumenty jsou celá čísla n, pro něž platí: %s\n"
+
+#: lib/getnum.c:223
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Platnými argumenty jsou reálná čísla f, pro něž platí: %s\n"
+
+#: lib/jobs.c:308
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "neznámé kódování „%s“"
+
+#: lib/madir.c:59
+msgid "rows first"
+msgstr "nejdříve řádky"
+
+#: lib/madir.c:62
+msgid "columns first"
+msgstr "nejdříve sloupce"
+
+#: lib/media.c:173
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "neznámé médium „%s“"
+
+#: lib/media.c:208 lib/media.c:237
+msgid "Known Media"
+msgstr "Připravená média"
+
+#: lib/media.c:211
+msgid "Name"
+msgstr "Název"
+
+#: lib/media.c:212
+msgid "dimensions"
+msgstr "rozměry"
+
+#: lib/metaseq.c:104 lib/metaseq.c:113
+#, c-format
+msgid "Known Variables"
+msgstr "Připravené proměnné"
+
+#: lib/metaseq.c:162 lib/metaseq.c:531 lib/metaseq.c:548 lib/metaseq.c:608
+#: lib/metaseq.c:951 lib/metaseq.c:972
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: chybí „%c“ pro řídící znak %s%c"
+
+#: lib/metaseq.c:288 lib/metaseq.c:300
+#, c-format
+msgid "Printed by %s"
+msgstr "Vytiskl %s"
+
+#: lib/metaseq.c:298
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Vytiskl %s z %s"
+
+#: lib/metaseq.c:308 lib/metaseq.c:327
+msgid "cannot get current working directory"
+msgstr "nelze určit současnou pracovní složku"
+
+#: lib/metaseq.c:341 lib/metaseq.c:534 lib/metaseq.c:563 lib/metaseq.c:652
+#: lib/metaseq.c:954 lib/metaseq.c:987
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: příliš dlouhý argument pro řídící znak %s"
+
+#: lib/metaseq.c:364 lib/metaseq.c:675
+msgid "%b %d, %y"
+msgstr "%d.%m. %y"
+
+#: lib/metaseq.c:373 lib/metaseq.c:684
+msgid "%A %B %d, %Y"
+msgstr "%A %d. %B %Y"
+
+#: lib/metaseq.c:419 lib/metaseq.c:448 lib/metaseq.c:491 lib/metaseq.c:724
+#: lib/metaseq.c:808 lib/metaseq.c:867 lib/metaseq.c:922 lib/metaseq.c:1099
+#: lib/metaseq.c:1234 lib/metaseq.c:1246 lib/metaseq.c:1289
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: pro „%s“ není řídící znak „%c“ (%d) definován"
+
+#: lib/metaseq.c:426 lib/metaseq.c:815
+#, c-format
+msgid "Page %d"
+msgstr "Stránka %d"
+
+#: lib/metaseq.c:431 lib/metaseq.c:826
+#, c-format
+msgid "Page %d/%c"
+msgstr "Stránka %d/%c"
+
+#: lib/metaseq.c:593 lib/metaseq.c:1021
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: neplatný oddělovač „%s%c“ pro řídící znak „%s“"
+
+#: lib/metaseq.c:601 lib/metaseq.c:611
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: neplatný argument pro řídící znak %s%c"
+
+#: lib/metaseq.c:822
+#, c-format
+msgid "Page %d/%d"
+msgstr "Stránka %d/%d"
+
+#: lib/metaseq.c:1266
+msgid "output command"
+msgstr "výstupní příkaz"
+
+#: lib/options.c:302
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Více informací získáte příkazem „%s --help“.\n"
+
+#: lib/output.c:466
+#, c-format
+msgid "invalid face `%s'"
+msgstr "neplatný vzhled „%s“"
+
+#: lib/output.c:538
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "„%s“ bez odpovídajícího „%s“"
+
+#: lib/ppd.c:108
+msgid "Known Fonts"
+msgstr "Připravená písma"
+
+#: lib/ppd.c:111
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Žádná.\n"
+
+#: lib/ppd.c:149 lib/ppd.c:165
+msgid "Known PostScript Printer Descriptions"
+msgstr "Připravené popisy tiskáren PPD"
+
+#: lib/prange.c:305 lib/prange.c:323
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "nepovolený interval „%s“"
+
+#: lib/printers.c:396 lib/printers.c:413
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "žádný příkaz pro „%s“ (%s%s)"
+
+#: lib/printers.c:429
+msgid "sent to the standard output"
+msgstr "posláno na standardní výstup"
+
+#: lib/printers.c:430
+msgid "sent to the default printer"
+msgstr "posláno na výchozí tiskárnu"
+
+#: lib/printers.c:435
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "uloženo do souboru „%s“"
+
+#: lib/printers.c:436
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "posláno na tiskárnu „%s“"
+
+#: lib/printers.c:613 lib/printers.c:621
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Připravené výstupní cíle (tiskárny apod.)"
+
+#: lib/prolog.c:98 lib/prolog.c:181
+msgid "Known Prologues"
+msgstr "Připravené prology"
+
+#: lib/prolog.c:579
+#, c-format
+msgid "font %f too big"
+msgstr "písmo %f je příliš veliké"
+
+#: lib/psgen.c:662
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "„%s“ je binární soubor, tisk ukončen"
+
+#: lib/quotearg.c:200
+msgid "`"
+msgstr "„"
+
+#: lib/quotearg.c:203
+msgid "'"
+msgstr "“"
+
+#: lib/userdata.c:129
+msgid "user"
+msgstr "uživatel"
+
+#: lib/userdata.c:130
+msgid "Unknown User"
+msgstr "Neznámý uživatel"
+
+#: lib/useropt.c:75
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "neznámá uživatelsky definovaná zkratka „%s“"
+
+#: lib/useropt.c:86 lib/useropt.c:97
+msgid "Known User Options"
+msgstr "Připravené uživatelsky definované zkratky"
+
+#: lib/xbackupfile.c:105 lib/xmalloc.c:66
+msgid "Memory exhausted"
+msgstr "Není volná paměť"
+
+#: lib/xbackupfile.c:240 lib/xbackupfile.c:252
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "soubor „%s“ nelze přejmenovat na „%s“"
+
+#: lib/xbackupfile.c:255
+#, c-format
+msgid "restored file `%s'"
+msgstr "soubor „%s“ obnoven"
+
+#: lib/argmatch.c:159
+#, c-format
+msgid "invalid argument %s for `%s'"
+msgstr "neplatný argument „%s“ pro přepínač „%s“"
+
+#: lib/argmatch.c:160
+#, c-format
+msgid "ambiguous argument %s for `%s'"
+msgstr "nejednoznačný argument „%s“ pro přepínač „%s“"
+
+#: lib/argmatch.c:178
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Platné argumenty jsou:"
+
+#: lib/error.c:102
+msgid "Unknown system error"
+msgstr "Neznámá systémová chyba"
+
+#: lib/getopt.c:675
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: přepínač „%s“ není jednoznačný\n"
+
+#: lib/getopt.c:700
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: přepínač „--%s“ musí být zadán bez argumentu\n"
+
+#: lib/getopt.c:705
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: přepínač „%c%s“ musí být zadán bez argumentu\n"
+
+#: lib/getopt.c:723 lib/getopt.c:896
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: přepínač „%s“ vyžaduje argument\n"
+
+#: lib/getopt.c:752
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: neznámý přepínač „--%s“\n"
+
+#: lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: neznámý přepínač „%c%s“\n"
+
+#: lib/getopt.c:782
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: nedovolený přepínač -- %c\n"
+
+#: lib/getopt.c:785
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: neplatný přepínač -- %c\n"
+
+#: lib/getopt.c:815 lib/getopt.c:945
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: přepínač vyžaduje argument -- %c\n"
+
+#: lib/getopt.c:862
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: přepínač „-W %s“ není jednoznačný\n"
+
+#: lib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: přepínač „-W %s“ musí být zadán bez argumentu\n"

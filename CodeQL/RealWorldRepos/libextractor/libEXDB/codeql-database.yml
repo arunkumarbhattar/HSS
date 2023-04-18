@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/libextractor"
+baselineLinesOfCode: 35050
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "6c70420641fc1d081bcecf323671ca169b13a129"
+  cliVersion: "2.11.3"
+  creationTime: "2022-11-11T22:44:13.355935476Z"

@@ -1,0 +1,1163 @@
+# Ukrainian translation for a2ps.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+#
+# Yuri Syrota <rasta@renome.rovno.ua>, 2000.
+# Yuri Chornoivan <yurchor@ukr.net>, 2016, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14.92\n"
+"Report-Msgid-Bugs-To: bug-a2ps@gnu.org\n"
+"POT-Creation-Date: 2022-08-11 16:45+0200\n"
+"PO-Revision-Date: 2022-08-12 19:45+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: src/delegate.c:110 liba2ps/encoding.c:569 liba2ps/encoding.c:615
+#: liba2ps/encoding.c:657 liba2ps/output.c:282 liba2ps/pair_ht.c:312
+#: liba2ps/prolog.c:137
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "пропущений аргумент для '%s'"
+
+#: src/delegate.c:233 liba2ps/routines.c:136 liba2ps/xbackupfile.c:171
+#: liba2ps/xbackupfile.c:196 liba2ps/xbackupfile.c:204
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "не вдається створити файл '%s'"
+
+#: src/delegate.c:242 src/select.c:188 liba2ps/routines.c:163
+#: liba2ps/routines.c:169
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "не вдається відкрити канал на '%s'"
+
+#: src/delegate.c:362
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Делегування '%s', від %s до %s\n"
+
+#: src/delegate.c:380 src/delegate.c:400
+msgid "Applications configured for delegation"
+msgstr "Додатки, сконфігуровані для делегування"
+
+#: src/generate.c:82
+#, c-format
+msgid "`%s' is a directory"
+msgstr "'%s' це каталог"
+
+#: src/generate.c:90 src/main.c:550 src/main.c:572 liba2ps/routines.c:130
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "не вдається відкрити файл '%s'"
+
+#: src/generate.c:95 liba2ps/xbackupfile.c:147
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "не можу отримати інформацію про файл '%s'"
+
+#: src/generate.c:160
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 сторінка на 1 аркуші]\n"
+
+#: src/generate.c:166
+#, c-format
+msgid "[%s (%s): %zu pages on 1 sheet]\n"
+msgstr "[%s (%s): %zu сторінки на 1 аркуші]\n"
+
+#: src/generate.c:173
+#, c-format
+msgid "[%s (%s): %zu pages on %zu sheets]\n"
+msgstr "[%s (%s): сторінок: %zu, аркушів: %zu]\n"
+
+#: src/generate.c:200
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Усього: 1 сторінка на 1 аркуші] %s\n"
+
+#: src/generate.c:204
+#, c-format
+msgid "[Total: %zu pages on 1 sheet] %s\n"
+msgstr "[Усього: %zu сторінки на 1 аркуші] %s\n"
+
+#: src/generate.c:209
+#, c-format
+msgid "[Total: %zu pages on %zu sheets] %s\n"
+msgstr "[Усього: сторінок: %zu, аркушів: %zu] %s\n"
+
+#: src/generate.c:218
+msgid "[1 line wrapped]\n"
+msgstr "[1 рядок усічений]\n"
+
+#: src/generate.c:221
+#, c-format
+msgid "[%zu lines wrapped]\n"
+msgstr "[%zu рядків перенесено]\n"
+
+#: src/generate.c:232
+msgid "[No output produced]\n"
+msgstr "[Вихідний потік порожній]\n"
+
+#: src/generate.c:304
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, делегований %s"
+
+#: src/generate.c:312
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): завершився з помилкою. Зігноровано]\n"
+
+#: src/generate.c:320
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (не друкується): ігнорований]\n"
+
+#: src/generate.c:329
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (двійковий): ігнорований]\n"
+
+#: src/generate.c:350
+msgid "plain"
+msgstr "простий"
+
+#: src/lexssh.l:353
+msgid "end-of-line in string constant"
+msgstr "кінець рядка усередині строкової константи"
+
+#: src/lexssh.l:420 src/sheets-map.l:159 src/sheets-map.l:198
+#, c-format
+msgid "end of line inside a %s"
+msgstr "кінець рядка усередині %s"
+
+#: src/main.c:197
+#, c-format
+msgid "received SIG%s"
+msgstr "отримано SIG%s"
+
+#: src/main.c:236
+msgid "heavy"
+msgstr "сильний"
+
+#: src/main.c:240
+msgid "normal"
+msgstr "звичайний"
+
+#: src/main.c:244
+msgid "none"
+msgstr "відсутній"
+
+#: src/main.c:318 src/main.c:322
+msgid "yes"
+msgstr "так"
+
+#: src/main.c:319 src/main.c:322 src/main.c:360
+msgid "no"
+msgstr "ні"
+
+#: src/main.c:328
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Параметри конфігурації %s %s\n"
+
+#: src/main.c:332 src/main.c:680
+msgid "Sheets:\n"
+msgstr "Аркуші:\n"
+
+#: src/main.c:333
+#, c-format
+msgid ""
+"  medium          = %s, %s\n"
+"  page layout     = %zu x %zu, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %u\n"
+msgstr ""
+"  папір              = %s, %s\n"
+"  макет листа        = %zu x %zu, %s\n"
+"  рамки              = %s\n"
+"  вирівнювання файлу = %s\n"
+"  внутрішнє поле     = %u\n"
+
+#: src/main.c:340
+msgid "portrait"
+msgstr "вертикально"
+
+#: src/main.c:340
+msgid "landscape"
+msgstr "горизонтально"
+
+#: src/main.c:349
+#, c-format
+msgid "%u characters per line"
+msgstr "%u знаків у рядку"
+
+#: src/main.c:352
+#, c-format
+msgid "%u lines per page"
+msgstr "%u рядків на сторінці"
+
+#: src/main.c:355
+#, c-format
+msgid "font size is %gpt"
+msgstr "розмір шрифту дорівнює %gpt"
+
+#: src/main.c:364
+msgid "each line"
+msgstr "кожен рядок"
+
+#: src/main.c:368
+#, c-format
+msgid "each %u lines"
+msgstr "кожен %u-й рядок"
+
+#: src/main.c:371 src/main.c:701
+msgid "Virtual pages:\n"
+msgstr "Віртуальні сторінки:\n"
+
+#: src/main.c:372
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %u\n"
+"  non printable format = %s\n"
+msgstr ""
+"  номери рядків        = %s\n"
+"  формат               = %s\n"
+"  крок табуляції       = %u\n"
+"  формат спецсимволів  = %s\n"
+
+#: src/main.c:383
+msgid "Headers:\n"
+msgstr "Заголовки:\n"
+
+#: src/main.c:384
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  верхній колонтитул     = %s\n"
+"  лівий нижній           = %s\n"
+"  нижній колонтитул      = %s\n"
+"  правий нижній          = %s\n"
+"  ліва шапка             = %s\n"
+"  центральна шапка       = %s\n"
+"  права шапка            = %s\n"
+"  підвал                 = %s\n"
+
+#: src/main.c:403 src/main.c:730
+msgid "Input:\n"
+msgstr "Вхідні дані:\n"
+
+#: src/main.c:404
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  усікання рядків     = %s\n"
+"  інтерпретація       = %s\n"
+"  кінець рядка        = %s\n"
+"  кодування           = %s\n"
+"  заголовок документа = %s\n"
+"  вступна частина     = %s\n"
+"  друкувати все одно  = %s\n"
+"  делегування         = %s\n"
+
+#: src/main.c:429 src/main.c:494
+msgid "selected automatically"
+msgstr "обраний автоматично"
+
+#: src/main.c:432 src/main.c:749
+msgid "Pretty-printing:\n"
+msgstr "Структурний друк:\n"
+
+#: src/main.c:433
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  набір стилів       = %s\n"
+"  рівень виділення   = %s\n"
+"  рівень усікання    = %d\n"
+
+#: src/main.c:453
+msgid "never make backups"
+msgstr "ніколи не створювати резервні копії"
+
+#: src/main.c:457
+msgid "simple backups of every file"
+msgstr "просте резервне копіювання кожного файлу"
+
+#: src/main.c:462
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"Нумеровані копії для вже пронумерованих файлів,\n"
+"         і просте резервне копіювання для інших"
+
+#: src/main.c:467
+msgid "numbered backups of every file"
+msgstr "нумеровані резервні копії кожного файлу"
+
+#: src/main.c:471 src/main.c:758
+msgid "Output:\n"
+msgstr "Вихідні дані:\n"
+
+#: src/main.c:472
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  приймач                = %s\n"
+"  контроль версій        = %s\n"
+"  суфікс резервної копії = %s\n"
+
+#: src/main.c:484 src/main.c:769
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:485
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %u\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  ідентифікатор версії         = %s\n"
+"  опис принтера (ОП)           = %s\n"
+"  типовий ОП                   = %s\n"
+"  формат мітки сторінки        = %s\n"
+"  кількість копій              = %u\n"
+"  число сторін на аркуші       = %s\n"
+"  визначення пристрою сторінки = "
+
+#: src/main.c:505
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  визначення statusdict    = "
+
+#: src/main.c:508
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  попередня подача сторінки = %s\n"
+
+#: src/main.c:517
+msgid "Internals:\n"
+msgstr "Внутрішні параметри:\n"
+
+#: src/main.c:518
+#, c-format
+msgid ""
+"  verbosity level     = %u\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  рівень подробиць    = %u\n"
+"  команда file        = %s\n"
+"  шлях до бібліотек   = \n"
+
+#: src/main.c:636
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with `*' require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Використання: %s [КЛЮЧІ]... [ФАЙЛ]...\n"
+"\n"
+"Перетворити ФАЙЛ(и) чи дані зі стандартного вхідного потоку у PostScript.\n"
+"Типово, результати буде виведено на типовий принтер. Файл для виведення\n"
+"результатів можна вказати за допомогою параметра -o.\n"
+"\n"
+"Аргументи, що є обов'язковими для довгих ключів, також є\n"
+"обов'язковими для коротких.  Довгі ключі, позначені «*», вимагають як\n"
+"аргумент yes або no, відповідний короткий ключ трактується як 'yes'.\n"
+
+#: src/main.c:651
+msgid "Tasks:\n"
+msgstr "Завдання:\n"
+
+#: src/main.c:652
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        вивести версію\n"
+"  --help           вивести цю довідку\n"
+"  --guess          показати типи ФАЙЛІВ, які розпізнаються\n"
+"  --which          показати повний шлях до бібліотечних файлів з назвами ФАЙЛИ\n"
+"  --glob           показати повний шлях до бібліотечних файлів,\n"
+"                   які відповідають ФАЙЛАМ\n"
+"  --list=defaults  вивести типові установки і параметри\n"
+"  --list=ТЕМА      докладний список по ТЕМІ (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+
+#: src/main.c:663
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Після виконання завдання, успішно завершитися.  Докладний список може\n"
+"надати додаткову допомогу по конкретних можливостях.\n"
+
+#: src/main.c:671
+msgid "Global:\n"
+msgstr "Глобальні:\n"
+
+#: src/main.c:672
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent           працювати мовчки\n"
+"  -v, --verbose[=РІВЕНЬ]          ввімкнути докладний режим, або\n"
+"                                  встановити його РІВЕНЬ\n"
+"  -=, --user-option=ПАРАМЕТР      використовувати визначене користувачем\n"
+"                                  скорочення для ПАРАМЕТРА\n"
+"      --debug                     ввімкнути режим налагодження\n"
+"  -D, --define=ЗМІННА[:ЗНАЧЕННЯ]  видалити ЗМІННУ або присвоїти їй ЗНАЧЕННЯ\n"
+
+#: src/main.c:681
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=ІМ'Я          використовувати вивідний носій ІМ'Я\n"
+"  -r, --landscape            друкувати в горизонтальному режимі\n"
+"  -R, --portrait             друкувати у вертикальному режимі\n"
+"      --columns=ЧИСЛО        кількість стовпців на листі\n"
+"      --rows=ЧИСЛО           кількість рядків на листі\n"
+"      --major=НАПРЯМ         спочатку заповнювати (НАПРЯМ=) рядків, чи стовпців\n"
+"  -1, -2, ..., -9            наперед визначені розміри шрифтів і макети для\n"
+"                             віртуальних сторінок 1..9\n"
+"  -A, --file-align=РЕЖИМ     вирівнювати окремі файли відповідно до\n"
+"                             РЕЖИМУ (fill, rank page, sheet або number)\n"
+"  -j, --borders*             друкувати рамки навколо стовпців\n"
+"      --margin[=ЧИСЛО]       встановити розмір внутрішнього поля у ЧИСЛО\n"
+
+#: src/main.c:694
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Ключі -1.. -9 впливають на деякі основні параметри для установки\n"
+"визначених макетів з 80 колонками.  Таким чином, порядок важливий:\n"
+"'-R -f40 -2' еквівалентно '-2'.  Для зміни макету вживайте '-2Rf40',\n"
+"або комбінуйте прості ключі ('--columns', '--font-size', тощо).\n"
+
+#: src/main.c:702
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=ЧИСЛО   поміщати номер рядка через кожні ЧИСЛО рядків\n"
+"  -C                         синонім для --line-numbers=5\n"
+"  -f, --font-size=РОЗМІР     вжити для тексту шрифт зазначеного РОЗМІРУ\n"
+"  -L, --lines-per-page=ЧИСЛО масштабувати шрифт так, щоб друкувати ЧИСЛО\n"
+"                             рядків на віртуальній сторінці\n"
+"  -l, --chars-per-line=ЧИСЛО масштабувати шрифт так, щоб друкувати ЧИСЛО\n"
+"                             стовпців на віртуальній сторінці\n"
+"  -m, --catman               обробляти файл як man-сторінки\n"
+"                             (те ж, що -L66)\n"
+"  -T, --tabsize=ЧИСЛО        встановити крок табуляції в ЧИСЛО\n"
+"  --non-printable-format=ФМТ вказати формат виводу недрукованих символів\n"
+
+#: src/main.c:713
+msgid "Headings:\n"
+msgstr "Заголовки:\n"
+
+#: src/main.c:715
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header            вимкнути верхні колонтитули\n"
+"  -b, --header[=ТЕКСТ]       ввімкнути верхні колонтитули\n"
+"  -u, --underlay[=ТЕКСТ]     друкувати ТЕКСТ під кожною сторінкою(підвал)\n"
+"  --center-title[=ТЕКСТ]     встановити шапку сторінки в ТЕКСТ\n"
+"  --left-title[=ТЕКСТ]       встановити ліву чи праву частину шапки в ТЕКСТ\n"
+"  --right-title[=ТЕКСТ]\n"
+"  --left-footer[=ТЕКСТ]      встановити нижні колонтитули сторінки в ТЕКСТ\n"
+"  --footer[=ТЕКСТ]\n"
+"  --right-footer[=TEXT]\n"
+
+#: src/main.c:726
+msgid "The TEXTs may use special escapes.\n"
+msgstr "Тексти можуть використовувати спеціальні послідовності, що екранують.\n"
+
+#: src/main.c:731
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=ДІАПАЗОН]     вибрати сторінки для друку\n"
+"  -c, --truncate-lines*      усікати довгі рядки\n"
+"  --, --interpret*           інтерпретувати символи tab, bs і ff\n"
+"      --end-of-line=ТИП      задати символ eol (ТИП: r, n, nr, rn, any)\n"
+"  -X, --encoding=ІМ'Я        використовувати вхідне кодування ІМ'Я\n"
+"  -t, --title=ІМ'Я           встановити ім'я завдання\n"
+"      --stdin=ІМ'Я           задати ім'я для вхідного файлу stdin\n"
+"      --print-anyway*        примусовий друк у двійковому режимі\n"
+"  -Z, --delegate*            делегувати файли іншому додатку\n"
+"      --toc[=ТЕКСТ]          створити зміст\n"
+
+#: src/main.c:743
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"При включеному делегуванні, a2ps може використовувати інші додатки для\n"
+"обробки файлів, що не повинні друкуватися в неопрацьованому вигляді, наприклад\n"
+"HTML, PostScript, PDF тощо.\n"
+
+#: src/main.c:750
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=МОВА]  ввімкнути структурний друк\n"
+"                             (встановити стиль МОВА)\n"
+"  --highlight-level=РІВЕНЬ   встановити рівень виділення РІВЕНЬ\n"
+"                             РІВЕНЬ може приймати значення none,\n"
+"                             normal або heavy\n"
+"  -g                         синонім для --highligh-level=heavy\n"
+"  --strip-level=ЧИСЛО        рівень усікання коментарів\n"
+
+#: src/main.c:759
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=ФАЙЛ          направити вивід у ФАЙЛ.  Якщо ФАЙЛ дорівнює '-',\n"
+"                             то направити вивід на stdout.\n"
+"  --version-control=СЛОВО    перекриває номер поточної версії\n"
+"  --suffix=СУФІКС            перекриває суфікс резервної копії\n"
+"  -P, --printer=НАЗВА        направити вивід на принтер НАЗВА\n"
+"  -d                         направити вивід на типовий принтер\n"
+"                             (це типова поведінка програми)\n"
+
+#: src/main.c:770
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=ФАЙЛ        включити ФАЙЛ.pro у якості\n"
+"                             вступної частини PostScript\n"
+"      --ppd[=КЛЮЧ]           автоматичний вибір визначення принтера\n"
+"                             чи встановлення його в КЛЮЧ\n"
+"  -n, --copies=ЧИСЛО         друкувати ЧИСЛО копій кожної сторінки\n"
+"  -s, --sides=РЕЖИМ          установити дуплексний РЕЖИМ ('1' або 'simplex',\n"
+"                             '2' чи 'duplex', 'tumble')\n"
+"  -S, --setpagedevice=K[:V]  передати опис page device на вивід\n"
+"      --statusdict=K[:[:]V]  передати опис statusdict на вивід\n"
+"  -k, --page-prefeed         дозволити попередню подачу сторінки\n"
+"  -K, --no-page-prefeed      заборонити попередню подачу сторінки\n"
+
+#: src/main.c:784
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+msgstr ""
+"Типово, a2ps налаштовано так, щоб робити те, що ви хочете. Довіртеся\n"
+"програмі.  Для структурованого показу вмісту каталогу 'src' і змісту, та\n"
+"надсилання результату на принтер 'lw', введіть\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Для обробки файлів 'sample.ps' і 'sample.html' і показу результату\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"Для обробки поштової скриньки і створення 4 сторінок на аркуші,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Для друку у вигляді книги на типовому принтері, що підтримує\n"
+"режим двобічного друку\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+
+#: src/main.c:1145
+msgid "Table of Content"
+msgstr "Зміст"
+
+#: src/parsessh.y:225
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "не вдається обробити '%s', що вимагає a2ps версії %s"
+
+#: src/sheets-map.l:117
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "несподіваний символ '%c'"
+
+#: src/sheets-map.l:217 liba2ps/lexppd.l:212
+#, c-format
+msgid "too many includes"
+msgstr "занадто багато включень"
+
+#: src/sheets-map.l:301 src/sheets-map.l:308
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "не визначений ключ для '%s'"
+
+#: src/select.c:119 src/ssheet.c:797 liba2ps/fonts.l:720 liba2ps/fonts.l:722
+#: liba2ps/fonts.l:724 liba2ps/pathwalk.c:315 liba2ps/pathwalk.c:400
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "не вдається знайти файл '%s'"
+
+#: src/select.c:121
+#, c-format
+msgid "automatic style selection cancelled"
+msgstr "режим автоматичного вибору стилів скасований"
+
+#: src/select.c:198
+#, c-format
+msgid "error running file(1)"
+msgstr "помилка під час спроби виконати file(1)"
+
+#: src/ssheet.c:281
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "не вдається скомпілювати регулярний вираз '%s': %s"
+
+#: src/ssheet.c:904 src/ssheet.c:925
+msgid "Known Style Sheets"
+msgstr "Відомі стильові набори"
+
+#: src/ssheet.c:1385
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "не вдається знайти стильовий набір '%s': використовується простий стиль"
+
+#: src/versions.c:128
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "некоректний номер версії '%s'"
+
+#: liba2ps/caret.c:33
+msgid "space (i.e., ` ')"
+msgstr "пробіл (тобто ' ')"
+
+#: liba2ps/caret.c:35
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "вісімкове число (тобто '\\001' тощо)"
+
+#: liba2ps/caret.c:37
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "шістнадцяткове число (тобто '\\x0а' тощо)"
+
+#: liba2ps/caret.c:39
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "керівні символи (тобто '^С', 'M-^С' тощо)"
+
+#: liba2ps/caret.c:41
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (тобто 'C-c', 'M-C-c' тощо)"
+
+#: liba2ps/caret.c:43
+msgid "question-mark (i.e., `?')"
+msgstr "знак питання (тобто '?')"
+
+#: liba2ps/darray.c:83 liba2ps/darray.c:553
+#, c-format
+msgid "Dynamic array `%s':\n"
+msgstr "Динамічний масив «%s»:\n"
+
+#: liba2ps/darray.c:84 liba2ps/dstring.c:72
+#, c-format
+msgid "\tload: %zu/%zu (%2.1f%%)\n"
+msgstr "\tнавантаження: %zu з %zu (%2.1f%%)\n"
+
+#: liba2ps/darray.c:102 liba2ps/dstring.c:87
+#, c-format
+msgid "\toriginal size: %zu, growth: %s %zu\n"
+msgstr "\tпочатковий розмір: %zu, зростання: %s %zu\n"
+
+#: liba2ps/dstring.c:71
+#, c-format
+msgid "Dynamic string:\n"
+msgstr "Динамічний рядок:\n"
+
+#: liba2ps/encoding.c:737
+#, c-format
+msgid "too many slant fonts: `%s'"
+msgstr "забагато нахилених шрифтів: «%s»"
+
+#: liba2ps/encoding.c:743
+#, c-format
+msgid "invalid option `%s'"
+msgstr "некоректний ключ '%s'"
+
+#: liba2ps/encoding.c:1270 liba2ps/encoding.c:1291
+msgid "Known Encodings"
+msgstr "Відомі кодування"
+
+#: liba2ps/faces.c:148
+#, c-format
+msgid "incomplete knowledge of faces"
+msgstr "неповна інформація про накреслення"
+
+#: liba2ps/filtdir.c:68
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "не вдається закрити каталог '%s'"
+
+#: liba2ps/getnum.c:41 liba2ps/getnum.c:99 liba2ps/getnum.c:131
+#: liba2ps/getnum.c:200
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "некоректний аргумент '%s' для '%s'"
+
+#: liba2ps/getnum.c:101
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Правильними аргументами є цілі числа n, такі як: %s\n"
+
+#: liba2ps/getnum.c:202
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Правильними аргументами є дійсні числа f, такі як: %s\n"
+
+#: liba2ps/jobs.c:285
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "невідоме кодування '%s'"
+
+#: liba2ps/madir.c:51
+msgid "rows first"
+msgstr "спочатку рядки"
+
+#: liba2ps/madir.c:54
+msgid "columns first"
+msgstr "спочатку стовпці"
+
+#: liba2ps/media.c:138
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "невідомий носій '%s'"
+
+#: liba2ps/media.c:166 liba2ps/media.c:193
+msgid "Known Media"
+msgstr "Відомі носії"
+
+#: liba2ps/media.c:169
+msgid "Name"
+msgstr "Ім'я"
+
+#: liba2ps/media.c:170
+msgid "dimensions"
+msgstr "розміри"
+
+#: liba2ps/metaseq.c:82 liba2ps/metaseq.c:91
+#, c-format
+msgid "Known Variables"
+msgstr "Відомі змінні"
+
+#: liba2ps/metaseq.c:140 liba2ps/metaseq.c:509 liba2ps/metaseq.c:526
+#: liba2ps/metaseq.c:586 liba2ps/metaseq.c:931 liba2ps/metaseq.c:951
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: пропущено '%c' для послідовності, що екранує, %s%c"
+
+#: liba2ps/metaseq.c:266 liba2ps/metaseq.c:278
+#, c-format
+msgid "Printed by %s"
+msgstr "Друкував %s"
+
+#: liba2ps/metaseq.c:276
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Друкував %s з %s"
+
+#: liba2ps/metaseq.c:286 liba2ps/metaseq.c:304
+#, c-format
+msgid "cannot get current working directory"
+msgstr "не вдається отримати ім'я поточного робочого каталогу"
+
+#: liba2ps/metaseq.c:317 liba2ps/metaseq.c:512 liba2ps/metaseq.c:541
+#: liba2ps/metaseq.c:630 liba2ps/metaseq.c:934 liba2ps/metaseq.c:966
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: занадто довгий аргумент для послідовності, що екранує %s"
+
+#: liba2ps/metaseq.c:342 liba2ps/metaseq.c:655
+msgid "%b %d, %Y"
+msgstr "%d %b %Y"
+
+#: liba2ps/metaseq.c:351 liba2ps/metaseq.c:664
+msgid "%A %B %d, %Y"
+msgstr "%d %B %Y, %A"
+
+#: liba2ps/metaseq.c:397 liba2ps/metaseq.c:426 liba2ps/metaseq.c:469
+#: liba2ps/metaseq.c:704 liba2ps/metaseq.c:788 liba2ps/metaseq.c:847
+#: liba2ps/metaseq.c:902 liba2ps/metaseq.c:1078 liba2ps/metaseq.c:1208
+#: liba2ps/metaseq.c:1219 liba2ps/metaseq.c:1262
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: невідомий '%s' код послідовності, що екранує '%c' (%d)"
+
+#: liba2ps/metaseq.c:404 liba2ps/metaseq.c:795
+#, c-format
+msgid "Page %zu"
+msgstr "Сторінка %zu"
+
+#: liba2ps/metaseq.c:409 liba2ps/metaseq.c:806
+#, c-format
+msgid "Page %zu/%c"
+msgstr "Сторінка %zu/%c"
+
+#: liba2ps/metaseq.c:571 liba2ps/metaseq.c:1000
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr " %s: некоректний роздільник '%s%c' для послідовності, що екранує, '%s'"
+
+#: liba2ps/metaseq.c:579 liba2ps/metaseq.c:589
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: некоректний аргумент для послідовності, що екранує, %s%c"
+
+#: liba2ps/metaseq.c:802
+#, c-format
+msgid "Page %zu/%zu"
+msgstr "Сторінка %zu з %zu"
+
+#: liba2ps/metaseq.c:1239
+msgid "output command"
+msgstr "команда виводу"
+
+#: liba2ps/options.c:48
+msgid "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+msgstr "© Free Software Foundation, Inc., 1988-2017"
+
+#: liba2ps/options.c:290
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Спробуйте `%s --help' для одержання додаткової інформації.\n"
+
+#: liba2ps/options.c:674
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "некоректний ідентифікатор змінної '%s'"
+
+#: liba2ps/output.c:428
+#, c-format
+msgid "invalid face `%s'"
+msgstr "невірне накреслення '%s'"
+
+#: liba2ps/output.c:499
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "'%s' не має відповідний '%s'"
+
+#: liba2ps/ppd.c:83
+msgid "Known Fonts"
+msgstr "Відомі шрифти"
+
+#: liba2ps/ppd.c:86
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Немає.\n"
+
+#: liba2ps/ppd.c:124 liba2ps/ppd.c:140
+msgid "Known PostScript Printer Descriptions"
+msgstr "Відомі описи PostScript-принтера"
+
+#: liba2ps/prange.c:284 liba2ps/prange.c:302
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "неприпустимий інтервал '%s'"
+
+#: liba2ps/printers.c:41
+msgid "Default Printer"
+msgstr "Типовий принтер"
+
+#: liba2ps/printers.c:42
+msgid "Unknown Printer"
+msgstr "Невідомий принтер"
+
+#: liba2ps/printers.c:342 liba2ps/printers.c:359
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "немає команди для '%s' (%s%s)"
+
+#: liba2ps/printers.c:375
+msgid "sent to the standard output"
+msgstr "відісланий на стандартний вивід"
+
+#: liba2ps/printers.c:376
+msgid "sent to the default printer"
+msgstr "надіслано на типовий принтер"
+
+#: liba2ps/printers.c:381
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "збережений у файл '%s'"
+
+#: liba2ps/printers.c:382
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "відісланий на принтер '%s'"
+
+#: liba2ps/printers.c:559 liba2ps/printers.c:567
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Відомі пристрої виводу (принтери і т.п.)"
+
+#: liba2ps/prolog.c:84 liba2ps/prolog.c:169
+msgid "Known Prologues"
+msgstr "Відомі вступні частини"
+
+#: liba2ps/prolog.c:565
+#, c-format
+msgid "font %f too big"
+msgstr "шрифт %f занадто великий"
+
+#: liba2ps/psgen.c:631
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "'%s' це двійковий файл, друк перерваний"
+
+#: liba2ps/userdata.c:104
+msgid "user"
+msgstr "користувач"
+
+#: liba2ps/userdata.c:105
+msgid "Unknown User"
+msgstr "Невідомий користувач"
+
+#: liba2ps/useropt.c:56
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "невідомий користувальницький ключ '%s'"
+
+#: liba2ps/useropt.c:67 liba2ps/useropt.c:78
+msgid "Known User Options"
+msgstr "Відомі користувальницькі ключі"
+
+#: liba2ps/xbackupfile.c:44
+#, c-format
+msgid "memory exhausted"
+msgstr "пам'ять вичерпано"
+
+#: liba2ps/xbackupfile.c:163 liba2ps/xbackupfile.c:175
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "не вдається перейменувати файл '%s' у '%s'"
+
+#: liba2ps/xbackupfile.c:178
+#, c-format
+msgid "restored file `%s'"
+msgstr "файл '%s' відновлений"
+
+#~ msgid "any type"
+#~ msgstr "довільного типу"
+
+#~ msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+#~ msgstr ""
+#~ "Новини, оновлення і документацію можна знайти тут:\n"
+#~ "http://www.gnu.org/software/a2ps/.\n"
+
+#~ msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+#~ msgstr "Про помилки в програмі повідомляйте за адресою <bug-a2ps@gnu.org>.\n"
+
+#~ msgid ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+#~ "Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+#~ msgstr ""
+#~ "Авторські права (c) 1988-1993 Miguel Santana\n"
+#~ "Авторські права (c) 1995-2000 Akim Demaille, Miguel Santana Авторські права (c) 2007- Akim Demaille, Miguel Santana та Masayuki Hatta"
+
+#~ msgid "unknown encoding `%s', ignored"
+#~ msgstr "невідоме кодування '%s', ігноровано"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Написав %s.\n"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+#~ msgstr ""
+#~ "Це вільне програмне забезпечення; умови копіювання наведені в \n"
+#~ "джерелах програми. Немає НІЯКИХ гарантій; навіть гарантії КОМЕРЦІЙНОЇ\n"
+#~ "ЦІННОСТІ або ПРИДАТНОСТІ ДЛЯ КОНКРЕТНОЇ ЦІЛІ.\n"
+
+#~ msgid "write error"
+#~ msgstr "помилка запису"
+
+#~ msgid "invalid definition for printer `%s': %s"
+#~ msgstr "невірне визначення принтера '%s': %s"
+
+#~ msgid "obsolete `%s' entry.  Ignored"
+#~ msgstr "застарілий запис '%s'. Ігноровано"
+
+#~ msgid "Page %d/%d"
+#~ msgstr "Сторінка %d/%d"
+
+#~ msgid "`"
+#~ msgstr "'"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "invalid argument %s for `%s'"
+#~ msgstr "некоректний аргумент %s для '%s'"
+
+#~ msgid "ambiguous argument %s for `%s'"
+#~ msgstr "неоднозначний аргумент %s для '%s'"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Правильні аргументи:"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Невідома системна помилка"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: неоднозначний ключ '%s'\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: ключ '--%s' повинен використовуватися без аргументу\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: ключ '%c%s' повинен використовуватися без аргументу\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: ключ '%s' повинен використовуватися з аргументом\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: невідомий ключ '--%s'\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: невідомий ключ '%c%s'\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: неприпустимий ключ -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: некоректний ключ -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: ключ повинен використовуватися із аргументом -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: неоднозначний ключ '-W %s'\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: ключ '-W %s' повинен використовуватися без аргументу\n"

@@ -1,0 +1,1426 @@
+[T 22:51:53 121388] CodeQL CLI version 2.11.3
+[T 22:51:53 121388] Initializing tracer.
+[T 22:51:53 121388] Initialising tags...
+[T 22:51:53 121388] ID set to 000000000001DA2C_0000000000000001 (parent root)
+[T 22:51:53 121388] Initializing tracer.
+[T 22:51:53 121388] Initialising tags...
+[T 22:51:53 121388] ID set to 000000000001DA2C_0000000000000002 (parent root)
+[T 22:51:53 121388] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:51:53 121388] ==== Candidate to intercept: /home/arun/codeql_/codeql/tools/linux64/runner-linux (canonical: /home/arun/codeql_/codeql/tools/linux64/runner-linux) ====
+[T 22:51:53 121388] Executing the following tracer actions:
+[T 22:51:53 121388] Tracer actions:
+[T 22:51:53 121388] pre_invocations(0)
+[T 22:51:53 121388] post_invocations(0)
+[T 22:51:53 121388] trace_languages(1): [cpp]
+[T 22:51:53 121388] Initializing tracer.
+[T 22:51:53 121388] Initialising tags...
+[T 22:51:53 121388] ID set to 000000000001DA2C_0000000000000003 (parent 000000000001DA2C_0000000000000002)
+[T 22:51:53 121388] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/autobuild.sh (canonical: /home/arun/codeql_/codeql/cpp/tools/autobuild.sh) ====
+[T 22:51:53 121388] Executing the following tracer actions:
+[T 22:51:53 121388] Tracer actions:
+[T 22:51:53 121388] pre_invocations(0)
+[T 22:51:53 121388] post_invocations(0)
+[T 22:51:53 121388] trace_languages(1): [cpp]
+[T 22:51:53 121391] Initializing tracer.
+[T 22:51:53 121391] Initialising tags...
+[T 22:51:53 121391] ID set to 000000000001DA2F_0000000000000001 (parent 000000000001DA2C_0000000000000003)
+[T 22:51:53 121391] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/do-prebuild (canonical: /home/arun/codeql_/codeql/cpp/tools/do-prebuild) ====
+[T 22:51:53 121391] Lua: === Intercepted call to /home/arun/codeql_/codeql/cpp/tools/do-prebuild ===
+[T 22:51:53 121391] Lua: Disabling tracing for language cpp.
+[T 22:51:53 121391] Executing the following tracer actions:
+[T 22:51:53 121391] Tracer actions:
+[T 22:51:53 121391] pre_invocations(0)
+[T 22:51:53 121391] post_invocations(0)
+[T 22:51:53 121391] trace_languages(0): []
+[T 22:51:53 121391] Disabling tracing for this command.
+[T 22:51:53 121404] Initializing tracer.
+[T 22:51:53 121404] Initialising tags...
+[T 22:51:53 121404] ID set to 000000000001DA3C_0000000000000001 (parent 000000000001DA2C_0000000000000003)
+[T 22:51:53 121404] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/do-build (canonical: /home/arun/codeql_/codeql/cpp/tools/do-build) ====
+[T 22:51:53 121404] Executing the following tracer actions:
+[T 22:51:53 121404] Tracer actions:
+[T 22:51:53 121404] pre_invocations(0)
+[T 22:51:53 121404] post_invocations(0)
+[T 22:51:53 121404] trace_languages(1): [cpp]
+[T 22:51:53 121405] Initializing tracer.
+[T 22:51:53 121405] Initialising tags...
+[T 22:51:53 121405] ID set to 000000000001DA3D_0000000000000001 (parent 000000000001DA3C_0000000000000001)
+[T 22:51:53 121405] ==== Candidate to intercept: /usr/bin/readlink (canonical: /usr/bin/readlink) ====
+[T 22:51:53 121405] Executing the following tracer actions:
+[T 22:51:53 121405] Tracer actions:
+[T 22:51:53 121405] pre_invocations(0)
+[T 22:51:53 121405] post_invocations(0)
+[T 22:51:53 121405] trace_languages(1): [cpp]
+[T 22:51:53 121406] Initializing tracer.
+[T 22:51:53 121406] Initialising tags...
+[T 22:51:53 121406] ID set to 000000000001DA3E_0000000000000001 (parent 000000000001DA3C_0000000000000001)
+[T 22:51:53 121406] ==== Candidate to intercept: /usr/bin/make (canonical: /usr/bin/make) ====
+[T 22:51:53 121406] Executing the following tracer actions:
+[T 22:51:53 121406] Tracer actions:
+[T 22:51:53 121406] pre_invocations(0)
+[T 22:51:53 121406] post_invocations(0)
+[T 22:51:53 121406] trace_languages(1): [cpp]
+[T 22:51:53 121407] Initializing tracer.
+[T 22:51:53 121407] Initialising tags...
+[T 22:51:53 121407] ID set to 000000000001DA3F_0000000000000001 (parent 000000000001DA3E_0000000000000001)
+[T 22:51:53 121407] ==== Candidate to intercept: gcc (canonical: gcc) ====
+[T 22:51:53 121407] Will try to resolve gcc in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:51:53 121407]  -> path lookup for gcc as /home/linuxbrew/.linuxbrew/bin/gcc...
+[T 22:51:53 121407]  -> path lookup for gcc as /home/linuxbrew/.linuxbrew/sbin/gcc...
+[T 22:51:53 121407]  -> path lookup for gcc as /usr/local/sbin/gcc...
+[T 22:51:53 121407]  -> path lookup for gcc as /usr/local/bin/gcc...
+[T 22:51:53 121407]  -> path lookup for gcc as /usr/sbin/gcc...
+[T 22:51:53 121407]  -> path lookup for gcc as /usr/bin/gcc...
+[T 22:51:53 121407] Resolved barename gcc to /usr/bin/gcc
+[T 22:51:53 121407] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 22:51:53 121407] Executing the following tracer actions:
+[T 22:51:53 121407] Tracer actions:
+[T 22:51:53 121407] pre_invocations(0)
+[T 22:51:53 121407] post_invocations(1)
+[T 22:51:53 121407] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, -o, test, test.c]
+[T 22:51:53 121407] trace_languages(1): [cpp]
+[T 22:51:53 121409] Initializing tracer.
+[T 22:51:53 121409] Initialising tags...
+[T 22:51:53 121409] ID set to 000000000001DA41_0000000000000001 (parent 000000000001DA3F_0000000000000001)
+[T 22:51:53 121409] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121409] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121409] Executing the following tracer actions:
+[T 22:51:53 121409] Tracer actions:
+[T 22:51:53 121409] pre_invocations(0)
+[T 22:51:53 121409] post_invocations(1)
+[T 22:51:53 121409] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -imultiarch, x86_64-linux-gnu, test.c, -quiet, -dumpbase, test.c, -mtune=generic, -march=x86-64, -auxbase, test, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/cc93i4Qw.s]
+[T 22:51:53 121409] trace_languages(1): [cpp]
+[T 22:51:53 121411] Attempting to switch stdout/stderr to 4...
+[T 22:51:53 121411] Initializing tracer.
+[T 22:51:53 121411] Initialising tags...
+[T 22:51:53 121411] ID set to 000000000001DA43_0000000000000001 (parent 000000000001DA41_0000000000000001)
+[E 22:51:53 121411] CodeQL C/C++ Extractor 2.11.3
+[E 22:51:53 121411] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:51:53 121411] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --mimic /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -imultiarch x86_64-linux-gnu test.c -quiet -dumpbase test.c -mtune=generic -march=x86-64 -auxbase test -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc93i4Qw.s
+[T 22:51:53 121412] Initializing tracer.
+[T 22:51:53 121412] Initialising tags...
+[T 22:51:53 121412] ID set to 000000000001DA44_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121412] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121412] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121412] Executing the following tracer actions:
+[T 22:51:53 121412] Tracer actions:
+[T 22:51:53 121412] pre_invocations(0)
+[T 22:51:53 121412] post_invocations(1)
+[T 22:51:53 121412] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, --version]
+[T 22:51:53 121412] trace_languages(1): [cpp]
+[T 22:51:53 121414] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121414] Initializing tracer.
+[T 22:51:53 121414] Initialising tags...
+[T 22:51:53 121414] ID set to 000000000001DA46_0000000000000001 (parent 000000000001DA44_0000000000000001)
+[E 22:51:53 121414] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121412] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121415] Initializing tracer.
+[T 22:51:53 121415] Initialising tags...
+[T 22:51:53 121415] ID set to 000000000001DA47_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121415] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121415] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121415] Executing the following tracer actions:
+[T 22:51:53 121415] Tracer actions:
+[T 22:51:53 121415] pre_invocations(0)
+[T 22:51:53 121415] post_invocations(1)
+[T 22:51:53 121415] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, --help]
+[T 22:51:53 121415] trace_languages(1): [cpp]
+[T 22:51:53 121417] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121417] Initializing tracer.
+[T 22:51:53 121417] Initialising tags...
+[T 22:51:53 121417] ID set to 000000000001DA49_0000000000000001 (parent 000000000001DA47_0000000000000001)
+[E 22:51:53 121417] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121415] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121418] Initializing tracer.
+[T 22:51:53 121418] Initialising tags...
+[T 22:51:53 121418] ID set to 000000000001DA4A_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121418] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121418] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121418] Executing the following tracer actions:
+[T 22:51:53 121418] Tracer actions:
+[T 22:51:53 121418] pre_invocations(0)
+[T 22:51:53 121418] post_invocations(1)
+[T 22:51:53 121418] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -version, --help]
+[T 22:51:53 121418] trace_languages(1): [cpp]
+[T 22:51:53 121420] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121420] Initializing tracer.
+[T 22:51:53 121420] Initialising tags...
+[T 22:51:53 121420] ID set to 000000000001DA4C_0000000000000001 (parent 000000000001DA4A_0000000000000001)
+[E 22:51:53 121420] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121418] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121421] Initializing tracer.
+[T 22:51:53 121421] Initialising tags...
+[T 22:51:53 121421] ID set to 000000000001DA4D_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121421] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121421] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121421] Executing the following tracer actions:
+[T 22:51:53 121421] Tracer actions:
+[T 22:51:53 121421] pre_invocations(0)
+[T 22:51:53 121421] post_invocations(1)
+[T 22:51:53 121421] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121411_508047.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121411_508037.c]
+[T 22:51:53 121421] trace_languages(1): [cpp]
+[T 22:51:53 121423] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121423] Initializing tracer.
+[T 22:51:53 121423] Initialising tags...
+[T 22:51:53 121423] ID set to 000000000001DA4F_0000000000000001 (parent 000000000001DA4D_0000000000000001)
+[E 22:51:53 121423] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121421] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121424] Initializing tracer.
+[T 22:51:53 121424] Initialising tags...
+[T 22:51:53 121424] ID set to 000000000001DA50_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121424] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121424] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121424] Executing the following tracer actions:
+[T 22:51:53 121424] Tracer actions:
+[T 22:51:53 121424] pre_invocations(0)
+[T 22:51:53 121424] post_invocations(1)
+[T 22:51:53 121424] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121411_516549.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121411_516533.c]
+[T 22:51:53 121424] trace_languages(1): [cpp]
+[T 22:51:53 121426] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121426] Initializing tracer.
+[T 22:51:53 121426] Initialising tags...
+[T 22:51:53 121426] ID set to 000000000001DA52_0000000000000001 (parent 000000000001DA50_0000000000000001)
+[E 22:51:53 121426] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121424] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:51:53 121411] Checking whether C compilation already happened.
+[E 22:51:53 121411] Checking for tag c-compilation-happened
+[E 22:51:53 121411] Checking CODEQL_TRACER_DB_ID 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Unlocking DB
+[E 22:51:53 121411] Unlocked DB
+[E 22:51:53 121411] Looks like C compilation didn't already happen.
+[E 22:51:53 121411] Checking whether C compilation has been attempted.
+[E 22:51:53 121411] Checking for tag c-compilation-attempted
+[E 22:51:53 121411] Checking CODEQL_TRACER_DB_ID 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Unlocking DB
+[E 22:51:53 121411] Unlocked DB
+[E 22:51:53 121411] Marking C compilation as attempted.
+[E 22:51:53 121411] Setting tag c-compilation-attempted
+[E 22:51:53 121411] Starting from CODEQL_TRACER_DB_ID 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Set tag for 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3F_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3E_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3C_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA2C_0000000000000003
+[E 22:51:53 121411] Set tag for 000000000001DA2C_0000000000000002
+[E 22:51:53 121411] Set tag for root
+[E 22:51:53 121411] Unlocking DB
+[E 22:51:53 121411] Unlocked DB
+[T 22:51:53 121427] Initializing tracer.
+[T 22:51:53 121427] Initialising tags...
+[T 22:51:53 121427] ID set to 000000000001DA53_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121427] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121427] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121427] Executing the following tracer actions:
+[T 22:51:53 121427] Tracer actions:
+[T 22:51:53 121427] pre_invocations(0)
+[T 22:51:53 121427] post_invocations(1)
+[T 22:51:53 121427] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -v, -fsyntax-only, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_6_121411_522643]
+[T 22:51:53 121427] trace_languages(1): [cpp]
+[T 22:51:53 121429] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121429] Initializing tracer.
+[T 22:51:53 121429] Initialising tags...
+[T 22:51:53 121429] ID set to 000000000001DA55_0000000000000001 (parent 000000000001DA53_0000000000000001)
+[E 22:51:53 121429] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121427] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121430] Initializing tracer.
+[T 22:51:53 121430] Initialising tags...
+[T 22:51:53 121430] ID set to 000000000001DA56_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121430] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121430] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121430] Executing the following tracer actions:
+[T 22:51:53 121430] Tracer actions:
+[T 22:51:53 121430] pre_invocations(0)
+[T 22:51:53 121430] post_invocations(1)
+[T 22:51:53 121430] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -E, -dM, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_7_121411_527886]
+[T 22:51:53 121430] trace_languages(1): [cpp]
+[T 22:51:53 121432] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121432] Initializing tracer.
+[T 22:51:53 121432] Initialising tags...
+[T 22:51:53 121432] ID set to 000000000001DA58_0000000000000001 (parent 000000000001DA56_0000000000000001)
+[E 22:51:53 121432] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121430] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121433] Initializing tracer.
+[T 22:51:53 121433] Initialising tags...
+[T 22:51:53 121433] ID set to 000000000001DA59_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121433] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121433] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121433] Executing the following tracer actions:
+[T 22:51:53 121433] Tracer actions:
+[T 22:51:53 121433] pre_invocations(0)
+[T 22:51:53 121433] post_invocations(1)
+[T 22:51:53 121433] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -fmax-errors=0, -Wreturn-type, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_8_121411_532445.h.gch, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_8_121411_532445.h]
+[T 22:51:53 121433] trace_languages(1): [cpp]
+[T 22:51:53 121435] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121435] Initializing tracer.
+[T 22:51:53 121435] Initialising tags...
+[T 22:51:53 121435] ID set to 000000000001DA5B_0000000000000001 (parent 000000000001DA59_0000000000000001)
+[E 22:51:53 121435] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121433] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+Warning: Only 0 reserved identifiers found in precompiled header file.
+[T 22:51:53 121436] Initializing tracer.
+[T 22:51:53 121436] Initialising tags...
+[T 22:51:53 121436] ID set to 000000000001DA5C_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121436] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121436] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121436] Executing the following tracer actions:
+[T 22:51:53 121436] Tracer actions:
+[T 22:51:53 121436] pre_invocations(0)
+[T 22:51:53 121436] post_invocations(1)
+[T 22:51:53 121436] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_10_121411_537530.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_9_121411_537521.c]
+[T 22:51:53 121436] trace_languages(1): [cpp]
+[T 22:51:53 121438] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121438] Initializing tracer.
+[T 22:51:53 121438] Initialising tags...
+[T 22:51:53 121438] ID set to 000000000001DA5E_0000000000000001 (parent 000000000001DA5C_0000000000000001)
+[E 22:51:53 121438] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121436] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121439] Initializing tracer.
+[T 22:51:53 121439] Initialising tags...
+[T 22:51:53 121439] ID set to 000000000001DA5F_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121439] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121439] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121439] Executing the following tracer actions:
+[T 22:51:53 121439] Tracer actions:
+[T 22:51:53 121439] pre_invocations(0)
+[T 22:51:53 121439] post_invocations(1)
+[T 22:51:53 121439] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_12_121411_542674.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_11_121411_542658.c]
+[T 22:51:53 121439] trace_languages(1): [cpp]
+[T 22:51:53 121441] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121441] Initializing tracer.
+[T 22:51:53 121441] Initialising tags...
+[T 22:51:53 121441] ID set to 000000000001DA61_0000000000000001 (parent 000000000001DA5F_0000000000000001)
+[E 22:51:53 121441] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121439] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121442] Initializing tracer.
+[T 22:51:53 121442] Initialising tags...
+[T 22:51:53 121442] ID set to 000000000001DA62_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121442] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121442] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121442] Executing the following tracer actions:
+[T 22:51:53 121442] Tracer actions:
+[T 22:51:53 121442] pre_invocations(0)
+[T 22:51:53 121442] post_invocations(1)
+[T 22:51:53 121442] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_14_121411_547977.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_13_121411_547965.c]
+[T 22:51:53 121442] trace_languages(1): [cpp]
+[T 22:51:53 121444] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121444] Initializing tracer.
+[T 22:51:53 121444] Initialising tags...
+[T 22:51:53 121444] ID set to 000000000001DA64_0000000000000001 (parent 000000000001DA62_0000000000000001)
+[E 22:51:53 121444] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121442] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121445] Initializing tracer.
+[T 22:51:53 121445] Initialising tags...
+[T 22:51:53 121445] ID set to 000000000001DA65_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121445] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121445] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121445] Executing the following tracer actions:
+[T 22:51:53 121445] Tracer actions:
+[T 22:51:53 121445] pre_invocations(0)
+[T 22:51:53 121445] post_invocations(1)
+[T 22:51:53 121445] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_16_121411_556255.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_15_121411_556245.c]
+[T 22:51:53 121445] trace_languages(1): [cpp]
+[T 22:51:53 121447] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121447] Initializing tracer.
+[T 22:51:53 121447] Initialising tags...
+[T 22:51:53 121447] ID set to 000000000001DA67_0000000000000001 (parent 000000000001DA65_0000000000000001)
+[E 22:51:53 121447] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121445] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121448] Initializing tracer.
+[T 22:51:53 121448] Initialising tags...
+[T 22:51:53 121448] ID set to 000000000001DA68_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121448] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121448] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121448] Executing the following tracer actions:
+[T 22:51:53 121448] Tracer actions:
+[T 22:51:53 121448] pre_invocations(0)
+[T 22:51:53 121448] post_invocations(1)
+[T 22:51:53 121448] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_18_121411_561311.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_17_121411_561299.c]
+[T 22:51:53 121448] trace_languages(1): [cpp]
+[T 22:51:53 121450] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121450] Initializing tracer.
+[T 22:51:53 121450] Initialising tags...
+[T 22:51:53 121450] ID set to 000000000001DA6A_0000000000000001 (parent 000000000001DA68_0000000000000001)
+[E 22:51:53 121450] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121448] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121451] Initializing tracer.
+[T 22:51:53 121451] Initialising tags...
+[T 22:51:53 121451] ID set to 000000000001DA6B_0000000000000001 (parent 000000000001DA43_0000000000000001)
+[T 22:51:53 121451] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121451] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121451] Executing the following tracer actions:
+[T 22:51:53 121451] Tracer actions:
+[T 22:51:53 121451] pre_invocations(0)
+[T 22:51:53 121451] post_invocations(1)
+[T 22:51:53 121451] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_20_121411_569475.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_19_121411_569464.c]
+[T 22:51:53 121451] trace_languages(1): [cpp]
+[T 22:51:53 121453] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121453] Initializing tracer.
+[T 22:51:53 121453] Initialising tags...
+[T 22:51:53 121453] ID set to 000000000001DA6D_0000000000000001 (parent 000000000001DA6B_0000000000000001)
+[E 22:51:53 121453] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121451] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:51:53 121411] Processed command line: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --trapfolder /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp --src_archive /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src --mimic_config /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/compiler_mimic_cache/c66556a4d412 --object_filename /tmp/cc93i4Qw.s -w --error_limit 1000 --disable_system_macros --variadic_macros --gcc --gnu_version 90400 --target linux_x86_64 -D__SSP_STRONG__=3 '-D__DBL_MIN_EXP__=(-1021)' -D__FLT32X_MAX_EXP__=1024 -D__UINT_LEAST16_MAX__=0xffff -D__ATOMIC_ACQUIRE=2 -D__FLT128_MAX_10_EXP__=4932 -D__FLT_MIN__=1.17549435082228750796873653722224568e-38F -D__GCC_IEC_559_COMPLEX=2 '-D__UINT_LEAST8_TYPE__=unsigned char' -D__SIZEOF_FLOAT80__=16 '-D__INTMAX_C(c)=c ## L' -D__CHAR_BIT__=8 -D__UINT8_MAX__=0xff -D__WINT_MAX__=0xffffffffU '-D__FLT32_MIN_EXP__=(-125)' -D__ORDER_LITTLE_ENDIAN__=1234 -D__SIZE_MAX__=0xffffffffffffffffUL -D__WCHAR_MAX__=0x7fffffff -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1 '-D__DBL_DENORM_MIN__=((double)4.94065645841246544176568792868221372e-324L)' -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1 -D__GCC_ATOMIC_CHAR_LOCK_FREE=2 -D__GCC_IEC_559=2 -D__FLT32X_DECIMAL_DIG__=17 -D__FLT_EVAL_METHOD__=0 -D__unix__=1 -D__FLT64_DECIMAL_DIG__=17 -D__CET__=3 -D__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__x86_64=1 -D__UINT_FAST64_MAX__=0xffffffffffffffffUL -D__SIG_ATOMIC_TYPE__=int '-D__DBL_MIN_10_EXP__=(-307)' -D__FINITE_MATH_ONLY__=0 -D__FLT32_HAS_DENORM__=1 -D__UINT_FAST8_MAX__=0xff '-D__has_include(STR)=__has_include__(STR)' -D__DEC64_MAX_EXP__=385 '-D__INT8_C(c)=c' -D__INT_LEAST8_WIDTH__=8 -D__UINT_LEAST64_MAX__=0xffffffffffffffffUL -D__SHRT_MAX__=0x7fff '-D__LDBL_MAX__=1.18973149535723176502126385303097021e+4932L' -D__FLT64X_MAX_10_EXP__=4932 -D__UINT_LEAST8_MAX__=0xff -D__GCC_ATOMIC_BOOL_LOCK_FREE=2 -D__FLT128_DENORM_MIN__=6.47517511943802511092443895822764655e-4966F128 '-D__UINTMAX_TYPE__=long unsigned int' -D__linux=1 -D__DEC32_EPSILON__=1E-6DF -D__FLT_EVAL_METHOD_TS_18661_3__=0 -D__unix=1 -D__UINT32_MAX__=0xffffffffU -D__LDBL_MAX_EXP__=16384 '-D__FLT128_MIN_EXP__=(-16381)' -D__WINT_MIN__=0U -D__linux__=1 '-D__FLT128_MIN_10_EXP__=(-4931)' -D__INT_LEAST16_WIDTH__=16 -D__SCHAR_MAX__=0x7f -D__FLT128_MANT_DIG__=113 '-D__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)' '-D__INT64_C(c)=c ## L' -D__DBL_DIG__=15 -D__GCC_ATOMIC_POINTER_LOCK_FREE=2 -D__FLT64X_MANT_DIG__=64 -D__SIZEOF_INT__=4 -D__SIZEOF_POINTER__=8 -D__USER_LABEL_PREFIX__= -D__FLT64X_EPSILON__=1.08420217248550443400745280086994171e-19F64x -D__LDBL_HAS_INFINITY__=1 -D__FLT32_DIG__=6 -D__FLT_EPSILON__=1.19209289550781250000000000000000000e-7F -D__SHRT_WIDTH__=16 -D__LDBL_MIN__=3.36210314311209350626267781732175260e-4932L -D__STDC_UTF_16__=1 -D__DEC32_MAX__=9.999999E96DF -D__FLT64X_DENORM_MIN__=3.64519953188247460252840593361941982e-4951F64x -D__FLT32X_HAS_INFINITY__=1 -D__INT32_MAX__=0x7fffffff -D__INT_WIDTH__=32 -D__SIZEOF_LONG__=8 -D__STDC_IEC_559__=1 -D__STDC_ISO_10646__=201706L '-D__UINT16_C(c)=c' -D__PTRDIFF_WIDTH__=64 -D__DECIMAL_DIG__=21 -D__FLT64_EPSILON__=2.22044604925031308084726333618164062e-16F64 -D__gnu_linux__=1 -D__INTMAX_WIDTH__=64 '-D__has_include_next(STR)=__has_include_next__(STR)' '-D__FLT64X_MIN_10_EXP__=(-4931)' -D__LDBL_HAS_QUIET_NAN__=1 -D__FLT64_MANT_DIG__=53 -D__pie__=2 -D__MMX__=1 -D__FLT_HAS_DENORM__=1 -D__SIZEOF_LONG_DOUBLE__=16 -D__BIGGEST_ALIGNMENT__=16 -D__FLT64_MAX_10_EXP__=308 '-D__DBL_MAX__=((double)1.79769313486231570814527423731704357e+308L)' -D__INT_FAST32_MAX__=0x7fffffffffffffffL -D__DBL_HAS_INFINITY__=1 -D__HAVE_SPECULATION_SAFE_VALUE=1 '-D__DEC32_MIN_EXP__=(-94)' -D__INTPTR_WIDTH__=64 -D__FLT32X_HAS_DENORM__=1 '-D__INT_FAST16_TYPE__=long int' -D__LDBL_HAS_DENORM__=1 -D__FLT128_HAS_INFINITY__=1 -D__DEC128_MAX__=9.999999999999999999999999999999999E6144DL -D__INT_LEAST32_MAX__=0x7fffffff -D__DEC32_MIN__=1E-95DF -D__DBL_MAX_EXP__=1024 -D__WCHAR_WIDTH__=32 '-D__FLT32_MAX__=3.40282346638528859811704183484516925e+38F32' -D__DEC128_EPSILON__=1E-33DL -D__SSE2_MATH__=1 -D__ATOMIC_HLE_RELEASE=131072 -D__PTRDIFF_MAX__=0x7fffffffffffffffL -D__amd64=1 -D__ATOMIC_HLE_ACQUIRE=65536 -D__FLT32_HAS_QUIET_NAN__=1 -D__LONG_LONG_MAX__=0x7fffffffffffffffLL -D__SIZEOF_SIZE_T__=8 '-D__FLT64X_MIN_EXP__=(-16381)' -D__SIZEOF_WINT_T__=4 -D__LONG_LONG_WIDTH__=64 -D__FLT32_MAX_EXP__=128 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -D__GXX_ABI_VERSION=1013 '-D__FLT_MIN_EXP__=(-125)' -D__FLT64X_HAS_QUIET_NAN__=1 '-D__INT_FAST64_TYPE__=long int' -D__FLT64_DENORM_MIN__=4.94065645841246544176568792868221372e-324F64 '-D__DBL_MIN__=((double)2.22507385850720138309023271733240406e-308L)' -D__PIE__=2 -D__LP64__=1 -D__FLT32X_EPSILON__=2.22044604925031308084726333618164062e-16F32x -D__DECIMAL_BID_FORMAT__=1 '-D__FLT64_MIN_EXP__=(-1021)' '-D__FLT64_MIN_10_EXP__=(-307)' -D__FLT64X_DECIMAL_DIG__=21 -D__DEC128_MIN__=1E-6143DL -D__REGISTER_PREFIX__= -D__UINT16_MAX__=0xffff -D__DBL_HAS_DENORM__=1 -D__FLT32_MIN__=1.17549435082228750796873653722224568e-38F32 '-D__UINT8_TYPE__=unsigned char' -D__NO_INLINE__=1 -D__FLT_MANT_DIG__=24 -D__LDBL_DECIMAL_DIG__=21 '-D__UINT64_C(c)=c ## UL' -D_STDC_PREDEF_H=1 -D__GCC_ATOMIC_INT_LOCK_FREE=2 -D__FLT128_MAX_EXP__=16384 -D__FLT32_MANT_DIG__=24 -D__FLOAT_WORD_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__STDC_IEC_559_COMPLEX__=1 -D__FLT128_HAS_DENORM__=1 -D__FLT128_DIG__=33 -D__SCHAR_WIDTH__=8 '-D__INT32_C(c)=c' -D__DEC64_EPSILON__=1E-15DD -D__ORDER_PDP_ENDIAN__=3412 '-D__DEC128_MIN_EXP__=(-6142)' -D__FLT32_MAX_10_EXP__=38 '-D__INT_FAST32_TYPE__=long int' '-D__UINT_LEAST16_TYPE__=short unsigned int' -D__FLT64X_HAS_INFINITY__=1 -Dunix=1 -D__INT16_MAX__=0x7fff '-D__SIZE_TYPE__=long unsigned int' -D__UINT64_MAX__=0xffffffffffffffffUL -D__FLT64X_DIG__=18 '-D__INT8_TYPE__=signed char' -D__ELF__=1 -D__GCC_ASM_FLAG_OUTPUTS__=1 -D__FLT_RADIX__=2 '-D__INT_LEAST16_TYPE__=short int' -D__LDBL_EPSILON__=1.08420217248550443400745280086994171e-19L '-D__UINTMAX_C(c)=c ## UL' -D__SSE_MATH__=1 -D__k8=1 -D__SIG_ATOMIC_MAX__=0x7fffffff -D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__SIZEOF_PTRDIFF_T__=8 -D__FLT32X_MANT_DIG__=53 -D__x86_64__=1 '-D__FLT32X_MIN_EXP__=(-1021)' -D__DEC32_SUBNORMAL_MIN__=0.000001E-95DF -D__INT_FAST16_MAX__=0x7fffffffffffffffL -D__FLT64_DIG__=15 -D__UINT_FAST32_MAX__=0xffffffffffffffffUL '-D__UINT_LEAST64_TYPE__=long unsigned int' -D__FLT_HAS_QUIET_NAN__=1 -D__FLT_MAX_10_EXP__=38 -D__LONG_MAX__=0x7fffffffffffffffL -D__FLT64X_HAS_DENORM__=1 -D__DEC128_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143DL -D__FLT_HAS_INFINITY__=1 '-D__UINT_FAST16_TYPE__=long unsigned int' -D__DEC64_MAX__=9.999999999999999E384DD -D__INT_FAST32_WIDTH__=64 -D__PRAGMA_REDEFINE_EXTNAME=1 -D__SIZE_WIDTH__=64 -D__SEG_FS=1 -D__INT_LEAST16_MAX__=0x7fff -D__DEC64_MANT_DIG__=16 -D__INT64_MAX__=0x7fffffffffffffffL -D__UINT_LEAST32_MAX__=0xffffffffU -D__SEG_GS=1 -D__FLT32_DENORM_MIN__=1.40129846432481707092372958328991613e-45F32 -D__GCC_ATOMIC_LONG_LOCK_FREE=2 -D__SIG_ATOMIC_WIDTH__=32 '-D__INT_LEAST64_TYPE__=long int' '-D__INT16_TYPE__=short int' '-D__INT_LEAST8_TYPE__=signed char' -D__DEC32_MAX_EXP__=97 -D__INT_FAST8_MAX__=0x7f '-D__FLT128_MAX__=1.18973149535723176508575932662800702e+4932F128' -D__INTPTR_MAX__=0x7fffffffffffffffL -Dlinux=1 -D__FLT64_HAS_QUIET_NAN__=1 '-D__FLT32_MIN_10_EXP__=(-37)' -D__SSE2__=1 -D__FLT32X_DIG__=15 -D__LDBL_MANT_DIG__=64 -D__DBL_HAS_QUIET_NAN__=1 -D__FLT64_HAS_INFINITY__=1 '-D__FLT64X_MAX__=1.18973149535723176502126385303097021e+4932F64x' '-D__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)' -D__code_model_small__=1 -D__k8__=1 '-D__INTPTR_TYPE__=long int' '-D__UINT16_TYPE__=short unsigned int' -D__WCHAR_TYPE__=int -D__SIZEOF_FLOAT__=4 -D__pic__=2 -D__UINTPTR_MAX__=0xffffffffffffffffUL -D__INT_FAST64_WIDTH__=64 '-D__DEC64_MIN_EXP__=(-382)' -D__FLT32_DECIMAL_DIG__=9 -D__INT_FAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1 -D__FLT_DIG__=6 -D__FLT32_HAS_INFINITY__=1 -D__FLT64X_MAX_EXP__=16384 '-D__UINT_FAST64_TYPE__=long unsigned int' -D__INT_MAX__=0x7fffffff -D__amd64__=1 '-D__INT64_TYPE__=long int' -D__FLT_MAX_EXP__=128 -D__ORDER_BIG_ENDIAN__=4321 -D__DBL_MANT_DIG__=53 -D__SIZEOF_FLOAT128__=16 -D__INT_LEAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__DEC64_MIN__=1E-383DD '-D__WINT_TYPE__=unsigned int' '-D__UINT_LEAST32_TYPE__=unsigned int' -D__SIZEOF_SHORT__=2 -D__SSE__=1 '-D__LDBL_MIN_EXP__=(-16381)' '-D__FLT64_MAX__=1.79769313486231570814527423731704357e+308F64' -D__WINT_WIDTH__=32 -D__INT_LEAST8_MAX__=0x7f -D__FLT32X_MAX_10_EXP__=308 -D__SIZEOF_INT128__=16 -D__LDBL_MAX_10_EXP__=4932 -D__ATOMIC_RELAXED=0 '-D__DBL_EPSILON__=((double)2.22044604925031308084726333618164062e-16L)' -D__FLT128_MIN__=3.36210314311209350626267781732175260e-4932F128 -D_LP64=1 '-D__UINT8_C(c)=c' -D__FLT64_MAX_EXP__=1024 -D__INT_LEAST32_TYPE__=int -D__SIZEOF_WCHAR_T__=4 '-D__UINT64_TYPE__=long unsigned int' -D__FLT128_HAS_QUIET_NAN__=1 '-D__INT_FAST8_TYPE__=signed char' -D__FLT64X_MIN__=3.36210314311209350626267781732175260e-4932F64x -D__FLT64_HAS_DENORM__=1 -D__FLT32_EPSILON__=1.19209289550781250000000000000000000e-7F32 -D__DBL_DECIMAL_DIG__=17 -D__STDC_UTF_32__=1 -D__INT_FAST8_WIDTH__=8 -D__FXSR__=1 -D__DEC_EVAL_METHOD__=2 '-D__FLT32X_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__UINT32_C(c)=c ## U' -D__INTMAX_MAX__=0x7fffffffffffffffL -D__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__FLT_DENORM_MIN__=1.40129846432481707092372958328991613e-45F -D__INT8_MAX__=0x7f -D__LONG_WIDTH__=64 -D__PIC__=2 '-D__UINT_FAST32_TYPE__=long unsigned int' '-D__FLT_MAX__=3.40282346638528859811704183484516925e+38F' -D__INT32_TYPE__=int -D__SIZEOF_DOUBLE__=8 '-D__FLT_MIN_10_EXP__=(-37)' -D__FLT64_MIN__=2.22507385850720138309023271733240406e-308F64 -D__INT_LEAST32_WIDTH__=32 '-D__INTMAX_TYPE__=long int' -D__DEC128_MAX_EXP__=6145 -D__FLT32X_HAS_QUIET_NAN__=1 -D__ATOMIC_CONSUME=1 -D__INT_FAST16_WIDTH__=64 -D__UINTMAX_MAX__=0xffffffffffffffffUL -D__DEC32_MANT_DIG__=7 -D__FLT32X_DENORM_MIN__=4.94065645841246544176568792868221372e-324F32x -D__DBL_MAX_10_EXP__=308 -D__LDBL_DENORM_MIN__=3.64519953188247460252840593361941982e-4951L '-D__INT16_C(c)=c' '-D__PTRDIFF_TYPE__=long int' -D__ATOMIC_SEQ_CST=5 '-D__UINT32_TYPE__=unsigned int' '-D__FLT32X_MIN_10_EXP__=(-307)' '-D__UINTPTR_TYPE__=long unsigned int' -D__DEC64_SUBNORMAL_MIN__=0.000000000000001E-383DD -D__DEC128_MANT_DIG__=34 '-D__LDBL_MIN_10_EXP__=(-4931)' -D__FLT128_EPSILON__=1.92592994438723585305597794258492732e-34F128 -D__SIZEOF_LONG_LONG__=8 -D__FLT128_DECIMAL_DIG__=36 -D__GCC_ATOMIC_LLONG_LOCK_FREE=2 -D__FLT32X_MIN__=2.22507385850720138309023271733240406e-308F32x -D__LDBL_DIG__=18 -D__FLT_DECIMAL_DIG__=9 -D__UINT_FAST16_MAX__=0xffffffffffffffffUL -D__GCC_ATOMIC_SHORT_LOCK_FREE=2 -D__INT_LEAST64_WIDTH__=64 '-D__UINT_FAST8_TYPE__=unsigned char' -D__ATOMIC_ACQ_REL=4 -D__ATOMIC_RELEASE=3 -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -- test.c
+[E 22:51:53 121411] Starting compilation TRAP /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/compilations/18/48551193_0.trap.br
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/stdlib.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/features.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/stdc-predef.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/waitflags.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/waitstatus.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/floatn.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/types.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/timesize.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/time64.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/clock_t.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/time_t.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/timer_t.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/endian.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/endian.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/endianness.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/byteswap.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/uintn-identity.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/select.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/select.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/struct_mutex.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/alloca.h
+[E 22:51:53 121411] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:51:53 121411] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+[E 22:51:53 121411] Creating trap tarball /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/tarballs/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c.167fe3a4_0.trap.tar.br
+[E 22:51:53 121411] Emitting trap files for test.c
+[E 22:51:53 121411] Opening existencedb in /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/existencedb/db
+[E 22:51:53 121411] Wrote 46 files to /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/tarballs/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c.167fe3a4_0.trap.tar.br
+[E 22:51:53 121411] Finished compilation TRAP /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/compilations/18/48551193_0.trap.br
+[E 22:51:53 121411] Marking C compilation as happened.
+[E 22:51:53 121411] Setting tag c-compilation-happened
+[E 22:51:53 121411] Starting from CODEQL_TRACER_DB_ID 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121411] Set tag for 000000000001DA41_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3F_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3E_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA3C_0000000000000001
+[E 22:51:53 121411] Set tag for 000000000001DA2C_0000000000000003
+[E 22:51:53 121411] Set tag for 000000000001DA2C_0000000000000002
+[E 22:51:53 121411] Set tag for root
+[E 22:51:53 121411] Unlocking DB
+[E 22:51:53 121411] Unlocked DB
+[T 22:51:53 121409] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121454] Initializing tracer.
+[T 22:51:53 121454] Initialising tags...
+[T 22:51:53 121454] ID set to 000000000001DA6E_0000000000000001 (parent 000000000001DA3F_0000000000000001)
+[T 22:51:53 121454] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:51:53 121454] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:51:53 121454]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:51:53 121454]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:51:53 121454]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:51:53 121454]  -> path lookup for as as /usr/local/bin/as...
+[T 22:51:53 121454]  -> path lookup for as as /usr/sbin/as...
+[T 22:51:53 121454]  -> path lookup for as as /usr/bin/as...
+[T 22:51:53 121454] Resolved barename as to /usr/bin/as
+[T 22:51:53 121454] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:51:53 121454] Executing the following tracer actions:
+[T 22:51:53 121454] Tracer actions:
+[T 22:51:53 121454] pre_invocations(0)
+[T 22:51:53 121454] post_invocations(1)
+[T 22:51:53 121454] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /tmp/cc1rxYOu.o, /tmp/cc93i4Qw.s]
+[T 22:51:53 121454] trace_languages(1): [cpp]
+[T 22:51:53 121456] Attempting to switch stdout/stderr to 4...
+[T 22:51:53 121456] Initializing tracer.
+[T 22:51:53 121456] Initialising tags...
+[T 22:51:53 121456] ID set to 000000000001DA70_0000000000000001 (parent 000000000001DA6E_0000000000000001)
+[E 22:51:53 121456] CodeQL C/C++ Extractor 2.11.3
+[E 22:51:53 121456] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:51:53 121456] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --assembler --codeql-assembler-executable /usr/bin/as --64 -o /tmp/cc1rxYOu.o /tmp/cc93i4Qw.s
+[T 22:51:53 121454] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121457] Initializing tracer.
+[T 22:51:53 121457] Initialising tags...
+[T 22:51:53 121457] ID set to 000000000001DA71_0000000000000001 (parent 000000000001DA3F_0000000000000001)
+[T 22:51:53 121457] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/collect2 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/collect2) ====
+[T 22:51:53 121457] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/collect2 ===
+[T 22:51:53 121457] Executing the following tracer actions:
+[T 22:51:53 121457] Tracer actions:
+[T 22:51:53 121457] pre_invocations(0)
+[T 22:51:53 121457] post_invocations(1)
+[T 22:51:53 121457] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--linker, --semmle-linker-executable, /usr/lib/gcc/x86_64-linux-gnu/9/collect2, -plugin, /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so, -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper, -plugin-opt=-fresolution=/tmp/ccbotyvt.res, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, -plugin-opt=-pass-through=-lc, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, --build-id, --eh-frame-hdr, -m, elf_x86_64, --hash-style=gnu, --as-needed, -dynamic-linker, /lib64/ld-linux-x86-64.so.2, -pie, -z, now, -z, relro, -o, test, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o, /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o, -L/usr/lib/gcc/x86_64-linux-gnu/9, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib, -L/lib/x86_64-linux-gnu, -L/lib/../lib, -L/usr/lib/x86_64-linux-gnu, -L/usr/lib/../lib, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.., /tmp/cc1rxYOu.o, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, -lc, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+[T 22:51:53 121457] trace_languages(1): [cpp]
+[T 22:51:53 121459] Initializing tracer.
+[T 22:51:53 121459] Initialising tags...
+[T 22:51:53 121459] ID set to 000000000001DA73_0000000000000001 (parent 000000000001DA71_0000000000000001)
+[T 22:51:53 121459] ==== Candidate to intercept: /usr/bin/ld (canonical: /usr/bin/x86_64-linux-gnu-ld.bfd) ====
+[T 22:51:53 121459] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-ld.bfd ===
+[T 22:51:53 121459] Executing the following tracer actions:
+[T 22:51:53 121459] Tracer actions:
+[T 22:51:53 121459] pre_invocations(0)
+[T 22:51:53 121459] post_invocations(1)
+[T 22:51:53 121459] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--linker, --semmle-linker-executable, /usr/bin/x86_64-linux-gnu-ld.bfd, -plugin, /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so, -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper, -plugin-opt=-fresolution=/tmp/ccbotyvt.res, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, -plugin-opt=-pass-through=-lc, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, --build-id, --eh-frame-hdr, -m, elf_x86_64, --hash-style=gnu, --as-needed, -dynamic-linker, /lib64/ld-linux-x86-64.so.2, -pie, -z, now, -z, relro, -o, test, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o, /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o, -L/usr/lib/gcc/x86_64-linux-gnu/9, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib, -L/lib/x86_64-linux-gnu, -L/lib/../lib, -L/usr/lib/x86_64-linux-gnu, -L/usr/lib/../lib, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.., /tmp/cc1rxYOu.o, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, -lc, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+[T 22:51:53 121459] trace_languages(1): [cpp]
+[T 22:51:53 121461] Attempting to switch stdout/stderr to 4...
+[T 22:51:53 121461] Initializing tracer.
+[T 22:51:53 121461] Initialising tags...
+[T 22:51:53 121461] ID set to 000000000001DA75_0000000000000001 (parent 000000000001DA73_0000000000000001)
+[E 22:51:53 121461] CodeQL C/C++ Extractor 2.11.3
+[E 22:51:53 121461] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:51:53 121461] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --linker --semmle-linker-executable /usr/bin/x86_64-linux-gnu-ld.bfd -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbotyvt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o test /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/cc1rxYOu.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+[T 22:51:53 121459] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121462] Attempting to switch stdout/stderr to 4...
+[T 22:51:53 121462] Initializing tracer.
+[T 22:51:53 121462] Initialising tags...
+[T 22:51:53 121462] ID set to 000000000001DA76_0000000000000001 (parent 000000000001DA71_0000000000000001)
+[E 22:51:53 121462] CodeQL C/C++ Extractor 2.11.3
+[E 22:51:53 121462] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:51:53 121462] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --linker --semmle-linker-executable /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbotyvt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o test /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/cc1rxYOu.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+[T 22:51:53 121457] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121463] Attempting to switch stdout/stderr to 4...
+[T 22:51:53 121463] Initializing tracer.
+[T 22:51:53 121463] Initialising tags...
+[T 22:51:53 121463] ID set to 000000000001DA77_0000000000000001 (parent 000000000001DA3F_0000000000000001)
+[E 22:51:53 121463] CodeQL C/C++ Extractor 2.11.3
+[E 22:51:53 121463] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:51:53 121463] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/gcc -o test test.c
+[T 22:51:53 121464] Initializing tracer.
+[T 22:51:53 121464] Initialising tags...
+[T 22:51:53 121464] ID set to 000000000001DA78_0000000000000001 (parent 000000000001DA77_0000000000000001)
+[T 22:51:53 121464] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:51:53 121464] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:51:53 121464] Executing the following tracer actions:
+[T 22:51:53 121464] Tracer actions:
+[T 22:51:53 121464] pre_invocations(0)
+[T 22:51:53 121464] post_invocations(1)
+[T 22:51:53 121464] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, --version]
+[T 22:51:53 121464] trace_languages(1): [cpp]
+[T 22:51:53 121466] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121466] Initializing tracer.
+[T 22:51:53 121466] Initialising tags...
+[T 22:51:53 121466] ID set to 000000000001DA7A_0000000000000001 (parent 000000000001DA78_0000000000000001)
+[E 22:51:53 121466] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121464] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121467] Initializing tracer.
+[T 22:51:53 121467] Initialising tags...
+[T 22:51:53 121467] ID set to 000000000001DA7B_0000000000000001 (parent 000000000001DA77_0000000000000001)
+[T 22:51:53 121467] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:51:53 121467] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:51:53 121467] Executing the following tracer actions:
+[T 22:51:53 121467] Tracer actions:
+[T 22:51:53 121467] pre_invocations(0)
+[T 22:51:53 121467] post_invocations(1)
+[T 22:51:53 121467] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, --help]
+[T 22:51:53 121467] trace_languages(1): [cpp]
+[T 22:51:53 121469] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121469] Initializing tracer.
+[T 22:51:53 121469] Initialising tags...
+[T 22:51:53 121469] ID set to 000000000001DA7D_0000000000000001 (parent 000000000001DA7B_0000000000000001)
+[E 22:51:53 121469] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121467] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121470] Initializing tracer.
+[T 22:51:53 121470] Initialising tags...
+[T 22:51:53 121470] ID set to 000000000001DA7E_0000000000000001 (parent 000000000001DA77_0000000000000001)
+[T 22:51:53 121470] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:51:53 121470] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:51:53 121470] Executing the following tracer actions:
+[T 22:51:53 121470] Tracer actions:
+[T 22:51:53 121470] pre_invocations(0)
+[T 22:51:53 121470] post_invocations(1)
+[T 22:51:53 121470] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121463_631247.c]
+[T 22:51:53 121470] trace_languages(1): [cpp]
+[T 22:51:53 121472] Initializing tracer.
+[T 22:51:53 121472] Initialising tags...
+[T 22:51:53 121472] ID set to 000000000001DA80_0000000000000001 (parent 000000000001DA7E_0000000000000001)
+[T 22:51:53 121472] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121472] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121472] Executing the following tracer actions:
+[T 22:51:53 121472] Tracer actions:
+[T 22:51:53 121472] pre_invocations(0)
+[T 22:51:53 121472] post_invocations(1)
+[T 22:51:53 121472] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121463_631247.c, -quiet, -dumpbase, semmle_1_121463_631247.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccMT0KNf.s]
+[T 22:51:53 121472] trace_languages(1): [cpp]
+[T 22:51:53 121474] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121474] Initializing tracer.
+[T 22:51:53 121474] Initialising tags...
+[T 22:51:53 121474] ID set to 000000000001DA82_0000000000000001 (parent 000000000001DA80_0000000000000001)
+[E 22:51:53 121474] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121472] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121475] Initializing tracer.
+[T 22:51:53 121475] Initialising tags...
+[T 22:51:53 121475] ID set to 000000000001DA83_0000000000000001 (parent 000000000001DA7E_0000000000000001)
+[T 22:51:53 121475] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:51:53 121475] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:51:53 121475]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:51:53 121475]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:51:53 121475]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:51:53 121475]  -> path lookup for as as /usr/local/bin/as...
+[T 22:51:53 121475]  -> path lookup for as as /usr/sbin/as...
+[T 22:51:53 121475]  -> path lookup for as as /usr/bin/as...
+[T 22:51:53 121475] Resolved barename as to /usr/bin/as
+[T 22:51:53 121475] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:51:53 121475] Executing the following tracer actions:
+[T 22:51:53 121475] Tracer actions:
+[T 22:51:53 121475] pre_invocations(0)
+[T 22:51:53 121475] post_invocations(1)
+[T 22:51:53 121475] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, /tmp/ccMT0KNf.s]
+[T 22:51:53 121475] trace_languages(1): [cpp]
+[T 22:51:53 121477] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121477] Initializing tracer.
+[T 22:51:53 121477] Initialising tags...
+[T 22:51:53 121477] ID set to 000000000001DA85_0000000000000001 (parent 000000000001DA83_0000000000000001)
+[E 22:51:53 121477] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121475] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121478] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121478] Initializing tracer.
+[T 22:51:53 121478] Initialising tags...
+[T 22:51:53 121478] ID set to 000000000001DA86_0000000000000001 (parent 000000000001DA7E_0000000000000001)
+[E 22:51:53 121478] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121470] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121479] Initializing tracer.
+[T 22:51:53 121479] Initialising tags...
+[T 22:51:53 121479] ID set to 000000000001DA87_0000000000000001 (parent 000000000001DA77_0000000000000001)
+[T 22:51:53 121479] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:51:53 121479] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:51:53 121479] Executing the following tracer actions:
+[T 22:51:53 121479] Tracer actions:
+[T 22:51:53 121479] pre_invocations(0)
+[T 22:51:53 121479] post_invocations(1)
+[T 22:51:53 121479] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121463_631247.c, -v, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35]
+[T 22:51:53 121479] trace_languages(1): [cpp]
+[T 22:51:53 121481] Initializing tracer.
+[T 22:51:53 121481] Initialising tags...
+[T 22:51:53 121481] ID set to 000000000001DA89_0000000000000001 (parent 000000000001DA87_0000000000000001)
+[T 22:51:53 121481] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121481] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121481] Executing the following tracer actions:
+[T 22:51:53 121481] Tracer actions:
+[T 22:51:53 121481] pre_invocations(0)
+[T 22:51:53 121481] post_invocations(1)
+[T 22:51:53 121481] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -v, -imultiarch, x86_64-linux-gnu, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121463_631247.c, -quiet, -dumpbase, semmle_1_121463_631247.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, -version, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccQSEgOX.s]
+[T 22:51:53 121481] trace_languages(1): [cpp]
+[T 22:51:53 121483] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121483] Initializing tracer.
+[T 22:51:53 121483] Initialising tags...
+[T 22:51:53 121483] ID set to 000000000001DA8B_0000000000000001 (parent 000000000001DA89_0000000000000001)
+[E 22:51:53 121483] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121481] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121484] Initializing tracer.
+[T 22:51:53 121484] Initialising tags...
+[T 22:51:53 121484] ID set to 000000000001DA8C_0000000000000001 (parent 000000000001DA87_0000000000000001)
+[T 22:51:53 121484] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:51:53 121484] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:51:53 121484]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:51:53 121484]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:51:53 121484]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:51:53 121484]  -> path lookup for as as /usr/local/bin/as...
+[T 22:51:53 121484]  -> path lookup for as as /usr/sbin/as...
+[T 22:51:53 121484]  -> path lookup for as as /usr/bin/as...
+[T 22:51:53 121484] Resolved barename as to /usr/bin/as
+[T 22:51:53 121484] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:51:53 121484] Executing the following tracer actions:
+[T 22:51:53 121484] Tracer actions:
+[T 22:51:53 121484] pre_invocations(0)
+[T 22:51:53 121484] post_invocations(1)
+[T 22:51:53 121484] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, -v, --64, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121463_631261.o, /tmp/ccQSEgOX.s]
+[T 22:51:53 121484] trace_languages(1): [cpp]
+[T 22:51:53 121486] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121486] Initializing tracer.
+[T 22:51:53 121486] Initialising tags...
+[T 22:51:53 121486] ID set to 000000000001DA8E_0000000000000001 (parent 000000000001DA8C_0000000000000001)
+[E 22:51:53 121486] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121484] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121487] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121487] Initializing tracer.
+[T 22:51:53 121487] Initialising tags...
+[T 22:51:53 121487] ID set to 000000000001DA8F_0000000000000001 (parent 000000000001DA87_0000000000000001)
+[E 22:51:53 121487] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121479] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121488] Initializing tracer.
+[T 22:51:53 121488] Initialising tags...
+[T 22:51:53 121488] ID set to 000000000001DA90_0000000000000001 (parent 000000000001DA77_0000000000000001)
+[T 22:51:53 121488] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:51:53 121488] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:51:53 121488] Executing the following tracer actions:
+[T 22:51:53 121488] Tracer actions:
+[T 22:51:53 121488] pre_invocations(0)
+[T 22:51:53 121488] post_invocations(1)
+[T 22:51:53 121488] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121463_662076.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121463_662060.c]
+[T 22:51:53 121488] trace_languages(1): [cpp]
+[T 22:51:53 121490] Initializing tracer.
+[T 22:51:53 121490] Initialising tags...
+[T 22:51:53 121490] ID set to 000000000001DA92_0000000000000001 (parent 000000000001DA90_0000000000000001)
+[T 22:51:53 121490] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:51:53 121490] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:51:53 121490] Executing the following tracer actions:
+[T 22:51:53 121490] Tracer actions:
+[T 22:51:53 121490] pre_invocations(0)
+[T 22:51:53 121490] post_invocations(1)
+[T 22:51:53 121490] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121463_662060.c, -quiet, -dumpbase, semmle_3_121463_662060.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121463_662076.o, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/cclcx04E.s]
+[T 22:51:53 121490] trace_languages(1): [cpp]
+[T 22:51:53 121492] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121492] Initializing tracer.
+[T 22:51:53 121492] Initialising tags...
+[T 22:51:53 121492] ID set to 000000000001DA94_0000000000000001 (parent 000000000001DA92_0000000000000001)
+[E 22:51:53 121492] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121490] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:51:53 121493] Attempting to switch stdout/stderr to 7...
+[T 22:51:53 121493] Initializing tracer.
+[T 22:51:53 121493] Initialising tags...
+[T 22:51:53 121493] ID set to 000000000001DA95_0000000000000001 (parent 000000000001DA90_0000000000000001)
+[E 22:51:53 121493] Mimicry classification suppression detected; exiting.
+[T 22:51:53 121488] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:51:53 121463] Checking whether C compilation already happened.
+[E 22:51:53 121463] Checking for tag c-compilation-happened
+[E 22:51:53 121463] Checking CODEQL_TRACER_DB_ID 000000000001DA3F_0000000000000001
+[E 22:51:53 121463] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121463] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:51:53 121463] Unlocking DB
+[E 22:51:53 121463] Unlocked DB
+[E 22:51:53 121463] Exiting as C compilation already happened.
+[T 22:51:53 121407] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121890] CodeQL CLI version 2.11.3
+[T 22:56:32 121890] Initializing tracer.
+[T 22:56:32 121890] Initialising tags...
+[T 22:56:32 121890] ID set to 000000000001DC22_0000000000000001 (parent root)
+[T 22:56:32 121890] Initializing tracer.
+[T 22:56:32 121890] Initialising tags...
+[T 22:56:32 121890] ID set to 000000000001DC22_0000000000000002 (parent root)
+[T 22:56:32 121890] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:56:32 121890] ==== Candidate to intercept: /home/arun/codeql_/codeql/tools/linux64/runner-linux (canonical: /home/arun/codeql_/codeql/tools/linux64/runner-linux) ====
+[T 22:56:32 121890] Executing the following tracer actions:
+[T 22:56:32 121890] Tracer actions:
+[T 22:56:32 121890] pre_invocations(0)
+[T 22:56:32 121890] post_invocations(0)
+[T 22:56:32 121890] trace_languages(1): [cpp]
+[T 22:56:32 121890] Initializing tracer.
+[T 22:56:32 121890] Initialising tags...
+[T 22:56:32 121890] ID set to 000000000001DC22_0000000000000003 (parent 000000000001DC22_0000000000000002)
+[T 22:56:32 121890] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/autobuild.sh (canonical: /home/arun/codeql_/codeql/cpp/tools/autobuild.sh) ====
+[T 22:56:32 121890] Executing the following tracer actions:
+[T 22:56:32 121890] Tracer actions:
+[T 22:56:32 121890] pre_invocations(0)
+[T 22:56:32 121890] post_invocations(0)
+[T 22:56:32 121890] trace_languages(1): [cpp]
+[T 22:56:32 121893] Initializing tracer.
+[T 22:56:32 121893] Initialising tags...
+[T 22:56:32 121893] ID set to 000000000001DC25_0000000000000001 (parent 000000000001DC22_0000000000000003)
+[T 22:56:32 121893] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/do-prebuild (canonical: /home/arun/codeql_/codeql/cpp/tools/do-prebuild) ====
+[T 22:56:32 121893] Lua: === Intercepted call to /home/arun/codeql_/codeql/cpp/tools/do-prebuild ===
+[T 22:56:32 121893] Lua: Disabling tracing for language cpp.
+[T 22:56:32 121893] Executing the following tracer actions:
+[T 22:56:32 121893] Tracer actions:
+[T 22:56:32 121893] pre_invocations(0)
+[T 22:56:32 121893] post_invocations(0)
+[T 22:56:32 121893] trace_languages(0): []
+[T 22:56:32 121893] Disabling tracing for this command.
+[T 22:56:32 121906] Initializing tracer.
+[T 22:56:32 121906] Initialising tags...
+[T 22:56:32 121906] ID set to 000000000001DC32_0000000000000001 (parent 000000000001DC22_0000000000000003)
+[T 22:56:32 121906] ==== Candidate to intercept: /home/arun/codeql_/codeql/cpp/tools/do-build (canonical: /home/arun/codeql_/codeql/cpp/tools/do-build) ====
+[T 22:56:32 121906] Executing the following tracer actions:
+[T 22:56:32 121906] Tracer actions:
+[T 22:56:32 121906] pre_invocations(0)
+[T 22:56:32 121906] post_invocations(0)
+[T 22:56:32 121906] trace_languages(1): [cpp]
+[T 22:56:32 121907] Initializing tracer.
+[T 22:56:32 121907] Initialising tags...
+[T 22:56:32 121907] ID set to 000000000001DC33_0000000000000001 (parent 000000000001DC32_0000000000000001)
+[T 22:56:32 121907] ==== Candidate to intercept: /usr/bin/readlink (canonical: /usr/bin/readlink) ====
+[T 22:56:32 121907] Executing the following tracer actions:
+[T 22:56:32 121907] Tracer actions:
+[T 22:56:32 121907] pre_invocations(0)
+[T 22:56:32 121907] post_invocations(0)
+[T 22:56:32 121907] trace_languages(1): [cpp]
+[T 22:56:32 121908] Initializing tracer.
+[T 22:56:32 121908] Initialising tags...
+[T 22:56:32 121908] ID set to 000000000001DC34_0000000000000001 (parent 000000000001DC32_0000000000000001)
+[T 22:56:32 121908] ==== Candidate to intercept: /usr/bin/make (canonical: /usr/bin/make) ====
+[T 22:56:32 121908] Executing the following tracer actions:
+[T 22:56:32 121908] Tracer actions:
+[T 22:56:32 121908] pre_invocations(0)
+[T 22:56:32 121908] post_invocations(0)
+[T 22:56:32 121908] trace_languages(1): [cpp]
+[T 22:56:32 121909] Initializing tracer.
+[T 22:56:32 121909] Initialising tags...
+[T 22:56:32 121909] ID set to 000000000001DC35_0000000000000001 (parent 000000000001DC34_0000000000000001)
+[T 22:56:32 121909] ==== Candidate to intercept: gcc (canonical: gcc) ====
+[T 22:56:32 121909] Will try to resolve gcc in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:56:32 121909]  -> path lookup for gcc as /home/linuxbrew/.linuxbrew/bin/gcc...
+[T 22:56:32 121909]  -> path lookup for gcc as /home/linuxbrew/.linuxbrew/sbin/gcc...
+[T 22:56:32 121909]  -> path lookup for gcc as /usr/local/sbin/gcc...
+[T 22:56:32 121909]  -> path lookup for gcc as /usr/local/bin/gcc...
+[T 22:56:32 121909]  -> path lookup for gcc as /usr/sbin/gcc...
+[T 22:56:32 121909]  -> path lookup for gcc as /usr/bin/gcc...
+[T 22:56:32 121909] Resolved barename gcc to /usr/bin/gcc
+[T 22:56:32 121909] Lua: === Intercepted call to /usr/bin/gcc ===
+[T 22:56:32 121909] Executing the following tracer actions:
+[T 22:56:32 121909] Tracer actions:
+[T 22:56:32 121909] pre_invocations(0)
+[T 22:56:32 121909] post_invocations(1)
+[T 22:56:32 121909] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/gcc, -o, test, test.c]
+[T 22:56:32 121909] trace_languages(1): [cpp]
+[T 22:56:32 121911] Initializing tracer.
+[T 22:56:32 121911] Initialising tags...
+[T 22:56:32 121911] ID set to 000000000001DC37_0000000000000001 (parent 000000000001DC35_0000000000000001)
+[T 22:56:32 121911] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121911] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121911] Executing the following tracer actions:
+[T 22:56:32 121911] Tracer actions:
+[T 22:56:32 121911] pre_invocations(0)
+[T 22:56:32 121911] post_invocations(1)
+[T 22:56:32 121911] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -imultiarch, x86_64-linux-gnu, test.c, -quiet, -dumpbase, test.c, -mtune=generic, -march=x86-64, -auxbase, test, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccuHJAft.s]
+[T 22:56:32 121911] trace_languages(1): [cpp]
+[T 22:56:32 121913] Attempting to switch stdout/stderr to 4...
+[T 22:56:32 121913] Initializing tracer.
+[T 22:56:32 121913] Initialising tags...
+[T 22:56:32 121913] ID set to 000000000001DC39_0000000000000001 (parent 000000000001DC37_0000000000000001)
+[E 22:56:32 121913] CodeQL C/C++ Extractor 2.11.3
+[E 22:56:32 121913] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:56:32 121913] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --mimic /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -imultiarch x86_64-linux-gnu test.c -quiet -dumpbase test.c -mtune=generic -march=x86-64 -auxbase test -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuHJAft.s
+[T 22:56:32 121914] Initializing tracer.
+[T 22:56:32 121914] Initialising tags...
+[T 22:56:32 121914] ID set to 000000000001DC3A_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121914] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121914] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121914] Executing the following tracer actions:
+[T 22:56:32 121914] Tracer actions:
+[T 22:56:32 121914] pre_invocations(0)
+[T 22:56:32 121914] post_invocations(1)
+[T 22:56:32 121914] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, --version]
+[T 22:56:32 121914] trace_languages(1): [cpp]
+[T 22:56:32 121916] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121916] Initializing tracer.
+[T 22:56:32 121916] Initialising tags...
+[T 22:56:32 121916] ID set to 000000000001DC3C_0000000000000001 (parent 000000000001DC3A_0000000000000001)
+[E 22:56:32 121916] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121914] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121917] Initializing tracer.
+[T 22:56:32 121917] Initialising tags...
+[T 22:56:32 121917] ID set to 000000000001DC3D_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121917] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121917] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121917] Executing the following tracer actions:
+[T 22:56:32 121917] Tracer actions:
+[T 22:56:32 121917] pre_invocations(0)
+[T 22:56:32 121917] post_invocations(1)
+[T 22:56:32 121917] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, --help]
+[T 22:56:32 121917] trace_languages(1): [cpp]
+[T 22:56:32 121919] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121919] Initializing tracer.
+[T 22:56:32 121919] Initialising tags...
+[T 22:56:32 121919] ID set to 000000000001DC3F_0000000000000001 (parent 000000000001DC3D_0000000000000001)
+[E 22:56:32 121919] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121917] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121920] Initializing tracer.
+[T 22:56:32 121920] Initialising tags...
+[T 22:56:32 121920] ID set to 000000000001DC40_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121920] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121920] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121920] Executing the following tracer actions:
+[T 22:56:32 121920] Tracer actions:
+[T 22:56:32 121920] pre_invocations(0)
+[T 22:56:32 121920] post_invocations(1)
+[T 22:56:32 121920] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -version, --help]
+[T 22:56:32 121920] trace_languages(1): [cpp]
+[T 22:56:32 121922] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121922] Initializing tracer.
+[T 22:56:32 121922] Initialising tags...
+[T 22:56:32 121922] ID set to 000000000001DC42_0000000000000001 (parent 000000000001DC40_0000000000000001)
+[E 22:56:32 121922] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121920] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121923] Initializing tracer.
+[T 22:56:32 121923] Initialising tags...
+[T 22:56:32 121923] ID set to 000000000001DC43_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121923] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121923] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121923] Executing the following tracer actions:
+[T 22:56:32 121923] Tracer actions:
+[T 22:56:32 121923] pre_invocations(0)
+[T 22:56:32 121923] post_invocations(1)
+[T 22:56:32 121923] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121913_615228.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121913_615216.c]
+[T 22:56:32 121923] trace_languages(1): [cpp]
+[T 22:56:32 121925] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121925] Initializing tracer.
+[T 22:56:32 121925] Initialising tags...
+[T 22:56:32 121925] ID set to 000000000001DC45_0000000000000001 (parent 000000000001DC43_0000000000000001)
+[E 22:56:32 121925] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121923] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121926] Initializing tracer.
+[T 22:56:32 121926] Initialising tags...
+[T 22:56:32 121926] ID set to 000000000001DC46_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121926] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121926] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121926] Executing the following tracer actions:
+[T 22:56:32 121926] Tracer actions:
+[T 22:56:32 121926] pre_invocations(0)
+[T 22:56:32 121926] post_invocations(1)
+[T 22:56:32 121926] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121913_623586.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121913_623569.c]
+[T 22:56:32 121926] trace_languages(1): [cpp]
+[T 22:56:32 121928] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121928] Initializing tracer.
+[T 22:56:32 121928] Initialising tags...
+[T 22:56:32 121928] ID set to 000000000001DC48_0000000000000001 (parent 000000000001DC46_0000000000000001)
+[E 22:56:32 121928] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121926] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:56:32 121913] Checking whether C compilation already happened.
+[E 22:56:32 121913] Checking for tag c-compilation-happened
+[E 22:56:32 121913] Checking CODEQL_TRACER_DB_ID 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Unlocking DB
+[E 22:56:32 121913] Unlocked DB
+[E 22:56:32 121913] Looks like C compilation didn't already happen.
+[E 22:56:32 121913] Checking whether C compilation has been attempted.
+[E 22:56:32 121913] Checking for tag c-compilation-attempted
+[E 22:56:32 121913] Checking CODEQL_TRACER_DB_ID 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Unlocking DB
+[E 22:56:32 121913] Unlocked DB
+[E 22:56:32 121913] Marking C compilation as attempted.
+[E 22:56:32 121913] Setting tag c-compilation-attempted
+[E 22:56:32 121913] Starting from CODEQL_TRACER_DB_ID 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Set tag for 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC35_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC34_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC32_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC22_0000000000000003
+[E 22:56:32 121913] Set tag for 000000000001DC22_0000000000000002
+[E 22:56:32 121913] Set tag for root
+[E 22:56:32 121913] Unlocking DB
+[E 22:56:32 121913] Unlocked DB
+[T 22:56:32 121929] Initializing tracer.
+[T 22:56:32 121929] Initialising tags...
+[T 22:56:32 121929] ID set to 000000000001DC49_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121929] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121929] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121929] Executing the following tracer actions:
+[T 22:56:32 121929] Tracer actions:
+[T 22:56:32 121929] pre_invocations(0)
+[T 22:56:32 121929] post_invocations(1)
+[T 22:56:32 121929] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -v, -fsyntax-only, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_6_121913_629716]
+[T 22:56:32 121929] trace_languages(1): [cpp]
+[T 22:56:32 121931] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121931] Initializing tracer.
+[T 22:56:32 121931] Initialising tags...
+[T 22:56:32 121931] ID set to 000000000001DC4B_0000000000000001 (parent 000000000001DC49_0000000000000001)
+[E 22:56:32 121931] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121929] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121932] Initializing tracer.
+[T 22:56:32 121932] Initialising tags...
+[T 22:56:32 121932] ID set to 000000000001DC4C_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121932] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121932] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121932] Executing the following tracer actions:
+[T 22:56:32 121932] Tracer actions:
+[T 22:56:32 121932] pre_invocations(0)
+[T 22:56:32 121932] post_invocations(1)
+[T 22:56:32 121932] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -E, -dM, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_7_121913_635019]
+[T 22:56:32 121932] trace_languages(1): [cpp]
+[T 22:56:32 121934] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121934] Initializing tracer.
+[T 22:56:32 121934] Initialising tags...
+[T 22:56:32 121934] ID set to 000000000001DC4E_0000000000000001 (parent 000000000001DC4C_0000000000000001)
+[E 22:56:32 121934] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121932] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121935] Initializing tracer.
+[T 22:56:32 121935] Initialising tags...
+[T 22:56:32 121935] ID set to 000000000001DC4F_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121935] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121935] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121935] Executing the following tracer actions:
+[T 22:56:32 121935] Tracer actions:
+[T 22:56:32 121935] pre_invocations(0)
+[T 22:56:32 121935] post_invocations(1)
+[T 22:56:32 121935] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -fmax-errors=0, -Wreturn-type, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_8_121913_639498.h.gch, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_8_121913_639498.h]
+[T 22:56:32 121935] trace_languages(1): [cpp]
+[T 22:56:32 121937] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121937] Initializing tracer.
+[T 22:56:32 121937] Initialising tags...
+[T 22:56:32 121937] ID set to 000000000001DC51_0000000000000001 (parent 000000000001DC4F_0000000000000001)
+[E 22:56:32 121937] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121935] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+Warning: Only 0 reserved identifiers found in precompiled header file.
+[T 22:56:32 121938] Initializing tracer.
+[T 22:56:32 121938] Initialising tags...
+[T 22:56:32 121938] ID set to 000000000001DC52_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121938] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121938] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121938] Executing the following tracer actions:
+[T 22:56:32 121938] Tracer actions:
+[T 22:56:32 121938] pre_invocations(0)
+[T 22:56:32 121938] post_invocations(1)
+[T 22:56:32 121938] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_10_121913_644582.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_9_121913_644573.c]
+[T 22:56:32 121938] trace_languages(1): [cpp]
+[T 22:56:32 121940] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121940] Initializing tracer.
+[T 22:56:32 121940] Initialising tags...
+[T 22:56:32 121940] ID set to 000000000001DC54_0000000000000001 (parent 000000000001DC52_0000000000000001)
+[E 22:56:32 121940] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121938] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121941] Initializing tracer.
+[T 22:56:32 121941] Initialising tags...
+[T 22:56:32 121941] ID set to 000000000001DC55_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121941] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121941] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121941] Executing the following tracer actions:
+[T 22:56:32 121941] Tracer actions:
+[T 22:56:32 121941] pre_invocations(0)
+[T 22:56:32 121941] post_invocations(1)
+[T 22:56:32 121941] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_12_121913_649737.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_11_121913_649726.c]
+[T 22:56:32 121941] trace_languages(1): [cpp]
+[T 22:56:32 121943] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121943] Initializing tracer.
+[T 22:56:32 121943] Initialising tags...
+[T 22:56:32 121943] ID set to 000000000001DC57_0000000000000001 (parent 000000000001DC55_0000000000000001)
+[E 22:56:32 121943] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121941] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121944] Initializing tracer.
+[T 22:56:32 121944] Initialising tags...
+[T 22:56:32 121944] ID set to 000000000001DC58_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121944] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121944] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121944] Executing the following tracer actions:
+[T 22:56:32 121944] Tracer actions:
+[T 22:56:32 121944] pre_invocations(0)
+[T 22:56:32 121944] post_invocations(1)
+[T 22:56:32 121944] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_14_121913_654800.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_13_121913_654789.c]
+[T 22:56:32 121944] trace_languages(1): [cpp]
+[T 22:56:32 121946] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121946] Initializing tracer.
+[T 22:56:32 121946] Initialising tags...
+[T 22:56:32 121946] ID set to 000000000001DC5A_0000000000000001 (parent 000000000001DC58_0000000000000001)
+[E 22:56:32 121946] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121944] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121947] Initializing tracer.
+[T 22:56:32 121947] Initialising tags...
+[T 22:56:32 121947] ID set to 000000000001DC5B_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121947] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121947] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121947] Executing the following tracer actions:
+[T 22:56:32 121947] Tracer actions:
+[T 22:56:32 121947] pre_invocations(0)
+[T 22:56:32 121947] post_invocations(1)
+[T 22:56:32 121947] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_16_121913_663829.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_15_121913_663817.c]
+[T 22:56:32 121947] trace_languages(1): [cpp]
+[T 22:56:32 121949] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121949] Initializing tracer.
+[T 22:56:32 121949] Initialising tags...
+[T 22:56:32 121949] ID set to 000000000001DC5D_0000000000000001 (parent 000000000001DC5B_0000000000000001)
+[E 22:56:32 121949] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121947] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121950] Initializing tracer.
+[T 22:56:32 121950] Initialising tags...
+[T 22:56:32 121950] ID set to 000000000001DC5E_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121950] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121950] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121950] Executing the following tracer actions:
+[T 22:56:32 121950] Tracer actions:
+[T 22:56:32 121950] pre_invocations(0)
+[T 22:56:32 121950] post_invocations(1)
+[T 22:56:32 121950] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_18_121913_669337.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_17_121913_669326.c]
+[T 22:56:32 121950] trace_languages(1): [cpp]
+[T 22:56:32 121952] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121952] Initializing tracer.
+[T 22:56:32 121952] Initialising tags...
+[T 22:56:32 121952] ID set to 000000000001DC60_0000000000000001 (parent 000000000001DC5E_0000000000000001)
+[E 22:56:32 121952] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121950] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121953] Initializing tracer.
+[T 22:56:32 121953] Initialising tags...
+[T 22:56:32 121953] ID set to 000000000001DC61_0000000000000001 (parent 000000000001DC39_0000000000000001)
+[T 22:56:32 121953] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121953] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121953] Executing the following tracer actions:
+[T 22:56:32 121953] Tracer actions:
+[T 22:56:32 121953] pre_invocations(0)
+[T 22:56:32 121953] post_invocations(1)
+[T 22:56:32 121953] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fcf-protection, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_20_121913_677965.o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_19_121913_677954.c]
+[T 22:56:32 121953] trace_languages(1): [cpp]
+[T 22:56:32 121955] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121955] Initializing tracer.
+[T 22:56:32 121955] Initialising tags...
+[T 22:56:32 121955] ID set to 000000000001DC63_0000000000000001 (parent 000000000001DC61_0000000000000001)
+[E 22:56:32 121955] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121953] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:56:32 121913] Processed command line: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --trapfolder /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp --src_archive /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src --mimic_config /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/compiler_mimic_cache/c66556a4d412 --object_filename /tmp/ccuHJAft.s -w --error_limit 1000 --disable_system_macros --variadic_macros --gcc --gnu_version 90400 --target linux_x86_64 -D__SSP_STRONG__=3 '-D__DBL_MIN_EXP__=(-1021)' -D__FLT32X_MAX_EXP__=1024 -D__UINT_LEAST16_MAX__=0xffff -D__ATOMIC_ACQUIRE=2 -D__FLT128_MAX_10_EXP__=4932 -D__FLT_MIN__=1.17549435082228750796873653722224568e-38F -D__GCC_IEC_559_COMPLEX=2 '-D__UINT_LEAST8_TYPE__=unsigned char' -D__SIZEOF_FLOAT80__=16 '-D__INTMAX_C(c)=c ## L' -D__CHAR_BIT__=8 -D__UINT8_MAX__=0xff -D__WINT_MAX__=0xffffffffU '-D__FLT32_MIN_EXP__=(-125)' -D__ORDER_LITTLE_ENDIAN__=1234 -D__SIZE_MAX__=0xffffffffffffffffUL -D__WCHAR_MAX__=0x7fffffff -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1 '-D__DBL_DENORM_MIN__=((double)4.94065645841246544176568792868221372e-324L)' -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1 -D__GCC_ATOMIC_CHAR_LOCK_FREE=2 -D__GCC_IEC_559=2 -D__FLT32X_DECIMAL_DIG__=17 -D__FLT_EVAL_METHOD__=0 -D__unix__=1 -D__FLT64_DECIMAL_DIG__=17 -D__CET__=3 -D__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__x86_64=1 -D__UINT_FAST64_MAX__=0xffffffffffffffffUL -D__SIG_ATOMIC_TYPE__=int '-D__DBL_MIN_10_EXP__=(-307)' -D__FINITE_MATH_ONLY__=0 -D__FLT32_HAS_DENORM__=1 -D__UINT_FAST8_MAX__=0xff '-D__has_include(STR)=__has_include__(STR)' -D__DEC64_MAX_EXP__=385 '-D__INT8_C(c)=c' -D__INT_LEAST8_WIDTH__=8 -D__UINT_LEAST64_MAX__=0xffffffffffffffffUL -D__SHRT_MAX__=0x7fff '-D__LDBL_MAX__=1.18973149535723176502126385303097021e+4932L' -D__FLT64X_MAX_10_EXP__=4932 -D__UINT_LEAST8_MAX__=0xff -D__GCC_ATOMIC_BOOL_LOCK_FREE=2 -D__FLT128_DENORM_MIN__=6.47517511943802511092443895822764655e-4966F128 '-D__UINTMAX_TYPE__=long unsigned int' -D__linux=1 -D__DEC32_EPSILON__=1E-6DF -D__FLT_EVAL_METHOD_TS_18661_3__=0 -D__unix=1 -D__UINT32_MAX__=0xffffffffU -D__LDBL_MAX_EXP__=16384 '-D__FLT128_MIN_EXP__=(-16381)' -D__WINT_MIN__=0U -D__linux__=1 '-D__FLT128_MIN_10_EXP__=(-4931)' -D__INT_LEAST16_WIDTH__=16 -D__SCHAR_MAX__=0x7f -D__FLT128_MANT_DIG__=113 '-D__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)' '-D__INT64_C(c)=c ## L' -D__DBL_DIG__=15 -D__GCC_ATOMIC_POINTER_LOCK_FREE=2 -D__FLT64X_MANT_DIG__=64 -D__SIZEOF_INT__=4 -D__SIZEOF_POINTER__=8 -D__USER_LABEL_PREFIX__= -D__FLT64X_EPSILON__=1.08420217248550443400745280086994171e-19F64x -D__LDBL_HAS_INFINITY__=1 -D__FLT32_DIG__=6 -D__FLT_EPSILON__=1.19209289550781250000000000000000000e-7F -D__SHRT_WIDTH__=16 -D__LDBL_MIN__=3.36210314311209350626267781732175260e-4932L -D__STDC_UTF_16__=1 -D__DEC32_MAX__=9.999999E96DF -D__FLT64X_DENORM_MIN__=3.64519953188247460252840593361941982e-4951F64x -D__FLT32X_HAS_INFINITY__=1 -D__INT32_MAX__=0x7fffffff -D__INT_WIDTH__=32 -D__SIZEOF_LONG__=8 -D__STDC_IEC_559__=1 -D__STDC_ISO_10646__=201706L '-D__UINT16_C(c)=c' -D__PTRDIFF_WIDTH__=64 -D__DECIMAL_DIG__=21 -D__FLT64_EPSILON__=2.22044604925031308084726333618164062e-16F64 -D__gnu_linux__=1 -D__INTMAX_WIDTH__=64 '-D__has_include_next(STR)=__has_include_next__(STR)' '-D__FLT64X_MIN_10_EXP__=(-4931)' -D__LDBL_HAS_QUIET_NAN__=1 -D__FLT64_MANT_DIG__=53 -D__pie__=2 -D__MMX__=1 -D__FLT_HAS_DENORM__=1 -D__SIZEOF_LONG_DOUBLE__=16 -D__BIGGEST_ALIGNMENT__=16 -D__FLT64_MAX_10_EXP__=308 '-D__DBL_MAX__=((double)1.79769313486231570814527423731704357e+308L)' -D__INT_FAST32_MAX__=0x7fffffffffffffffL -D__DBL_HAS_INFINITY__=1 -D__HAVE_SPECULATION_SAFE_VALUE=1 '-D__DEC32_MIN_EXP__=(-94)' -D__INTPTR_WIDTH__=64 -D__FLT32X_HAS_DENORM__=1 '-D__INT_FAST16_TYPE__=long int' -D__LDBL_HAS_DENORM__=1 -D__FLT128_HAS_INFINITY__=1 -D__DEC128_MAX__=9.999999999999999999999999999999999E6144DL -D__INT_LEAST32_MAX__=0x7fffffff -D__DEC32_MIN__=1E-95DF -D__DBL_MAX_EXP__=1024 -D__WCHAR_WIDTH__=32 '-D__FLT32_MAX__=3.40282346638528859811704183484516925e+38F32' -D__DEC128_EPSILON__=1E-33DL -D__SSE2_MATH__=1 -D__ATOMIC_HLE_RELEASE=131072 -D__PTRDIFF_MAX__=0x7fffffffffffffffL -D__amd64=1 -D__ATOMIC_HLE_ACQUIRE=65536 -D__FLT32_HAS_QUIET_NAN__=1 -D__LONG_LONG_MAX__=0x7fffffffffffffffLL -D__SIZEOF_SIZE_T__=8 '-D__FLT64X_MIN_EXP__=(-16381)' -D__SIZEOF_WINT_T__=4 -D__LONG_LONG_WIDTH__=64 -D__FLT32_MAX_EXP__=128 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -D__GXX_ABI_VERSION=1013 '-D__FLT_MIN_EXP__=(-125)' -D__FLT64X_HAS_QUIET_NAN__=1 '-D__INT_FAST64_TYPE__=long int' -D__FLT64_DENORM_MIN__=4.94065645841246544176568792868221372e-324F64 '-D__DBL_MIN__=((double)2.22507385850720138309023271733240406e-308L)' -D__PIE__=2 -D__LP64__=1 -D__FLT32X_EPSILON__=2.22044604925031308084726333618164062e-16F32x -D__DECIMAL_BID_FORMAT__=1 '-D__FLT64_MIN_EXP__=(-1021)' '-D__FLT64_MIN_10_EXP__=(-307)' -D__FLT64X_DECIMAL_DIG__=21 -D__DEC128_MIN__=1E-6143DL -D__REGISTER_PREFIX__= -D__UINT16_MAX__=0xffff -D__DBL_HAS_DENORM__=1 -D__FLT32_MIN__=1.17549435082228750796873653722224568e-38F32 '-D__UINT8_TYPE__=unsigned char' -D__NO_INLINE__=1 -D__FLT_MANT_DIG__=24 -D__LDBL_DECIMAL_DIG__=21 '-D__UINT64_C(c)=c ## UL' -D_STDC_PREDEF_H=1 -D__GCC_ATOMIC_INT_LOCK_FREE=2 -D__FLT128_MAX_EXP__=16384 -D__FLT32_MANT_DIG__=24 -D__FLOAT_WORD_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__STDC_IEC_559_COMPLEX__=1 -D__FLT128_HAS_DENORM__=1 -D__FLT128_DIG__=33 -D__SCHAR_WIDTH__=8 '-D__INT32_C(c)=c' -D__DEC64_EPSILON__=1E-15DD -D__ORDER_PDP_ENDIAN__=3412 '-D__DEC128_MIN_EXP__=(-6142)' -D__FLT32_MAX_10_EXP__=38 '-D__INT_FAST32_TYPE__=long int' '-D__UINT_LEAST16_TYPE__=short unsigned int' -D__FLT64X_HAS_INFINITY__=1 -Dunix=1 -D__INT16_MAX__=0x7fff '-D__SIZE_TYPE__=long unsigned int' -D__UINT64_MAX__=0xffffffffffffffffUL -D__FLT64X_DIG__=18 '-D__INT8_TYPE__=signed char' -D__ELF__=1 -D__GCC_ASM_FLAG_OUTPUTS__=1 -D__FLT_RADIX__=2 '-D__INT_LEAST16_TYPE__=short int' -D__LDBL_EPSILON__=1.08420217248550443400745280086994171e-19L '-D__UINTMAX_C(c)=c ## UL' -D__SSE_MATH__=1 -D__k8=1 -D__SIG_ATOMIC_MAX__=0x7fffffff -D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__SIZEOF_PTRDIFF_T__=8 -D__FLT32X_MANT_DIG__=53 -D__x86_64__=1 '-D__FLT32X_MIN_EXP__=(-1021)' -D__DEC32_SUBNORMAL_MIN__=0.000001E-95DF -D__INT_FAST16_MAX__=0x7fffffffffffffffL -D__FLT64_DIG__=15 -D__UINT_FAST32_MAX__=0xffffffffffffffffUL '-D__UINT_LEAST64_TYPE__=long unsigned int' -D__FLT_HAS_QUIET_NAN__=1 -D__FLT_MAX_10_EXP__=38 -D__LONG_MAX__=0x7fffffffffffffffL -D__FLT64X_HAS_DENORM__=1 -D__DEC128_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143DL -D__FLT_HAS_INFINITY__=1 '-D__UINT_FAST16_TYPE__=long unsigned int' -D__DEC64_MAX__=9.999999999999999E384DD -D__INT_FAST32_WIDTH__=64 -D__PRAGMA_REDEFINE_EXTNAME=1 -D__SIZE_WIDTH__=64 -D__SEG_FS=1 -D__INT_LEAST16_MAX__=0x7fff -D__DEC64_MANT_DIG__=16 -D__INT64_MAX__=0x7fffffffffffffffL -D__UINT_LEAST32_MAX__=0xffffffffU -D__SEG_GS=1 -D__FLT32_DENORM_MIN__=1.40129846432481707092372958328991613e-45F32 -D__GCC_ATOMIC_LONG_LOCK_FREE=2 -D__SIG_ATOMIC_WIDTH__=32 '-D__INT_LEAST64_TYPE__=long int' '-D__INT16_TYPE__=short int' '-D__INT_LEAST8_TYPE__=signed char' -D__DEC32_MAX_EXP__=97 -D__INT_FAST8_MAX__=0x7f '-D__FLT128_MAX__=1.18973149535723176508575932662800702e+4932F128' -D__INTPTR_MAX__=0x7fffffffffffffffL -Dlinux=1 -D__FLT64_HAS_QUIET_NAN__=1 '-D__FLT32_MIN_10_EXP__=(-37)' -D__SSE2__=1 -D__FLT32X_DIG__=15 -D__LDBL_MANT_DIG__=64 -D__DBL_HAS_QUIET_NAN__=1 -D__FLT64_HAS_INFINITY__=1 '-D__FLT64X_MAX__=1.18973149535723176502126385303097021e+4932F64x' '-D__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)' -D__code_model_small__=1 -D__k8__=1 '-D__INTPTR_TYPE__=long int' '-D__UINT16_TYPE__=short unsigned int' -D__WCHAR_TYPE__=int -D__SIZEOF_FLOAT__=4 -D__pic__=2 -D__UINTPTR_MAX__=0xffffffffffffffffUL -D__INT_FAST64_WIDTH__=64 '-D__DEC64_MIN_EXP__=(-382)' -D__FLT32_DECIMAL_DIG__=9 -D__INT_FAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1 -D__FLT_DIG__=6 -D__FLT32_HAS_INFINITY__=1 -D__FLT64X_MAX_EXP__=16384 '-D__UINT_FAST64_TYPE__=long unsigned int' -D__INT_MAX__=0x7fffffff -D__amd64__=1 '-D__INT64_TYPE__=long int' -D__FLT_MAX_EXP__=128 -D__ORDER_BIG_ENDIAN__=4321 -D__DBL_MANT_DIG__=53 -D__SIZEOF_FLOAT128__=16 -D__INT_LEAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__DEC64_MIN__=1E-383DD '-D__WINT_TYPE__=unsigned int' '-D__UINT_LEAST32_TYPE__=unsigned int' -D__SIZEOF_SHORT__=2 -D__SSE__=1 '-D__LDBL_MIN_EXP__=(-16381)' '-D__FLT64_MAX__=1.79769313486231570814527423731704357e+308F64' -D__WINT_WIDTH__=32 -D__INT_LEAST8_MAX__=0x7f -D__FLT32X_MAX_10_EXP__=308 -D__SIZEOF_INT128__=16 -D__LDBL_MAX_10_EXP__=4932 -D__ATOMIC_RELAXED=0 '-D__DBL_EPSILON__=((double)2.22044604925031308084726333618164062e-16L)' -D__FLT128_MIN__=3.36210314311209350626267781732175260e-4932F128 -D_LP64=1 '-D__UINT8_C(c)=c' -D__FLT64_MAX_EXP__=1024 -D__INT_LEAST32_TYPE__=int -D__SIZEOF_WCHAR_T__=4 '-D__UINT64_TYPE__=long unsigned int' -D__FLT128_HAS_QUIET_NAN__=1 '-D__INT_FAST8_TYPE__=signed char' -D__FLT64X_MIN__=3.36210314311209350626267781732175260e-4932F64x -D__FLT64_HAS_DENORM__=1 -D__FLT32_EPSILON__=1.19209289550781250000000000000000000e-7F32 -D__DBL_DECIMAL_DIG__=17 -D__STDC_UTF_32__=1 -D__INT_FAST8_WIDTH__=8 -D__FXSR__=1 -D__DEC_EVAL_METHOD__=2 '-D__FLT32X_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__UINT32_C(c)=c ## U' -D__INTMAX_MAX__=0x7fffffffffffffffL -D__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__FLT_DENORM_MIN__=1.40129846432481707092372958328991613e-45F -D__INT8_MAX__=0x7f -D__LONG_WIDTH__=64 -D__PIC__=2 '-D__UINT_FAST32_TYPE__=long unsigned int' '-D__FLT_MAX__=3.40282346638528859811704183484516925e+38F' -D__INT32_TYPE__=int -D__SIZEOF_DOUBLE__=8 '-D__FLT_MIN_10_EXP__=(-37)' -D__FLT64_MIN__=2.22507385850720138309023271733240406e-308F64 -D__INT_LEAST32_WIDTH__=32 '-D__INTMAX_TYPE__=long int' -D__DEC128_MAX_EXP__=6145 -D__FLT32X_HAS_QUIET_NAN__=1 -D__ATOMIC_CONSUME=1 -D__INT_FAST16_WIDTH__=64 -D__UINTMAX_MAX__=0xffffffffffffffffUL -D__DEC32_MANT_DIG__=7 -D__FLT32X_DENORM_MIN__=4.94065645841246544176568792868221372e-324F32x -D__DBL_MAX_10_EXP__=308 -D__LDBL_DENORM_MIN__=3.64519953188247460252840593361941982e-4951L '-D__INT16_C(c)=c' '-D__PTRDIFF_TYPE__=long int' -D__ATOMIC_SEQ_CST=5 '-D__UINT32_TYPE__=unsigned int' '-D__FLT32X_MIN_10_EXP__=(-307)' '-D__UINTPTR_TYPE__=long unsigned int' -D__DEC64_SUBNORMAL_MIN__=0.000000000000001E-383DD -D__DEC128_MANT_DIG__=34 '-D__LDBL_MIN_10_EXP__=(-4931)' -D__FLT128_EPSILON__=1.92592994438723585305597794258492732e-34F128 -D__SIZEOF_LONG_LONG__=8 -D__FLT128_DECIMAL_DIG__=36 -D__GCC_ATOMIC_LLONG_LOCK_FREE=2 -D__FLT32X_MIN__=2.22507385850720138309023271733240406e-308F32x -D__LDBL_DIG__=18 -D__FLT_DECIMAL_DIG__=9 -D__UINT_FAST16_MAX__=0xffffffffffffffffUL -D__GCC_ATOMIC_SHORT_LOCK_FREE=2 -D__INT_LEAST64_WIDTH__=64 '-D__UINT_FAST8_TYPE__=unsigned char' -D__ATOMIC_ACQ_REL=4 -D__ATOMIC_RELEASE=3 -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -- test.c
+[E 22:56:32 121913] Starting compilation TRAP /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/compilations/26/19879979_0.trap.br
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/stdlib.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/features.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/stdc-predef.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/waitflags.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/waitstatus.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/floatn.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/types.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/timesize.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/time64.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/clock_t.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/time_t.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/timer_t.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/endian.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/endian.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/endianness.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/byteswap.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/uintn-identity.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/sys/select.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/select.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/struct_mutex.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/alloca.h
+[E 22:56:32 121913] Already archived /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+[E 22:56:32 121913] Archiving /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/src/usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+[E 22:56:32 121913] Creating trap tarball /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/tarballs/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c.3131389e_0.trap.tar.br
+[E 22:56:32 121913] Emitting trap files for test.c
+[E 22:56:32 121913] Opening existencedb in /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/existencedb/db
+[E 22:56:32 121913] Wrote 46 files to /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/tarballs/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/test.c.3131389e_0.trap.tar.br
+[E 22:56:32 121913] Finished compilation TRAP /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/trap/cpp/compilations/26/19879979_0.trap.br
+[E 22:56:32 121913] Marking C compilation as happened.
+[E 22:56:32 121913] Setting tag c-compilation-happened
+[E 22:56:32 121913] Starting from CODEQL_TRACER_DB_ID 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121913] Set tag for 000000000001DC37_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC35_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC34_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC32_0000000000000001
+[E 22:56:32 121913] Set tag for 000000000001DC22_0000000000000003
+[E 22:56:32 121913] Set tag for 000000000001DC22_0000000000000002
+[E 22:56:32 121913] Set tag for root
+[E 22:56:32 121913] Unlocking DB
+[E 22:56:32 121913] Unlocked DB
+[T 22:56:32 121911] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121956] Initializing tracer.
+[T 22:56:32 121956] Initialising tags...
+[T 22:56:32 121956] ID set to 000000000001DC64_0000000000000001 (parent 000000000001DC35_0000000000000001)
+[T 22:56:32 121956] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:56:32 121956] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:56:32 121956]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:56:32 121956]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:56:32 121956]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:56:32 121956]  -> path lookup for as as /usr/local/bin/as...
+[T 22:56:32 121956]  -> path lookup for as as /usr/sbin/as...
+[T 22:56:32 121956]  -> path lookup for as as /usr/bin/as...
+[T 22:56:32 121956] Resolved barename as to /usr/bin/as
+[T 22:56:32 121956] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:56:32 121956] Executing the following tracer actions:
+[T 22:56:32 121956] Tracer actions:
+[T 22:56:32 121956] pre_invocations(0)
+[T 22:56:32 121956] post_invocations(1)
+[T 22:56:32 121956] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /tmp/ccf8tP6q.o, /tmp/ccuHJAft.s]
+[T 22:56:32 121956] trace_languages(1): [cpp]
+[T 22:56:32 121958] Attempting to switch stdout/stderr to 4...
+[T 22:56:32 121958] Initializing tracer.
+[T 22:56:32 121958] Initialising tags...
+[T 22:56:32 121958] ID set to 000000000001DC66_0000000000000001 (parent 000000000001DC64_0000000000000001)
+[E 22:56:32 121958] CodeQL C/C++ Extractor 2.11.3
+[E 22:56:32 121958] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:56:32 121958] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --assembler --codeql-assembler-executable /usr/bin/as --64 -o /tmp/ccf8tP6q.o /tmp/ccuHJAft.s
+[T 22:56:32 121956] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121959] Initializing tracer.
+[T 22:56:32 121959] Initialising tags...
+[T 22:56:32 121959] ID set to 000000000001DC67_0000000000000001 (parent 000000000001DC35_0000000000000001)
+[T 22:56:32 121959] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/collect2 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/collect2) ====
+[T 22:56:32 121959] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/collect2 ===
+[T 22:56:32 121959] Executing the following tracer actions:
+[T 22:56:32 121959] Tracer actions:
+[T 22:56:32 121959] pre_invocations(0)
+[T 22:56:32 121959] post_invocations(1)
+[T 22:56:32 121959] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--linker, --semmle-linker-executable, /usr/lib/gcc/x86_64-linux-gnu/9/collect2, -plugin, /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so, -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper, -plugin-opt=-fresolution=/tmp/ccNXF5Au.res, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, -plugin-opt=-pass-through=-lc, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, --build-id, --eh-frame-hdr, -m, elf_x86_64, --hash-style=gnu, --as-needed, -dynamic-linker, /lib64/ld-linux-x86-64.so.2, -pie, -z, now, -z, relro, -o, test, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o, /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o, -L/usr/lib/gcc/x86_64-linux-gnu/9, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib, -L/lib/x86_64-linux-gnu, -L/lib/../lib, -L/usr/lib/x86_64-linux-gnu, -L/usr/lib/../lib, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.., /tmp/ccf8tP6q.o, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, -lc, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+[T 22:56:32 121959] trace_languages(1): [cpp]
+[T 22:56:32 121961] Initializing tracer.
+[T 22:56:32 121961] Initialising tags...
+[T 22:56:32 121961] ID set to 000000000001DC69_0000000000000001 (parent 000000000001DC67_0000000000000001)
+[T 22:56:32 121961] ==== Candidate to intercept: /usr/bin/ld (canonical: /usr/bin/x86_64-linux-gnu-ld.bfd) ====
+[T 22:56:32 121961] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-ld.bfd ===
+[T 22:56:32 121961] Executing the following tracer actions:
+[T 22:56:32 121961] Tracer actions:
+[T 22:56:32 121961] pre_invocations(0)
+[T 22:56:32 121961] post_invocations(1)
+[T 22:56:32 121961] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--linker, --semmle-linker-executable, /usr/bin/x86_64-linux-gnu-ld.bfd, -plugin, /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so, -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper, -plugin-opt=-fresolution=/tmp/ccNXF5Au.res, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, -plugin-opt=-pass-through=-lc, -plugin-opt=-pass-through=-lgcc, -plugin-opt=-pass-through=-lgcc_s, --build-id, --eh-frame-hdr, -m, elf_x86_64, --hash-style=gnu, --as-needed, -dynamic-linker, /lib64/ld-linux-x86-64.so.2, -pie, -z, now, -z, relro, -o, test, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o, /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o, -L/usr/lib/gcc/x86_64-linux-gnu/9, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib, -L/lib/x86_64-linux-gnu, -L/lib/../lib, -L/usr/lib/x86_64-linux-gnu, -L/usr/lib/../lib, -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.., /tmp/ccf8tP6q.o, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, -lc, -lgcc, --push-state, --as-needed, -lgcc_s, --pop-state, /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o, /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+[T 22:56:32 121961] trace_languages(1): [cpp]
+[T 22:56:32 121963] Attempting to switch stdout/stderr to 4...
+[T 22:56:32 121963] Initializing tracer.
+[T 22:56:32 121963] Initialising tags...
+[T 22:56:32 121963] ID set to 000000000001DC6B_0000000000000001 (parent 000000000001DC69_0000000000000001)
+[E 22:56:32 121963] CodeQL C/C++ Extractor 2.11.3
+[E 22:56:32 121963] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:56:32 121963] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --linker --semmle-linker-executable /usr/bin/x86_64-linux-gnu-ld.bfd -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNXF5Au.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o test /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/ccf8tP6q.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+[T 22:56:32 121961] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121964] Attempting to switch stdout/stderr to 4...
+[T 22:56:32 121964] Initializing tracer.
+[T 22:56:32 121964] Initialising tags...
+[T 22:56:32 121964] ID set to 000000000001DC6C_0000000000000001 (parent 000000000001DC67_0000000000000001)
+[E 22:56:32 121964] CodeQL C/C++ Extractor 2.11.3
+[E 22:56:32 121964] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:56:32 121964] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --linker --semmle-linker-executable /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNXF5Au.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o test /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/ccf8tP6q.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+Warning: Unrecognised command line argument --push-state
+Warning: Unrecognised command line argument --pop-state
+[T 22:56:32 121959] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121965] Attempting to switch stdout/stderr to 4...
+[T 22:56:32 121965] Initializing tracer.
+[T 22:56:32 121965] Initialising tags...
+[T 22:56:32 121965] ID set to 000000000001DC6D_0000000000000001 (parent 000000000001DC35_0000000000000001)
+[E 22:56:32 121965] CodeQL C/C++ Extractor 2.11.3
+[E 22:56:32 121965] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator
+[E 22:56:32 121965] Command: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/gcc -o test test.c
+[T 22:56:32 121966] Initializing tracer.
+[T 22:56:32 121966] Initialising tags...
+[T 22:56:32 121966] ID set to 000000000001DC6E_0000000000000001 (parent 000000000001DC6D_0000000000000001)
+[T 22:56:32 121966] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:56:32 121966] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:56:32 121966] Executing the following tracer actions:
+[T 22:56:32 121966] Tracer actions:
+[T 22:56:32 121966] pre_invocations(0)
+[T 22:56:32 121966] post_invocations(1)
+[T 22:56:32 121966] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, --version]
+[T 22:56:32 121966] trace_languages(1): [cpp]
+[T 22:56:32 121968] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121968] Initializing tracer.
+[T 22:56:32 121968] Initialising tags...
+[T 22:56:32 121968] ID set to 000000000001DC70_0000000000000001 (parent 000000000001DC6E_0000000000000001)
+[E 22:56:32 121968] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121966] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121969] Initializing tracer.
+[T 22:56:32 121969] Initialising tags...
+[T 22:56:32 121969] ID set to 000000000001DC71_0000000000000001 (parent 000000000001DC6D_0000000000000001)
+[T 22:56:32 121969] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:56:32 121969] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:56:32 121969] Executing the following tracer actions:
+[T 22:56:32 121969] Tracer actions:
+[T 22:56:32 121969] pre_invocations(0)
+[T 22:56:32 121969] post_invocations(1)
+[T 22:56:32 121969] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, --help]
+[T 22:56:32 121969] trace_languages(1): [cpp]
+[T 22:56:32 121971] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121971] Initializing tracer.
+[T 22:56:32 121971] Initialising tags...
+[T 22:56:32 121971] ID set to 000000000001DC73_0000000000000001 (parent 000000000001DC71_0000000000000001)
+[E 22:56:32 121971] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121969] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121972] Initializing tracer.
+[T 22:56:32 121972] Initialising tags...
+[T 22:56:32 121972] ID set to 000000000001DC74_0000000000000001 (parent 000000000001DC6D_0000000000000001)
+[T 22:56:32 121972] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:56:32 121972] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:56:32 121972] Executing the following tracer actions:
+[T 22:56:32 121972] Tracer actions:
+[T 22:56:32 121972] pre_invocations(0)
+[T 22:56:32 121972] post_invocations(1)
+[T 22:56:32 121972] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121965_740877.c]
+[T 22:56:32 121972] trace_languages(1): [cpp]
+[T 22:56:32 121974] Initializing tracer.
+[T 22:56:32 121974] Initialising tags...
+[T 22:56:32 121974] ID set to 000000000001DC76_0000000000000001 (parent 000000000001DC74_0000000000000001)
+[T 22:56:32 121974] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121974] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121974] Executing the following tracer actions:
+[T 22:56:32 121974] Tracer actions:
+[T 22:56:32 121974] pre_invocations(0)
+[T 22:56:32 121974] post_invocations(1)
+[T 22:56:32 121974] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121965_740877.c, -quiet, -dumpbase, semmle_1_121965_740877.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccxkf9td.s]
+[T 22:56:32 121974] trace_languages(1): [cpp]
+[T 22:56:32 121976] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121976] Initializing tracer.
+[T 22:56:32 121976] Initialising tags...
+[T 22:56:32 121976] ID set to 000000000001DC78_0000000000000001 (parent 000000000001DC76_0000000000000001)
+[E 22:56:32 121976] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121974] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121977] Initializing tracer.
+[T 22:56:32 121977] Initialising tags...
+[T 22:56:32 121977] ID set to 000000000001DC79_0000000000000001 (parent 000000000001DC74_0000000000000001)
+[T 22:56:32 121977] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:56:32 121977] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:56:32 121977]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:56:32 121977]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:56:32 121977]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:56:32 121977]  -> path lookup for as as /usr/local/bin/as...
+[T 22:56:32 121977]  -> path lookup for as as /usr/sbin/as...
+[T 22:56:32 121977]  -> path lookup for as as /usr/bin/as...
+[T 22:56:32 121977] Resolved barename as to /usr/bin/as
+[T 22:56:32 121977] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:56:32 121977] Executing the following tracer actions:
+[T 22:56:32 121977] Tracer actions:
+[T 22:56:32 121977] pre_invocations(0)
+[T 22:56:32 121977] post_invocations(1)
+[T 22:56:32 121977] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, /tmp/ccxkf9td.s]
+[T 22:56:32 121977] trace_languages(1): [cpp]
+[T 22:56:32 121979] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121979] Initializing tracer.
+[T 22:56:32 121979] Initialising tags...
+[T 22:56:32 121979] ID set to 000000000001DC7B_0000000000000001 (parent 000000000001DC79_0000000000000001)
+[E 22:56:32 121979] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121977] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121980] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121980] Initializing tracer.
+[T 22:56:32 121980] Initialising tags...
+[T 22:56:32 121980] ID set to 000000000001DC7C_0000000000000001 (parent 000000000001DC74_0000000000000001)
+[E 22:56:32 121980] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121972] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121981] Initializing tracer.
+[T 22:56:32 121981] Initialising tags...
+[T 22:56:32 121981] ID set to 000000000001DC7D_0000000000000001 (parent 000000000001DC6D_0000000000000001)
+[T 22:56:32 121981] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:56:32 121981] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:56:32 121981] Executing the following tracer actions:
+[T 22:56:32 121981] Tracer actions:
+[T 22:56:32 121981] pre_invocations(0)
+[T 22:56:32 121981] post_invocations(1)
+[T 22:56:32 121981] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121965_740877.c, -v, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35]
+[T 22:56:32 121981] trace_languages(1): [cpp]
+[T 22:56:32 121983] Initializing tracer.
+[T 22:56:32 121983] Initialising tags...
+[T 22:56:32 121983] ID set to 000000000001DC7F_0000000000000001 (parent 000000000001DC7D_0000000000000001)
+[T 22:56:32 121983] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121983] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121983] Executing the following tracer actions:
+[T 22:56:32 121983] Tracer actions:
+[T 22:56:32 121983] pre_invocations(0)
+[T 22:56:32 121983] post_invocations(1)
+[T 22:56:32 121983] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -v, -imultiarch, x86_64-linux-gnu, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_1_121965_740877.c, -quiet, -dumpbase, semmle_1_121965_740877.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, -version, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccFWgNHV.s]
+[T 22:56:32 121983] trace_languages(1): [cpp]
+[T 22:56:32 121985] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121985] Initializing tracer.
+[T 22:56:32 121985] Initialising tags...
+[T 22:56:32 121985] ID set to 000000000001DC81_0000000000000001 (parent 000000000001DC7F_0000000000000001)
+[E 22:56:32 121985] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121983] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121986] Initializing tracer.
+[T 22:56:32 121986] Initialising tags...
+[T 22:56:32 121986] ID set to 000000000001DC82_0000000000000001 (parent 000000000001DC7D_0000000000000001)
+[T 22:56:32 121986] ==== Candidate to intercept: as (canonical: as) ====
+[T 22:56:32 121986] Will try to resolve as in path /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arun/codeql_/codeql:/home/linuxbrew/.linuxbrew/bin/.
+[T 22:56:32 121986]  -> path lookup for as as /home/linuxbrew/.linuxbrew/bin/as...
+[T 22:56:32 121986]  -> path lookup for as as /home/linuxbrew/.linuxbrew/sbin/as...
+[T 22:56:32 121986]  -> path lookup for as as /usr/local/sbin/as...
+[T 22:56:32 121986]  -> path lookup for as as /usr/local/bin/as...
+[T 22:56:32 121986]  -> path lookup for as as /usr/sbin/as...
+[T 22:56:32 121986]  -> path lookup for as as /usr/bin/as...
+[T 22:56:32 121986] Resolved barename as to /usr/bin/as
+[T 22:56:32 121986] Lua: === Intercepted call to /usr/bin/as ===
+[T 22:56:32 121986] Executing the following tracer actions:
+[T 22:56:32 121986] Tracer actions:
+[T 22:56:32 121986] pre_invocations(0)
+[T 22:56:32 121986] post_invocations(1)
+[T 22:56:32 121986] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, -v, --64, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_2_121965_740891.o, /tmp/ccFWgNHV.s]
+[T 22:56:32 121986] trace_languages(1): [cpp]
+[T 22:56:32 121988] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121988] Initializing tracer.
+[T 22:56:32 121988] Initialising tags...
+[T 22:56:32 121988] ID set to 000000000001DC84_0000000000000001 (parent 000000000001DC82_0000000000000001)
+[E 22:56:32 121988] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121986] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121989] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121989] Initializing tracer.
+[T 22:56:32 121989] Initialising tags...
+[T 22:56:32 121989] ID set to 000000000001DC85_0000000000000001 (parent 000000000001DC7D_0000000000000001)
+[E 22:56:32 121989] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121981] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121990] Initializing tracer.
+[T 22:56:32 121990] Initialising tags...
+[T 22:56:32 121990] ID set to 000000000001DC86_0000000000000001 (parent 000000000001DC6D_0000000000000001)
+[T 22:56:32 121990] ==== Candidate to intercept: /usr/bin/gcc (canonical: /usr/bin/x86_64-linux-gnu-gcc-9) ====
+[T 22:56:32 121990] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-gcc-9 ===
+[T 22:56:32 121990] Executing the following tracer actions:
+[T 22:56:32 121990] Tracer actions:
+[T 22:56:32 121990] pre_invocations(0)
+[T 22:56:32 121990] post_invocations(1)
+[T 22:56:32 121990] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-gcc-9, -nostdinc, -o, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121965_770962.o, -c, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121965_770944.c]
+[T 22:56:32 121990] trace_languages(1): [cpp]
+[T 22:56:32 121992] Initializing tracer.
+[T 22:56:32 121992] Initialising tags...
+[T 22:56:32 121992] ID set to 000000000001DC88_0000000000000001 (parent 000000000001DC86_0000000000000001)
+[T 22:56:32 121992] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/9/cc1 (canonical: /usr/lib/gcc/x86_64-linux-gnu/9/cc1) ====
+[T 22:56:32 121992] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/9/cc1 ===
+[T 22:56:32 121992] Executing the following tracer actions:
+[T 22:56:32 121992] Tracer actions:
+[T 22:56:32 121992] pre_invocations(0)
+[T 22:56:32 121992] post_invocations(1)
+[T 22:56:32 121992] invocation: /home/arun/codeql_/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/9/cc1, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_3_121965_770944.c, -quiet, -dumpbase, semmle_3_121965_770944.c, -mtune=generic, -march=x86-64, -auxbase-strip, /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tmp//semmle_4_121965_770962.o, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccY1KuCA.s]
+[T 22:56:32 121992] trace_languages(1): [cpp]
+[T 22:56:32 121994] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121994] Initializing tracer.
+[T 22:56:32 121994] Initialising tags...
+[T 22:56:32 121994] ID set to 000000000001DC8A_0000000000000001 (parent 000000000001DC88_0000000000000001)
+[E 22:56:32 121994] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121992] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 22:56:32 121995] Attempting to switch stdout/stderr to 7...
+[T 22:56:32 121995] Initializing tracer.
+[T 22:56:32 121995] Initialising tags...
+[T 22:56:32 121995] ID set to 000000000001DC8B_0000000000000001 (parent 000000000001DC86_0000000000000001)
+[E 22:56:32 121995] Mimicry classification suppression detected; exiting.
+[T 22:56:32 121990] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 22:56:32 121965] Checking whether C compilation already happened.
+[E 22:56:32 121965] Checking for tag c-compilation-happened
+[E 22:56:32 121965] Checking CODEQL_TRACER_DB_ID 000000000001DC35_0000000000000001
+[E 22:56:32 121965] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121965] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchTaintedAllocator/Talloc/working/tags.db
+[E 22:56:32 121965] Unlocking DB
+[E 22:56:32 121965] Unlocked DB
+[E 22:56:32 121965] Exiting as C compilation already happened.
+[T 22:56:32 121909] Extractor /home/arun/codeql_/codeql/cpp/tools/linux64/extractor terminated with exit code 0.

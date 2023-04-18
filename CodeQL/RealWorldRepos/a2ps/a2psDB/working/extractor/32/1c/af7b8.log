@@ -1,0 +1,12 @@
+[E 16:16:50 66730] CodeQL C/C++ Extractor 2.11.0
+[E 16:16:50 66730] Current directory: /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/liba2ps
+[E 16:16:50 66730] Command: /home/arun/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/x86_64-linux-gnu-gcc-9 -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I. -I../lib '-DLOCALEDIR="/usr/share/locale"' '-DSYSCONFFILE="/usr/etc/a2ps.cfg"' -g -O2 -MT encoding.lo -MD -MP -MF .deps/encoding.Tpo -c encoding.c -o encoding.o
+[E 16:16:50 66730] Warning[extractor-c++]: In canonicalise_path: realpath failed
+[E 16:16:50 66730] Checking whether C compilation already happened.
+[E 16:16:50 66730] Checking for tag c-compilation-happened
+[E 16:16:50 66730] Checking CODEQL_TRACER_DB_ID 000000000001047B_0000000000000001
+[E 16:16:50 66730] Locking DB /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB/working/tags.db
+[E 16:16:50 66730] Locked DB /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB/working/tags.db
+[E 16:16:50 66730] Unlocking DB
+[E 16:16:50 66730] Unlocked DB
+[E 16:16:50 66730] Exiting as C compilation already happened.

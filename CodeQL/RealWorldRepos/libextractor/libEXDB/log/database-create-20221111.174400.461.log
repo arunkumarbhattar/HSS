@@ -1,0 +1,44 @@
+[2022-11-11 17:44:00] This is codeql database create libEXDB
+[2022-11-11 17:44:00] Log file was started late.
+[2022-11-11 17:44:00] [PROGRESS] database create> Initializing database at /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/libextractor/libEXDB.
+[2022-11-11 17:44:00] Running plumbing command: codeql database init --source-root=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/libextractor --allow-missing-source-root=false --allow-already-existing -- /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/libextractor/libEXDB
+[2022-11-11 17:44:00] Exception caught at top level: No GitHub token was provided to auto-detect the repository's languages. Please either provide one or specify the languages manually using --language.
+                      (eventual cause: MissingTokenException "An operation was attempted that requires a GitHub token but one could not be fou...")
+                      com.semmle.cli2.database.InitCommand.getOrAutodetectLanguages(InitCommand.java:372)
+                      com.semmle.cli2.database.InitCommand.executeSubcommand(InitCommand.java:180)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:188)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:84)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:561)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:223)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:232)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:100)
+                      
+                       ... caused by:
+                      
+                      com.semmle.cli2.github.MissingTokenException: An operation was attempted that requires a GitHub token but one could not be found. Please pass a token from standard input with the --github-auth-stdin option, or set it as the GITHUB_TOKEN environment variable.
+                      com.semmle.cli2.github.GithubOptions.getToken(GithubOptions.java:130)
+                      com.semmle.cli2.github.GithubOptions.getAuthorization(GithubOptions.java:135)
+                      com.semmle.cli2.github.GithubOptions.addHeaders(GithubOptions.java:110)
+                      com.semmle.cli2.github.GithubOptions.createGetRequest(GithubOptions.java:123)
+                      com.semmle.cli2.database.InitCommand.getOrAutodetectLanguages(InitCommand.java:353)
+                      com.semmle.cli2.database.InitCommand.executeSubcommand(InitCommand.java:180)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:188)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:84)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:561)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:223)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:232)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:100)

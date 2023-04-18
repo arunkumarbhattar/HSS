@@ -1,0 +1,870 @@
+[2022-11-11 16:05:38] This is codeql database create a2psDB --overwrite --language=cpp
+[2022-11-11 16:05:38] Log file was started late.
+[2022-11-11 16:05:38] [PROGRESS] database create> Initializing database at /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB.
+[2022-11-11 16:05:38] Running plumbing command: codeql database init --overwrite --language=cpp --source-root=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps --allow-missing-source-root=false --allow-already-existing -- /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB
+[2022-11-11 16:05:38] [PROGRESS] database init> Counting lines of code in /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps
+[2022-11-11 16:05:38] [PROGRESS] database init> Resolving extractor cpp.
+[2022-11-11 16:05:38] Calling plumbing command: codeql resolve languages --format=json
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /home/arun/codeql/.codeqlmanifest.json
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/properties/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/html/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/csv/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/csharp/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/cpp/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/java/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/javascript/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/ruby/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/python/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/xml/codeql-extractor.yml.
+[2022-11-11 16:05:38] [DETAILS] resolve languages> Parsing /home/arun/codeql/go/codeql-extractor.yml.
+[2022-11-11 16:05:38] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "properties" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/properties"
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/html"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/csv"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction.",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "cil" : {
+                                  "title" : "Whether to enable CIL extraction.",
+                                  "description" : "A value indicating, whether CIL extraction should be enabled. The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/cpp"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/javascript",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/ruby"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/python"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/xml"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "/home/arun/codeql/go"
+                            }
+                          ]
+                        }
+                      }
+[2022-11-11 16:05:38] [DETAILS] database init> Found candidate extractor root for cpp: /home/arun/codeql/cpp.
+[2022-11-11 16:05:38] [PROGRESS] database init> Successfully loaded extractor C/C++ (cpp) from /home/arun/codeql/cpp.
+[2022-11-11 16:05:38] [PROGRESS] database init> Created skeleton CodeQL database at /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB. This in-progress database is ready to be populated by an extractor.
+[2022-11-11 16:05:38] Plumbing command codeql database init completed.
+[2022-11-11 16:05:38] Using autobuild script /home/arun/codeql/cpp/tools/autobuild.sh.
+[2022-11-11 16:05:38] [DETAILS] database create> Detected autobuild command for C/C++: /home/arun/codeql/cpp/tools/autobuild.sh.
+[2022-11-11 16:05:38] [PROGRESS] database create> Running build command: [/home/arun/codeql/cpp/tools/autobuild.sh]
+[2022-11-11 16:05:38] Running plumbing command: codeql database trace-command --working-dir=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps --index-traceless-dbs --no-db-cluster -- /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps/a2psDB /home/arun/codeql/cpp/tools/autobuild.sh
+[2022-11-11 16:05:38] [PROGRESS] database trace-command> Running command in /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps: [/home/arun/codeql/cpp/tools/autobuild.sh]
+[2022-11-11 16:05:38] [build-stderr] + TOOLS_DIR=/home/arun/codeql/cpp/tools
+[2022-11-11 16:05:38] [build-stderr] + /home/arun/codeql/cpp/tools/detect_source_root
+[2022-11-11 16:05:38] [build-stdout] detect_source_root: Using build system found in '.'
+[2022-11-11 16:05:38] [build-stderr] + '[' -L _lgtm_detected_source_root ']'
+[2022-11-11 16:05:38] [build-stderr] ++ readlink _lgtm_detected_source_root
+[2022-11-11 16:05:38] [build-stderr] + cd .
+[2022-11-11 16:05:38] [build-stderr] + export CXXFLAGS=-fpermissive
+[2022-11-11 16:05:38] [build-stderr] + CXXFLAGS=-fpermissive
+[2022-11-11 16:05:38] [build-stderr] + configure_prefix_opt=
+[2022-11-11 16:05:38] [build-stderr] + '[' -f configure.ac ']'
+[2022-11-11 16:05:38] [build-stderr] + configure_prefix_opt=--prefix=/usr
+[2022-11-11 16:05:38] [build-stderr] + '[' -f CMakeLists.txt ']'
+[2022-11-11 16:05:38] [build-stderr] + '[' -f meson.build ']'
+[2022-11-11 16:05:38] [build-stderr] + try_configure
+[2022-11-11 16:05:38] [build-stderr] + build_dir=.
+[2022-11-11 16:05:38] [build-stderr] + root_dir=.
+[2022-11-11 16:05:38] [build-stderr] + grep -q 'AC_MSG_.* configure in a separate.* directory' configure.in configure.ac
+[2022-11-11 16:05:38] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:05:38] [build-stderr] + '[' -x configure ']'
+[2022-11-11 16:05:38] [build-stderr] + cd .
+[2022-11-11 16:05:38] [build-stderr] + /home/arun/codeql/cpp/tools/configure-wrapper ./configure --prefix=/usr
+[2022-11-11 16:05:38] [build-stdout] checking for a BSD-compatible install... /usr/bin/install -c
+[2022-11-11 16:05:38] [build-stdout] checking whether build environment is sane... yes
+[2022-11-11 16:05:38] [build-stdout] checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+[2022-11-11 16:05:38] [build-stdout] checking for gawk... no
+[2022-11-11 16:05:38] [build-stdout] checking for mawk... mawk
+[2022-11-11 16:05:38] [build-stdout] checking whether make sets $(MAKE)... no
+[2022-11-11 16:05:38] [build-stdout] checking whether make supports nested variables... no
+[2022-11-11 16:05:38] [build-stdout] checking for gawk... (cached) mawk
+[2022-11-11 16:05:38] [build-stdout] checking whether ln -s works... yes
+[2022-11-11 16:05:38] [build-stdout] checking whether make sets $(MAKE)... (cached) no
+[2022-11-11 16:05:38] [build-stdout] checking for perl... /usr/bin/perl
+[2022-11-11 16:05:38] [build-stdout] checking for gcc... gcc
+[2022-11-11 16:05:38] [build-stdout] checking whether the C compiler works... yes
+[2022-11-11 16:05:38] [build-stdout] checking for C compiler default output file name... a.out
+[2022-11-11 16:05:38] [build-stdout] checking for suffix of executables... 
+[2022-11-11 16:05:38] [build-stdout] checking whether we are cross compiling... no
+[2022-11-11 16:05:38] [build-stdout] checking for suffix of object files... o
+[2022-11-11 16:05:38] [build-stdout] checking whether we are using the GNU C compiler... yes
+[2022-11-11 16:05:38] [build-stdout] checking whether gcc accepts -g... yes
+[2022-11-11 16:05:38] [build-stdout] checking for gcc option to accept ISO C89... none needed
+[2022-11-11 16:05:38] [build-stdout] checking whether gcc understands -c and -o together... yes
+[2022-11-11 16:05:38] [build-stdout] checking whether make supports the include directive... no
+[2022-11-11 16:05:39] [build-stdout] checking dependency style of gcc... none
+[2022-11-11 16:05:39] [build-stdout] checking for gcc option to accept ISO C99... none needed
+[2022-11-11 16:05:39] [build-stdout] checking how to run the C preprocessor... gcc -E
+[2022-11-11 16:05:39] [build-stdout] checking for grep that handles long lines and -e... /usr/bin/grep
+[2022-11-11 16:05:39] [build-stdout] checking for egrep... /usr/bin/grep -E
+[2022-11-11 16:05:39] [build-stdout] checking for Minix Amsterdam compiler... no
+[2022-11-11 16:05:39] [build-stdout] checking for ar... ar
+[2022-11-11 16:05:39] [build-stdout] checking the archiver (ar) interface... ar
+[2022-11-11 16:05:39] [build-stdout] checking for ar... (cached) ar
+[2022-11-11 16:05:39] [build-stdout] checking for ranlib... ranlib
+[2022-11-11 16:05:39] [build-stdout] checking for ANSI C header files... yes
+[2022-11-11 16:05:39] [build-stdout] checking for sys/types.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for sys/stat.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for stdlib.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for string.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for memory.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for strings.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for inttypes.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for stdint.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for unistd.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking minix/config.h usability... no
+[2022-11-11 16:05:39] [build-stdout] checking minix/config.h presence... no
+[2022-11-11 16:05:39] [build-stdout] checking for minix/config.h... no
+[2022-11-11 16:05:39] [build-stdout] checking whether it is safe to define __EXTENSIONS__... yes
+[2022-11-11 16:05:39] [build-stdout] checking for bison... no
+[2022-11-11 16:05:39] [build-stdout] checking for byacc... no
+[2022-11-11 16:05:39] [build-stdout] checking for gperf... /usr/bin/gperf
+[2022-11-11 16:05:39] [build-stdout] checking for gperf - version >= 2.7... no
+[2022-11-11 16:05:39] [build-stdout] checking the archiver (ar) interface... (cached) ar
+[2022-11-11 16:05:39] [build-stdout] checking for flex... no
+[2022-11-11 16:05:39] [build-stdout] checking for lex... no
+[2022-11-11 16:05:39] [build-stdout] checking whether LEX is flex... no
+[2022-11-11 16:05:39] [build-stdout] checking build system type... x86_64-pc-linux-gnu
+[2022-11-11 16:05:39] [build-stdout] checking host system type... x86_64-pc-linux-gnu
+[2022-11-11 16:05:39] [build-stdout] checking how to print strings... printf
+[2022-11-11 16:05:39] [build-stdout] checking for a sed that does not truncate output... /usr/bin/sed
+[2022-11-11 16:05:39] [build-stdout] checking for fgrep... /usr/bin/grep -F
+[2022-11-11 16:05:39] [build-stdout] checking for ld used by gcc... /usr/bin/ld
+[2022-11-11 16:05:39] [build-stdout] checking if the linker (/usr/bin/ld) is GNU ld... yes
+[2022-11-11 16:05:39] [build-stdout] checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+[2022-11-11 16:05:39] [build-stdout] checking the name lister (/usr/bin/nm -B) interface... BSD nm
+[2022-11-11 16:05:39] [build-stdout] checking the maximum length of command line arguments... 1572864
+[2022-11-11 16:05:39] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+[2022-11-11 16:05:39] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+[2022-11-11 16:05:39] [build-stdout] checking for /usr/bin/ld option to reload object files... -r
+[2022-11-11 16:05:39] [build-stdout] checking for objdump... objdump
+[2022-11-11 16:05:39] [build-stdout] checking how to recognize dependent libraries... pass_all
+[2022-11-11 16:05:39] [build-stdout] checking for dlltool... no
+[2022-11-11 16:05:39] [build-stdout] checking how to associate runtime and link libraries... printf %s\n
+[2022-11-11 16:05:39] [build-stdout] checking for archiver @FILE support... @
+[2022-11-11 16:05:39] [build-stdout] checking for strip... strip
+[2022-11-11 16:05:39] [build-stdout] checking for ranlib... (cached) ranlib
+[2022-11-11 16:05:39] [build-stdout] checking command to parse /usr/bin/nm -B output from gcc object... ok
+[2022-11-11 16:05:39] [build-stdout] checking for sysroot... no
+[2022-11-11 16:05:39] [build-stdout] checking for a working dd... /usr/bin/dd
+[2022-11-11 16:05:39] [build-stdout] checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+[2022-11-11 16:05:39] [build-stdout] checking for mt... mt
+[2022-11-11 16:05:39] [build-stdout] checking if mt is a manifest tool... no
+[2022-11-11 16:05:39] [build-stdout] checking for dlfcn.h... yes
+[2022-11-11 16:05:39] [build-stdout] checking for objdir... .libs
+[2022-11-11 16:05:39] [build-stdout] checking if gcc supports -fno-rtti -fno-exceptions... no
+[2022-11-11 16:05:39] [build-stdout] checking for gcc option to produce PIC... -fPIC -DPIC
+[2022-11-11 16:05:39] [build-stdout] checking if gcc PIC flag -fPIC -DPIC works... yes
+[2022-11-11 16:05:39] [build-stdout] checking if gcc static flag -static works... yes
+[2022-11-11 16:05:39] [build-stdout] checking if gcc supports -c -o file.o... yes
+[2022-11-11 16:05:39] [build-stdout] checking if gcc supports -c -o file.o... (cached) yes
+[2022-11-11 16:05:39] [build-stdout] checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[2022-11-11 16:05:39] [build-stdout] checking dynamic linker characteristics... GNU/Linux ld.so
+[2022-11-11 16:05:39] [build-stdout] checking how to hardcode library paths into programs... immediate
+[2022-11-11 16:05:39] [build-stdout] checking whether stripping libraries is possible... yes
+[2022-11-11 16:05:39] [build-stdout] checking if libtool supports shared libraries... yes
+[2022-11-11 16:05:39] [build-stdout] checking whether to build shared libraries... no
+[2022-11-11 16:05:39] [build-stdout] checking whether to build static libraries... yes
+[2022-11-11 16:05:39] [build-stdout] checking for systempapername in -lpaper... no
+[2022-11-11 16:05:39] [build-stdout] checking whether NLS is requested... yes
+[2022-11-11 16:05:39] [build-stdout] checking for msgfmt... no
+[2022-11-11 16:05:39] [build-stdout] checking for gmsgfmt... :
+[2022-11-11 16:05:39] [build-stdout] checking for xgettext... no
+[2022-11-11 16:05:39] [build-stdout] checking for msgmerge... no
+[2022-11-11 16:05:39] [build-stdout] checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+[2022-11-11 16:05:39] [build-stdout] checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+[2022-11-11 16:05:40] [build-stdout] checking for shared library run path origin... done
+[2022-11-11 16:05:40] [build-stdout] checking for CFPreferencesCopyAppValue... no
+[2022-11-11 16:05:40] [build-stdout] checking for CFLocaleCopyCurrent... no
+[2022-11-11 16:05:40] [build-stdout] checking for GNU gettext in libc... yes
+[2022-11-11 16:05:40] [build-stdout] checking whether to use NLS... yes
+[2022-11-11 16:05:40] [build-stdout] checking where the gettext function comes from... libc
+[2022-11-11 16:05:40] [build-stdout] checking for emacs... no
+[2022-11-11 16:05:40] [build-stdout] checking for xemacs... no
+[2022-11-11 16:05:40] [build-stdout] checking where .elc files should go... ${datadir}/emacs/site-lisp
+[2022-11-11 16:05:40] [build-stdout] checking whether paths should be hardcoded... no
+[2022-11-11 16:05:40] [build-stdout] checking for PostScript fonts path... :/usr/local/ghostscript/fonts:/usr/local/share/ghostscript/fonts
+[2022-11-11 16:05:40] [build-stdout] checking for file... /usr/bin/file
+[2022-11-11 16:05:40] [build-stdout] checking for the option for file to follow the links...  -L
+[2022-11-11 16:05:40] [build-stdout] checking for lp... lp
+[2022-11-11 16:05:40] [build-stdout] checking for printer queue selection... lp -d PRINTER
+[2022-11-11 16:05:40] [build-stdout] checking for gv... no
+[2022-11-11 16:05:40] [build-stdout] checking for ghostview... no
+[2022-11-11 16:05:40] [build-stdout] checking for gzip... yes
+[2022-11-11 16:05:40] [build-stdout] checking for bzip... no
+[2022-11-11 16:05:40] [build-stdout] checking for bzip2... yes
+[2022-11-11 16:05:40] [build-stdout] checking for dvips... no
+[2022-11-11 16:05:40] [build-stdout] checking for convert... no
+[2022-11-11 16:05:40] [build-stdout] checking for netscape... no
+[2022-11-11 16:05:40] [build-stdout] checking for html2ps... no
+[2022-11-11 16:05:40] [build-stdout] checking for acroread... no
+[2022-11-11 16:05:40] [build-stdout] checking for pdf2ps... yes
+[2022-11-11 16:05:40] [build-stdout] checking for distill... no
+[2022-11-11 16:05:40] [build-stdout] checking for ps2pdf... yes
+[2022-11-11 16:05:40] [build-stdout] checking for psselect... no
+[2022-11-11 16:05:40] [build-stdout] checking for psnup... no
+[2022-11-11 16:05:40] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:05:40] [build-stdout] configure: WARNING: a2ps works much better with the psutils.  Available at
+[2022-11-11 16:05:40] [build-stdout] configure: WARNING:   http://www.dcs.ed.ac.uk/home/ajcd/psutils/
+[2022-11-11 16:05:40] [build-stdout] configure: WARNING: You *really* should install them *before* installing a2ps.
+[2022-11-11 16:05:40] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:05:40] [build-stdout] checking for grog... yes
+[2022-11-11 16:05:40] [build-stdout] checking for makeinfo... no
+[2022-11-11 16:05:40] [build-stdout] checking for tex... no
+[2022-11-11 16:05:40] [build-stdout] checking for latex... no
+[2022-11-11 16:05:40] [build-stdout] checking that generated files are newer than configure... done
+[2022-11-11 16:05:40] [build-stdout] configure: creating ./config.status
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/card
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/fixps
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/pdiff
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/psmandup
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/psset
+[2022-11-11 16:05:41] [build-stdout] config.status: creating Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating src/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating doc/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating man/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating tests/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating tests/defs
+[2022-11-11 16:05:41] [build-stdout] config.status: creating lib/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating liba2ps/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating build-aux/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating etc/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating etc/a2ps_cfg
+[2022-11-11 16:05:41] [build-stdout] config.status: creating etc/a2ps-site.cfg
+[2022-11-11 16:05:41] [build-stdout] config.status: creating po/Makefile.in
+[2022-11-11 16:05:41] [build-stdout] config.status: creating sheets/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating encoding/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating ps/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating afm/Makefile
+[2022-11-11 16:05:41] [build-stdout] config.status: creating contrib/Makefile
+[2022-11-11 16:05:42] [build-stdout] config.status: creating contrib/sample/Makefile
+[2022-11-11 16:05:42] [build-stdout] config.status: creating contrib/emacs/Makefile
+[2022-11-11 16:05:42] [build-stdout] config.status: creating fonts/Makefile
+[2022-11-11 16:05:42] [build-stdout] config.status: creating ppd/Makefile
+[2022-11-11 16:05:42] [build-stdout] config.status: creating config.h
+[2022-11-11 16:05:42] [build-stdout] config.status: config.h is unchanged
+[2022-11-11 16:05:42] [build-stdout] config.status: executing depfiles commands
+[2022-11-11 16:05:42] [build-stdout] config.status: error: in `/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps':
+[2022-11-11 16:05:42] [build-stdout] config.status: error: Something went wrong bootstrapping makefile fragments
+[2022-11-11 16:05:42] [build-stdout]     for automatic dependency tracking.  Try re-running configure with the
+[2022-11-11 16:05:42] [build-stdout]     '--disable-dependency-tracking' option to at least be able to build
+[2022-11-11 16:05:42] [build-stdout]     the package (albeit without support for automatic dependency tracking).
+[2022-11-11 16:05:42] [build-stdout] See `config.log' for more details
+[2022-11-11 16:05:42] [build-stdout] /home/arun/codeql/cpp/tools/configure-wrapper: Configure failed
+[2022-11-11 16:05:42] [build-stderr] + cd .
+[2022-11-11 16:05:42] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:05:42] [build-stderr] + '[' -x configure.gnu ']'
+[2022-11-11 16:05:42] [build-stderr] + rm -rf _lgtm_build_dir
+[2022-11-11 16:05:42] [build-stderr] + for bootstrap in bootstrap.sh bootstrap autogen.sh
+[2022-11-11 16:05:42] [build-stderr] + '[' -x bootstrap.sh ']'
+[2022-11-11 16:05:42] [build-stderr] + '[' -f bootstrap.sh ']'
+[2022-11-11 16:05:42] [build-stderr] + for bootstrap in bootstrap.sh bootstrap autogen.sh
+[2022-11-11 16:05:42] [build-stderr] + '[' -x bootstrap ']'
+[2022-11-11 16:05:42] [build-stderr] + ./bootstrap
+[2022-11-11 16:05:42] [build-stdout] ./bootstrap: Bootstrapping from checked-out a2ps sources...
+[2022-11-11 16:05:42] [build-stdout] ./bootstrap: consider installing git-merge-changelog from gnulib
+[2022-11-11 16:05:42] [build-stdout] ./bootstrap: getting gnulib files...
+[2022-11-11 16:05:42] [build-stdout] ./bootstrap: getting translations into po/.reference for a2ps...
+[2022-11-11 16:05:52] [build-stdout] ./bootstrap: autopoint --force
+[2022-11-11 16:05:53] [build-stdout] running: libtoolize --install --copy
+[2022-11-11 16:05:53] [build-stderr] libtoolize:   error: 'build-aux/config.guess' is newer: use '--force' to overwrite
+[2022-11-11 16:05:53] [build-stderr] libtoolize:   error: 'build-aux/config.sub' is newer: use '--force' to overwrite
+[2022-11-11 16:05:53] [build-stdout] libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+[2022-11-11 16:05:53] [build-stdout] ./bootstrap: gnulib/gnulib-tool    --no-changelog   --aux-dir=build-aux   --doc-base=doc   --lib=liba2ps   --m4-base=m4/   --source-base=lib/   --tests-base=tests   --local-dir=gl      --libtool --import ...
+[2022-11-11 16:05:53] [build-stdout] Module list with included dependencies (indented):
+[2022-11-11 16:05:53] [build-stdout] File list:
+[2022-11-11 16:05:53] [build-stdout]   lib/dummy.c
+[2022-11-11 16:05:53] [build-stdout]   m4/00gnulib.m4
+[2022-11-11 16:05:53] [build-stdout]   m4/gnulib-common.m4
+[2022-11-11 16:05:53] [build-stdout] Finished.
+[2022-11-11 16:05:53] [build-stdout] You may need to add #include directives for the following .h files.
+[2022-11-11 16:05:53] [build-stdout] Don't forget to
+[2022-11-11 16:05:53] [build-stdout]   - add "lib/Makefile" to AC_CONFIG_FILES in ./configure.ac,
+[2022-11-11 16:05:53] [build-stdout]   - mention "lib" in SUBDIRS in Makefile.am,
+[2022-11-11 16:05:53] [build-stdout]   - mention "-I m4" in ACLOCAL_AMFLAGS in Makefile.am,
+[2022-11-11 16:05:53] [build-stdout]   - mention "m4/gnulib-cache.m4" in EXTRA_DIST in Makefile.am,
+[2022-11-11 16:05:53] [build-stdout]   - invoke gl_EARLY in ./configure.ac, right after AC_PROG_CC_C99,
+[2022-11-11 16:05:53] [build-stdout]   - invoke gl_INIT in ./configure.ac.
+[2022-11-11 16:05:53] [build-stdout] running: AUTOPOINT=true LIBTOOLIZE=true autoreconf --verbose --install --force -I m4  --no-recursive
+[2022-11-11 16:05:53] [build-stderr] autoreconf: Entering directory `.'
+[2022-11-11 16:05:53] [build-stderr] autoreconf: running: true --force
+[2022-11-11 16:05:54] [build-stderr] autoreconf: running: aclocal -I m4 --force 
+[2022-11-11 16:05:55] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:55] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:55] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:55] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:55] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:55] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:55] [build-stderr] autoreconf: configure.ac: tracing
+[2022-11-11 16:05:56] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:56] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:56] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:56] [build-stderr] autoreconf: running: true --copy --force
+[2022-11-11 16:05:56] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:56] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:56] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:57] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:57] [build-stderr] autoreconf: running: /usr/bin/autoconf --include=m4 --force
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:57] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:57] [build-stderr] autoreconf: running: /usr/bin/autoheader --include=m4 --force
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:57] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:57] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:57] [build-stderr] autoreconf: running: automake --add-missing --copy --force-missing
+[2022-11-11 16:05:58] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:05:58] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:05:58] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:05:58] [build-stderr] liba2ps/Makefile.am:63: warning: noinst_HEADERS multiply defined in condition TRUE ...
+[2022-11-11 16:05:58] [build-stderr] liba2ps/Makefile.am:57: ... 'noinst_HEADERS' previously defined here
+[2022-11-11 16:05:58] [build-stderr] liba2ps/Makefile.am:28: warning: 'YFLAGS' is a user variable, you should not override it;
+[2022-11-11 16:05:58] [build-stderr] liba2ps/Makefile.am:28: use 'AM_YFLAGS' instead
+[2022-11-11 16:05:58] [build-stderr] src/Makefile.am:41: warning: 'YFLAGS' is a user variable, you should not override it;
+[2022-11-11 16:05:58] [build-stderr] src/Makefile.am:41: use 'AM_YFLAGS' instead
+[2022-11-11 16:05:58] [build-stderr] autoreconf: Leaving directory `.'
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/install-sh build-aux/install-sh
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/mdate-sh build-aux/mdate-sh
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/texinfo.tex build-aux/texinfo.tex
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/depcomp build-aux/depcomp
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/config.guess build-aux/config.guess
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: ln -fs ../gnulib/build-aux/config.sub build-aux/config.sub
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: Creating po/Makevars from po/Makevars.template ...
+[2022-11-11 16:05:58] [build-stdout] ./bootstrap: done.  Now you can run './configure'.
+[2022-11-11 16:05:58] [build-stderr] + try_configure
+[2022-11-11 16:05:58] [build-stderr] + build_dir=.
+[2022-11-11 16:05:58] [build-stderr] + root_dir=.
+[2022-11-11 16:05:58] [build-stderr] + grep -q 'AC_MSG_.* configure in a separate.* directory' configure.in configure.ac
+[2022-11-11 16:05:58] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:05:58] [build-stderr] + '[' -x configure ']'
+[2022-11-11 16:05:58] [build-stderr] + cd .
+[2022-11-11 16:05:58] [build-stderr] + /home/arun/codeql/cpp/tools/configure-wrapper ./configure --prefix=/usr
+[2022-11-11 16:05:58] [build-stdout] checking for a BSD-compatible install... /usr/bin/install -c
+[2022-11-11 16:05:58] [build-stdout] checking whether build environment is sane... yes
+[2022-11-11 16:05:58] [build-stdout] checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+[2022-11-11 16:05:58] [build-stdout] checking for gawk... no
+[2022-11-11 16:05:58] [build-stdout] checking for mawk... mawk
+[2022-11-11 16:05:58] [build-stdout] checking whether make sets $(MAKE)... no
+[2022-11-11 16:05:58] [build-stdout] checking whether make supports nested variables... no
+[2022-11-11 16:05:58] [build-stdout] checking for gawk... (cached) mawk
+[2022-11-11 16:05:58] [build-stdout] checking whether ln -s works... yes
+[2022-11-11 16:05:58] [build-stdout] checking whether make sets $(MAKE)... (cached) no
+[2022-11-11 16:05:58] [build-stdout] checking for perl... /usr/bin/perl
+[2022-11-11 16:05:58] [build-stdout] checking for gcc... gcc
+[2022-11-11 16:05:58] [build-stdout] checking whether the C compiler works... yes
+[2022-11-11 16:05:58] [build-stdout] checking for C compiler default output file name... a.out
+[2022-11-11 16:05:58] [build-stdout] checking for suffix of executables... 
+[2022-11-11 16:05:58] [build-stdout] checking whether we are cross compiling... no
+[2022-11-11 16:05:58] [build-stdout] checking for suffix of object files... o
+[2022-11-11 16:05:58] [build-stdout] checking whether we are using the GNU C compiler... yes
+[2022-11-11 16:05:58] [build-stdout] checking whether gcc accepts -g... yes
+[2022-11-11 16:05:58] [build-stdout] checking for gcc option to accept ISO C89... none needed
+[2022-11-11 16:05:58] [build-stdout] checking whether gcc understands -c and -o together... yes
+[2022-11-11 16:05:58] [build-stdout] checking whether make supports the include directive... no
+[2022-11-11 16:05:59] [build-stdout] checking dependency style of gcc... none
+[2022-11-11 16:05:59] [build-stdout] checking for gcc option to accept ISO C99... none needed
+[2022-11-11 16:05:59] [build-stdout] checking how to run the C preprocessor... gcc -E
+[2022-11-11 16:05:59] [build-stdout] checking for grep that handles long lines and -e... /usr/bin/grep
+[2022-11-11 16:05:59] [build-stdout] checking for egrep... /usr/bin/grep -E
+[2022-11-11 16:05:59] [build-stdout] checking for Minix Amsterdam compiler... no
+[2022-11-11 16:05:59] [build-stdout] checking for ar... ar
+[2022-11-11 16:05:59] [build-stdout] checking the archiver (ar) interface... ar
+[2022-11-11 16:05:59] [build-stdout] checking for ar... (cached) ar
+[2022-11-11 16:05:59] [build-stdout] checking for ranlib... ranlib
+[2022-11-11 16:05:59] [build-stdout] checking for ANSI C header files... yes
+[2022-11-11 16:05:59] [build-stdout] checking for sys/types.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for sys/stat.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for stdlib.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for string.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for memory.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for strings.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for inttypes.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for stdint.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking for unistd.h... yes
+[2022-11-11 16:05:59] [build-stdout] checking minix/config.h usability... no
+[2022-11-11 16:05:59] [build-stdout] checking minix/config.h presence... no
+[2022-11-11 16:05:59] [build-stdout] checking for minix/config.h... no
+[2022-11-11 16:05:59] [build-stdout] checking whether it is safe to define __EXTENSIONS__... yes
+[2022-11-11 16:05:59] [build-stdout] checking for bison... no
+[2022-11-11 16:05:59] [build-stdout] checking for byacc... no
+[2022-11-11 16:05:59] [build-stdout] checking for gperf... /usr/bin/gperf
+[2022-11-11 16:05:59] [build-stdout] checking for gperf - version >= 2.7... no
+[2022-11-11 16:05:59] [build-stdout] checking the archiver (ar) interface... (cached) ar
+[2022-11-11 16:05:59] [build-stdout] checking for flex... no
+[2022-11-11 16:05:59] [build-stdout] checking for lex... no
+[2022-11-11 16:05:59] [build-stdout] checking whether LEX is flex... no
+[2022-11-11 16:05:59] [build-stdout] checking build system type... x86_64-pc-linux-gnu
+[2022-11-11 16:05:59] [build-stdout] checking host system type... x86_64-pc-linux-gnu
+[2022-11-11 16:05:59] [build-stdout] checking how to print strings... printf
+[2022-11-11 16:05:59] [build-stdout] checking for a sed that does not truncate output... /usr/bin/sed
+[2022-11-11 16:05:59] [build-stdout] checking for fgrep... /usr/bin/grep -F
+[2022-11-11 16:05:59] [build-stdout] checking for ld used by gcc... /usr/bin/ld
+[2022-11-11 16:05:59] [build-stdout] checking if the linker (/usr/bin/ld) is GNU ld... yes
+[2022-11-11 16:05:59] [build-stdout] checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+[2022-11-11 16:05:59] [build-stdout] checking the name lister (/usr/bin/nm -B) interface... BSD nm
+[2022-11-11 16:05:59] [build-stdout] checking the maximum length of command line arguments... 1572864
+[2022-11-11 16:05:59] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+[2022-11-11 16:05:59] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+[2022-11-11 16:05:59] [build-stdout] checking for /usr/bin/ld option to reload object files... -r
+[2022-11-11 16:05:59] [build-stdout] checking for objdump... objdump
+[2022-11-11 16:05:59] [build-stdout] checking how to recognize dependent libraries... pass_all
+[2022-11-11 16:05:59] [build-stdout] checking for dlltool... no
+[2022-11-11 16:05:59] [build-stdout] checking how to associate runtime and link libraries... printf %s\n
+[2022-11-11 16:05:59] [build-stdout] checking for archiver @FILE support... @
+[2022-11-11 16:05:59] [build-stdout] checking for strip... strip
+[2022-11-11 16:05:59] [build-stdout] checking for ranlib... (cached) ranlib
+[2022-11-11 16:06:00] [build-stdout] checking command to parse /usr/bin/nm -B output from gcc object... ok
+[2022-11-11 16:06:00] [build-stdout] checking for sysroot... no
+[2022-11-11 16:06:00] [build-stdout] checking for a working dd... /usr/bin/dd
+[2022-11-11 16:06:00] [build-stdout] checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+[2022-11-11 16:06:00] [build-stdout] checking for mt... mt
+[2022-11-11 16:06:00] [build-stdout] checking if mt is a manifest tool... no
+[2022-11-11 16:06:00] [build-stdout] checking for dlfcn.h... yes
+[2022-11-11 16:06:00] [build-stdout] checking for objdir... .libs
+[2022-11-11 16:06:00] [build-stdout] checking if gcc supports -fno-rtti -fno-exceptions... no
+[2022-11-11 16:06:00] [build-stdout] checking for gcc option to produce PIC... -fPIC -DPIC
+[2022-11-11 16:06:00] [build-stdout] checking if gcc PIC flag -fPIC -DPIC works... yes
+[2022-11-11 16:06:00] [build-stdout] checking if gcc static flag -static works... yes
+[2022-11-11 16:06:00] [build-stdout] checking if gcc supports -c -o file.o... yes
+[2022-11-11 16:06:00] [build-stdout] checking if gcc supports -c -o file.o... (cached) yes
+[2022-11-11 16:06:00] [build-stdout] checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[2022-11-11 16:06:00] [build-stdout] checking dynamic linker characteristics... GNU/Linux ld.so
+[2022-11-11 16:06:00] [build-stdout] checking how to hardcode library paths into programs... immediate
+[2022-11-11 16:06:00] [build-stdout] checking whether stripping libraries is possible... yes
+[2022-11-11 16:06:00] [build-stdout] checking if libtool supports shared libraries... yes
+[2022-11-11 16:06:00] [build-stdout] checking whether to build shared libraries... no
+[2022-11-11 16:06:00] [build-stdout] checking whether to build static libraries... yes
+[2022-11-11 16:06:00] [build-stdout] checking for systempapername in -lpaper... no
+[2022-11-11 16:06:00] [build-stdout] checking whether NLS is requested... yes
+[2022-11-11 16:06:00] [build-stdout] checking for msgfmt... no
+[2022-11-11 16:06:00] [build-stdout] checking for gmsgfmt... :
+[2022-11-11 16:06:00] [build-stdout] checking for xgettext... no
+[2022-11-11 16:06:00] [build-stdout] checking for msgmerge... no
+[2022-11-11 16:06:00] [build-stdout] checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+[2022-11-11 16:06:00] [build-stdout] checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+[2022-11-11 16:06:00] [build-stdout] checking for shared library run path origin... done
+[2022-11-11 16:06:00] [build-stdout] checking for CFPreferencesCopyAppValue... no
+[2022-11-11 16:06:00] [build-stdout] checking for CFLocaleCopyCurrent... no
+[2022-11-11 16:06:00] [build-stdout] checking for GNU gettext in libc... yes
+[2022-11-11 16:06:00] [build-stdout] checking whether to use NLS... yes
+[2022-11-11 16:06:00] [build-stdout] checking where the gettext function comes from... libc
+[2022-11-11 16:06:00] [build-stdout] checking for emacs... no
+[2022-11-11 16:06:00] [build-stdout] checking for xemacs... no
+[2022-11-11 16:06:00] [build-stdout] checking where .elc files should go... ${datadir}/emacs/site-lisp
+[2022-11-11 16:06:00] [build-stdout] checking whether paths should be hardcoded... no
+[2022-11-11 16:06:00] [build-stdout] checking for PostScript fonts path... :/usr/local/ghostscript/fonts:/usr/local/share/ghostscript/fonts
+[2022-11-11 16:06:00] [build-stdout] checking for file... /usr/bin/file
+[2022-11-11 16:06:00] [build-stdout] checking for the option for file to follow the links...  -L
+[2022-11-11 16:06:00] [build-stdout] checking for lp... lp
+[2022-11-11 16:06:00] [build-stdout] checking for printer queue selection... lp -d PRINTER
+[2022-11-11 16:06:00] [build-stdout] checking for gv... no
+[2022-11-11 16:06:00] [build-stdout] checking for ghostview... no
+[2022-11-11 16:06:00] [build-stdout] checking for gzip... yes
+[2022-11-11 16:06:00] [build-stdout] checking for bzip... no
+[2022-11-11 16:06:00] [build-stdout] checking for bzip2... yes
+[2022-11-11 16:06:00] [build-stdout] checking for dvips... no
+[2022-11-11 16:06:00] [build-stdout] checking for convert... no
+[2022-11-11 16:06:00] [build-stdout] checking for netscape... no
+[2022-11-11 16:06:00] [build-stdout] checking for html2ps... no
+[2022-11-11 16:06:00] [build-stdout] checking for acroread... no
+[2022-11-11 16:06:00] [build-stdout] checking for pdf2ps... yes
+[2022-11-11 16:06:00] [build-stdout] checking for distill... no
+[2022-11-11 16:06:00] [build-stdout] checking for ps2pdf... yes
+[2022-11-11 16:06:00] [build-stdout] checking for psselect... no
+[2022-11-11 16:06:00] [build-stdout] checking for psnup... no
+[2022-11-11 16:06:00] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:06:00] [build-stdout] configure: WARNING: a2ps works much better with the psutils.  Available at
+[2022-11-11 16:06:00] [build-stdout] configure: WARNING:   http://www.dcs.ed.ac.uk/home/ajcd/psutils/
+[2022-11-11 16:06:00] [build-stdout] configure: WARNING: You *really* should install them *before* installing a2ps.
+[2022-11-11 16:06:00] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:06:00] [build-stdout] checking for grog... yes
+[2022-11-11 16:06:00] [build-stdout] checking for makeinfo... no
+[2022-11-11 16:06:00] [build-stdout] checking for tex... no
+[2022-11-11 16:06:00] [build-stdout] checking for latex... no
+[2022-11-11 16:06:00] [build-stdout] checking that generated files are newer than configure... done
+[2022-11-11 16:06:00] [build-stdout] configure: creating ./config.status
+[2022-11-11 16:06:01] [build-stdout] config.status: creating contrib/card
+[2022-11-11 16:06:01] [build-stdout] config.status: creating contrib/fixps
+[2022-11-11 16:06:01] [build-stdout] config.status: creating contrib/pdiff
+[2022-11-11 16:06:01] [build-stdout] config.status: creating contrib/psmandup
+[2022-11-11 16:06:01] [build-stdout] config.status: creating contrib/psset
+[2022-11-11 16:06:01] [build-stdout] config.status: creating Makefile
+[2022-11-11 16:06:01] [build-stdout] config.status: creating src/Makefile
+[2022-11-11 16:06:01] [build-stdout] config.status: creating doc/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating man/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating tests/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating tests/defs
+[2022-11-11 16:06:02] [build-stdout] config.status: creating lib/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating liba2ps/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating build-aux/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating etc/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating etc/a2ps_cfg
+[2022-11-11 16:06:02] [build-stdout] config.status: creating etc/a2ps-site.cfg
+[2022-11-11 16:06:02] [build-stdout] config.status: creating po/Makefile.in
+[2022-11-11 16:06:02] [build-stdout] config.status: creating sheets/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating encoding/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating ps/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating afm/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating contrib/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating contrib/sample/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating contrib/emacs/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating fonts/Makefile
+[2022-11-11 16:06:02] [build-stdout] config.status: creating ppd/Makefile
+[2022-11-11 16:06:03] [build-stdout] config.status: creating config.h
+[2022-11-11 16:06:03] [build-stdout] config.status: config.h is unchanged
+[2022-11-11 16:06:03] [build-stdout] config.status: executing depfiles commands
+[2022-11-11 16:06:03] [build-stdout] config.status: error: in `/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps':
+[2022-11-11 16:06:03] [build-stdout] config.status: error: Something went wrong bootstrapping makefile fragments
+[2022-11-11 16:06:03] [build-stdout]     for automatic dependency tracking.  Try re-running configure with the
+[2022-11-11 16:06:03] [build-stdout]     '--disable-dependency-tracking' option to at least be able to build
+[2022-11-11 16:06:03] [build-stdout]     the package (albeit without support for automatic dependency tracking).
+[2022-11-11 16:06:03] [build-stdout] See `config.log' for more details
+[2022-11-11 16:06:03] [build-stdout] /home/arun/codeql/cpp/tools/configure-wrapper: Configure failed
+[2022-11-11 16:06:03] [build-stderr] + cd .
+[2022-11-11 16:06:03] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:06:03] [build-stderr] + '[' -x configure.gnu ']'
+[2022-11-11 16:06:03] [build-stderr] + rm -rf _lgtm_build_dir
+[2022-11-11 16:06:03] [build-stderr] + break
+[2022-11-11 16:06:03] [build-stderr] + '[' -f wscript ']'
+[2022-11-11 16:06:03] [build-stderr] + '[' -f Kbuild ']'
+[2022-11-11 16:06:03] [build-stderr] + '[' -f configure.ac ']'
+[2022-11-11 16:06:03] [build-stderr] + touch install-sh
+[2022-11-11 16:06:03] [build-stderr] + libtoolize -ci
+[2022-11-11 16:06:03] [build-stderr] libtoolize:   error: 'build-aux/config.guess' is newer: use '--force' to overwrite
+[2022-11-11 16:06:03] [build-stderr] libtoolize:   error: 'build-aux/config.sub' is newer: use '--force' to overwrite
+[2022-11-11 16:06:03] [build-stdout] libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+[2022-11-11 16:06:03] [build-stderr] + autoreconf -i
+[2022-11-11 16:06:06] [build-stderr] configure.ac:70: warning: macro 'AM_GNU_GETTEXT_VERSION' not found in library
+[2022-11-11 16:06:06] [build-stderr] configure.ac:71: warning: macro 'AM_GNU_GETTEXT' not found in library
+[2022-11-11 16:06:07] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:07] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:07] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:07] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:07] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:07] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:08] [build-stderr] m4/perl.m4:44: warning: underquoted definition of jm_PATH_PERL
+[2022-11-11 16:06:08] [build-stderr] m4/perl.m4:44:   run info Automake 'Extending aclocal'
+[2022-11-11 16:06:08] [build-stderr] m4/perl.m4:44:   or see https://www.gnu.org/software/automake/manual/automake.html#Extending-aclocal
+[2022-11-11 16:06:09] [build-stdout] libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+[2022-11-11 16:06:09] [build-stderr] configure.ac:70: warning: macro 'AM_GNU_GETTEXT_VERSION' not found in library
+[2022-11-11 16:06:09] [build-stderr] configure.ac:71: warning: macro 'AM_GNU_GETTEXT' not found in library
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:10] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:10] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:10] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: warning: AC_COMPILE_IFELSE was called before AC_USE_SYSTEM_EXTENSIONS
+[2022-11-11 16:06:10] [build-stderr] ../../lib/autoconf/specific.m4:368: AC_USE_SYSTEM_EXTENSIONS is expanded from...
+[2022-11-11 16:06:10] [build-stderr] configure.ac:48: the top level
+[2022-11-11 16:06:10] [build-stderr] liba2ps/Makefile.am:63: warning: noinst_HEADERS multiply defined in condition TRUE ...
+[2022-11-11 16:06:10] [build-stderr] liba2ps/Makefile.am:57: ... 'noinst_HEADERS' previously defined here
+[2022-11-11 16:06:10] [build-stderr] liba2ps/Makefile.am:28: warning: 'YFLAGS' is a user variable, you should not override it;
+[2022-11-11 16:06:10] [build-stderr] liba2ps/Makefile.am:28: use 'AM_YFLAGS' instead
+[2022-11-11 16:06:11] [build-stderr] src/Makefile.am:41: warning: 'YFLAGS' is a user variable, you should not override it;
+[2022-11-11 16:06:11] [build-stderr] src/Makefile.am:41: use 'AM_YFLAGS' instead
+[2022-11-11 16:06:11] [build-stderr] + try_configure
+[2022-11-11 16:06:11] [build-stderr] + build_dir=.
+[2022-11-11 16:06:11] [build-stderr] + root_dir=.
+[2022-11-11 16:06:11] [build-stderr] + grep -q 'AC_MSG_.* configure in a separate.* directory' configure.in configure.ac
+[2022-11-11 16:06:11] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:06:11] [build-stderr] + '[' -x configure ']'
+[2022-11-11 16:06:11] [build-stderr] + cd .
+[2022-11-11 16:06:11] [build-stderr] + /home/arun/codeql/cpp/tools/configure-wrapper ./configure --prefix=/usr
+[2022-11-11 16:06:11] [build-stdout] checking for a BSD-compatible install... /usr/bin/install -c
+[2022-11-11 16:06:11] [build-stdout] checking whether build environment is sane... yes
+[2022-11-11 16:06:11] [build-stdout] checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+[2022-11-11 16:06:11] [build-stdout] checking for gawk... no
+[2022-11-11 16:06:11] [build-stdout] checking for mawk... mawk
+[2022-11-11 16:06:11] [build-stdout] checking whether make sets $(MAKE)... no
+[2022-11-11 16:06:11] [build-stdout] checking whether make supports nested variables... no
+[2022-11-11 16:06:11] [build-stdout] checking for gawk... (cached) mawk
+[2022-11-11 16:06:11] [build-stdout] checking whether ln -s works... yes
+[2022-11-11 16:06:11] [build-stdout] checking whether make sets $(MAKE)... (cached) no
+[2022-11-11 16:06:11] [build-stdout] checking for perl... /usr/bin/perl
+[2022-11-11 16:06:11] [build-stdout] checking for gcc... gcc
+[2022-11-11 16:06:11] [build-stdout] checking whether the C compiler works... yes
+[2022-11-11 16:06:11] [build-stdout] checking for C compiler default output file name... a.out
+[2022-11-11 16:06:11] [build-stdout] checking for suffix of executables... 
+[2022-11-11 16:06:11] [build-stdout] checking whether we are cross compiling... no
+[2022-11-11 16:06:11] [build-stdout] checking for suffix of object files... o
+[2022-11-11 16:06:11] [build-stdout] checking whether we are using the GNU C compiler... yes
+[2022-11-11 16:06:11] [build-stdout] checking whether gcc accepts -g... yes
+[2022-11-11 16:06:11] [build-stdout] checking for gcc option to accept ISO C89... none needed
+[2022-11-11 16:06:11] [build-stdout] checking whether gcc understands -c and -o together... yes
+[2022-11-11 16:06:11] [build-stdout] checking whether make supports the include directive... no
+[2022-11-11 16:06:11] [build-stdout] checking dependency style of gcc... none
+[2022-11-11 16:06:11] [build-stdout] checking for gcc option to accept ISO C99... none needed
+[2022-11-11 16:06:11] [build-stdout] checking how to run the C preprocessor... gcc -E
+[2022-11-11 16:06:11] [build-stdout] checking for grep that handles long lines and -e... /usr/bin/grep
+[2022-11-11 16:06:11] [build-stdout] checking for egrep... /usr/bin/grep -E
+[2022-11-11 16:06:11] [build-stdout] checking for Minix Amsterdam compiler... no
+[2022-11-11 16:06:11] [build-stdout] checking for ar... ar
+[2022-11-11 16:06:11] [build-stdout] checking the archiver (ar) interface... ar
+[2022-11-11 16:06:11] [build-stdout] checking for ar... (cached) ar
+[2022-11-11 16:06:11] [build-stdout] checking for ranlib... ranlib
+[2022-11-11 16:06:11] [build-stdout] checking for ANSI C header files... yes
+[2022-11-11 16:06:11] [build-stdout] checking for sys/types.h... yes
+[2022-11-11 16:06:11] [build-stdout] checking for sys/stat.h... yes
+[2022-11-11 16:06:11] [build-stdout] checking for stdlib.h... yes
+[2022-11-11 16:06:11] [build-stdout] checking for string.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for memory.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for strings.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for inttypes.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for stdint.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for unistd.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking minix/config.h usability... no
+[2022-11-11 16:06:12] [build-stdout] checking minix/config.h presence... no
+[2022-11-11 16:06:12] [build-stdout] checking for minix/config.h... no
+[2022-11-11 16:06:12] [build-stdout] checking whether it is safe to define __EXTENSIONS__... yes
+[2022-11-11 16:06:12] [build-stdout] checking for bison... no
+[2022-11-11 16:06:12] [build-stdout] checking for byacc... no
+[2022-11-11 16:06:12] [build-stdout] checking for gperf... /usr/bin/gperf
+[2022-11-11 16:06:12] [build-stdout] checking for gperf - version >= 2.7... no
+[2022-11-11 16:06:12] [build-stdout] checking the archiver (ar) interface... (cached) ar
+[2022-11-11 16:06:12] [build-stdout] checking for flex... no
+[2022-11-11 16:06:12] [build-stdout] checking for lex... no
+[2022-11-11 16:06:12] [build-stdout] checking whether LEX is flex... no
+[2022-11-11 16:06:12] [build-stdout] checking build system type... x86_64-pc-linux-gnu
+[2022-11-11 16:06:12] [build-stdout] checking host system type... x86_64-pc-linux-gnu
+[2022-11-11 16:06:12] [build-stdout] checking how to print strings... printf
+[2022-11-11 16:06:12] [build-stdout] checking for a sed that does not truncate output... /usr/bin/sed
+[2022-11-11 16:06:12] [build-stdout] checking for fgrep... /usr/bin/grep -F
+[2022-11-11 16:06:12] [build-stdout] checking for ld used by gcc... /usr/bin/ld
+[2022-11-11 16:06:12] [build-stdout] checking if the linker (/usr/bin/ld) is GNU ld... yes
+[2022-11-11 16:06:12] [build-stdout] checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+[2022-11-11 16:06:12] [build-stdout] checking the name lister (/usr/bin/nm -B) interface... BSD nm
+[2022-11-11 16:06:12] [build-stdout] checking the maximum length of command line arguments... 1572864
+[2022-11-11 16:06:12] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+[2022-11-11 16:06:12] [build-stdout] checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+[2022-11-11 16:06:12] [build-stdout] checking for /usr/bin/ld option to reload object files... -r
+[2022-11-11 16:06:12] [build-stdout] checking for objdump... objdump
+[2022-11-11 16:06:12] [build-stdout] checking how to recognize dependent libraries... pass_all
+[2022-11-11 16:06:12] [build-stdout] checking for dlltool... no
+[2022-11-11 16:06:12] [build-stdout] checking how to associate runtime and link libraries... printf %s\n
+[2022-11-11 16:06:12] [build-stdout] checking for archiver @FILE support... @
+[2022-11-11 16:06:12] [build-stdout] checking for strip... strip
+[2022-11-11 16:06:12] [build-stdout] checking for ranlib... (cached) ranlib
+[2022-11-11 16:06:12] [build-stdout] checking command to parse /usr/bin/nm -B output from gcc object... ok
+[2022-11-11 16:06:12] [build-stdout] checking for sysroot... no
+[2022-11-11 16:06:12] [build-stdout] checking for a working dd... /usr/bin/dd
+[2022-11-11 16:06:12] [build-stdout] checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+[2022-11-11 16:06:12] [build-stdout] checking for mt... mt
+[2022-11-11 16:06:12] [build-stdout] checking if mt is a manifest tool... no
+[2022-11-11 16:06:12] [build-stdout] checking for dlfcn.h... yes
+[2022-11-11 16:06:12] [build-stdout] checking for objdir... .libs
+[2022-11-11 16:06:12] [build-stdout] checking if gcc supports -fno-rtti -fno-exceptions... no
+[2022-11-11 16:06:12] [build-stdout] checking for gcc option to produce PIC... -fPIC -DPIC
+[2022-11-11 16:06:12] [build-stdout] checking if gcc PIC flag -fPIC -DPIC works... yes
+[2022-11-11 16:06:12] [build-stdout] checking if gcc static flag -static works... yes
+[2022-11-11 16:06:12] [build-stdout] checking if gcc supports -c -o file.o... yes
+[2022-11-11 16:06:12] [build-stdout] checking if gcc supports -c -o file.o... (cached) yes
+[2022-11-11 16:06:12] [build-stdout] checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+[2022-11-11 16:06:12] [build-stdout] checking dynamic linker characteristics... GNU/Linux ld.so
+[2022-11-11 16:06:12] [build-stdout] checking how to hardcode library paths into programs... immediate
+[2022-11-11 16:06:12] [build-stdout] checking whether stripping libraries is possible... yes
+[2022-11-11 16:06:12] [build-stdout] checking if libtool supports shared libraries... yes
+[2022-11-11 16:06:12] [build-stdout] checking whether to build shared libraries... no
+[2022-11-11 16:06:12] [build-stdout] checking whether to build static libraries... yes
+[2022-11-11 16:06:12] [build-stdout] checking for systempapername in -lpaper... no
+[2022-11-11 16:06:12] [build-stdout] checking whether NLS is requested... yes
+[2022-11-11 16:06:12] [build-stdout] checking for msgfmt... no
+[2022-11-11 16:06:12] [build-stdout] checking for gmsgfmt... :
+[2022-11-11 16:06:12] [build-stdout] checking for xgettext... no
+[2022-11-11 16:06:12] [build-stdout] checking for msgmerge... no
+[2022-11-11 16:06:12] [build-stdout] checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+[2022-11-11 16:06:12] [build-stdout] checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+[2022-11-11 16:06:12] [build-stdout] checking for shared library run path origin... done
+[2022-11-11 16:06:12] [build-stdout] checking for CFPreferencesCopyAppValue... no
+[2022-11-11 16:06:12] [build-stdout] checking for CFLocaleCopyCurrent... no
+[2022-11-11 16:06:12] [build-stdout] checking for GNU gettext in libc... yes
+[2022-11-11 16:06:12] [build-stdout] checking whether to use NLS... yes
+[2022-11-11 16:06:12] [build-stdout] checking where the gettext function comes from... libc
+[2022-11-11 16:06:12] [build-stdout] checking for emacs... no
+[2022-11-11 16:06:12] [build-stdout] checking for xemacs... no
+[2022-11-11 16:06:12] [build-stdout] checking where .elc files should go... ${datadir}/emacs/site-lisp
+[2022-11-11 16:06:12] [build-stdout] checking whether paths should be hardcoded... no
+[2022-11-11 16:06:12] [build-stdout] checking for PostScript fonts path... :/usr/local/ghostscript/fonts:/usr/local/share/ghostscript/fonts
+[2022-11-11 16:06:12] [build-stdout] checking for file... /usr/bin/file
+[2022-11-11 16:06:12] [build-stdout] checking for the option for file to follow the links...  -L
+[2022-11-11 16:06:12] [build-stdout] checking for lp... lp
+[2022-11-11 16:06:12] [build-stdout] checking for printer queue selection... lp -d PRINTER
+[2022-11-11 16:06:12] [build-stdout] checking for gv... no
+[2022-11-11 16:06:12] [build-stdout] checking for ghostview... no
+[2022-11-11 16:06:12] [build-stdout] checking for gzip... yes
+[2022-11-11 16:06:12] [build-stdout] checking for bzip... no
+[2022-11-11 16:06:12] [build-stdout] checking for bzip2... yes
+[2022-11-11 16:06:12] [build-stdout] checking for dvips... no
+[2022-11-11 16:06:12] [build-stdout] checking for convert... no
+[2022-11-11 16:06:12] [build-stdout] checking for netscape... no
+[2022-11-11 16:06:12] [build-stdout] checking for html2ps... no
+[2022-11-11 16:06:12] [build-stdout] checking for acroread... no
+[2022-11-11 16:06:12] [build-stdout] checking for pdf2ps... yes
+[2022-11-11 16:06:12] [build-stdout] checking for distill... no
+[2022-11-11 16:06:12] [build-stdout] checking for ps2pdf... yes
+[2022-11-11 16:06:12] [build-stdout] checking for psselect... no
+[2022-11-11 16:06:12] [build-stdout] checking for psnup... no
+[2022-11-11 16:06:12] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:06:12] [build-stdout] configure: WARNING: a2ps works much better with the psutils.  Available at
+[2022-11-11 16:06:12] [build-stdout] configure: WARNING:   http://www.dcs.ed.ac.uk/home/ajcd/psutils/
+[2022-11-11 16:06:12] [build-stdout] configure: WARNING: You *really* should install them *before* installing a2ps.
+[2022-11-11 16:06:12] [build-stdout] configure: WARNING: ===========================================================
+[2022-11-11 16:06:12] [build-stdout] checking for grog... yes
+[2022-11-11 16:06:12] [build-stdout] checking for makeinfo... no
+[2022-11-11 16:06:12] [build-stdout] checking for tex... no
+[2022-11-11 16:06:12] [build-stdout] checking for latex... no
+[2022-11-11 16:06:12] [build-stdout] checking that generated files are newer than configure... done
+[2022-11-11 16:06:12] [build-stdout] configure: creating ./config.status
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/card
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/fixps
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/pdiff
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/psmandup
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/psset
+[2022-11-11 16:06:13] [build-stdout] config.status: creating Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating src/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating doc/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating man/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating tests/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating tests/defs
+[2022-11-11 16:06:13] [build-stdout] config.status: creating lib/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating liba2ps/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating build-aux/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating etc/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating etc/a2ps_cfg
+[2022-11-11 16:06:13] [build-stdout] config.status: creating etc/a2ps-site.cfg
+[2022-11-11 16:06:13] [build-stdout] config.status: creating po/Makefile.in
+[2022-11-11 16:06:13] [build-stdout] config.status: creating sheets/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating encoding/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating ps/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating afm/Makefile
+[2022-11-11 16:06:13] [build-stdout] config.status: creating contrib/Makefile
+[2022-11-11 16:06:14] [build-stdout] config.status: creating contrib/sample/Makefile
+[2022-11-11 16:06:14] [build-stdout] config.status: creating contrib/emacs/Makefile
+[2022-11-11 16:06:14] [build-stdout] config.status: creating fonts/Makefile
+[2022-11-11 16:06:14] [build-stdout] config.status: creating ppd/Makefile
+[2022-11-11 16:06:14] [build-stdout] config.status: creating config.h
+[2022-11-11 16:06:14] [build-stdout] config.status: config.h is unchanged
+[2022-11-11 16:06:14] [build-stdout] config.status: executing depfiles commands
+[2022-11-11 16:06:14] [build-stdout] config.status: error: in `/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/a2ps':
+[2022-11-11 16:06:14] [build-stdout] config.status: error: Something went wrong bootstrapping makefile fragments
+[2022-11-11 16:06:14] [build-stdout]     for automatic dependency tracking.  Try re-running configure with the
+[2022-11-11 16:06:14] [build-stdout]     '--disable-dependency-tracking' option to at least be able to build
+[2022-11-11 16:06:14] [build-stdout]     the package (albeit without support for automatic dependency tracking).
+[2022-11-11 16:06:14] [build-stdout] See `config.log' for more details
+[2022-11-11 16:06:14] [build-stdout] /home/arun/codeql/cpp/tools/configure-wrapper: Configure failed
+[2022-11-11 16:06:14] [build-stderr] + cd .
+[2022-11-11 16:06:14] [build-stderr] + for configure in configure configure.gnu
+[2022-11-11 16:06:14] [build-stderr] + '[' -x configure.gnu ']'
+[2022-11-11 16:06:14] [build-stderr] + rm -rf _lgtm_build_dir
+[2022-11-11 16:06:14] [build-stderr] ++ echo './*.pro'
+[2022-11-11 16:06:14] [build-stderr] + '[' './*.pro' '!=' './*.pro' ']'
+[2022-11-11 16:06:14] [build-stderr] + exit 0
+[2022-11-11 16:06:14] [build-stderr] + export VERBOSE=1
+[2022-11-11 16:06:14] [build-stderr] + VERBOSE=1
+[2022-11-11 16:06:14] [build-stderr] + '[' -L _lgtm_detected_source_root ']'
+[2022-11-11 16:06:14] [build-stderr] ++ readlink _lgtm_detected_source_root
+[2022-11-11 16:06:14] [build-stderr] + cd .
+[2022-11-11 16:06:14] [build-stderr] + '[' -d _lgtm_build_dir ']'
+[2022-11-11 16:06:14] [build-stderr] + '[' -f SConstruct ']'
+[2022-11-11 16:06:14] [build-stderr] + '[' -f wscript ']'
+[2022-11-11 16:06:14] [build-stderr] + '[' -f Makefile ']'
+[2022-11-11 16:06:14] [build-stderr] + make
+[2022-11-11 16:06:14] [build-stderr] /home/arun/codeql/cpp/tools/do-build: line 23: make: command not found
+[2022-11-11 16:06:14] [build-stderr] + '[' -f build.ninja ']'
+[2022-11-11 16:06:14] [build-stderr] + '[' -d ../_lgtm_build_dir ']'
+[2022-11-11 16:06:14] [build-stderr] + for f in build build.sh
+[2022-11-11 16:06:14] [build-stderr] + '[' -x build ']'
+[2022-11-11 16:06:14] [build-stderr] + for f in build build.sh
+[2022-11-11 16:06:14] [build-stderr] + '[' -x build.sh ']'
+[2022-11-11 16:06:14] [build-stderr] + '[' -f setup.py ']'
+[2022-11-11 16:06:14] [build-stderr] + echo 'Semmle autobuild: no supported build system detected.'
+[2022-11-11 16:06:14] [build-stdout] Semmle autobuild: no supported build system detected.
+[2022-11-11 16:06:14] [build-stderr] + exit 1
+[2022-11-11 16:06:14] [ERROR] Spawned process exited abnormally (code 1; tried to run: [/home/arun/codeql/tools/linux64/preload_tracer, /home/arun/codeql/cpp/tools/autobuild.sh])
+[2022-11-11 16:06:14] Exception caught at top level: Exit status 1 from command: [/home/arun/codeql/cpp/tools/autobuild.sh]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:215)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:85)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:169)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:151)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:512)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:223)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:232)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:98)

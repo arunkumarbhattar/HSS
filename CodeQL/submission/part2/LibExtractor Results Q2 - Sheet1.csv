@@ -1,0 +1,6 @@
+"[object Object],""The call -->sprintf <--in file named--> src/main/extractor_plugins.c at line -->98 <-- has a format string with a %s specifier --> """"_EXTRACTOR_%s_options"""""""
+"[object Object],""The call -->sprintf <--in file named--> src/main/extractor_plugpath.c at line -->433 <-- has a format string with a %s specifier --> """"%s%s"""""""
+"[object Object],""The call -->sprintf <--in file named--> src/main/extractor_plugpath.c at line -->438 <-- has a format string with a %s specifier --> """"%s/%s"""""""
+"[object Object],""The call -->sprintf <--in file named--> src/main/extractor_plugpath.c at line -->352 <-- has a format string with a %s specifier --> """"%s/%s"""""""
+"[object Object],""The call -->sprintf <--in file named--> src/main/extractor_plugpath.c at line -->375 <-- has a format string with a %s specifier --> """"%s/%s"""""""
+"[object Object],""The call -->sscanf <--in file named--> src/main/extractor_plugpath.c at line -->110 <-- has a format string with a %s specifier --> """"%*x-%*x %*c%*c%*c%*c %*x %*2x:%*2x %*u%*[ ]%s"""""""

@@ -1,0 +1,19 @@
+[2022-11-11 16:54:12] This is codeql database create gettext --overwrite --language=c[[
+[2022-11-11 16:54:12] Log file was started late.
+[2022-11-11 16:54:12] [PROGRESS] database create> Initializing database at /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/gettext/gettext.
+[2022-11-11 16:54:12] Running plumbing command: codeql database init --overwrite --language=c[[ --source-root=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/gettext --allow-missing-source-root=false --allow-already-existing -- /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/gettext/gettext
+[2022-11-11 16:54:12] [PROGRESS] database init> Counting lines of code in /home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/gettext
+[2022-11-11 16:54:13] [PROGRESS] database init> Resolving extractor c[[.
+[2022-11-11 16:54:13] Calling plumbing command: codeql resolve languages --format=json
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /home/arun/codeql/.codeqlmanifest.json
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/properties/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/html/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/csv/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/csharp/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/cpp/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/java/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/javascript/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/ruby/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/python/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/xml/codeql-extractor.yml.
+[2022-11-11 16:54:13] [DETAILS] resolve languages> Parsing /home/arun/codeql/go/codeql-extractor.yml.

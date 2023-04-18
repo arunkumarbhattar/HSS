@@ -1,0 +1,9 @@
+---
+sourceLocationPrefix: "/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchDangerousFormatString"
+baselineLinesOfCode: 24
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  cliVersion: "2.11.3"
+  creationTime: "2022-11-14T23:36:43.121509431Z"

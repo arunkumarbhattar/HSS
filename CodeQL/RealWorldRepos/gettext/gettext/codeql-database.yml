@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/gettext"
+baselineLinesOfCode: 941802
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  sha: "349cf65bf2852ec53351ffc8e2292f565a6dfde7"
+  cliVersion: "2.11.0"
+  creationTime: "2022-11-11T21:54:15.484880559Z"

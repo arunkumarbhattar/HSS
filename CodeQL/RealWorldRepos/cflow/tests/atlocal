@@ -1,0 +1,14 @@
+# tests/atlocal.  Generated from atlocal.in by configure.                                     -*- shell-script -*-
+# Configurable variable values for GNU test test suite.
+
+PATH=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/cflow/tests:/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/cflow/src:$top_srcdir:$srcdir:$PATH
+CFLOWDIR=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/cflow/tests
+#EXAMPLES=/home/arun/Desktop/TakeDownHSS/CodeQL/RealWorldRepos/cflow/examples
+CFLOW_OPTIONS=
+export CFLOW_OPTIONS
+CFLOWRC=/dev/null
+export CFLOWRC
+# On some systems unsetting undefined variable produces an error, so
+# make sure it is defined.
+POSIXLY_CORRECT=0
+unset POSIXLY_CORRECT

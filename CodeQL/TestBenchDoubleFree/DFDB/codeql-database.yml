@@ -1,0 +1,9 @@
+---
+sourceLocationPrefix: "/home/arun/Desktop/TakeDownHSS/CodeQL/TestBenchDoubleFree"
+baselineLinesOfCode: 106
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  cliVersion: "2.11.3"
+  creationTime: "2022-11-13T23:50:06.904333691Z"

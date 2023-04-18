@@ -1,0 +1,1149 @@
+# Esperanto translation
+# Copyright (C) 2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+# Felipe Castro <fefcas@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 11:28+0800\n"
+"PO-Revision-Date: 2012-01-15 14:23-0300\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
+"Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
+"Language: eo\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/buffer.c:68
+msgid "any type"
+msgstr "iu ajn tipo"
+
+#: src/delegate.c:137 confg.gperf:168 lib/encoding.c:530 lib/encoding.c:576
+#: lib/encoding.c:616 lib/output.c:302 lib/pair_ht.c:296 lib/prolog.c:146
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "mankas argumento por '%s'"
+
+#: src/delegate.c:260 lib/routines.c:160 lib/xbackupfile.c:248
+#: lib/xbackupfile.c:276 lib/xbackupfile.c:284
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "ne eblas krei dosieron '%s'"
+
+#: src/delegate.c:269 src/select.c:193 lib/routines.c:190 lib/routines.c:196
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "ne eblas malfermi dukton ĉe '%s'"
+
+#: src/delegate.c:389
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Delegado '%s', de %s al %s\n"
+
+#: src/delegate.c:408 src/delegate.c:430
+msgid "Applications configured for delegation"
+msgstr "Aplikaĵoj agorditaj por delegado"
+
+#: src/generate.c:88
+#, c-format
+msgid "`%s' is a directory"
+msgstr "'%s' estas dosierujo"
+
+#: src/generate.c:96 src/main.c:560 src/main.c:582 confg.gperf:192
+#: confg.gperf:355 lib/routines.c:154
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "ne eblas malfermi dosieron '%s'"
+
+#: src/generate.c:101 lib/xbackupfile.c:224
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "ne eblas preni informojn pri dosiero '%s'"
+
+#: src/generate.c:168
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 paĝo en 1 folio]\n"
+
+#: src/generate.c:174
+#, c-format
+msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgstr "[%s (%s): %d paĝoj en 1 folio]\n"
+
+#: src/generate.c:181
+#, c-format
+msgid "[%s (%s): %d pages on %d sheets]\n"
+msgstr "[%s (%s): %d paĝoj en %d folioj]\n"
+
+#: src/generate.c:208
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Totalo: 1 paĝo en 1 folio] %s\n"
+
+#: src/generate.c:212
+#, c-format
+msgid "[Total: %d pages on 1 sheet] %s\n"
+msgstr "[Totalo: %d paĝoj en 1 folio] %s\n"
+
+#: src/generate.c:217
+#, c-format
+msgid "[Total: %d pages on %d sheets] %s\n"
+msgstr "[Totalo: %d paĝoj en %d folioj] %s\n"
+
+#: src/generate.c:226
+msgid "[1 line wrapped]\n"
+msgstr "[1 linio faldita]\n"
+
+#: src/generate.c:229
+#, c-format
+msgid "[%d lines wrapped]\n"
+msgstr "[%d linioj falditaj]\n"
+
+#: src/generate.c:242
+msgid "[No output produced]\n"
+msgstr "[Neniu eligo produktite]\n"
+
+#: src/generate.c:314
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, delegite al %s"
+
+#: src/generate.c:322
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): fiaskis.  Preterpasite]\n"
+
+#: src/generate.c:330
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (neprinteble): preterpasite]\n"
+
+#: src/generate.c:339
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (cifereca): preterpasite]\n"
+
+#: src/generate.c:360
+msgid "plain"
+msgstr "plate"
+
+#: lexssh.l:348
+msgid "end-of-line in string constant"
+msgstr "lini-fino en signoĉena konstanto"
+
+#: lexssh.l:415 src/sheets-map.l:153 src/sheets-map.l:192
+#, c-format
+msgid "end of line inside a %s"
+msgstr "lini-fino interne de %s"
+
+#: src/main.c:203
+#, c-format
+msgid "received signal %d: %s"
+msgstr "ricevis signalon %d: %s"
+
+#: src/main.c:242
+msgid "heavy"
+msgstr "peza"
+
+#: src/main.c:246
+msgid "normal"
+msgstr "normala"
+
+#: src/main.c:250
+msgid "none"
+msgstr "nenia"
+
+#: src/main.c:324 src/main.c:328
+msgid "yes"
+msgstr "jes"
+
+#: src/main.c:325 src/main.c:328 src/main.c:369
+msgid "no"
+msgstr "ne"
+
+#: src/main.c:335
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Agorda stato de %s %s\n"
+
+#: src/main.c:339 src/main.c:697
+msgid "Sheets:\n"
+msgstr "Folioj:\n"
+
+#: src/main.c:340
+#, c-format
+msgid ""
+"  medium          = %s%s, %s\n"
+"  page layout     = %d x %d, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %d\n"
+msgstr ""
+"  perilo           = %s%s, %s\n"
+"  paĝa aranĝo      = %d x %d, %s\n"
+"  randoj           = %s\n"
+"  dosier-alliniigo = %s\n"
+"  interna marĝeno  = %d\n"
+
+#: src/main.c:349
+msgid "portrait"
+msgstr "portreto"
+
+#: src/main.c:349
+msgid "landscape"
+msgstr "pejzaĝo"
+
+#: src/main.c:358
+#, c-format
+msgid "%d characters per line"
+msgstr "po %d signoj por linio"
+
+#: src/main.c:361
+#, c-format
+msgid "%d lines per page"
+msgstr "po %d linioj por paĝo"
+
+#: src/main.c:364
+#, c-format
+msgid "font size is %gpt"
+msgstr "tipar-grando estas %gpt"
+
+#: src/main.c:373
+msgid "each line"
+msgstr "ĉiu linio"
+
+#: src/main.c:377
+#, c-format
+msgid "each %d lines"
+msgstr "ĉiu %d linioj"
+
+#: src/main.c:380 src/main.c:718
+msgid "Virtual pages:\n"
+msgstr "Virtualaj paĝoj:\n"
+
+#: src/main.c:381
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %d\n"
+"  non printable format = %s\n"
+msgstr ""
+"  numerigi liniojn   = %s\n"
+"  formo              = %s\n"
+"  tabo-grando        = %d\n"
+"  neprintebla formo = %s\n"
+
+#: src/main.c:392
+msgid "Headers:\n"
+msgstr "Kaplinioj:\n"
+
+#: src/main.c:393
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  kaplinio          = %s\n"
+"  maldekstra piedo  = %s\n"
+"  piedo             = %s\n"
+"  dekstra piedo     = %s\n"
+"  maldekstra titolo = %s\n"
+"  centra titolo     = %s\n"
+"  dekstra titolo    = %s\n"
+"  suba tavolo       = %s\n"
+
+#: src/main.c:412 src/main.c:747
+msgid "Input:\n"
+msgstr "Enigo:\n"
+
+#: src/main.c:413
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  tranĉi liniojn  = %s\n"
+"  interpreti      = %s\n"
+"  lini-fino       = %s\n"
+"  enkodigo        = %s\n"
+"  dokument-titolo = %s\n"
+"  antaŭparolo     = %s\n"
+"  printi tamen    = %s\n"
+"  delegado        = %s\n"
+
+#: src/main.c:438 src/main.c:504
+msgid "selected automatically"
+msgstr "elektita aŭtomate"
+
+#: src/main.c:441 src/main.c:766
+msgid "Pretty-printing:\n"
+msgstr "Ornam-printado:\n"
+
+#: src/main.c:442
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  stil-folio       = %s\n"
+"  reliefiga nivelo = %s\n"
+"  apartiga nivelo  = %d\n"
+
+#: src/main.c:462
+msgid "never make backups"
+msgstr "neniam fari sekurkopiojn"
+
+#: src/main.c:466
+msgid "simple backups of every file"
+msgstr "simpla sekurkopio de ĉiu dosiero"
+
+#: src/main.c:471
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"numeritaj sekurkopioj de dosieroj jam numerigitaj,\n"
+"                            kaj simpla por la aliaj"
+
+#: src/main.c:476
+msgid "numbered backups of every file"
+msgstr "numerita sekurkopio de ĉiu dosiero"
+
+#: src/main.c:480 src/main.c:775
+msgid "Output:\n"
+msgstr "Eligo:\n"
+
+#: src/main.c:481
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  celo               = %s\n"
+"  versi-kontrolo     = %s\n"
+"  sekurkopia sufikso = %s\n"
+
+#: src/main.c:494 src/main.c:786
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:495
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %d\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  magia numero              = %s\n"
+"  Printila Priskribo (PPD)  = %s\n"
+"  apriora PPD               = %s\n"
+"  formo de paĝ-etikedo      = %s\n"
+"  nombro da kopioj          = %d\n"
+"  flankoj por folio         = %s\n"
+"  paĝ-difinoj de aparato    = "
+
+#: src/main.c:515
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  difinoj de statusdict     = "
+
+#: src/main.c:518
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  antaŭmeto de paĝo         = %s\n"
+
+#: src/main.c:527
+msgid "Internals:\n"
+msgstr "Internaĵoj:\n"
+
+#: src/main.c:528
+#, c-format
+msgid ""
+"  verbosity level     = %d\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  informada nivelo    = %d\n"
+"  dosier-komando      = %s\n"
+"  vojo de biblioteko  = \n"
+
+#: src/main.c:653
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with * require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Usage: %s [ELEKTILO]... [DOSIERO]...\n"
+"\n"
+"Konverti DOSIERO(j)n aŭ ordinaran enigon al PostScript.  Apriore, la eligo\n"
+"estas sendata al la implicita printilo.  Eliga dosiero povas esti indikata per -o.\n"
+"\n"
+"Nepraj argumentoj por longaj elektiloj estas ankaŭ estas nepraj por mallongaj.\n"
+"Longaj elektiloj markitaj per * bezonas argumenton yes/no (jes/ne), rilataj\n"
+"mallongaj elektiloj funkcias kiel 'yes'.\n"
+
+#: src/main.c:668
+msgid "Tasks:\n"
+msgstr "Taskoj:\n"
+
+#: src/main.c:669
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        montrigi version\n"
+"  --help           montrigi tiun ĉi helpon\n"
+"  --guess          informi diveneblaj tipoj de DOSIEROJ\n"
+"  --which          informi la tutan vojon de bibliotek-dosieroj nomitaj DOSIEROJ\n"
+"  --glob           informi la tutam vojon de bibliotek-dosieroj kongruaj al DOSIEROJ\n"
+"  --list=defaults  montrigi apriorajn agordojn kaj parametrojn\n"
+"  --list=TEMO      detaliga listo pri TEMO (delegadoj, enkodigoj, trajtoj,\n"
+"                   variabloj, periloj, ppd, printiloj, antaŭparoloj, stil-folioj,\n"
+"                   uzant-elektiloj)\n"
+
+#: src/main.c:680
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Post plenumo de la tasko, eliri plensukcese.  Detaligaj listoj povas\n"
+"aldoni helpon pri specifaj trajtoj.\n"
+
+#: src/main.c:688
+msgid "Global:\n"
+msgstr "Ĝenerale:\n"
+
+#: src/main.c:689
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent      esti vere silenta\n"
+"  -v, --verbose[=NIVELO]     difini informadon al NIVELO\n"
+"  -=, --user-option=ELEK     uzi la uzant-difinitan tujkomandon ELEK\n"
+"      --debug                ebligi rafinigajn trajtojn\n"
+"  -D, --define=ŜLO[:VALORO]  maldifini variablon ŜLO aŭ difini ĝin kiel VALOROn\n"
+
+#: src/main.c:698
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NOMO      uzi elig-perilon NOMO\n"
+"  -r, --landscape        printi laŭ pejẑaĝa reĝimo\n"
+"  -R, --portrait         printi laŭ portreta reĝimo\n"
+"      --columns=NOMBRO   nombro da kolumnoj por folio\n"
+"      --rows=NOMBRO      nombro da linioj por folio\n"
+"      --major=DIREKTO    unue plenigi (DIREKTO=) liniojn, aŭ kolumnojn\n"
+"  -1, -2, ..., -9        antaŭdifinitaj tipar-grandoj kaj aranĝoj por 1.. 9 virtualoj\n"
+"  -A, --file-align=REĜIMO allinigi apartajn dosierojn laŭ REĜIMO (fill: plenigi, rank: klasifiki\n"
+"                         page: paĝo, sheet: folio, aŭ numero)\n"
+"  -j, --borders*         printi borderojn ĉirkaŭ kolumnoj\n"
+"      --margin[=NUM]     difini internan marĝenon de grandeco NUM\n"
+
+#: src/main.c:711
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"La elektiloj -1.. -9 influas plurajn primitivajn parametrojn por agordi antaŭdifinitajn\n"
+"aranĝojn kun 80 kolumnoj.  Tial la ordo gravas: '-R -f40 -2' estas\n"
+"same efika ol '-2'.  Por modifi la aranĝon, uzu '2Rf40', aŭ kombinu primitivajn\n"
+"elektilojn ('--columns', --font-size' ktp.).\n"
+
+#: src/main.c:719
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NUM     prefiksi post ĉiu NUM linioj per ĝia lini-numero\n"
+"  -C                         kromnomo por --line-numbers=5\n"
+"  -f, --font-size=GRANDO     uzi tipar-GRANDOn (reelo) por la ĉefa teksto\n"
+"  -L, --lines-per-page=NUM   skali la tiparon por printi po NUM linioj por virtualo\n"
+"  -l, --chars-per-line=NUM   skali la tiparon por printi po NUM kolumnoj por virtualo\n"
+"  -m, --catman               procezi DOSIERON kiel man-paĝo (same ol -L66)\n"
+"  -T, --tabsize=NUM          igi tabig-grandon al NUM\n"
+"  --non-printable-format=FMT indiki kiel ne-printeblaj signoj estos printataj\n"
+
+#: src/main.c:730
+msgid "Headings:\n"
+msgstr "Kaplinioj:\n"
+
+#: src/main.c:732
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header         neniu ajn paĝkapo\n"
+"  -b, --header[=TEKSTO]   difini paĝkapon\n"
+"  -u, --underlay[=TEKSTO] printi TEKSTOn je ĉiu paĝo\n"
+"  --center-title[=TEKSTO] difini paĝtitolon al TEKSTO\n"
+"  --rigth-title[=TEKSTO]  difini dekstran kaj malan paĝtitolojn al TEKSTO\n"
+"  --left-title[=TEKSTO]\n"
+"  --right-footer[=TEKSTO]  difini foli-piedojn al TEKSTO\n"
+"  --footer[=TEKSTO]\n"
+"  --left-footer[=TEKSTO]\n"
+
+#: src/main.c:743
+msgid "The TEXTs may use special escapes.\n"
+msgstr "La TEKSTOj povas uzi specialajn eskapojn.\n"
+
+#: src/main.c:748
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=RANGO]        elekti la paĝojn por printi\n"
+"  -c, --truncate-lines*      tranĉi longajn liniojn\n"
+"  -i, --interpret*           interpreti tabon, bs kaj ff signojn\n"
+"      --end-of-line=TIPO     inidiki la signon eol (TIPO: r, n, nr, rn, any)\n"
+"  -X, --encoding=NOMO        uzi enigan enkodigon NOMO\n"
+"  -t, --title=NOMO           difini la nomon de la laboron\n"
+"      --stdin=NOMO           difini la nomon de la enigan dosieron stdin\n"
+"      --print-anyway*        devigi ciferecan printadon\n"
+"  -Z, --delegate*            delegi dosierojn al alia aplikaĵo\n"
+"      --toc[=TEKSTO]         generi enhavon\n"
+
+#: src/main.c:760
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Kiam delegado estas ebligata, a2ps povas uzi aliajn aplikaĵojn por trakti la\n"
+"procezadon de dosieroj kiuj ne devos esti printataj kiel kruda informaro, t.e. HTML\n"
+"PostScript, PDF ktp.\n"
+
+#: src/main.c:767
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=LING]  ebligi adorn-printadon (difini stilon al LING)\n"
+"  --highlight-level=NIVELO   difini NIVELOn de adorn-printada reliefigo\n"
+"                             NIVELO povas esti 'none' (nenia), 'normal' aŭ 'heavy' (peza)\n"
+"  -g                         kromnomo por --highlight-level=heavy\n"
+"  --strip-level=NUM          nivelo de forigo de komentoj\n"
+
+#: src/main.c:776
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=DOSI          konduki eligon al dosiero DOSI.  Se DOSI estos '-',\n"
+"                             konduki eligon al stdout.\n"
+"  --version-control=VORTO    preterpasi la kutiman versi-kontrolon\n"
+"  --suffix=SUFIKSO           preterpasi la kutiman sekurkopian sufikson\n"
+"  -P, --printer=NAME         konduki eligon al printilon NOMo\n"
+"  -d                         konduki eligon al la implicita printilo\n"
+"                             (tio ĉi estas la apriora konduto)\n"
+
+#: src/main.c:787
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=DOSI        inkluzivi DOSI.pro kiel antaŭparolo de PostScript\n"
+"      --ppd[=ŜLO]            aŭtomata elekto de PPD aŭ difini kiel ŜLO\n"
+"  -n, --copies=NUM           printi NUM kopiojn de ĉiu paĝo\n"
+"  -s, --sides=MODE           difini la REĜIMOn duplex ('1' aŭ 'simplex',\n"
+"                             '2' aŭ 'duplex', 'tumble')\n"
+"  -S, --setpagedevice=K[:V]  pasi paĝ-aparatan difinon al eligo\n"
+"      --statusdict=K[:[:]V]  pasi difinon 'statusdict' al la eligo\n"
+"  -k, --page-prefeed         ebligi antaŭmeton de paĝo\n"
+"  -K, --no-page-prefeed      malebligi antaŭmeton de paĝo\n"
+
+#: src/main.c:801
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is Duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+msgstr ""
+"Apriore a2ps estas agordita por fari kion vi volas, do fidu ĝin.  Por\n"
+"adorn-printi la enhavon de dosierujo 'src' kaj enhav-tabelon, kaj sendi la\n"
+"rezulton al la printilo 'lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Por procezi la dosierojn 'specimeno.ps' kaj `specimeno.html' kaj montrigi la rezulton,\n"
+"\n"
+"    $ a2ps -P display specimeno.ps specimeno.html\n"
+"\n"
+"Por procezi mailbox po 4 paĝe,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Por printi as kiel libreto en la implicita printilo, kiu estu kapabla pri Duplex,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+
+#: src/main.c:822
+msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+msgstr "Novaĵoj, ĝisdatigoj kaj dokumentado: vizitu http://www.gnu.org/software/a2ps/.\n"
+
+#: src/main.c:824
+msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+msgstr "Informu misojn al <bug-a2ps@gnu.org>.\n"
+
+#: src/main.c:942
+msgid ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+msgstr ""
+"Kopirajto (c) 1988-1993 Miguel Santana\n"
+"Kopirajto (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Kopirajto (c) 2007- Akim Demaille, Miguel Santana kaj Masayuki Hatta"
+
+#: src/main.c:1173
+msgid "Table of Content"
+msgstr "Enhavo"
+
+#: src/parsessh.y:236
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "ne eblas procezi '%s', kiu postulas version %s de a2ps"
+
+#: src/sheets-map.l:111
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "neatendita signo '%c'"
+
+#: src/sheets-map.l:211 lexppd.l:211
+msgid "too many includes"
+msgstr "troaj inkluzivoj"
+
+#: src/sheets-map.l:296 src/sheets-map.l:303
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "neniu ŝlosilo difinita por '%s'"
+
+#: src/select.c:122 src/ssheet.c:866 fonts.l:838 fonts.l:840 fonts.l:842
+#: lib/pathwalk.c:328 lib/pathwalk.c:414
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "ne eblas trovi dosieron '%s'"
+
+#: src/select.c:124
+msgid "automatic style selection cancelled"
+msgstr "aŭtomata elekto de stilo ĉesigite"
+
+#: src/ssheet.c:295
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "ne eblas komplili regulan esprimon '%s': %s"
+
+#: src/ssheet.c:974 src/ssheet.c:995
+msgid "Known Style Sheets"
+msgstr "Konataj stil-folioj"
+
+#: src/ssheet.c:1461
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "ne eblas trovi stil-folio '%s': ni uzas platan stilon"
+
+#: src/sshread.c:453
+#, c-format
+msgid "unknown encoding `%s', ignored"
+msgstr "ne konata enkodigo '%s', preterpasite"
+
+#: src/version-etc.c:38
+msgid "Copyright (C) 1999 Free Software Foundation, Inc."
+msgstr "Kopyrajto (C) 1999 Free Software Foundation, Inc."
+
+#: src/version-etc.c:60
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Verkite de %s.\n"
+
+#: src/version-etc.c:66
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Tio ĉi estas libera programaro; vidu la kodumaĵon por kopi-kondiĉoj.  Ekzistas NENIU\n"
+"garantio; eĉ ne por MERKATIGO aŭ TAŬGO POR PRIVATA CELO.\n"
+
+#: src/versions.c:133
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "malvalida versi-numero '%s'"
+
+#: lib/caret.c:43
+msgid "space (i.e., ` ')"
+msgstr "spaco (t.e., ' ')"
+
+#: lib/caret.c:45
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "okume (t.e., '\\001' ktp.)"
+
+#: lib/caret.c:47
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "deksesume (t.e., '\\x0a' ktp.)"
+
+#: lib/caret.c:49
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "tajpmontrile (caret) (t.e., '^C', 'M-^C' ktp.)"
+
+#: lib/caret.c:51
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (i.e., 'C-c', 'M-C-c' ktp.)"
+
+#: lib/caret.c:53
+msgid "question-mark (i.e., `?')"
+msgstr "demando-signo (t.e., '?')"
+
+#: lib/closeout.c:71 lib/closeout.c:73
+msgid "write error"
+msgstr "skriba eraro"
+
+#: confg.gperf:157 lib/encoding.c:638
+#, c-format
+msgid "invalid option `%s'"
+msgstr "malvalida elektilo '%s'"
+
+#: confg.gperf:224 confg.gperf:231 confg.gperf:238
+#, c-format
+msgid "invalid definition for printer `%s': %s"
+msgstr "malvalida difino por printilo '%s': %s"
+
+#: confg.gperf:229 confg.gperf:232 lib/printers.c:47
+msgid "Unknown Printer"
+msgstr "Nekonata printilo"
+
+#: confg.gperf:236 confg.gperf:239 lib/printers.c:46
+msgid "Default Printer"
+msgstr "Apriora Printilo"
+
+#: confg.gperf:292 lib/options.c:697
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "malvalida variabla identigilo '%s'"
+
+#: confg.gperf:321
+#, c-format
+msgid "obsolete `%s' entry.  Ignored"
+msgstr "malaktuala kampon '%s'.  Preteratentite"
+
+#: lib/encoding.c:1114 lib/encoding.c:1135
+msgid "Known Encodings"
+msgstr "Konataj enkodigoj"
+
+#: lib/faces.c:156
+msgid "incomplete knowledge of faces"
+msgstr "nekompleta kono de fasonoj"
+
+#: lib/filtdir.c:113
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "ne eblas fermi dosierujon '%s'"
+
+#: lib/getnum.c:63 lib/getnum.c:121 lib/getnum.c:153 lib/getnum.c:221
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "malvalida argumento '%s' por '%s'"
+
+#: lib/getnum.c:123
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Validaj argumentoj estas entjeroj n tiel ke: %s\n"
+
+#: lib/getnum.c:223
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Validaj argumentoj estas reeloj f tiel ke: %s\n"
+
+#: lib/jobs.c:308
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "nekonata enkodigo '%s'"
+
+#: lib/madir.c:59
+msgid "rows first"
+msgstr "linioj unue"
+
+#: lib/madir.c:62
+msgid "columns first"
+msgstr "kolumnoj unue"
+
+#: lib/media.c:173
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "nekonata perilo '%s'"
+
+#: lib/media.c:208 lib/media.c:237
+msgid "Known Media"
+msgstr "Konataj periloj"
+
+#: lib/media.c:211
+msgid "Name"
+msgstr "Nomo"
+
+#: lib/media.c:212
+msgid "dimensions"
+msgstr "dimensioj"
+
+#: lib/metaseq.c:104 lib/metaseq.c:113
+#, c-format
+msgid "Known Variables"
+msgstr "Konataj variabloj"
+
+#: lib/metaseq.c:162 lib/metaseq.c:531 lib/metaseq.c:548 lib/metaseq.c:608
+#: lib/metaseq.c:951 lib/metaseq.c:972
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: mankas '%c' por eskapo %s%c"
+
+#: lib/metaseq.c:288 lib/metaseq.c:300
+#, c-format
+msgid "Printed by %s"
+msgstr "Printite de %s"
+
+#: lib/metaseq.c:298
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Printite de %s el %s"
+
+#: lib/metaseq.c:308 lib/metaseq.c:327
+msgid "cannot get current working directory"
+msgstr "ne eblas akiri nunan aktualan dosierujon"
+
+#: lib/metaseq.c:341 lib/metaseq.c:534 lib/metaseq.c:563 lib/metaseq.c:652
+#: lib/metaseq.c:954 lib/metaseq.c:987
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: tro longa argumento por eskapo %s"
+
+#: lib/metaseq.c:364 lib/metaseq.c:675
+msgid "%b %d, %y"
+msgstr "%b %d, %y"
+
+#: lib/metaseq.c:373 lib/metaseq.c:684
+msgid "%A %B %d, %Y"
+msgstr "%A %B %d, %Y"
+
+#: lib/metaseq.c:419 lib/metaseq.c:448 lib/metaseq.c:491 lib/metaseq.c:724
+#: lib/metaseq.c:808 lib/metaseq.c:867 lib/metaseq.c:922 lib/metaseq.c:1099
+#: lib/metaseq.c:1234 lib/metaseq.c:1246 lib/metaseq.c:1289
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: nekonata '%s'-a eskapo '%c' (%d)"
+
+#: lib/metaseq.c:426 lib/metaseq.c:815
+#, c-format
+msgid "Page %d"
+msgstr "Paĝo %d"
+
+#: lib/metaseq.c:431 lib/metaseq.c:826
+#, c-format
+msgid "Page %d/%c"
+msgstr "Paĝo %d/%c"
+
+#: lib/metaseq.c:593 lib/metaseq.c:1021
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: malvalida apartigilo '%s%c' por eskapo '%s'"
+
+#: lib/metaseq.c:601 lib/metaseq.c:611
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: malvalida argumento por eskapo %s%c"
+
+#: lib/metaseq.c:822
+#, c-format
+msgid "Page %d/%d"
+msgstr "Paĝo %d/%d"
+
+#: lib/metaseq.c:1266
+msgid "output command"
+msgstr "eliga komando"
+
+#: lib/options.c:302
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Provu '%s --help' por pli da informado.\n"
+
+#: lib/output.c:466
+#, c-format
+msgid "invalid face `%s'"
+msgstr "malvalida fasono '%s'"
+
+#: lib/output.c:538
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "'%s' kun neniu kongrua '%s'"
+
+#: lib/ppd.c:108
+msgid "Known Fonts"
+msgstr "Konataj tiparoj"
+
+#: lib/ppd.c:111
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Nenio.\n"
+
+#: lib/ppd.c:149 lib/ppd.c:165
+msgid "Known PostScript Printer Descriptions"
+msgstr "Konataj printil-priskriboj de PostScript"
+
+#: lib/prange.c:305 lib/prange.c:323
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "malvalida intervalo '%s'"
+
+#: lib/printers.c:396 lib/printers.c:413
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "neniu komando por la '%s' (%s%s)"
+
+#: lib/printers.c:429
+msgid "sent to the standard output"
+msgstr "sendite al la ordinara eligo"
+
+#: lib/printers.c:430
+msgid "sent to the default printer"
+msgstr "sendite al la implicita printilo"
+
+#: lib/printers.c:435
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "konservite en la dosieron '%s'"
+
+#: lib/printers.c:436
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "sendite al la printilo '%s'"
+
+#: lib/printers.c:613 lib/printers.c:621
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Konataj eligoj (printiloj, ktp.)"
+
+#: lib/prolog.c:98 lib/prolog.c:181
+msgid "Known Prologues"
+msgstr "Konataj antaŭparoloj"
+
+#: lib/prolog.c:579
+#, c-format
+msgid "font %f too big"
+msgstr "tiparo %f tro larĝas"
+
+#: lib/psgen.c:662
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "'%s' estas cifereca dosiero, printado ĉesigita"
+
+#: lib/quotearg.c:200
+msgid "`"
+msgstr "'"
+
+#: lib/quotearg.c:203
+msgid "'"
+msgstr "'"
+
+#: lib/userdata.c:129
+msgid "user"
+msgstr "uzanto"
+
+#: lib/userdata.c:130
+msgid "Unknown User"
+msgstr "Nekonata uzanto"
+
+#: lib/useropt.c:75
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "nekonata uzant-elektilo '%s'"
+
+#: lib/useropt.c:86 lib/useropt.c:97
+msgid "Known User Options"
+msgstr "Konataj uzant-elektiloj"
+
+#: lib/xbackupfile.c:105 lib/xmalloc.c:66
+msgid "Memory exhausted"
+msgstr "Memoro eluzita"
+
+#: lib/xbackupfile.c:240 lib/xbackupfile.c:252
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "ne eblas renomigi dosieron '%s' al '%s'"
+
+#: lib/xbackupfile.c:255
+#, c-format
+msgid "restored file `%s'"
+msgstr "restarigis dosieron '%s'"
+
+#: lib/argmatch.c:159
+#, c-format
+msgid "invalid argument %s for `%s'"
+msgstr "malvalida argumento %s por '%s'"
+
+#: lib/argmatch.c:160
+#, c-format
+msgid "ambiguous argument %s for `%s'"
+msgstr "dusenca argumento %s por '%s'"
+
+#: lib/argmatch.c:178
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Validaj argumentoj estas:"
+
+#: lib/error.c:102
+msgid "Unknown system error"
+msgstr "Nekonata sistema eraro"
+
+#: lib/getopt.c:675
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: elektilo '%s' estas dusenca\n"
+
+#: lib/getopt.c:700
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: elektilo '--%s' ne permesas argumenton\n"
+
+#: lib/getopt.c:705
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: elektilo '%c%s' ne permesas argumenton\n"
+
+#: lib/getopt.c:723 lib/getopt.c:896
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: elektilo '%s' postulas argumenton\n"
+
+#: lib/getopt.c:752
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: ne rekonita elektilo '--%s'\n"
+
+#: lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: ne rekonita elektilo '%c%s'\n"
+
+#: lib/getopt.c:782
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: malpermesata elektilo -- %c\n"
+
+#: lib/getopt.c:785
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: malvalida elektilo -- %c\n"
+
+#: lib/getopt.c:815 lib/getopt.c:945
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: elektilo postulas argumenton -- %c\n"
+
+#: lib/getopt.c:862
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: elektilo '-W %s' estas dusenca\n"
+
+#: lib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: elektilo '-W %s' ne permesas argumenton\n"

@@ -1,0 +1,1118 @@
+# a2ps Bahasa Melayu (Malay) (ms).
+# Copyright (C) 2002, 2008, 2022 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2002, 2008, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14.92\n"
+"Report-Msgid-Bugs-To: bug-a2ps@gnu.org\n"
+"POT-Creation-Date: 2022-08-11 16:45+0200\n"
+"PO-Revision-Date: 2022-10-10 02:20+0800\n"
+"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
+"Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: src/delegate.c:110 liba2ps/encoding.c:569 liba2ps/encoding.c:615
+#: liba2ps/encoding.c:657 liba2ps/output.c:282 liba2ps/pair_ht.c:312
+#: liba2ps/prolog.c:137
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "hujah tiada bagi `%s'"
+
+#: src/delegate.c:233 liba2ps/routines.c:136 liba2ps/xbackupfile.c:171
+#: liba2ps/xbackupfile.c:196 liba2ps/xbackupfile.c:204
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "tidak dapat mencipta fail `%s'"
+
+#: src/delegate.c:242 src/select.c:188 liba2ps/routines.c:163
+#: liba2ps/routines.c:169
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "tidak dapat membuka paip pada `%s'"
+
+#: src/delegate.c:362
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Pemindahan `%s', daripada %s kepada %s\n"
+
+#: src/delegate.c:380 src/delegate.c:400
+msgid "Applications configured for delegation"
+msgstr "Aplikasi telah dikonfigurasikan untuk pemindahan"
+
+#: src/generate.c:82
+#, c-format
+msgid "`%s' is a directory"
+msgstr "`%s' adalah sebuah direktori"
+
+#: src/generate.c:90 src/main.c:550 src/main.c:572 liba2ps/routines.c:130
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "tidak dapat membuka fail `%s'"
+
+#: src/generate.c:95 liba2ps/xbackupfile.c:147
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "tidak dapat mengambil maklumat pada fail `%s'"
+
+#: src/generate.c:160
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 halaman pada 1 helaian]\n"
+
+#: src/generate.c:166
+#, fuzzy, c-format
+#| msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgid "[%s (%s): %zu pages on 1 sheet]\n"
+msgstr "[Jumlah: %d halaman pada 1 helaian] %s\n"
+
+#: src/generate.c:173
+#, fuzzy, c-format
+#| msgid "[%s (%s): %d pages on %d sheets]\n"
+msgid "[%s (%s): %zu pages on %zu sheets]\n"
+msgstr "Ralat dalam %s pada baris %zu: "
+
+#: src/generate.c:200
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Jumlah: 1 halaman pada 1 helaian] %s\n"
+
+#: src/generate.c:204
+#, fuzzy, c-format
+#| msgid "[Total: %d pages on 1 sheet] %s\n"
+msgid "[Total: %zu pages on 1 sheet] %s\n"
+msgstr "[Jumlah: %d halaman pada 1 helaian] %s\n"
+
+#: src/generate.c:209
+#, fuzzy, c-format
+#| msgid "[Total: %d pages on %d sheets] %s\n"
+msgid "[Total: %zu pages on %zu sheets] %s\n"
+msgstr "[Jumlah: %d halaman pada %d helaian] %s\n"
+
+#: src/generate.c:218
+msgid "[1 line wrapped]\n"
+msgstr "[1 baris dililit]\n"
+
+#: src/generate.c:221
+#, fuzzy, c-format
+#| msgid "[%d lines wrapped]\n"
+msgid "[%zu lines wrapped]\n"
+msgstr "[%d baris dililit]\n"
+
+#: src/generate.c:232
+msgid "[No output produced]\n"
+msgstr "[Tiada keluaran dihasilkan]\n"
+
+#: src/generate.c:304
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, diwakilkan kepada %s"
+
+#: src/generate.c:312
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): gagal.  Diabaikan]\n"
+
+#: src/generate.c:320
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (tidak boleh dicetak): diabaikan]\n"
+
+#: src/generate.c:329
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (perduaan): diabaikan]\n"
+
+#: src/generate.c:350
+msgid "plain"
+msgstr "biasa"
+
+#: src/lexssh.l:353
+msgid "end-of-line in string constant"
+msgstr "pengakhir-baris dalam pemalar rentetan"
+
+#: src/lexssh.l:420 src/sheets-map.l:159 src/sheets-map.l:198
+#, c-format
+msgid "end of line inside a %s"
+msgstr "pengakhir baris dalam %s"
+
+#: src/main.c:197
+#, fuzzy, c-format
+#| msgid "received signal %d: %s"
+msgid "received SIG%s"
+msgstr "S/MIME ditan_da tangan"
+
+#: src/main.c:236
+msgid "heavy"
+msgstr "tebal"
+
+#: src/main.c:240
+msgid "normal"
+msgstr "normal"
+
+#: src/main.c:244
+msgid "none"
+msgstr "tiada"
+
+#: src/main.c:318 src/main.c:322
+msgid "yes"
+msgstr "ya"
+
+#: src/main.c:319 src/main.c:322 src/main.c:360
+msgid "no"
+msgstr "tidak"
+
+#: src/main.c:328
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Status konfigurasi bagi %s %s\n"
+
+#: src/main.c:332 src/main.c:680
+msgid "Sheets:\n"
+msgstr "Helaian:\n"
+
+#: src/main.c:333
+#, fuzzy, c-format
+#| msgid ""
+#| "  medium          = %s%s, %s\n"
+#| "  page layout     = %d x %d, %s\n"
+#| "  borders         = %s\n"
+#| "  file alignment  = %s\n"
+#| "  interior margin = %d\n"
+msgid ""
+"  medium          = %s, %s\n"
+"  page layout     = %zu x %zu, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %u\n"
+msgstr ""
+"  sederhana         = %s%s, %s\n"
+"  susunatur halaman = %d x %d, %s\n"
+"  sempadan          = %s\n"
+"  jajaran fail      = %s\n"
+"  sisi dalaman      = %d\n"
+
+#: src/main.c:340
+msgid "portrait"
+msgstr "potret"
+
+#: src/main.c:340
+msgid "landscape"
+msgstr "lanskap"
+
+#: src/main.c:349
+#, fuzzy, c-format
+#| msgid "%d characters per line"
+msgid "%u characters per line"
+msgstr "%d aksara setiap baris"
+
+#: src/main.c:352
+#, fuzzy, c-format
+#| msgid "%d lines per page"
+msgid "%u lines per page"
+msgstr "%d baris setiap halaman"
+
+#: src/main.c:355
+#, c-format
+msgid "font size is %gpt"
+msgstr "saiz font adalah %gpt"
+
+#: src/main.c:364
+msgid "each line"
+msgstr "setiap baris"
+
+#: src/main.c:368
+#, fuzzy, c-format
+#| msgid "each %d lines"
+msgid "each %u lines"
+msgstr "setiap %d baris"
+
+#: src/main.c:371 src/main.c:701
+msgid "Virtual pages:\n"
+msgstr "Laman maya:\n"
+
+#: src/main.c:372
+#, fuzzy, c-format
+#| msgid ""
+#| "  number lines         = %s\n"
+#| "  format               = %s\n"
+#| "  tabulation size      = %d\n"
+#| "  non printable format = %s\n"
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %u\n"
+"  non printable format = %s\n"
+msgstr ""
+"  nombor baris             = %s\n"
+"  format                   = %s\n"
+"  saiz tabulasi            = %d\n"
+"  format tidak boleh cetak = %s\n"
+
+#: src/main.c:383
+msgid "Headers:\n"
+msgstr "Pengepala:\n"
+
+#: src/main.c:384
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  pengepala    = %s\n"
+"  footer kiri  = %s\n"
+"  footer       = %s\n"
+"  footer kanan = %s\n"
+"  tajuk kiri   = %s\n"
+"  tajuk tengah = %s\n"
+"  tajuk kanan  = %s\n"
+"  under lay    = %s\n"
+
+#: src/main.c:403 src/main.c:730
+msgid "Input:\n"
+msgstr "Masukan:\n"
+
+#: src/main.c:404
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  baris pemendekan   = %s\n"
+"  terjemah           = %s\n"
+"  pengakhir baris    = %s\n"
+"  pengekodan         = %s\n"
+"  tajuk dokumen      = %s\n"
+"  prolog             = %s\n"
+"  cetak bagaimanapun = %s\n"
+"  mewakilkan         = %s\n"
+
+#: src/main.c:429 src/main.c:494
+msgid "selected automatically"
+msgstr "dipilih secara automatik"
+
+#: src/main.c:432 src/main.c:749
+msgid "Pretty-printing:\n"
+msgstr "Cetakan-menarik:\n"
+
+#: src/main.c:433
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  helaian gaya    = %s\n"
+"  tahap sorotan   = %s\n"
+"  tahap pelucutan = %d\n"
+
+#: src/main.c:453
+msgid "never make backups"
+msgstr "jangan buat salinan"
+
+#: src/main.c:457
+msgid "simple backups of every file"
+msgstr "salinan mudah bagi setiap fail"
+
+#: src/main.c:462
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"salinan bernombor bagi fail yang telah bernombor,\n"
+"                            dan mudah bagi yang lain"
+
+#: src/main.c:467
+msgid "numbered backups of every file"
+msgstr "salinan bernombor bagi setiap fail"
+
+#: src/main.c:471 src/main.c:758
+msgid "Output:\n"
+msgstr "Keluaran:\n"
+
+#: src/main.c:472
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  destinasi       = %s\n"
+"  kawalan versi   = %s\n"
+"  akhiran salinan = %s\n"
+
+#: src/main.c:484 src/main.c:769
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:485
+#, fuzzy, c-format
+#| msgid ""
+#| "  magic number              = %s\n"
+#| "  Printer Description (PPD) = %s\n"
+#| "  default PPD               = %s\n"
+#| "  page label format         = %s\n"
+#| "  number of copies          = %d\n"
+#| "  sides per sheet           = %s\n"
+#| "  page device definitions   = "
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %u\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  nombor magik              = %s\n"
+"  Keterangan Pencetak (PPD) = %s\n"
+"  PPD asal                  = %s\n"
+"  format label halaman      = %s\n"
+"  jumlah salinan            = %d\n"
+"  sisi setiap helaian       = %s\n"
+"  takrifan peranti halaman  = "
+
+#: src/main.c:505
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  takrifan statusdict       = "
+
+#: src/main.c:508
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  prasuap halaman           = %s\n"
+
+#: src/main.c:517
+msgid "Internals:\n"
+msgstr "Dalaman:\n"
+
+#: src/main.c:518
+#, fuzzy, c-format
+#| msgid ""
+#| "  verbosity level     = %d\n"
+#| "  file command        = %s\n"
+#| "  library path        = \n"
+msgid ""
+"  verbosity level     = %u\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  tahap jelaan        = %d\n"
+"  arahan fail         = %s\n"
+"  laluan perpustakaan = \n"
+
+#: src/main.c:636
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [OPTION]... [FILE]...\n"
+#| "\n"
+#| "Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+#| "is sent to the default printer.  An output file may be specified with -o.\n"
+#| "\n"
+#| "Mandatory arguments to long options are mandatory for short options too.\n"
+#| "Long options marked with * require a yes/no argument, corresponding\n"
+#| "short options stand for `yes'.\n"
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with `*' require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Penggunaan: %s [PILIHAN]... [FAIL]...\n"
+"\n"
+"Menukar FAIL atau masukan piawai ke PostScript. Secara default, keluaran\n"
+"dihantar ke pencetak default. Keluaran fail boleh dinyatakan dengan -o.\n"
+"\n"
+"Hujah mandatori kepada pilihan panjang adalah wajib untuk pilihan pendek\n"
+"juga. Pilihan panjang yang ditandakan dengan * memerlukan hujah ya/tidak,\n"
+"pilihan pendek yang setara mewakili `ya'.\n"
+
+#: src/main.c:651
+msgid "Tasks:\n"
+msgstr "Tugas:\n"
+
+#: src/main.c:652
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        papar versi\n"
+"  --help           papar bantuan ini\n"
+"  --guess          lapor agakan jenis FAIL\n"
+"  --which          lapor laluan penuh fail perpustakaan bernama FAIL\n"
+"  --glob           lapor laluan penuh fail perpustakaan menyamai FAIL\n"
+"  --list=defaults  papar tetapan asal dan parameter\n"
+"  --list=TOPIK     senarai terperinci tentang TOPIK (delegation, encodings,\n"
+"                   features, variables, media, ppd, printers, prologues,\n"
+"                   style-sheets, user-options)\n"
+
+#: src/main.c:663
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Selepas selesai melakukan tugas, keluar dengan berjaya.  Senarai terperinci\n"
+"mungkin memberikan bantuan tambahan kepada ciri-ciri khusus.\n"
+
+#: src/main.c:671
+msgid "Global:\n"
+msgstr "Sejagat:\n"
+
+#: src/main.c:672
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent          jadi sangat senyap\n"
+"  -v, --verbose[=TAHAP]          tetapkan jelaan on, atau ke TAHAP\n"
+"  -=, --user-option=PILIHAN      guna pintasan PILIHAN ditakrif pengguna\n"
+"      --debug                    hidupkan ciri nyahpepijat\n"
+"  -D, --define=KEKUNCI[:NILAI]   nyahtetap pembolehubah KEKUNCI atau tetapkan\n"
+"                                 ke NILAI\n"
+
+#: src/main.c:681
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NAMA      guna media keluaran NAMA\n"
+"  -r, --landscape        cetak dalam mod lanskap\n"
+"  -R, --portrait         cetak dalam mod potret\n"
+"      --columns=NOM      jumlah lajur setiap helaian\n"
+"      --rows=NOM         jumlah baris setiap helaian\n"
+"      --major=ARAH       isi dahulu (ARAH=) row, atau column\n"
+"  -1, -2, ..., -9        saiz font dan aturan pratetap untuk 1.. 9 maya\n"
+"  -A, --file-align=MOD   jajar fail berlainan mengikut MOD (fill, rank\n"
+"                         page, sheet, atau number)\n"
+"  -j, --borders*         cetak sempadan keliling lajur\n"
+"      --margin[=NOM]     tetapkan margin dalaman bersaiz NOM\n"
+
+#: src/main.c:694
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Pilihan  -1.. -9 memberi kesan beberapa parameter asal untuk menetapkan\n"
+"susunatur pratetap dengan 80 lajur.  Oleh itu susunan adalah penting: `-R -f40\n"
+"-2' adalah bersamaan dengan `-2'.  Untuk mengubah susunatur, guna `-2Rf40', atau\n"
+"gubah tetapan asal (`--columns', `--font-size' dsb.).\n"
+
+#: src/main.c:702
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NOM     mendahulukan setiap NOM baris dengan nombor\n"
+"                             barisnya\n"
+"  -C                         alias bagi --line-numbers=5\n"
+"  -f, --font-size=SAIZ       guna font SAIZ (terapung) bagi badan teks\n"
+"  -L, --lines-per-page=NOM   ubah font untuk mencetak NOM baris per maya\n"
+"  -l, --chars-per-line=NOM   ubah font untuk mencetak NOM lajur per maya\n"
+"  -m, --catman               proses FAIL sebagai laman man (sama seperti -L66)\n"
+"  -T, --tabsize=NOM          tetap saiz tab kepada NOM\n"
+"  --non-printable-format=FMT menentukan bagaimana aksara tidak-boleh cetak\n"
+"                             dicetak\n"
+
+#: src/main.c:713
+msgid "Headings:\n"
+msgstr "Pengepala:\n"
+
+#: src/main.c:715
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        tiada pengepala laman\n"
+"  -b, --header[=TEKS]    tetapkan pengepala laman\n"
+"  -u, --underlay[=TEKS]  cetak TEKS dibawah setiap laman\n"
+"  --center-title[=TEKS]  tetapkan tajuk laman kepada TAJUK\n"
+"  --left-title[=TEKS]    tetapkan tajuk laman kiri dan kanan kepada TEKS\n"
+"  --right-title[=TEKS]\n"
+"  --left-footer[=TEKS]   tetapkan footer laman kepada TEKS\n"
+"  --footer[=TEKS]\n"
+"  --right-footer[=TEKS]\n"
+
+#: src/main.c:726
+msgid "The TEXTs may use special escapes.\n"
+msgstr "TEKS tersebut boleh menggunakan escape khas.\n"
+
+#: src/main.c:731
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=JULAT]        pilih laman yang hendak dicetak\n"
+"  -c, --truncate-lines*      potong baris panjang\n"
+"  -i, --interpret*           terjemah aksara tab, bs dan ff\n"
+"      --end-of-line=JENIS    nyatakan aksara eol (JENIS: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAMA        guna enkoding kemasukan NAMA\n"
+"  -t, --title=NAMA           tetapkan nama tugas\n"
+"      --stdin=NAMA           tetapkan nama fail masukan stdin\n"
+"      --print-anyway*        paksa cetakan binari\n"
+"  -Z, --delegate*            pindah fail ke aplikasi lain\n"
+"      --toc[=TEKS]           jana senarai kandungan\n"
+
+#: src/main.c:743
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Apabila pemindahan dihidupkan, a2ps boleh menggunakan aplikasi lain untuk\n"
+"mengawal pemprosesan fail yang sepatutnya tidak dicetak sebagai maklumat\n"
+"mentah, cth., HTML, PostScript, PDF dsb.\n"
+
+#: src/main.c:750
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=LANG]  hidupkan cetakan-menarik (tetapkan gaya kepada\n"
+"                             LANG)\n"
+"  --highlight-level=TAHAP    tetapkan TAHAP sorotan cetakan menarik\n"
+"                             TAHAP boleh sebagai none, normal atau heavy\n"
+"  -g                         alias untuk --highlight-level=heavy\n"
+"  --strip-level=NOM          tahap untuk pembuangan komen\n"
+
+#: src/main.c:759
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=FAIL          biarkan keluaran kepada fail FAIL.  Jika FAIL\n"
+"                             adalah `-', biarkan keluaran kepada stdout.\n"
+"  --version-control=WORD     pintas kawalan versi biasa\n"
+"  --suffix=SUFFIX            pintas akhiran salinan biasa\n"
+"  -P, --printer=NAMA         hantar keluaran kepada pencetak NAMA\n"
+"  -d                         hantar keluaran kepada pencetak default\n"
+"                             (ini adalah kelakuan default)\n"
+
+#: src/main.c:770
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=FAIL        masukkan FAIL.pro sebagai prolog PostScript\n"
+"      --ppd[=KEKUNCI]        pilihan PPD automatik atau tetapkan kepada KEKUNCI\n"
+"  -n, --copies=NOM           cetak NOM salinan bagi setiap laman\n"
+"  -s, --sides=MOD            tetapkan MOD dupleks (`1' atau `simplex',\n"
+"                             `2' atau `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  hantar laman definisi alat kepada keluaran\n"
+"      --statusdict=K[:[:]V]  hantar definisi statusdict kepada keluaran\n"
+"  -k, --page-prefeed         hidupkan laman prasuap\n"
+"  -K, --no-page-prefeed      matikan laman prasuap\n"
+
+#: src/main.c:784
+#, fuzzy
+#| msgid ""
+#| "By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+#| "print the content of the `src' directory and a table of content, and send the\n"
+#| "result to the printer `lw',\n"
+#| "\n"
+#| "    $ a2ps -P lw --toc src/*\n"
+#| "\n"
+#| "To process the files `sample.ps' and `sample.html' and display the result,\n"
+#| "\n"
+#| "    $ a2ps -P display sample.ps sample.html\n"
+#| "\n"
+#| "To process a mailbox in 4 up,\n"
+#| "\n"
+#| "    $ a2ps -=mail -4 mailbox\n"
+#| "\n"
+#| "To print as a booklet on the default printer, which is Duplex capable,\n"
+#| "\n"
+#| "    $ a2ps -=book paper.dvi.gz -d\n"
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+msgstr ""
+"Secara default a2ps ditala untuk melakukan apa yang anda mahu, jadi yakinilah\n"
+"ia.  Untuk cetakan menarik kandungan direktori `src' dan senarai kandungan, dan\n"
+"hantar keputusan ke pencetak `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Untuk memproses fail `sample.ps' dan `sample.html' dan papar keputusannya,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"Untuk memproses kotakmel dalam 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Untuk mencetak sebagai buku kecil pada pencetak default, dimana ia berkemampuan Duplex,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+
+#: src/main.c:1145
+msgid "Table of Content"
+msgstr "Senarai Kandungan"
+
+#: src/parsessh.y:225
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "tidak dapat proses `%s' dimana memerlukan a2ps versi %s"
+
+#: src/sheets-map.l:117
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "aksara tidak dijangka `%c'"
+
+#: src/sheets-map.l:217 liba2ps/lexppd.l:212
+#, c-format
+msgid "too many includes"
+msgstr "terlalu banyak masukan"
+
+#: src/sheets-map.l:301 src/sheets-map.l:308
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "tiada kekunci ditakrifkan untuk `%s'"
+
+#: src/select.c:119 src/ssheet.c:797 liba2ps/fonts.l:720 liba2ps/fonts.l:722
+#: liba2ps/fonts.l:724 liba2ps/pathwalk.c:315 liba2ps/pathwalk.c:400
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "tidak dapat mencari fail `%s'"
+
+#: src/select.c:121
+#, c-format
+msgid "automatic style selection cancelled"
+msgstr "pemilihan gaya automatik dibatalkan"
+
+#: src/select.c:198
+#, fuzzy, c-format
+msgid "error running file(1)"
+msgstr ""
+"Ralat memuat turun %1:/n\n"
+"fail telah rosak."
+
+#: src/ssheet.c:281
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "tidak dapat menghimpun ungkapan biasa `%s': %s"
+
+#: src/ssheet.c:904 src/ssheet.c:925
+msgid "Known Style Sheets"
+msgstr "Helaian Gaya Diketahui"
+
+#: src/ssheet.c:1385
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "tidak dapat mencari helaian gaya `%s': menggunakan gaya mudah"
+
+#: src/versions.c:128
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "nombor versi tidak sah `%s'"
+
+#: liba2ps/caret.c:33
+msgid "space (i.e., ` ')"
+msgstr "ruang (i.e., ` ')"
+
+#: liba2ps/caret.c:35
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "octal (i.e., `\\001' dsb.)"
+
+#: liba2ps/caret.c:37
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "hexadecimal (i.e., `\\x0a' dsb.)"
+
+#: liba2ps/caret.c:39
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "caret (i.e., `^C', `M-^C' dsb.)"
+
+#: liba2ps/caret.c:41
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (i.e., `C-c', `M-C-c' dsb.)"
+
+#: liba2ps/caret.c:43
+msgid "question-mark (i.e., `?')"
+msgstr "tanda-soal (i.e., `?')"
+
+#: liba2ps/darray.c:83 liba2ps/darray.c:553
+#, fuzzy, c-format
+msgid "Dynamic array `%s':\n"
+msgstr "Tatasusunan bagi [%s]"
+
+#: liba2ps/darray.c:84 liba2ps/dstring.c:72
+#, c-format
+msgid "\tload: %zu/%zu (%2.1f%%)\n"
+msgstr "\tmuatkan: %zu/%zu (%2.1f%%)\n"
+
+#: liba2ps/darray.c:102 liba2ps/dstring.c:87
+#, c-format
+msgid "\toriginal size: %zu, growth: %s %zu\n"
+msgstr ""
+
+#: liba2ps/dstring.c:71
+#, c-format
+msgid "Dynamic string:\n"
+msgstr "Rentetan dinamik:\n"
+
+#: liba2ps/encoding.c:737
+#, c-format
+msgid "too many slant fonts: `%s'"
+msgstr "terlalu banyak font senget: `%s'"
+
+#: liba2ps/encoding.c:743
+#, c-format
+msgid "invalid option `%s'"
+msgstr "pilihan tidak sah `%s'"
+
+#: liba2ps/encoding.c:1270 liba2ps/encoding.c:1291
+msgid "Known Encodings"
+msgstr "Pengekodan Diketahui"
+
+#: liba2ps/faces.c:148
+#, c-format
+msgid "incomplete knowledge of faces"
+msgstr "pengetahuan tidak lengkap tentang muka"
+
+#: liba2ps/filtdir.c:68
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "tidak dapat menutup direktori `%s'"
+
+#: liba2ps/getnum.c:41 liba2ps/getnum.c:99 liba2ps/getnum.c:131
+#: liba2ps/getnum.c:200
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "hujah tidak sah `%s' untuk `%s'"
+
+#: liba2ps/getnum.c:101
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Hujah sah adalah nombor bulat n seperti: %s\n"
+
+#: liba2ps/getnum.c:202
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Hujah sah adalah apungan f seperti: %s\n"
+
+#: liba2ps/jobs.c:285
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "pengekodan tidak diketahui `%s'"
+
+#: liba2ps/madir.c:51
+msgid "rows first"
+msgstr "baris dahulu"
+
+#: liba2ps/madir.c:54
+msgid "columns first"
+msgstr "lajur dahulu"
+
+#: liba2ps/media.c:138
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "media tidak diketahui `%s'"
+
+#: liba2ps/media.c:166 liba2ps/media.c:193
+msgid "Known Media"
+msgstr "Media Diketahui"
+
+#: liba2ps/media.c:169
+msgid "Name"
+msgstr "Nama"
+
+#: liba2ps/media.c:170
+msgid "dimensions"
+msgstr "dimensi"
+
+#: liba2ps/metaseq.c:82 liba2ps/metaseq.c:91
+#, c-format
+msgid "Known Variables"
+msgstr "Pembolehubah Diketahui"
+
+#: liba2ps/metaseq.c:140 liba2ps/metaseq.c:509 liba2ps/metaseq.c:526
+#: liba2ps/metaseq.c:586 liba2ps/metaseq.c:931 liba2ps/metaseq.c:951
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: kehilangan `%c' untuk %s%c escape"
+
+#: liba2ps/metaseq.c:266 liba2ps/metaseq.c:278
+#, c-format
+msgid "Printed by %s"
+msgstr "Dicetak oleh %s"
+
+#: liba2ps/metaseq.c:276
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Dicetak oleh %s dari %s"
+
+#: liba2ps/metaseq.c:286 liba2ps/metaseq.c:304
+#, c-format
+msgid "cannot get current working directory"
+msgstr "tidak boleh mendapatkan direktori kerja semasa"
+
+#: liba2ps/metaseq.c:317 liba2ps/metaseq.c:512 liba2ps/metaseq.c:541
+#: liba2ps/metaseq.c:630 liba2ps/metaseq.c:934 liba2ps/metaseq.c:966
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: hujah terlalu panjang untuk %s escape"
+
+#: liba2ps/metaseq.c:342 liba2ps/metaseq.c:655
+msgid "%b %d, %Y"
+msgstr "%b %d, %Y"
+
+#: liba2ps/metaseq.c:351 liba2ps/metaseq.c:664
+msgid "%A %B %d, %Y"
+msgstr "%A, %d %B %Y"
+
+#: liba2ps/metaseq.c:397 liba2ps/metaseq.c:426 liba2ps/metaseq.c:469
+#: liba2ps/metaseq.c:704 liba2ps/metaseq.c:788 liba2ps/metaseq.c:847
+#: liba2ps/metaseq.c:902 liba2ps/metaseq.c:1078 liba2ps/metaseq.c:1208
+#: liba2ps/metaseq.c:1219 liba2ps/metaseq.c:1262
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: tidak diketahui `%s' escape `%c' (%d)"
+
+#: liba2ps/metaseq.c:404 liba2ps/metaseq.c:795
+#, c-format
+msgid "Page %zu"
+msgstr "Halaman %zu"
+
+#: liba2ps/metaseq.c:409 liba2ps/metaseq.c:806
+#, c-format
+msgid "Page %zu/%c"
+msgstr "Halaman %zu/%c"
+
+#: liba2ps/metaseq.c:571 liba2ps/metaseq.c:1000
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: pemisah tidak sah `%s%c' untuk `%s' escape"
+
+#: liba2ps/metaseq.c:579 liba2ps/metaseq.c:589
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: hujah tidak sah untuk %s%c escape"
+
+#: liba2ps/metaseq.c:802
+#, c-format
+msgid "Page %zu/%zu"
+msgstr "Halaman %zu/%zu"
+
+#: liba2ps/metaseq.c:1239
+msgid "output command"
+msgstr "arahan keluaran"
+
+#: liba2ps/options.c:48
+msgid "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+msgstr "Hakcipta (C) 1988-2017 Free Software Foundation, Inc."
+
+#: liba2ps/options.c:290
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Cuba `%s --help' untuk lebih maklumat.\n"
+
+#: liba2ps/options.c:674
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "pengenalan pembolehubah tidak sah `%s'"
+
+#: liba2ps/output.c:428
+#, c-format
+msgid "invalid face `%s'"
+msgstr "rupa `%s' tidak sah"
+
+#: liba2ps/output.c:499
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "`%s' dengan tiada persamaan `%s'"
+
+#: liba2ps/ppd.c:83
+msgid "Known Fonts"
+msgstr "Font Diketahui"
+
+#: liba2ps/ppd.c:86
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Tiada.\n"
+
+#: liba2ps/ppd.c:124 liba2ps/ppd.c:140
+msgid "Known PostScript Printer Descriptions"
+msgstr "PostScript Printer Descriptions Diketahui"
+
+#: liba2ps/prange.c:284 liba2ps/prange.c:302
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "jarakmasa `%s' tidak sah"
+
+#: liba2ps/printers.c:41
+msgid "Default Printer"
+msgstr "Pencetak Default"
+
+#: liba2ps/printers.c:42
+msgid "Unknown Printer"
+msgstr "Pencetak Tidak Diketahui"
+
+#: liba2ps/printers.c:342 liba2ps/printers.c:359
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "tiada arahan untuk `%s' (%s%s)"
+
+#: liba2ps/printers.c:375
+msgid "sent to the standard output"
+msgstr "dihantar kepada keluaran piawai"
+
+#: liba2ps/printers.c:376
+msgid "sent to the default printer"
+msgstr "dihantar kepada pencetak default"
+
+#: liba2ps/printers.c:381
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "disimpan kedalam fail `%s'"
+
+#: liba2ps/printers.c:382
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "dihantar kepada pencetak `%s'"
+
+#: liba2ps/printers.c:559 liba2ps/printers.c:567
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Keluaran Diketahui (Pencetak, dsb.)"
+
+#: liba2ps/prolog.c:84 liba2ps/prolog.c:169
+msgid "Known Prologues"
+msgstr "Prolog Diketahui"
+
+#: liba2ps/prolog.c:565
+#, c-format
+msgid "font %f too big"
+msgstr "font %f terlalu besar"
+
+#: liba2ps/psgen.c:631
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "`%s' adalah fail perduaan, cetakan dibatalkan"
+
+#: liba2ps/userdata.c:104
+msgid "user"
+msgstr "pengguna"
+
+#: liba2ps/userdata.c:105
+msgid "Unknown User"
+msgstr "Pengguna Tidak Diketahui"
+
+#: liba2ps/useropt.c:56
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "pilihan pengguna tidak diketahui `%s'"
+
+#: liba2ps/useropt.c:67 liba2ps/useropt.c:78
+msgid "Known User Options"
+msgstr "Pilihan Pengguna Diketahui"
+
+#: liba2ps/xbackupfile.c:44
+#, c-format
+msgid "memory exhausted"
+msgstr "kehabisan memori"
+
+#: liba2ps/xbackupfile.c:163 liba2ps/xbackupfile.c:175
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "tidak dapat tukarnama fail `%s' sebagai `%s'"
+
+#: liba2ps/xbackupfile.c:178
+#, c-format
+msgid "restored file `%s'"
+msgstr "fail dikembalikan `%s'"

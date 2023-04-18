@@ -1,0 +1,1159 @@
+# Mensajes en español para a2ps.
+# Copyright (C) 2018 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+# Miguel Ángel Varó Giner <mvaro@dlsi.ua.es>, 1998.
+# Francisco Javier Serrador <fserrador@gmail.com>, 2018.
+# Antonio Ceballos Roa <aceballos@gmail.com>, 2018, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14.92\n"
+"Report-Msgid-Bugs-To: bug-a2ps@gnu.org\n"
+"POT-Creation-Date: 2022-08-11 16:45+0200\n"
+"PO-Revision-Date: 2022-09-25 13:32+0200\n"
+"Last-Translator: Antonio Ceballos Roa <aceballos@gmail.com>\n"
+"Language-Team: Spanish <es@tp.org.es>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/delegate.c:110 liba2ps/encoding.c:569 liba2ps/encoding.c:615
+#: liba2ps/encoding.c:657 liba2ps/output.c:282 liba2ps/pair_ht.c:312
+#: liba2ps/prolog.c:137
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "falta argumento para «%s»"
+
+#: src/delegate.c:233 liba2ps/routines.c:136 liba2ps/xbackupfile.c:171
+#: liba2ps/xbackupfile.c:196 liba2ps/xbackupfile.c:204
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "no se puede crear el fichero «%s»"
+
+#: src/delegate.c:242 src/select.c:188 liba2ps/routines.c:163
+#: liba2ps/routines.c:169
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "no se puede abrir una tuberí­a en «%s»"
+
+#: src/delegate.c:362
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Delegación «%s», de %s a %s\n"
+
+#: src/delegate.c:380 src/delegate.c:400
+msgid "Applications configured for delegation"
+msgstr "Aplicaciones configuradas para la delegación"
+
+#: src/generate.c:82
+#, c-format
+msgid "`%s' is a directory"
+msgstr "«%s» es un directorio"
+
+#: src/generate.c:90 src/main.c:550 src/main.c:572 liba2ps/routines.c:130
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "no se puede abrir el fichero «%s»"
+
+#: src/generate.c:95 liba2ps/xbackupfile.c:147
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "no se puede obtener información del fichero «%s»"
+
+#: src/generate.c:160
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 página en 1 hoja]\n"
+
+#: src/generate.c:166
+#, c-format
+msgid "[%s (%s): %zu pages on 1 sheet]\n"
+msgstr "[%s (%s): %zu páginas en 1 hoja]\n"
+
+#: src/generate.c:173
+#, c-format
+msgid "[%s (%s): %zu pages on %zu sheets]\n"
+msgstr "[%s (%s): %zu páginas en %zu hojas]\n"
+
+#: src/generate.c:200
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Total: 1 página en 1 hoja] %s\n"
+
+#: src/generate.c:204
+#, c-format
+msgid "[Total: %zu pages on 1 sheet] %s\n"
+msgstr "[Total: %zu páginas en 1 hoja] %s\n"
+
+#: src/generate.c:209
+#, c-format
+msgid "[Total: %zu pages on %zu sheets] %s\n"
+msgstr "[Total: %zu páginas en %zu hojas] %s\n"
+
+#: src/generate.c:218
+msgid "[1 line wrapped]\n"
+msgstr "[1 línea envuelta]\n"
+
+#: src/generate.c:221
+#, c-format
+msgid "[%zu lines wrapped]\n"
+msgstr "[%zu líneas envueltas]\n"
+
+#: src/generate.c:232
+msgid "[No output produced]\n"
+msgstr "[No se ha producido salida]\n"
+
+#: src/generate.c:304
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, delegado a %s"
+
+#: src/generate.c:312
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): ha fallado. Ignorado]\n"
+
+#: src/generate.c:320
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (no imprimible): ignorado]\n"
+
+#: src/generate.c:329
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (binario): ignorado]\n"
+
+#: src/generate.c:350
+msgid "plain"
+msgstr "estándar"
+
+#: src/lexssh.l:353
+msgid "end-of-line in string constant"
+msgstr "fin de línea en una cadena constante"
+
+#: src/lexssh.l:420 src/sheets-map.l:159 src/sheets-map.l:198
+#, c-format
+msgid "end of line inside a %s"
+msgstr "fin de línea dentro de un %s"
+
+#: src/main.c:197
+#, c-format
+msgid "received SIG%s"
+msgstr "recibida SIG%s"
+
+#: src/main.c:236
+msgid "heavy"
+msgstr "máximo"
+
+#: src/main.c:240
+msgid "normal"
+msgstr "normal"
+
+#: src/main.c:244
+msgid "none"
+msgstr "ninguno"
+
+#: src/main.c:318 src/main.c:322
+msgid "yes"
+msgstr "sí­"
+
+#: src/main.c:319 src/main.c:322 src/main.c:360
+msgid "no"
+msgstr "no"
+
+#: src/main.c:328
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Estado de configuración de %s %s\n"
+
+#: src/main.c:332 src/main.c:680
+msgid "Sheets:\n"
+msgstr "Hojas:\n"
+
+#: src/main.c:333
+#, c-format
+msgid ""
+"  medium          = %s, %s\n"
+"  page layout     = %zu x %zu, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %u\n"
+msgstr ""
+"  soporte                 = %s, %s\n"
+"  diseño de página        = %zu x %zu, %s\n"
+"  bordes                  = %s\n"
+"  alineamiento de fichero = %s\n"
+"  margen interior         = %u\n"
+
+#: src/main.c:340
+msgid "portrait"
+msgstr "vertical"
+
+#: src/main.c:340
+msgid "landscape"
+msgstr "apaisado"
+
+#: src/main.c:349
+#, c-format
+msgid "%u characters per line"
+msgstr "%u caracteres por línea"
+
+#: src/main.c:352
+#, c-format
+msgid "%u lines per page"
+msgstr "%u líneas por página"
+
+#: src/main.c:355
+#, c-format
+msgid "font size is %gpt"
+msgstr "el tamaño de la letra es %g puntos"
+
+#: src/main.c:364
+msgid "each line"
+msgstr "cada lí­nea"
+
+#: src/main.c:368
+#, c-format
+msgid "each %u lines"
+msgstr "cada %u líneas"
+
+#: src/main.c:371 src/main.c:701
+msgid "Virtual pages:\n"
+msgstr "Páginas virtuales:\n"
+
+#: src/main.c:372
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %u\n"
+"  non printable format = %s\n"
+msgstr ""
+"  numeración de líneas      = %s\n"
+"  formato                   = %s\n"
+"  tamaño de tabulación      = %u\n"
+"  caracteres no imprimibles = %s\n"
+
+#: src/main.c:383
+msgid "Headers:\n"
+msgstr "Cabeceras:\n"
+
+#: src/main.c:384
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  encabezamiento          = %s\n"
+"  pie de página izquierdo = %s\n"
+"  pie de página           = %s\n"
+"  pie de página derecho   = %s\n"
+"  tí­tulo izquierdo        = %s\n"
+"  tí­tulo centrado         = %s\n"
+"  tí­tulo derecho          = %s\n"
+"  marca de agua           = %s\n"
+
+#: src/main.c:403 src/main.c:730
+msgid "Input:\n"
+msgstr "Entrada:\n"
+
+#: src/main.c:404
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  truncar las líneas       = %s\n"
+"  interpretar tab, ff y bs = %s\n"
+"  fin de línea             = %s\n"
+"  codificación             = %s\n"
+"  título del documento     = %s\n"
+"  prólogo                  = %s\n"
+"  imprimir los binarios    = %s\n"
+"  delegando                = %s\n"
+
+#: src/main.c:429 src/main.c:494
+msgid "selected automatically"
+msgstr "seleccionado automáticamente"
+
+#: src/main.c:432 src/main.c:749
+msgid "Pretty-printing:\n"
+msgstr "Impresión estilosa:\n"
+
+#: src/main.c:433
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  hoja de estilo           = %s\n"
+"  nivel de color           = %s\n"
+"  supresión de comentarios = %d\n"
+
+#: src/main.c:453
+msgid "never make backups"
+msgstr "nunca hace copias de seguridad"
+
+#: src/main.c:457
+msgid "simple backups of every file"
+msgstr "copias de seguridad simples para cada fichero"
+
+#: src/main.c:462
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"copias de seguridad numeradas de los ficheros ya numerados,\n"
+"                            y simples de los otros"
+
+#: src/main.c:467
+msgid "numbered backups of every file"
+msgstr "copias de seguridad numeradas de cada fichero"
+
+#: src/main.c:471 src/main.c:758
+msgid "Output:\n"
+msgstr "Salida:\n"
+
+#: src/main.c:472
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  destino                           = %s\n"
+"  control de versión                = %s\n"
+"  sufijo de las copias de seguridad = %s\n"
+
+#: src/main.c:484 src/main.c:769
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:485
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %u\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  número mágico                     = %s\n"
+"  Descripción de la Impresora (PPD) = %s\n"
+"  PPD por defecto                   = %s\n"
+"  formato del rótulo de página      = %s\n"
+"  número de copias                  = %u\n"
+"  caras por hoja                    = %s\n"
+"  definiciones dispositivo página   = "
+
+#: src/main.c:505
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  definiciones statusdict   = "
+
+#: src/main.c:508
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  precarga del papel        = %s\n"
+
+#: src/main.c:517
+msgid "Internals:\n"
+msgstr "Detalles internos:\n"
+
+#: src/main.c:518
+#, c-format
+msgid ""
+"  verbosity level     = %u\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  nivel de verbosidad    = %u\n"
+"  orden de fichero       = %s\n"
+"  ruta a biblioteca      = \n"
+
+#: src/main.c:636
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with `*' require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Modo de empleo: %s [OPCIÓN]... [FICHERO]...\n"
+"\n"
+"Convierte los FICHERO(s) o la entrada estándar a PostScript.  Por defecto,\n"
+"la salida se envía a la impresora predeterminada.  Se puede especificar un\n"
+"fichero de salida con -o.\n"
+"\n"
+"Los argumentos obligatorios para las opciones largas también son obligatorios\n"
+"para las cortas. Las opciones largas marcadas con `*' requieren un argumento\n"
+"sí/no; las correspondientes opciones cortas suponen un `sí'.\n"
+
+#: src/main.c:651
+msgid "Tasks:\n"
+msgstr "Tareas:\n"
+
+#: src/main.c:652
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        muestra la versión\n"
+"  --help           muestra esta ayuda\n"
+"  --guess          informa de los tipos de FICHEROS adivinados\n"
+"  --which          informa de la ruta completa de los ficheros de biblioteca\n"
+"                   llamados FICHEROS\n"
+"  --glob           informa de la ruta completa de los ficheros de biblioteca\n"
+"                   coincidentes con FICHEROS\n"
+"  --list=defaults  muestra los ajustes y los parámetros predefinidos\n"
+"  --list=CATEGORÍA lista destallada sobre CATEGORÍA (delegaciones, codificaciones,\n"
+"                   características, vaiables, medios, ppd, impresoras, prólogos,\n"
+"                   hojas de estilo, opciones de usuario)\n"
+
+#: src/main.c:663
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Tras haber realizado la tarea, sale correctamente.  Las listas detalladas\n"
+"pueden proporcionar ayuda adicional sobre características concretas.\n"
+
+#: src/main.c:671
+msgid "Global:\n"
+msgstr "Global:\n"
+
+#: src/main.c:672
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent      no muestra ningún mensaje\n"
+"  -v, --verbose[=NIVEL]      activa la verbosidad, o ponerla al NIVEL\n"
+"  -=, --user-option=OPCIÓN   emplea la OPCIÓN abreviada del usuario\n"
+"      --debug                activa las funciones de depuración\n"
+"  -D, --define=CLAVE[:VALOR] quita CLAVE de variable o le poner VALOR\n"
+
+#  TODO review: fill, rank
+#: src/main.c:681
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NOMBRE    utiliza el soporte de salida NOMBRE\n"
+"  -r, --landscape        imprime en apaisado\n"
+"  -R, --portrait         imprime en vertical\n"
+"      --columns=NUM      número de columnas por hoja\n"
+"      --rows=NUM         número de líneas por hoja\n"
+"      --major=DIRECCIÓN  rellena primero (DIRECCIÓN=) filas(row) o columnas(column)\n"
+"  -1, -2, ..., -9        tamaños de letra y diseños predef. para los virtuales 1.. 9\n"
+"  -A, --file-align=MODO  alinea distintos ficheros según el MODO (relleno(fill),\n"
+"                         rango(rank), página(page), hoja(sheet) o un número)\n"
+"  -j, --borders*         imprime bordes alrededor de las columnas\n"
+"      --margin[=NUM]     define un margen interior de tamaño NUM\n"
+
+#: src/main.c:694
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Las opciones -1..-9 afectan a varios parámetros primitivos para configurar\n"
+"diseños predefinidos con 80 columnas.  Por lo tanto el orden importa:\n"
+"«-R -f40 -2» es equivalente a «-2».  Para modificar el diseño, emplee\n"
+"`-2Rf40', o componga opciones primitivas (`--columns', `--font-size', etc.).\n"
+
+#: src/main.c:702
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NUM     numera una de cada NUM lí­neas\n"
+"  -C                         igual que --line-numbers=5\n"
+"  -f, --font-size=TAMAÑO     usa TAMAÑO (real) de letra para el texto principal\n"
+"  -L, --lines-per-page=NUM   cambia a escala el tamaño de letra para imprimir\n"
+"                             NUM líneas por página\n"
+"  -l, --chars-per-page=NUM   cambia a escala el tamaño de letra para imprimir\n"
+"                             NUM columnas por página\n"
+"  -m, --catman               procesa FICHERO como una página de manual (igual\n"
+"                             que -L66)\n"
+"  -T, --tabsize=NUM          establece el tamaño de tabulación a NUM\n"
+"  --non-printable-format=FMT indica como imprimir los caracteres\n"
+"                             no visibles\n"
+
+#: src/main.c:713
+msgid "Headings:\n"
+msgstr "Encabezamientos:\n"
+
+#: src/main.c:715
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        sin encabezamientos de página\n"
+"  -b, --header[=TEXTO]   establece el encabezamiento de página\n"
+"  -u, --underlay[=TEXTO] imprime TEXTO debajo de cada página\n"
+"  --center-title[=TEXTO] establece TEXTO como título de página\n"
+"  --left-title[=TEXTO]   establece TEXTO como título de página izquierdo o derecho\n"
+"  --right-title[=TEXTO]\n"
+"  --left-footer[=TEXTO]  establece TEXTO como pie de página\n"
+"  --footer[=TEXTO]\n"
+"  --right-footer[=TEXTO]\n"
+
+#: src/main.c:726
+msgid "The TEXTs may use special escapes.\n"
+msgstr "Los TEXTos pueden emplear caracteres de escape especiales.\n"
+
+#: src/main.c:731
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=RANGO]        selecciona las páginas a imprimir\n"
+"  -c, --truncate-lines*      trunca las lí­neas largas\n"
+"  -i, --interpret*           interpreta los tab, bs y ff\n"
+"      --end-of-line=TIPO     especifica el fin de lí­nea (r, n, nr, rn, any)\n"
+"  -X, --encoding=NOMBRE      utiliza la codif. de entrada NOMBRE\n"
+"  -t, --title=NOMBRE         pone el NOMBRE al trabajo\n"
+"      --stdin=NOMBRE         pone el NOMBRE a la entrada estándar\n"
+"      --print-anyway*        fuerza impresión binaria\n"
+"  -Z, --delegate*            delega ficheros a otras aplicaciones\n"
+"      --toc[=TEXTO]          genera una tabla de contenidos\n"
+
+#: src/main.c:743
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Cuando las delegaciones están activadas, a2ps puede encargar a otras\n"
+"aplicaciones el procesamiento de ficheros que no deben imprimirse como\n"
+"información en bruto, p. ej., HTML, PostScript, PDF, etc.\n"
+
+#: src/main.c:750
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=LENG]  activa la impresión estilosa (con el estilo LENG)\n"
+"  --highlight-level=NIVEL    indica el NIVEL de color para impresión estilosa\n"
+"                             (none, normal, heavy)\n"
+"  -g                         alias para --highlight-level=heavy\n"
+"  --strip-level=NUM          nivel de supresión de comentarios\n"
+
+#: src/main.c:759
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=FICHERO       guarda la salida en el FICHERO.\n"
+"                             Si FICHERO es '-', la redirige a la salida\n"
+"                             estándar.\n"
+"  --version-control=PALABRA  sobrescribe el control de versión actual\n"
+"  --suffix=SUFIJO            sobrescribe el sufijo de copia de seguridad actual\n"
+"  -P, --printer=NOMBRE       envía la salida a la impresora NOMBRE\n"
+"  -d                         envía la salida a la impresora por defecto\n"
+"                             (este es el comportamiento predefinido)\n"
+
+#: src/main.c:770
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=FICH        incluye FICH.pro como prólogo PostScript\n"
+"      --ppd[=CLAVE]          selección automática de PPD o puesta a CLAVE\n"
+"  -n, --copies=NUM           imprime NUM copias de cada página\n"
+"  -s, --sides=MODO           Establece el MODO dúplex (`1' o `simplex',\n"
+"                             `2' o `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pasa definición de dispositivo de página\n"
+"                             a la salida\n"
+"      --statusdict=K[:[:]V]  pasa definición statusdict a la salida\n"
+"  -k, --page-prefeed         activa la precarga de papel\n"
+"  -K, --no-page-prefeed      desactiva la precarga de papel\n"
+
+#: src/main.c:784
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+msgstr ""
+"Por defecto a2ps está ajustado para hacer lo que usted necesita, fíese. Para\n"
+"impresión estilosa del contenido del directorio «src» y de un índice de\n"
+"materias, y envío del resultado a la impresora 'lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Para procesar los ficheros `muestra.ps' y `muestra.html' y mostrar el resultado,\n"
+"\n"
+"    $ a2ps -P display muestra.ps muestra.html\n"
+"\n"
+"Para procesar un buzón de correo a 4 páginas por hoja,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Para escribir como un folleto en la impresora predeterminada, la cual tiene capacidad dúplex,\n"
+"\n"
+"    $ a2ps -=papel paper.dvi.gz -d"
+
+#: src/main.c:1145
+msgid "Table of Content"
+msgstr "Tabla de Contenidos"
+
+#: src/parsessh.y:225
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "no se puede procesar «%s» que requiere a2ps versión %s"
+
+#: src/sheets-map.l:117
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "carácter inesperado «%c»"
+
+#: src/sheets-map.l:217 liba2ps/lexppd.l:212
+#, c-format
+msgid "too many includes"
+msgstr "demasiados inclusiones"
+
+#: src/sheets-map.l:301 src/sheets-map.l:308
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "ninguna clave definida para «%s»"
+
+#: src/select.c:119 src/ssheet.c:797 liba2ps/fonts.l:720 liba2ps/fonts.l:722
+#: liba2ps/fonts.l:724 liba2ps/pathwalk.c:315 liba2ps/pathwalk.c:400
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "no se puede encontrar el fichero «%s»"
+
+#: src/select.c:121
+#, c-format
+msgid "automatic style selection cancelled"
+msgstr "cancelada la selección automática de estilo"
+
+#: src/select.c:198
+#, c-format
+msgid "error running file(1)"
+msgstr "error  ejecutando file(1)"
+
+#: src/ssheet.c:281
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "no se puede compilar la expresión regular «%s»: %s"
+
+#: src/ssheet.c:904 src/ssheet.c:925
+msgid "Known Style Sheets"
+msgstr "Hojas de Estilo Conocidas"
+
+#: src/ssheet.c:1385
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "no se puede encontrar la hoja de estilo «%s»: utilizando estilo estándar"
+
+#: src/versions.c:128
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "número de versión inválido «%s»"
+
+#: liba2ps/caret.c:33
+msgid "space (i.e., ` ')"
+msgstr "espacio (p. ej., « »)"
+
+#: liba2ps/caret.c:35
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "octal (p. ej., `\\001', etc.)"
+
+#: liba2ps/caret.c:37
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "hexadecimal (p. ej., `\\x0a', etc.)"
+
+#: liba2ps/caret.c:39
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "circunflejo (p. ej., `^C', `M-^C', etc.)"
+
+#: liba2ps/caret.c:41
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (p. ej., `C-c', `M-C-c', etc.)"
+
+#: liba2ps/caret.c:43
+msgid "question-mark (i.e., `?')"
+msgstr "interrogación (p. ej., `?')"
+
+#: liba2ps/darray.c:83 liba2ps/darray.c:553
+#, c-format
+msgid "Dynamic array `%s':\n"
+msgstr "Matriz dinámica `%s':\n"
+
+#: liba2ps/darray.c:84 liba2ps/dstring.c:72
+#, c-format
+msgid "\tload: %zu/%zu (%2.1f%%)\n"
+msgstr "\tcarga: %zu/%zu (%2.1f%%)\n"
+
+#: liba2ps/darray.c:102 liba2ps/dstring.c:87
+#, c-format
+msgid "\toriginal size: %zu, growth: %s %zu\n"
+msgstr "\ttamaño original: %zu, crecimiento: %s %zu\n"
+
+#: liba2ps/dstring.c:71
+#, c-format
+msgid "Dynamic string:\n"
+msgstr "Cadena dinámica:\n"
+
+#: liba2ps/encoding.c:737
+#, c-format
+msgid "too many slant fonts: `%s'"
+msgstr "demasiadas fuentes inclinadas: `%s'"
+
+#: liba2ps/encoding.c:743
+#, c-format
+msgid "invalid option `%s'"
+msgstr "opción inválida «%s»"
+
+#: liba2ps/encoding.c:1270 liba2ps/encoding.c:1291
+msgid "Known Encodings"
+msgstr "Codificaciones conocidas"
+
+#: liba2ps/faces.c:148
+#, c-format
+msgid "incomplete knowledge of faces"
+msgstr "conocimiento incompleto de los estilos de caracteres"
+
+#: liba2ps/filtdir.c:68
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "no se puede cerrar el directorio «%s»"
+
+#: liba2ps/getnum.c:41 liba2ps/getnum.c:99 liba2ps/getnum.c:131
+#: liba2ps/getnum.c:200
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "argumento inválido «%s» para «%s»"
+
+#: liba2ps/getnum.c:101
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Los argumentos válidos son enteros n tales que: %s\n"
+
+#: liba2ps/getnum.c:202
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Los argumentos válidos son reales f tales que: %s\n"
+
+#: liba2ps/jobs.c:285
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "codificación desconocida «%s»"
+
+#: liba2ps/madir.c:51
+msgid "rows first"
+msgstr "primero filas"
+
+#: liba2ps/madir.c:54
+msgid "columns first"
+msgstr "primero columnas"
+
+#: liba2ps/media.c:138
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "medio desconocido «%s»"
+
+#: liba2ps/media.c:166 liba2ps/media.c:193
+msgid "Known Media"
+msgstr "Soportes Conocidos"
+
+#: liba2ps/media.c:169
+msgid "Name"
+msgstr "Nombre"
+
+#: liba2ps/media.c:170
+msgid "dimensions"
+msgstr "dimensiones"
+
+#: liba2ps/metaseq.c:82 liba2ps/metaseq.c:91
+#, c-format
+msgid "Known Variables"
+msgstr "Variables Conocidas"
+
+#: liba2ps/metaseq.c:140 liba2ps/metaseq.c:509 liba2ps/metaseq.c:526
+#: liba2ps/metaseq.c:586 liba2ps/metaseq.c:931 liba2ps/metaseq.c:951
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: falta `%c' para la secuencia de escape %s%c"
+
+#: liba2ps/metaseq.c:266 liba2ps/metaseq.c:278
+#, c-format
+msgid "Printed by %s"
+msgstr "Impreso por %s"
+
+#: liba2ps/metaseq.c:276
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Impreso por %s desde %s"
+
+#: liba2ps/metaseq.c:286 liba2ps/metaseq.c:304
+#, c-format
+msgid "cannot get current working directory"
+msgstr "no se puede determinar el directorio actual"
+
+#: liba2ps/metaseq.c:317 liba2ps/metaseq.c:512 liba2ps/metaseq.c:541
+#: liba2ps/metaseq.c:630 liba2ps/metaseq.c:934 liba2ps/metaseq.c:966
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: argumento demasiado largo para la secuencia de escape %s"
+
+#: liba2ps/metaseq.c:342 liba2ps/metaseq.c:655
+msgid "%b %d, %Y"
+msgstr "%d %b %Y"
+
+#: liba2ps/metaseq.c:351 liba2ps/metaseq.c:664
+msgid "%A %B %d, %Y"
+msgstr "%A %d %B %Y"
+
+#: liba2ps/metaseq.c:397 liba2ps/metaseq.c:426 liba2ps/metaseq.c:469
+#: liba2ps/metaseq.c:704 liba2ps/metaseq.c:788 liba2ps/metaseq.c:847
+#: liba2ps/metaseq.c:902 liba2ps/metaseq.c:1078 liba2ps/metaseq.c:1208
+#: liba2ps/metaseq.c:1219 liba2ps/metaseq.c:1262
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: secuencia de escape «%s» «%c» (%d) desconocida"
+
+#: liba2ps/metaseq.c:404 liba2ps/metaseq.c:795
+#, c-format
+msgid "Page %zu"
+msgstr "Página %zu"
+
+#: liba2ps/metaseq.c:409 liba2ps/metaseq.c:806
+#, c-format
+msgid "Page %zu/%c"
+msgstr "Página %zu/%c"
+
+#: liba2ps/metaseq.c:571 liba2ps/metaseq.c:1000
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: separador inválido «%s%c» para la secuencia de escape «%s»"
+
+#: liba2ps/metaseq.c:579 liba2ps/metaseq.c:589
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: argumento inválido para la secuencia de escape %s%c"
+
+#: liba2ps/metaseq.c:802
+#, c-format
+msgid "Page %zu/%zu"
+msgstr "Página %zu/%zu"
+
+#: liba2ps/metaseq.c:1239
+msgid "output command"
+msgstr "orden de salida"
+
+#: liba2ps/options.c:48
+msgid "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+msgstr "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+
+#: liba2ps/options.c:290
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Pruebe `%s --help' para más información.\n"
+
+#: liba2ps/options.c:674
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "identificador de variable «%s» inválido"
+
+#: liba2ps/output.c:428
+#, c-format
+msgid "invalid face `%s'"
+msgstr "opción inválida «%s»"
+
+#: liba2ps/output.c:499
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "«%s» sin correspondiente «%s»"
+
+#: liba2ps/ppd.c:83
+msgid "Known Fonts"
+msgstr "Tipos de letra Conocidos"
+
+#: liba2ps/ppd.c:86
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Ninguna.\n"
+
+#: liba2ps/ppd.c:124 liba2ps/ppd.c:140
+msgid "Known PostScript Printer Descriptions"
+msgstr "Descripciones de Impresora Postscript Conocidas"
+
+#: liba2ps/prange.c:284 liba2ps/prange.c:302
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "intervalo inválido «%s»"
+
+#: liba2ps/printers.c:41
+msgid "Default Printer"
+msgstr "Impresora por defecto"
+
+#: liba2ps/printers.c:42
+msgid "Unknown Printer"
+msgstr "Impresora Desconocida"
+
+#: liba2ps/printers.c:342 liba2ps/printers.c:359
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "ninguna orden para el «%s» (%s%s)"
+
+#: liba2ps/printers.c:375
+msgid "sent to the standard output"
+msgstr "enviado a la salida estándar"
+
+#: liba2ps/printers.c:376
+msgid "sent to the default printer"
+msgstr "enviado a la impresora por defecto"
+
+#: liba2ps/printers.c:381
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "guardado en el fichero «%s»"
+
+#: liba2ps/printers.c:382
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "enviado a la impresora «%s»"
+
+#: liba2ps/printers.c:559 liba2ps/printers.c:567
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Destinos de salida conocidos (impresoras, etc.)"
+
+#: liba2ps/prolog.c:84 liba2ps/prolog.c:169
+msgid "Known Prologues"
+msgstr "Prólogos conocidos"
+
+#: liba2ps/prolog.c:565
+#, c-format
+msgid "font %f too big"
+msgstr "el tipo de letra %f es demasiado grande"
+
+#: liba2ps/psgen.c:631
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "«%s» es un fichero binario, impresión interrumpida"
+
+#: liba2ps/userdata.c:104
+msgid "user"
+msgstr "usuario"
+
+#: liba2ps/userdata.c:105
+msgid "Unknown User"
+msgstr "Usuario Desconocido"
+
+#: liba2ps/useropt.c:56
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "opción de usuario desconocida «%s»"
+
+#: liba2ps/useropt.c:67 liba2ps/useropt.c:78
+msgid "Known User Options"
+msgstr "Opciones de Usuario Conocidas"
+
+#: liba2ps/xbackupfile.c:44
+#, c-format
+msgid "memory exhausted"
+msgstr "memoria agotada"
+
+#: liba2ps/xbackupfile.c:163 liba2ps/xbackupfile.c:175
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "no se puede renombrar el fichero «%s» como «%s»"
+
+#: liba2ps/xbackupfile.c:178
+#, c-format
+msgid "restored file `%s'"
+msgstr "fichero restaurado «%s»"
+
+#~ msgid "any type"
+#~ msgstr "cualquiera"
+
+#~ msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+#~ msgstr "Noticias, actualizaciones y documentación: visite http://www.gnu.org/software/a2ps/.\n"
+
+#~ msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+#~ msgstr "Informar de defectos a <bug-a2ps@gnu.org>.\n"
+
+#~ msgid ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+#~ "Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+#~ msgstr ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+#~ "Copyright (c) 2007- Akim Demaille, Miguel Santana y Masayuki Hatta"
+
+#~ msgid "unknown encoding `%s', ignored"
+#~ msgstr "codificación desconocida «%s», ignorada"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+#~ msgstr ""
+#~ "Esto es software libre; vea el código fuente para las condiciones de copia.\n"
+#~ "No hay NINGUNA garantí­a; ni siquiera de COMERCIABILIDAD o IDONEIDAD PARA UN\n"
+#~ "FIN DETERMINADO.\n"
+
+#~ msgid "write error"
+#~ msgstr "error de escritura"
+
+#~ msgid "invalid definition for printer `%s': %s"
+#~ msgstr "definición inválida para la impresora «%s»: %s"
+
+#~ msgid "obsolete `%s' entry.  Ignored"
+#~ msgstr "entrada «%s» obsoleta. Ignorada"
+
+#~ msgid "Page %d/%d"
+#~ msgstr "Página %d/%d"
+
+#~ msgid "`"
+#~ msgstr "«"
+
+#~ msgid "'"
+#~ msgstr "»"
+
+#~ msgid "invalid argument %s for `%s'"
+#~ msgstr "argumento inválido %s para «%s»"
+
+#~ msgid "ambiguous argument %s for `%s'"
+#~ msgstr "argumento %s ambiguo para «%s»"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Los argumentos válidos son:"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Error de sistema desconocido"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: la opción «%s» es ambigua\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: la opción «--%s» no permite un argumento\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: la opción `%c%s' no permite un argumento\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: la opción «%s» precisa un argumento\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: opción desconocida «--%s»\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: opción desconocida `%c%s'\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opción ilegal -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: opción inválida -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: la opción precisa un argumento -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: la opción `-W %s' es ambigua\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: la opción `-W %s' no permite un argumento\n"

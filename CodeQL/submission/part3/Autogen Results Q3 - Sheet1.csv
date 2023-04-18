@@ -1,0 +1,2 @@
+"[object Object],""The call -->realloc <--in file named--> columns/columns.c at line -->320 has a chance of causing memory leak in the program"""
+"[object Object],""The call -->realloc <--in file named--> getdefs/getdefs.c at line -->856 has a chance of causing memory leak in the program"""

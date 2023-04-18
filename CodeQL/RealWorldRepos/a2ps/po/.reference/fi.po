@@ -1,0 +1,1155 @@
+# Finnish translation of a2ps.
+# This file is distributed under the same license as the a2ps package.
+# Copyright © 2002, 2009 Free Software Foundation, Inc.
+# Matti Koskimies <matti@apulanta.fi>, 2002.
+# Lauri Nurmi <lanurmi@iki.fi>, 2009.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 11:28+0800\n"
+"PO-Revision-Date: 2009-02-24 21:37+02:00\n"
+"Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
+"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/buffer.c:68
+msgid "any type"
+msgstr "mikä tahansa"
+
+#: src/delegate.c:137 confg.gperf:168 lib/encoding.c:530 lib/encoding.c:576
+#: lib/encoding.c:616 lib/output.c:302 lib/pair_ht.c:296 lib/prolog.c:146
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "”%s” vaatii parametrin"
+
+#: src/delegate.c:260 lib/routines.c:160 lib/xbackupfile.c:248
+#: lib/xbackupfile.c:276 lib/xbackupfile.c:284
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "tiedoston ”%s” luonti ei onnistu"
+
+#: src/delegate.c:269 src/select.c:193 lib/routines.c:190 lib/routines.c:196
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "Putken avaaminen kohteeseen ”%s” ei onnistu"
+
+#: src/delegate.c:389
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Delegointi ”%s”, %s:sta %s:ksi\n"
+
+#: src/delegate.c:408 src/delegate.c:430
+msgid "Applications configured for delegation"
+msgstr "Delegointiin konfiguroidut sovellukset"
+
+#: src/generate.c:88
+#, c-format
+msgid "`%s' is a directory"
+msgstr "”%s” on hakemisto"
+
+#: src/generate.c:96 src/main.c:560 src/main.c:582 confg.gperf:192
+#: confg.gperf:355 lib/routines.c:154
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "Tiedoston ”%s” avaaminen ei onnistu"
+
+#: src/generate.c:101 lib/xbackupfile.c:224
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "tietojen keruu tiedostosta ”%s” ei onnistu"
+
+#: src/generate.c:168
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 sivu 1 arkilla]\n"
+
+#: src/generate.c:174
+#, c-format
+msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgstr "[%s (%s): %d sivua 1 arkilla]\n"
+
+#: src/generate.c:181
+#, c-format
+msgid "[%s (%s): %d pages on %d sheets]\n"
+msgstr "[%s (%s): %d sivua %d arkilla]\n"
+
+#: src/generate.c:208
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Yhteensä: 1 sivu 1 arkilla] %s\n"
+
+#: src/generate.c:212
+#, c-format
+msgid "[Total: %d pages on 1 sheet] %s\n"
+msgstr "[Yhteensä: %d sivua 1 arkilla] %s\n"
+
+#: src/generate.c:217
+#, c-format
+msgid "[Total: %d pages on %d sheets] %s\n"
+msgstr "[Yhteensä: %d sivua %d arkilla] %s\n"
+
+#: src/generate.c:226
+msgid "[1 line wrapped]\n"
+msgstr "[1 rivi rivitetty]\n"
+
+#: src/generate.c:229
+#, c-format
+msgid "[%d lines wrapped]\n"
+msgstr "[%d riviä rivitetty]\n"
+
+#: src/generate.c:242
+msgid "[No output produced]\n"
+msgstr "[Ei vastetta]\n"
+
+#: src/generate.c:314
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, delegoitu %s:lle"
+
+#: src/generate.c:322
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): epäonnistui. Jätetty huomiotta]\n"
+
+#: src/generate.c:330
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (tulostuskelvoton): jätetty huomiotta]\n"
+
+#: src/generate.c:339
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (binäärinen): jätetty huomiotta]\n"
+
+#: src/generate.c:360
+msgid "plain"
+msgstr "pelkkä teksti"
+
+#: lexssh.l:348
+msgid "end-of-line in string constant"
+msgstr "rivin loppu merkkijonovakiossa"
+
+#: lexssh.l:415 src/sheets-map.l:153 src/sheets-map.l:192
+#, c-format
+msgid "end of line inside a %s"
+msgstr "rivin loppu %s:n sisällä"
+
+#: src/main.c:203
+#, c-format
+msgid "received signal %d: %s"
+msgstr "Vastaantotettiin signaali %d: %s"
+
+#: src/main.c:242
+msgid "heavy"
+msgstr "raskas"
+
+#: src/main.c:246
+msgid "normal"
+msgstr "tavallinen"
+
+#: src/main.c:250
+msgid "none"
+msgstr "ei_mitään"
+
+#: src/main.c:324 src/main.c:328
+msgid "yes"
+msgstr "kyllä"
+
+#: src/main.c:325 src/main.c:328 src/main.c:369
+msgid "no"
+msgstr "ei"
+
+#: src/main.c:335
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "%s:n konfiguraatiotila %s\n"
+
+#: src/main.c:339 src/main.c:697
+msgid "Sheets:\n"
+msgstr "Arkit:\n"
+
+#: src/main.c:340
+#, c-format
+msgid ""
+"  medium          = %s%s, %s\n"
+"  page layout     = %d x %d, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %d\n"
+msgstr ""
+"  media               = %s%s, %s\n"
+"  sivun asettelu      = %d x %d, %s\n"
+"  reunukset           = %s\n"
+"  tiedoston kohdistus = %s\n"
+"  sisempi marginaali  = %d\n"
+
+#: src/main.c:349
+msgid "portrait"
+msgstr "pystytulostus"
+
+#: src/main.c:349
+msgid "landscape"
+msgstr "vaakatulostus"
+
+#: src/main.c:358
+#, c-format
+msgid "%d characters per line"
+msgstr "%d merkkiä joka rivillä"
+
+#: src/main.c:361
+#, c-format
+msgid "%d lines per page"
+msgstr "%d riviä joka sivulla"
+
+#: src/main.c:364
+#, c-format
+msgid "font size is %gpt"
+msgstr "kirjasinkoko on %gpt"
+
+#: src/main.c:373
+msgid "each line"
+msgstr "joka rivi"
+
+#: src/main.c:377
+#, c-format
+msgid "each %d lines"
+msgstr "joka %d. rivi"
+
+#: src/main.c:380 src/main.c:718
+msgid "Virtual pages:\n"
+msgstr "Näennäissivut:\n"
+
+#: src/main.c:381
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %d\n"
+"  non printable format = %s\n"
+msgstr ""
+"  rivien numerointi         = %s\n"
+"  muotoilu                  = %s\n"
+"  sarkaimen koko            = %d\n"
+"  tulostuskelvoton muotoilu = %s\n"
+
+#: src/main.c:392
+msgid "Headers:\n"
+msgstr "Otsikot:\n"
+
+#: src/main.c:393
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  otsikko           = %s\n"
+"  vasen alatunniste = %s\n"
+"  alatunniste       = %s\n"
+"  oikea alatunniste = %s\n"
+"  vasen ylätunniste = %s\n"
+"  keskiylätunniste  = %s\n"
+"  oikea ylätunniste = %s\n"
+"  ”vesileima”       = %s\n"
+
+#: src/main.c:412 src/main.c:747
+msgid "Input:\n"
+msgstr "Syöte:\n"
+
+#: src/main.c:413
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  rivien katkaisu    = %s\n"
+"  tulkitse           = %s\n"
+"  rivinvaihtotyyppi  = %s\n"
+"  koodaus            = %s\n"
+"  asiakirjan otsikko = %s\n"
+"  prologi            = %s\n"
+"  tulosta joka tapauksessa = %s\n"
+"  delegointi         = %s\n"
+
+#: src/main.c:438 src/main.c:504
+msgid "selected automatically"
+msgstr "valittu automaattisesti"
+
+#: src/main.c:441 src/main.c:766
+msgid "Pretty-printing:\n"
+msgstr "Kaunotulostus:\n"
+
+#: src/main.c:442
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  tyylisäännöstö = %s\n"
+"  korostustaso   = %s\n"
+"  kommenttienkarsintataso = %d\n"
+
+#: src/main.c:462
+msgid "never make backups"
+msgstr "ei varmuuskopioita"
+
+#: src/main.c:466
+msgid "simple backups of every file"
+msgstr "yksinkertainen varmuuskopio joka tiedostosta"
+
+#: src/main.c:471
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"numeroidut varmuuskopiot ennestään numeroiduista tiedostoista\n"
+"                            ja yksinkertaiset muista"
+
+#: src/main.c:476
+msgid "numbered backups of every file"
+msgstr "numeroidut varmuuskopiot joka tiedostosta"
+
+#: src/main.c:480 src/main.c:775
+msgid "Output:\n"
+msgstr "Tuloste:\n"
+
+#: src/main.c:481
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  määränpää                = %s\n"
+"  versiokontrolli          = %s\n"
+"  varmuuskopion jälkiliite = %s\n"
+
+#: src/main.c:494 src/main.c:786
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:495
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %d\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  maaginen numero           = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  oletus-PPD                = %s\n"
+"  sivun merkin muoto        = %s\n"
+"  kopioiden määrä           = %d\n"
+"  yksi-/kaksipuolisuus      = %s\n"
+"  laitemääritteet           = "
+
+#: src/main.c:515
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  statusdict-määritteet     = "
+
+#: src/main.c:518
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  sivun esisyöttö           = %s\n"
+
+#: src/main.c:527
+msgid "Internals:\n"
+msgstr "Sisäiset:\n"
+
+#: src/main.c:528
+#, c-format
+msgid ""
+"  verbosity level     = %d\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  monisanaisuustaso   = %d\n"
+"  file-komento        = %s\n"
+"  kirjastopolku       = \n"
+
+#: src/main.c:653
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with * require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Käyttö: %s [VALITSIN]... [TIEDOSTO]...\n"
+"\n"
+"Muunna TIEDOSTO(t) tai oletussyöte PostScript-muotoon. Tuloste lähetetään\n"
+"oletuksena oletustulostimelle. Tulostiedoston voi antaa valitsimella -o.\n"
+"\n"
+"Pitkien valitsinten pakolliset määritteet ovat pakollisia myös lyhyille\n"
+"valitsimille. *:lla merkityt pitkät valitsimet vaativat yes/no -määritteen,\n"
+"näitä vastaavat lyhyet valitsimet tulkitaan kuin ”yes”.\n"
+
+#: src/main.c:668
+msgid "Tasks:\n"
+msgstr "Tehtävät:\n"
+
+#: src/main.c:669
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        näytä versio\n"
+"  --help           näytä tämä aputeksti\n"
+"  --guess          kerro TIEDOSTOJEN arvatut tyypit\n"
+"  --which          kerro TIEDOSTO-nimisten kirjastotiedostojen täydet polut\n"
+"  --glob           kerro TIEDOSTO-nimiin täsmäävien kirjastotiedostojen polut\n"
+"  --list=defaults  näytä oletusasetukset ja -parametrit\n"
+"\n"
+"  --list=AIHE      yksityiskohtainen lista AIHEesta (delegations, encodings,\n"
+"                   features, variables, media, ppd, printers, prologues,\n"
+"                   style-sheets, user-options)\n"
+
+#: src/main.c:680
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"Tehtävän suorituksen jälkeen poistutaan onnistuneesti. Yksityiskohtaiset\n"
+"listat saattavat tarjota lisäapua tiettyihin ominaisuuksiin.\n"
+
+#: src/main.c:688
+msgid "Global:\n"
+msgstr "Yleiset:\n"
+
+#: src/main.c:689
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent       ollaan todella hiljaa\n"
+"  -v, --verbose[=TASO]        monisanaisuus päälle tai tasolle TASO\n"
+"  -=, --user-option=VALITSIN  käytä käyttäjäkohtaista valitsinta VALITSIN\n"
+"      --debug                 käytä virheenkorjausominaisuuksia\n"
+"  -D, --define=AVAIN[:ARVO]   aseta muuttujalle AVAIN tyhjä arvo tai arvo ARVO \n"
+
+#: src/main.c:698
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NIMI      käytä paperikokoa NIMI\n"
+"  -r, --landscape        vaakatulostus\n"
+"  -R, --portrait         pystytulostus\n"
+"      --columns=NUM      sivujen sarakemäärä\n"
+"      --rows=NUM         sivujen rivimäärä\n"
+"      --major=SUUNTA     täyttösuunta, ”rows” tai ”columns”\n"
+"  -1, -2, ..., -9        esiasetetut kirjasinkoot ja asemoinnit 1-9 näennäissivulle\n"
+"  -A, --file-align=TILA  kohdista erilliset tiedostot TILAn mukaan (fill, rank\n"
+"                         page, sheet, tai numero)\n"
+"  -j, --borders*         tulosta näennäissivuille kehykset\n"
+"      --margin[=NUM]     aseta sisäpuolisen marginaalin kooksi NUM\n"
+
+#: src/main.c:711
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Valitsimet -1.. -9 vaikuttavat useisiin primitiivisiin parametreihin\n"
+"esiasetetun 80 kolumnin asemoinnin alustamiseksi. Tämän vuoksi\n"
+"järjestyksellä on väliä: ”-R -f40 -2” on sama kuin ”-2”. Muokataksesi\n"
+"asemointia vaihda järjestykseksi ”-2Rf40” tai käytä primitiivisiä\n"
+"valitsimia (`--columns', `--font-size' jne.).\n"
+
+#: src/main.c:719
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NUM     aseta joka NUM:nnen rivin eteen rivinumero\n"
+"  -C                         sama kuin --line-numbers=5\n"
+"  -f, --font-size=KOKO       käytä kirjasinkokoa KOKO (liukuluku) tekstissä\n"
+"  -L, --lines-per-page=NUM   skaalaa kirjasinta tulostaaksesi NUM riviä joka\n"
+"                             näennäissivulle\n"
+"  -l, --chars-per-line=NUM   skaalaa kirjasinta tulostaaksesi NUM saraketta\n"
+"                             joka näennäissivulle\n"
+"  -m, --catman               käsittele TIEDOSTO kuin man-sivu (sama kuin -L66)\n"
+"  -T, --tabsize=NUM          aseta sarkaimen kooksi NUM\n"
+"  --non-printable-format=FMT määritä tulostuskelvottomien merkkien tulostustapa\n"
+
+#: src/main.c:730
+msgid "Headings:\n"
+msgstr "Tunnisteet:\n"
+
+#: src/main.c:732
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header          ei tunnisteita ollenkaan\n"
+"  -b, --header[=TEKSTI]    aseta otsikko\n"
+"  -u, --underlay[=TEKSTI]  tulosta TEKSTI joka sivun alle (”vesileima”)\n"
+"  --center-title[=TEKSTI]  aseta TEKSTI ylätunnusteeksi\n"
+"  --left-title[=TEKSTI]    aseta TEKSTI vasemmaksi ylätunnusteeksi\n"
+"  --right-title[=TEKSTI]   aseta TEKSTI oikeaksi ylätunnusteeksi\n"
+"  --left-footer[=TEKSTI]   aseta TEKSTI alatunnisteiksi\n"
+"  --footer[=TEKSTI]\n"
+"  --right-footer[=TEKSTI]\n"
+
+#: src/main.c:743
+msgid "The TEXTs may use special escapes.\n"
+msgstr "TEKSTIssä voi käyttää erikoismerkkejä.\n"
+
+#: src/main.c:748
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=ALUE]        valitse tulostettavat sivut\n"
+"  -c, --truncate-lines*     katkaise pitkät rivit\n"
+"  -i, --interpret*          tulkkaa tab, bs ja ff -merkit\n"
+"      --end-of-line=TYYPPI  määrittele rivinlopetusmerkki\n"
+"                                           (TYYPPI: r, n, nr, rn, any)\n"
+"  -X, --encoding=NIMI       käytä syötteelle koodausta NIMI\n"
+"  -t, --title=NIMI          aseta työn nimi\n"
+"      --stdin=NIMI          aseta oletussyötetiedoston nimi\n"
+"      --print-anyway*       tulosta myös binääritiedostot\n"
+"  -Z, --delegate*           delegoi tiedostit toiselle ohjelmalle\n"
+"      --toc[=TEKSTI]        luo sisällysluettelo\n"
+
+#: src/main.c:760
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Kun delegointi on käytössä, a2ps voi käyttää muita ohjelmia sellaisten\n"
+"tiedostojen käsittelyyn, joita ei tulisi tulostaa sellaisenaan, esim. HTML\n"
+"PostScript, PDF jne.\n"
+
+#: src/main.c:767
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=KIELI]  ota kaunotulostus käyttöön (aseta tyyliksi KIELI)\n"
+"  --highlight-level=TASO      aseta kaunotulostuksen korstuksen TASO\n"
+"                              TASO voi olla ei_mitään, tavallinen tai raskas\n"
+"  -g                          alias valinnalle --highlight-level=raskas\n"
+"  --strip-level=NUM           kommenttienkarsintataso\n"
+
+#: src/main.c:776
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=TIEDOSTO      ohjaa tuloste TIEDOSTOon.  Jos TIEDOSTO on ”-”,\n"
+"                             ohjaa tuloste vakiotulosteeseen.\n"
+"  --version-control=SANA     kumoa versionhallinnan oletusarvo\n"
+"  --suffix=JÄLKILIITE        kumoa varmuuskopion jälkiliitteen oletusarvo\n"
+"  -P, --printer=NIMI         lähetä tuloste tulostimelle NIMI\n"
+"  -d                         lähetä tuloste oletustulostimelle\n"
+"                             (tämä on oletustoimintatapa)\n"
+
+#: src/main.c:787
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=TIEDOSTO    sisällytä TIEDOSTO.pro PostScript-prologiksi\n"
+"      --ppd[=AVAIN]          automaattinen PPD:n valinta tai asetus arvoon AVAIN\n"
+"  -n, --copies=NUM           tulosta NUM kopiota joka sivusta\n"
+"  -s, --sides=TILA           aseta kaksipuolisuuden TILA (`1' tai `simplex',\n"
+"                             `2' tai `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  ohjaa laitemäärite tulosteeseen\n"
+"      --statusdict=K[:[:]V]  ohjaa statusdict-määrite tulosteeseen\n"
+"  -k, --page-prefeed         ota sivun esisyöttö käyttöön\n"
+"  -K, --no-page-prefeed      poista sivun esisyöttö käytöstä\n"
+
+#: src/main.c:801
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is Duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+msgstr ""
+"Oletuksena a2ps on säädetty tekemään mitä halutaan, joten luota siihen.\n"
+"Tulostaaksesi ”src”-hakemiston sisällysluetteloineen kaunotulostuksena\n"
+"tulostimelle ”lw”:\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Käsittele tiedostot ”sample.ps” ja ”sample.html” ja ohjaa tulos näytölle:\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"Käsittele meililaatikko nelisivuisena:\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Tulosta kirjanen oletustulostimelle, joka osaa tulostaa kaksipuolista:\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+
+#: src/main.c:822
+msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+msgstr "Uutiset, päivitykset ja dokumentaatio: http://www.gnu.org/software/a2ps/.\n"
+
+#: src/main.c:824
+msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+msgstr "Lähetä vikailmoitukset (englanniksi) osoitteeseen <bug-a2ps@gnu.org>.\n"
+
+#: src/main.c:942
+msgid ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+msgstr ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel SantanaCopyright (c) 2007- Akim Demaille, Miguel Santana ja Masayuki Hatta"
+
+#: src/main.c:1173
+msgid "Table of Content"
+msgstr "Sisällysluettelo"
+
+#: src/parsessh.y:236
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "”%s”:n käsittely ei onnistu, sillä se vaatii a2ps:n version %s"
+
+#: src/sheets-map.l:111
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "odottamaton merkki `%c'"
+
+#: src/sheets-map.l:211 lexppd.l:211
+msgid "too many includes"
+msgstr "liian monta sisällytystä"
+
+#: src/sheets-map.l:296 src/sheets-map.l:303
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "”%s”:lle ei ole määritelty avainta"
+
+#: src/select.c:122 src/ssheet.c:866 fonts.l:838 fonts.l:840 fonts.l:842
+#: lib/pathwalk.c:328 lib/pathwalk.c:414
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "tiedostoa ”%s” ei löydy"
+
+#: src/select.c:124
+msgid "automatic style selection cancelled"
+msgstr "automaattinen tyylin valinta peruutettu"
+
+#: src/ssheet.c:295
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "kännnös ei onnistu säännölliselle lausekkeelle `%s': %s"
+
+#: src/ssheet.c:974 src/ssheet.c:995
+msgid "Known Style Sheets"
+msgstr "Tunnetut tyylisäännöstöt"
+
+#: src/ssheet.c:1461
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "tyylisäännöstöä ”%s” ei löydy: käytetään tyylittelemätöntä säännöstöä"
+
+#: src/sshread.c:453
+#, c-format
+msgid "unknown encoding `%s', ignored"
+msgstr "tuntematon koodaus ”%s”, jätetty huomiotta"
+
+#: src/version-etc.c:38
+msgid "Copyright (C) 1999 Free Software Foundation, Inc."
+msgstr "Copyright © 1999 Free Software Foundation, Inc."
+
+#: src/version-etc.c:60
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Kirjoittanut %s.\n"
+
+#: src/version-etc.c:66
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen,\n"
+"mutta ilman mitään takuuta; ilman edes hiljaista takuuta kaupallisesti\n"
+"hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\n"
+"Katso GPL-lisenssistä lisää yksityiskohtia.\n"
+
+#: src/versions.c:133
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "epäkelpo versionumero ”%s”"
+
+#: lib/caret.c:43
+msgid "space (i.e., ` ')"
+msgstr "välilyönti (siis ” ”)"
+
+#: lib/caret.c:45
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "oktaalinen (siis ”\\001” jne.)"
+
+#: lib/caret.c:47
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "heksadesimaalinen (siis ”\\x0a” jne.)"
+
+#: lib/caret.c:49
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "caret (siis ”^C”, ”M-^C” jne.)"
+
+#: lib/caret.c:51
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (siis `C-c', `M-C-c' jne.)"
+
+#: lib/caret.c:53
+msgid "question-mark (i.e., `?')"
+msgstr "kysymysmerkki (siis ”?”)"
+
+#: lib/closeout.c:71 lib/closeout.c:73
+msgid "write error"
+msgstr "kirjoituksenaikainen virhe"
+
+#: confg.gperf:157 lib/encoding.c:638
+#, c-format
+msgid "invalid option `%s'"
+msgstr "epäkelpo valitsin ”%s”"
+
+#: confg.gperf:224 confg.gperf:231 confg.gperf:238
+#, c-format
+msgid "invalid definition for printer `%s': %s"
+msgstr "epäkelpo tulostimen ”%s” määrittely: %s"
+
+#: confg.gperf:229 confg.gperf:232 lib/printers.c:47
+msgid "Unknown Printer"
+msgstr "Tuntematon tulostin"
+
+#: confg.gperf:236 confg.gperf:239 lib/printers.c:46
+msgid "Default Printer"
+msgstr "Oletustulostin"
+
+#: confg.gperf:292 lib/options.c:697
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "epäkelpo muuttujan tunniste ”%s”"
+
+#: confg.gperf:321
+#, c-format
+msgid "obsolete `%s' entry.  Ignored"
+msgstr "käytöstä poistunut ”%s”-merkintä. Jätetty huomiotta."
+
+#: lib/encoding.c:1114 lib/encoding.c:1135
+msgid "Known Encodings"
+msgstr "Tunnetut koodaukset"
+
+#: lib/faces.c:156
+msgid "incomplete knowledge of faces"
+msgstr "epätäydellinen ulkoasujen tietämys"
+
+#: lib/filtdir.c:113
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "hakemiston ”%s” sulkeminen ei onnistu"
+
+#: lib/getnum.c:63 lib/getnum.c:121 lib/getnum.c:153 lib/getnum.c:221
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "”%s” on epäkelpo parametri ”%s”:lle"
+
+#: lib/getnum.c:123
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Kelvollisia parametrejä ovat kokonaisluvut n niin että: %s\n"
+
+#: lib/getnum.c:223
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Kelvollisia parametrejä ovat liukuluvut f niin että: %s\n"
+
+#: lib/jobs.c:308
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "tuntematon koodaus ”%s”"
+
+#: lib/madir.c:59
+msgid "rows first"
+msgstr "rivit ensin"
+
+#: lib/madir.c:62
+msgid "columns first"
+msgstr "sarakkeet ensin"
+
+#: lib/media.c:173
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "tuntematon paperikoko ”%s”"
+
+#: lib/media.c:208 lib/media.c:237
+msgid "Known Media"
+msgstr "Tunnetut paperikoot"
+
+#: lib/media.c:211
+msgid "Name"
+msgstr "Nimi"
+
+#: lib/media.c:212
+msgid "dimensions"
+msgstr "mitat"
+
+#: lib/metaseq.c:104 lib/metaseq.c:113
+#, c-format
+msgid "Known Variables"
+msgstr "Tunnetut muuttujat"
+
+#: lib/metaseq.c:162 lib/metaseq.c:531 lib/metaseq.c:548 lib/metaseq.c:608
+#: lib/metaseq.c:951 lib/metaseq.c:972
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: puuttuva ”%c” ohjausmerkille %s%c"
+
+#: lib/metaseq.c:288 lib/metaseq.c:300
+#, c-format
+msgid "Printed by %s"
+msgstr "Tulostanut %s"
+
+#: lib/metaseq.c:298
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Tulostanut %s %s:sta"
+
+#: lib/metaseq.c:308 lib/metaseq.c:327
+msgid "cannot get current working directory"
+msgstr "työhakemiston luku ei onnistu"
+
+#: lib/metaseq.c:341 lib/metaseq.c:534 lib/metaseq.c:563 lib/metaseq.c:652
+#: lib/metaseq.c:954 lib/metaseq.c:987
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: liian pitkä paramteri %s -ohjausmerkille"
+
+#: lib/metaseq.c:364 lib/metaseq.c:675
+msgid "%b %d, %y"
+msgstr "%-d.%-m.%Y"
+
+#: lib/metaseq.c:373 lib/metaseq.c:684
+msgid "%A %B %d, %Y"
+msgstr "%A, %e. %Bta %Y"
+
+#: lib/metaseq.c:419 lib/metaseq.c:448 lib/metaseq.c:491 lib/metaseq.c:724
+#: lib/metaseq.c:808 lib/metaseq.c:867 lib/metaseq.c:922 lib/metaseq.c:1099
+#: lib/metaseq.c:1234 lib/metaseq.c:1246 lib/metaseq.c:1289
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: tuntematon ”%s” -ohjausmerkki ”%c” (%d)"
+
+#: lib/metaseq.c:426 lib/metaseq.c:815
+#, c-format
+msgid "Page %d"
+msgstr "Sivu %d"
+
+#: lib/metaseq.c:431 lib/metaseq.c:826
+#, c-format
+msgid "Page %d/%c"
+msgstr "Sivu %d/%c"
+
+#: lib/metaseq.c:593 lib/metaseq.c:1021
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: epäkelpo erotin ”%s%c” ohjausmerkille ”%s”"
+
+#: lib/metaseq.c:601 lib/metaseq.c:611
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: epäkelpo parametri ohjausmerkille %s%c"
+
+#: lib/metaseq.c:822
+#, c-format
+msgid "Page %d/%d"
+msgstr "Sivu %d/%d"
+
+#: lib/metaseq.c:1266
+msgid "output command"
+msgstr "tulostekäsky"
+
+#: lib/options.c:302
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Kokeile komentoa ”%s --help” lisätiedon saamiseksi.\n"
+
+#: lib/output.c:466
+#, c-format
+msgid "invalid face `%s'"
+msgstr "epäkelpo ulkoasu ”%s”"
+
+#: lib/output.c:538
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "Pariton ”%s” (puuttuva ”%s”)"
+
+#: lib/ppd.c:108
+msgid "Known Fonts"
+msgstr "Tunnetut kirjasimet"
+
+#: lib/ppd.c:111
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Ei mitään.\n"
+
+#: lib/ppd.c:149 lib/ppd.c:165
+msgid "Known PostScript Printer Descriptions"
+msgstr "Tunnetut PostScript-tulostinten määritykset"
+
+#: lib/prange.c:305 lib/prange.c:323
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "Epäkelpo väli ”%s”"
+
+#: lib/printers.c:396 lib/printers.c:413
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "ei komentoa ”%s”:lle (%s%s)"
+
+#: lib/printers.c:429
+msgid "sent to the standard output"
+msgstr "lähetetty oletustulosteeseen"
+
+#: lib/printers.c:430
+msgid "sent to the default printer"
+msgstr "lähetetty oletustulosimelle"
+
+#: lib/printers.c:435
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "talletettu tiedostoon ”%s”"
+
+#: lib/printers.c:436
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "lähetetty tulostimelle ”%s”"
+
+#: lib/printers.c:613 lib/printers.c:621
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Tunnetut tulosteet (tulostimet jne.)"
+
+#: lib/prolog.c:98 lib/prolog.c:181
+msgid "Known Prologues"
+msgstr "Tunnetut prologit"
+
+#: lib/prolog.c:579
+#, c-format
+msgid "font %f too big"
+msgstr "kirjasin %f on liian iso"
+
+#: lib/psgen.c:662
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "”%s” on binääritiedosto, tulostus keskeytetty"
+
+#: lib/quotearg.c:200
+msgid "`"
+msgstr "”"
+
+#: lib/quotearg.c:203
+msgid "'"
+msgstr "”"
+
+#: lib/userdata.c:129
+msgid "user"
+msgstr "käyttäjä"
+
+#: lib/userdata.c:130
+msgid "Unknown User"
+msgstr "Tuntematon käyttäjä"
+
+#: lib/useropt.c:75
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "tuntematon käyttäjän valitsin ”%s”"
+
+#: lib/useropt.c:86 lib/useropt.c:97
+msgid "Known User Options"
+msgstr "Tunnetut käyttäjän valitsimet"
+
+#: lib/xbackupfile.c:105 lib/xmalloc.c:66
+msgid "Memory exhausted"
+msgstr "Muisti loppu"
+
+#: lib/xbackupfile.c:240 lib/xbackupfile.c:252
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "Ei voida uudelleennimetä tiedostoa ”%s” nimellä ”%s”"
+
+#: lib/xbackupfile.c:255
+#, c-format
+msgid "restored file `%s'"
+msgstr "palautettu tiedosto ”%s”"
+
+#: lib/argmatch.c:159
+#, c-format
+msgid "invalid argument %s for `%s'"
+msgstr "%s on epäkelpo parametri ”%s”:lle"
+
+#: lib/argmatch.c:160
+#, c-format
+msgid "ambiguous argument %s for `%s'"
+msgstr "Monitulkintainen parametri %s ”%s”:lle"
+
+#: lib/argmatch.c:178
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Kelvolliset parametrit ovat:"
+
+#: lib/error.c:102
+msgid "Unknown system error"
+msgstr "Tuntematon järjestemävirhe"
+
+#: lib/getopt.c:675
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: valitsin ”%s” on monitulkintainen\n"
+
+#: lib/getopt.c:700
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: valitsin ”--%s” ei salli argumenttia\n"
+
+#: lib/getopt.c:705
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: valitsin ”%c%s” ei hyväksy parametriä\n"
+
+#: lib/getopt.c:723 lib/getopt.c:896
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: valitsin ”%s” vaatii parametrin\n"
+
+#: lib/getopt.c:752
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: tunnistamaton valitsin ”--%s”\n"
+
+#: lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: tunnistamaton valitsin ”%c%s”\n"
+
+#: lib/getopt.c:782
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: kielletty valitsin -- %c\n"
+
+#: lib/getopt.c:785
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: epäkelpo valitsin -- %c\n"
+
+#: lib/getopt.c:815 lib/getopt.c:945
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: valitsin vaatii parametrin -- %c\n"
+
+#: lib/getopt.c:862
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: valitsin ”-W %s” on monitulkintainen\n"
+
+#: lib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: valitsin ”-W %s” ei salli parametriä\n"

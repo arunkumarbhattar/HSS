@@ -1,0 +1,1210 @@
+# Mesajele în limba română pentru a2ps.
+# Copyright © 2003, 2022 Free Software Foundation, Inc.
+# Acest fișier este distribuit sub aceeași licență ca și pachetul a2ps.
+# This file is distributed under the same license as the a2ps package.
+#
+# Eugen Hoanca <eugenh@urban-grafx.ro>, 2003.
+# Laurentiu Buzdugan <buzdugan@voyager.net>, 2003.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2022.
+#
+# Cronologia traducerii fișierului „a2ps”:
+# Traducerea inițială, făcută de EH/LB, pentru versiunea a2ps 4.13b.
+# Actualizare a codării caracteror, la codarea de caractere UTF-8.
+# Actualizare a diacriticelor de la „cu sedilă” la „cu virgulă”.
+# Actualizare a algoritmului formelor de plural (de la „două” la „trei”).
+# Actualizare a traducerii pentru versiunea a2ps 4.14.92, făcută de R-GC, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14.92\n"
+"Report-Msgid-Bugs-To: bug-a2ps@gnu.org\n"
+"POT-Creation-Date: 2022-08-11 16:45+0200\n"
+"PO-Revision-Date: 2022-08-13 15:16+0200\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: src/delegate.c:110 liba2ps/encoding.c:569 liba2ps/encoding.c:615
+#: liba2ps/encoding.c:657 liba2ps/output.c:282 liba2ps/pair_ht.c:312
+#: liba2ps/prolog.c:137
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "lipsește argumentul pentru „%s”"
+
+#: src/delegate.c:233 liba2ps/routines.c:136 liba2ps/xbackupfile.c:171
+#: liba2ps/xbackupfile.c:196 liba2ps/xbackupfile.c:204
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "nu se poate crea fișierul „%s”"
+
+#: src/delegate.c:242 src/select.c:188 liba2ps/routines.c:163
+#: liba2ps/routines.c:169
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "nu se poate deschide o linie de conectare (pipe) pe „%s”"
+
+#: src/delegate.c:362
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "Delegare „%s”, de la %s la %sn\n"
+
+#: src/delegate.c:380 src/delegate.c:400
+msgid "Applications configured for delegation"
+msgstr "Aplicațiile configurate pentru delegare"
+
+#: src/generate.c:82
+#, c-format
+msgid "`%s' is a directory"
+msgstr "„%s” este un director"
+
+#: src/generate.c:90 src/main.c:550 src/main.c:572 liba2ps/routines.c:130
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "nu se poate deschide fișierul „%s”"
+
+#: src/generate.c:95 liba2ps/xbackupfile.c:147
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "nu s-au putut obține informații despre fișierul „%s”"
+
+#: src/generate.c:160
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 pagină pe 1 foaie]\n"
+
+#: src/generate.c:166
+#, c-format
+msgid "[%s (%s): %zu pages on 1 sheet]\n"
+msgstr "[%s (%s): %zu pagini pe 1 foaie]\n"
+
+#: src/generate.c:173
+#, c-format
+msgid "[%s (%s): %zu pages on %zu sheets]\n"
+msgstr "[%s (%s): %zu pagini pe %zu foi]\n"
+
+#: src/generate.c:200
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[Total: 1 pagină pe 1 foaie] %s\n"
+
+#: src/generate.c:204
+#, c-format
+msgid "[Total: %zu pages on 1 sheet] %s\n"
+msgstr "[Total: %zu pagini pe 1 foaie] %s\n"
+
+#: src/generate.c:209
+#, c-format
+msgid "[Total: %zu pages on %zu sheets] %s\n"
+msgstr "[Total: %zu pagini pe %zu foi] %s\n"
+
+#: src/generate.c:218
+msgid "[1 line wrapped]\n"
+msgstr "[1 linie reformatată (wrapped)]\n"
+
+#: src/generate.c:221
+#, c-format
+msgid "[%zu lines wrapped]\n"
+msgstr "[%zu linii reformatate (wrapped)]\n"
+
+#: src/generate.c:232
+msgid "[No output produced]\n"
+msgstr "[Nu a fost generată nici o ieșire]\n"
+
+#: src/generate.c:304
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, delegat pentru %s"
+
+#: src/generate.c:312
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): a eșuat.  Ignorat]\n"
+
+#: src/generate.c:320
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (neimprimabil): ignorat]\n"
+
+#: src/generate.c:329
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (binar): ignorat]\n"
+
+#: src/generate.c:350
+msgid "plain"
+msgstr "simplu"
+
+# R-GC, scrie:
+# am modificat traducerea inițială:
+# „sfârșit de linie (end-of-line) în șir constant”
+# la (avînd ca inspirație traducerea franceză și cea
+# olandeză):
+# „caracter de sfârșit de linie în constanta șir”
+#: src/lexssh.l:353
+msgid "end-of-line in string constant"
+msgstr "caracter de sfârșit de linie în constanta șir"
+
+#: src/lexssh.l:420 src/sheets-map.l:159 src/sheets-map.l:198
+#, c-format
+msgid "end of line inside a %s"
+msgstr "sfârșit de linie în interiorul unui %s"
+
+#: src/main.c:197
+#, c-format
+msgid "received SIG%s"
+msgstr "s-a primit SIG%s"
+
+#: src/main.c:236
+msgid "heavy"
+msgstr "accentuat"
+
+#: src/main.c:240
+msgid "normal"
+msgstr "normal"
+
+#: src/main.c:244
+msgid "none"
+msgstr "deloc"
+
+#: src/main.c:318 src/main.c:322
+msgid "yes"
+msgstr "da"
+
+#: src/main.c:319 src/main.c:322 src/main.c:360
+msgid "no"
+msgstr "nu"
+
+#: src/main.c:328
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "Starea de configurare a lui %s %s\n"
+
+#: src/main.c:332 src/main.c:680
+msgid "Sheets:\n"
+msgstr "Foi:\n"
+
+#: src/main.c:333
+#, c-format
+msgid ""
+"  medium          = %s, %s\n"
+"  page layout     = %zu x %zu, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %u\n"
+msgstr ""
+"  mediu              = %s, %s\n"
+"  aranjare în pagină = %zu x %zu, %s\n"
+"  chenar             = %s\n"
+"  aliniere fișier    = %s\n"
+"  margini interioare = %u\n"
+
+# R-GC, scrie:
+# am preferat (și prefer), traducerea inițială
+# în locul celei „normale” mot-a-mot:
+# perechea: portret - peisaj.
+#: src/main.c:340
+msgid "portrait"
+msgstr "orientare verticală"
+
+#: src/main.c:340
+msgid "landscape"
+msgstr "orientare orizontală"
+
+#: src/main.c:349
+#, c-format
+msgid "%u characters per line"
+msgstr "%u caractere pe linie"
+
+#: src/main.c:352
+#, c-format
+msgid "%u lines per page"
+msgstr "%u linii pe pagină"
+
+#: src/main.c:355
+#, c-format
+msgid "font size is %gpt"
+msgstr "dimensiunea fontului este %gpt"
+
+#: src/main.c:364
+msgid "each line"
+msgstr "fiecare linie"
+
+#: src/main.c:368
+#, c-format
+msgid "each %u lines"
+msgstr "fiecare a %u-a linie"
+
+#: src/main.c:371 src/main.c:701
+msgid "Virtual pages:\n"
+msgstr "Pagini virtuale:\n"
+
+#: src/main.c:372
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %u\n"
+"  non printable format = %s\n"
+msgstr ""
+"  număr de linii       = %s\n"
+"  format               = %s\n"
+"  dimensiune tabulator = %u\n"
+"  format neimprimabil  = %s\n"
+
+#: src/main.c:383
+msgid "Headers:\n"
+msgstr "Antete:\n"
+
+#: src/main.c:384
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  antet               = %s\n"
+"  notă subsol stânga  = %s\n"
+"  notă subsol         = %s\n"
+"  notă subsol dreapta = %s\n"
+"  titlu stânga        = %s\n"
+"  titlu centru        = %s\n"
+"  titlu dreapta       = %s\n"
+"  dedesubt            = %s\n"
+
+#: src/main.c:403 src/main.c:730
+msgid "Input:\n"
+msgstr "Intrare:\n"
+
+#: src/main.c:404
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  truncare linii   = %s\n"
+"  interpretează    = %s\n"
+"  sfârșit de linie = %s\n"
+"  codificare       = %s\n"
+"  titlu document   = %s\n"
+"  prolog           = %s\n"
+"  imprimă oricum   = %s\n"
+"  deleagă          = %s\n"
+
+#: src/main.c:429 src/main.c:494
+msgid "selected automatically"
+msgstr "selectat automat"
+
+#: src/main.c:432 src/main.c:749
+msgid "Pretty-printing:\n"
+msgstr "Imprimare-formatată-plăcut:\n"
+
+#: src/main.c:433
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  foaie de stil     = %s\n"
+"  nivel evidențiere = %s\n"
+"  nivel suprimare   = %d\n"
+
+#: src/main.c:453
+msgid "never make backups"
+msgstr "nu face niciodată copii de rezervă"
+
+#: src/main.c:457
+msgid "simple backups of every file"
+msgstr "copii de rezervă simple ale fiecărui fișier"
+
+#: src/main.c:462
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"copii de rezervă numerotate pentru fișierele deja numerotate,\n"
+"                                   și simple pentru celelalte"
+
+#: src/main.c:467
+msgid "numbered backups of every file"
+msgstr "copii de rezervă numerotate pentru fiecare fișier"
+
+#: src/main.c:471 src/main.c:758
+msgid "Output:\n"
+msgstr "Ieșire:\n"
+
+#: src/main.c:472
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  destinație                      = %s\n"
+"  controlul versiunilor           = %s\n"
+"  sufix pentru copiile de rezervă = %s\n"
+
+#: src/main.c:484 src/main.c:769
+msgid "PostScript:\n"
+msgstr "PostScript:\n"
+
+#: src/main.c:485
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %u\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  număr magic                   = %s\n"
+"  Descriere Imprimantă (PPD)    = %s\n"
+"  PPD implicit                  = %s\n"
+"  format etichetă pentru pagină = %s\n"
+"  număr de copii                = %u\n"
+"  părți pe foaie                = %s\n"
+"  definiții dispozitiv pagină   = "
+
+#: src/main.c:505
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  definiții statusdict      = "
+
+#: src/main.c:508
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  pagină preîncărcată       = %s\n"
+
+#: src/main.c:517
+msgid "Internals:\n"
+msgstr "Interne:\n"
+
+#: src/main.c:518
+#, c-format
+msgid ""
+"  verbosity level     = %u\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  nivel de detaliere  = %u\n"
+"  comandă fișier      = %s\n"
+"  cale bibliotecă     = \n"
+
+#: src/main.c:636
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with `*' require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"Utilizare: %s [OPȚIUNE]... [FIȘIER]...\n"
+"\n"
+"Convertește FIȘIER(E) sau intrarea standard în PostScript.  În mod implicit,\n"
+"ieșirea este trimisă la imprimanta implicită.  Un fișier de ieșire poate fi\n"
+"specificat cu opțiunea „-o”.\n"
+"\n"
+"Argumentele obligatorii pentru opțiunile lungi sunt obligatorii și pentru\n"
+"opțiunile scurte.\n"
+"Opțiunile lungi marcate cu „*” necesită un argument da/nu (yes/no), \n"
+"opțiunile scurte corespunzătoare sunt interpretate ca „da” (yes).\n"
+
+#: src/main.c:651
+msgid "Tasks:\n"
+msgstr "Sarcini:\n"
+
+#: src/main.c:652
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        afișează versiunea\n"
+"  --help           afișează acest mesaj de ajutor\n"
+"  --guess          raportează tipurile ghicite ale FIȘIERElor\n"
+"  --which          raportează calea completă a fișierelor de bibliotecă\n"
+"                   numite FIȘIERE\n"
+"  --glob           raportează calea completă a fișierelor de bibliotecă\n"
+"                   ce se potrivesc cu FIȘIEREle\n"
+"  --list=defaults  afișează configurările și parametri impliciți\n"
+"  --list=SUBIECT   listă detaliată despre SUBIECT (delegări, codificări,\n"
+"                   facilități, variabile, mediu, ppd, imprimante, prologuri,\n"
+"                   foi de stil, opțiuni utilizator)\n"
+
+#: src/main.c:663
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"După ce efectuează sarcina, iese cu succes.  Listele detaliate pot oferi\n"
+"ajutor suplimentar pentru anumite caracteristici.\n"
+
+#: src/main.c:671
+msgid "Global:\n"
+msgstr "Global:\n"
+
+#: src/main.c:672
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent        face ca ieșirea să fie silențioasă, fără detalii\n"
+"  -v, --verbose[=NIVEL]        activează ieșirea detaliată, sau specifică\n"
+"                               NIVELul de detaliere\n"
+"  -=, --user-option=OPȚIUNE    folosește OPȚIUNEa definită de utilizator\n"
+"      --debug                  activează facilități depanare\n"
+"  -D, --define=CHEIE[:VALOARE] elimină variabila CHEIE sau îi atribuie\n"
+"                               VALOAREa\n"
+
+#: src/main.c:681
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NUME      folosește mediu ieșire NUME\n"
+"  -r, --landscape        imprimă în modul orientare orizontală (landscape)\n"
+"  -R, --portrait         imprimă în modul orientare verticală (portrait)\n"
+"      --columns=NUM      număr de coloane pe foaie\n"
+"      --rows=NUM         număr de rânduri pe foaie\n"
+"      --major=DIRECȚIE   prima dată umple (DIRECȚIE=) rânduri, sau coloane\n"
+"  -1, -2, ..., -9        dimensiune font și aspect predefinit pentru 1.. 9\n"
+"                         pagini virtuale\n"
+"  -A, --file-align=MOD   aliniază fișiere separate conform cu MOD\n"
+"                         umplere(fill), rang(rank), pagină(page), foaie(sheet),\n"
+"                         sau un număr)\n"
+"  -j, --borders*         imprimă chenare în jurul coloanelor\n"
+"      --margin[=NUM]     definește o margine interioară de dimensiune NUM\n"
+
+#: src/main.c:694
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"Opțiunile -1.. -9 afectează mai mulți parametri fundamentali pentru a configura\n"
+"machetări predefinite cu 80 de coloane.  De aceea ordinea e importantă:\n"
+"„-R -f40 -2” este echivalent cu „-2”.  Pentru a schimba machetarea, folosiți\n"
+"„-2Rf40”, sau compuneți opțiunile fundamentale („--columns”, „--font-size”, etc.).\n"
+
+#: src/main.c:702
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NUM     precede fiecare linie din NUM linii cu numărul său\n"
+"  -C                         alias pentru „--line-numbers=5”\n"
+"  -f, --font-size=DIM        folosește DIMensiune font (nr. real) pentru\n"
+"                             corpul de text\n"
+"  -L, --lines-per-page=NUM   scalează fontul pentru a imprima NUM linii pe\n"
+"                             pagina virtuală\n"
+"  -l, --chars-per-line=NUM   scalează fontul pentru a tipări NUM coloane pe\n"
+"                             pagina virtuală\n"
+"  -m, --catman               procesează FIȘIER ca pagină de manual (același\n"
+"                             efect ca „-L66”)\n"
+"  -T, --tabsize=NUM          stabilește dimensiunea tabulatorului la NUM\n"
+"  --non-printable-format=FMT specifică cum sunt imprimate caracterele\n"
+"                             neimprimabile\n"
+
+#: src/main.c:713
+msgid "Headings:\n"
+msgstr "Titluri:\n"
+
+#: src/main.c:715
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        dezactivează antetul paginilor\n"
+"  -b, --header[=TEXT]    configurează antetul paginii\n"
+"  -u, --underlay[=TEXT]  imprimă TEXT sub fiecare pagină\n"
+"  --center-title[=TEXT]  configurează titlul paginii ca TITLU\n"
+"  --left-title[=TEXT]    configurează titlurile paginii stânga/dreapta ca TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   configurează notele de subsol ale foii ca TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+
+#: src/main.c:726
+msgid "The TEXTs may use special escapes.\n"
+msgstr "TEXTele pot utiliza eludări speciale.\n"
+
+#: src/main.c:731
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=INTERVAL]     selectează paginile de imprimat\n"
+"  -c, --truncate-lines*      trunchiază liniile lungi\n"
+"  -i, --interpret*           interpretează caracterele „tab”, „bs” și „ff”\n"
+"      --end-of-line=TIP      specifică TIPul caracterului de sfârșit de linie:\n"
+"                             „r” («return» retur de caret), „n” («newline»\n"
+"                             linie nouă), „nr”, „rn” sau any (oricare)\n"
+"  -X, --encoding=NUME        utilizează codificarea NUME\n"
+"  -t, --title=NUME           stabilește numele acțiunii (job)\n"
+"      --stdin=NUME           stabilește numele fișierului de intrare de la\n"
+"                             intrarea standard\n"
+"      --print-anyway*        forțează imprimarea fișierelor binare\n"
+"  -Z, --delegate*            delegare fișiere către altă aplicație\n"
+"      --toc[=TEXT]           generează cuprinsul fișierului\n"
+
+#: src/main.c:743
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"Când delegările sunt activate, «a2ps» poate utiliza alte aplicații pentru a\n"
+"gestiona procesarea fișierelor care nu ar trebui imprimate ca informație brută,\n"
+"de exemplu: HTML, PostScript, PDF, etc.\n"
+
+#: src/main.c:750
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=LIMBAJ]\n"
+"                             activează imprimarea-formatată-plăcut (stabilește\n"
+"                             stilul imprimării la LIMBAJ)\n"
+"  --highlight-level=NIVEL    stabilește NIVELul de evidențiere al imprimării\n"
+"                             formatată-plăcut; NIVELul poate fi: \n"
+"                             „none”(niciunul), „normal” sau „heavy”(accentuat)\n"
+"  -g                         alias pentru --highlight-level=heavy (accentuat)\n"
+"  --strip-level=NUM          nivelul de suprimare al comentariilor\n"
+
+#: src/main.c:759
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=FIȘIER        trimite ieșirea către fișierul FIȘIER. Dacă FIȘIER\n"
+"                             este „-”, lasă ieșirea la ieșirea standard\n"
+"  --version-control=VERSIUNE suprascrie controlul actual al versiunii\n"
+"  --suffix=SUFIX             suprascrie sufixul actual al copiei de rezervă\n"
+"  -P, --printer=NUME         trimite ieșirea către imprimanta NUME\n"
+"  -d                         trimite ieșirea către imprimanta implicită\n"
+"                             (acesta este comportamentul implicit)\n"
+"\n"
+
+#: src/main.c:770
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=FIȘIER      include FIȘIER.pro ca prolog PostScript\n"
+"      --ppd[=CHEIE]          selectează automat definiția imprimantei (PPD)\n"
+"                             sau o stabilește conform CHEII\n"
+"  -n, --copies=NUM           imprimă NUM copii de fiecare pagină\n"
+"  -s, --sides=MOD            stabilește MODul de imprimare, pe una sau pe două\n"
+"                             fețe; modurile posibile, sunt: „1” sau „simplex”,\n"
+"                             „2” sau „duplex” și „tumble” (pe ambele fețe,\n"
+"                             dar inversate)\n"
+"  -S, --setpagedevice=K[:V]  trimite definiția dispozitivului de pagină către\n"
+"                             ieșire\n"
+"      --statusdict=K[:[:]V]  trimite o definiție statusdict către ieșire\n"
+"  -k, --page-prefeed         activează preîncărcarea paginii\n"
+"  -K, --no-page-prefeed      dezactivează preîncărcarea paginii\n"
+
+#: src/main.c:784
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+msgstr ""
+"Implicit, comanda «a2ps» face ce doriți, așa ca aveți încredere în ea. \n"
+"Pentru o imprimare-formatată-plăcut a directorului „src”, un cuprins al \n"
+"acestuia și trimiterea rezultatului la imprimanta „lw”:\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"Pentru procesarea fișierelor „probă.ps”, „probă.html” și afișarea rezultatului:\n"
+"\n"
+"    $ a2ps -P display probă.ps probă.html\n"
+"\n"
+"Pentru procesarea unei cutii poștale „mailbox” cu 4 pagini pe foaie (2x2):\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"Pentru a imprima un fișier ca broșură pe imprimanta implicită, dacă aceasta\n"
+"poate imprima pe ambele fețe:\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d"
+
+#: src/main.c:1145
+msgid "Table of Content"
+msgstr "Cuprins"
+
+#: src/parsessh.y:225
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "nu pot procesa „%s” care necesită «a2ps» versiunea %s"
+
+#: src/sheets-map.l:117
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "caracter neașteptat „%c”"
+
+#: src/sheets-map.l:217 liba2ps/lexppd.l:212
+#, c-format
+msgid "too many includes"
+msgstr "prea multe includeri"
+
+#: src/sheets-map.l:301 src/sheets-map.l:308
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "nicio tastă nu a fost definită pentru „%s”"
+
+#: src/select.c:119 src/ssheet.c:797 liba2ps/fonts.l:720 liba2ps/fonts.l:722
+#: liba2ps/fonts.l:724 liba2ps/pathwalk.c:315 liba2ps/pathwalk.c:400
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "nu se poate găsi fișierul „%s”"
+
+#: src/select.c:121
+#, c-format
+msgid "automatic style selection cancelled"
+msgstr "selecția automată a stilului a fost anulată"
+
+#: src/select.c:198
+#, c-format
+msgid "error running file(1)"
+msgstr "eroare la încercarea de a executa file(1)"
+
+#: src/ssheet.c:281
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "nu se poate compila expresia regulată „%s”: %s"
+
+#: src/ssheet.c:904 src/ssheet.c:925
+msgid "Known Style Sheets"
+msgstr "Foi de stil cunoscute"
+
+#: src/ssheet.c:1385
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "nu se găsește foaia de stil „%s”: se folosește stilul simplu"
+
+#: src/versions.c:128
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "număr de versiune nevalid „%s”"
+
+#: liba2ps/caret.c:33
+msgid "space (i.e., ` ')"
+msgstr "spațiu (adică, „ ”)"
+
+#: liba2ps/caret.c:35
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "octal (adică, „\\001” etc.)"
+
+#: liba2ps/caret.c:37
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "hexazecimal (adică, „\\x0a” etc.)"
+
+#: liba2ps/caret.c:39
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "semnul de insertare (adică, „^C”, „M-^C” etc.)"
+
+#: liba2ps/caret.c:41
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (adică, „C-c”, „M-C-c” etc.)"
+
+#: liba2ps/caret.c:43
+msgid "question-mark (i.e., `?')"
+msgstr "semnul întrebării (adică, „?”)"
+
+#: liba2ps/darray.c:83 liba2ps/darray.c:553
+#, c-format
+msgid "Dynamic array `%s':\n"
+msgstr "Matrice dinamică „%s”:\n"
+
+#: liba2ps/darray.c:84 liba2ps/dstring.c:72
+#, c-format
+msgid "\tload: %zu/%zu (%2.1f%%)\n"
+msgstr "\tîncărcare: %zu/%zu (%2.1f%%)\n"
+
+#: liba2ps/darray.c:102 liba2ps/dstring.c:87
+#, c-format
+msgid "\toriginal size: %zu, growth: %s %zu\n"
+msgstr "\tdimensiunea originală: %zu, creștere: %s %zu\n"
+
+#: liba2ps/dstring.c:71
+#, c-format
+msgid "Dynamic string:\n"
+msgstr "Șir dinamic:\n"
+
+#: liba2ps/encoding.c:737
+#, c-format
+msgid "too many slant fonts: `%s'"
+msgstr "prea multe tipuri de cursive: „%s”"
+
+#: liba2ps/encoding.c:743
+#, c-format
+msgid "invalid option `%s'"
+msgstr "opțiune nevalidă „%s”"
+
+#: liba2ps/encoding.c:1270 liba2ps/encoding.c:1291
+msgid "Known Encodings"
+msgstr "Codificări cunoscute"
+
+#: liba2ps/faces.c:148
+#, c-format
+msgid "incomplete knowledge of faces"
+msgstr "cunoaștere incompletă a stilurilor de caractere"
+
+#: liba2ps/filtdir.c:68
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "nu s-a putut închide directorul „%s”"
+
+#: liba2ps/getnum.c:41 liba2ps/getnum.c:99 liba2ps/getnum.c:131
+#: liba2ps/getnum.c:200
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "argument nevalid „%s” pentru „%s”"
+
+#: liba2ps/getnum.c:101
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "Argumentele valide sunt numere întregi n precum acesta: %s\n"
+
+#: liba2ps/getnum.c:202
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "Argumentele valide sunt numere reale f precum acesta: %s \n"
+
+#: liba2ps/jobs.c:285
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "codificare necunoscută „%s”"
+
+#: liba2ps/madir.c:51
+msgid "rows first"
+msgstr "rândurile primele"
+
+#: liba2ps/madir.c:54
+msgid "columns first"
+msgstr "coloanele primele"
+
+#: liba2ps/media.c:138
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "mediu necunoscut „%s”"
+
+#: liba2ps/media.c:166 liba2ps/media.c:193
+msgid "Known Media"
+msgstr "Medii cunoscute"
+
+#: liba2ps/media.c:169
+msgid "Name"
+msgstr "Nume"
+
+#: liba2ps/media.c:170
+msgid "dimensions"
+msgstr "dimensiuni"
+
+#: liba2ps/metaseq.c:82 liba2ps/metaseq.c:91
+#, c-format
+msgid "Known Variables"
+msgstr "Variabile cunoscute"
+
+# R-GC, scrie:
+# ***
+# ATENȚIE:
+# „escape”, nu înseamnă mereu „eludare”; ci, precum
+# aici, «secvență/caracter al codului de control»
+# ===
+# Pentru că: acest caracter/secvență de..., modifică
+# anumite detalii de aparență (în general a textului
+# afișat) precum dimensiune, culoare, poziția inițială
+# a cursorului, etc.
+#: liba2ps/metaseq.c:140 liba2ps/metaseq.c:509 liba2ps/metaseq.c:526
+#: liba2ps/metaseq.c:586 liba2ps/metaseq.c:931 liba2ps/metaseq.c:951
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: lipsește „%c” din secvența codului de control „%s%c”"
+
+#: liba2ps/metaseq.c:266 liba2ps/metaseq.c:278
+#, c-format
+msgid "Printed by %s"
+msgstr "Imprimat de %s"
+
+#: liba2ps/metaseq.c:276
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "Imprimat de %s de pe %s"
+
+#: liba2ps/metaseq.c:286 liba2ps/metaseq.c:304
+#, c-format
+msgid "cannot get current working directory"
+msgstr "nu se poate obține directorul de lucru actual"
+
+#: liba2ps/metaseq.c:317 liba2ps/metaseq.c:512 liba2ps/metaseq.c:541
+#: liba2ps/metaseq.c:630 liba2ps/metaseq.c:934 liba2ps/metaseq.c:966
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: argumentul pentru secvența codului de control „%s” este prea lung"
+
+#: liba2ps/metaseq.c:342 liba2ps/metaseq.c:655
+msgid "%b %d, %Y"
+msgstr "%b %d, %Y"
+
+#: liba2ps/metaseq.c:351 liba2ps/metaseq.c:664
+msgid "%A %B %d, %Y"
+msgstr "%A %B %d, %Y"
+
+# R-GC, scrie:
+# este posibil ca poziția variabilelor:
+# „%s” și „%c” să trebuiască să fie
+# inversată; eventual cu numerotarea
+# tuturor varibilelor.
+#: liba2ps/metaseq.c:397 liba2ps/metaseq.c:426 liba2ps/metaseq.c:469
+#: liba2ps/metaseq.c:704 liba2ps/metaseq.c:788 liba2ps/metaseq.c:847
+#: liba2ps/metaseq.c:902 liba2ps/metaseq.c:1078 liba2ps/metaseq.c:1208
+#: liba2ps/metaseq.c:1219 liba2ps/metaseq.c:1262
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: secvență a codului de control „%s” necunoscută „%c” (%d)"
+
+#: liba2ps/metaseq.c:404 liba2ps/metaseq.c:795
+#, c-format
+msgid "Page %zu"
+msgstr "Pagina %zu"
+
+#: liba2ps/metaseq.c:409 liba2ps/metaseq.c:806
+#, c-format
+msgid "Page %zu/%c"
+msgstr "Pagina %zu/%c"
+
+#: liba2ps/metaseq.c:571 liba2ps/metaseq.c:1000
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: separator nevalid „%s%c” pentru codul de control „%s”"
+
+#: liba2ps/metaseq.c:579 liba2ps/metaseq.c:589
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: argument nevalid al codului de control „%s%c”"
+
+#: liba2ps/metaseq.c:802
+#, c-format
+msgid "Page %zu/%zu"
+msgstr "Pagina %zu/%zu"
+
+#: liba2ps/metaseq.c:1239
+msgid "output command"
+msgstr "comanda de ieșire"
+
+#: liba2ps/options.c:48
+msgid "Copyright (C) 1988-2017 Free Software Foundation, Inc."
+msgstr "Drepturi de autor © 1988-2017 Free Software Foundation, Inc."
+
+#: liba2ps/options.c:290
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Încercați «%s --help» pentru informații suplimentare.\n"
+
+#: liba2ps/options.c:674
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "identificator de variabilă nevalid „%s”"
+
+#: liba2ps/output.c:428
+#, c-format
+msgid "invalid face `%s'"
+msgstr "stil al caracterului nevalid „%s”"
+
+#: liba2ps/output.c:499
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "„%s” fără „%s” corespunzător"
+
+#: liba2ps/ppd.c:83
+msgid "Known Fonts"
+msgstr "Fonturi cunoscute"
+
+#: liba2ps/ppd.c:86
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  Nimic.\n"
+
+#: liba2ps/ppd.c:124 liba2ps/ppd.c:140
+msgid "Known PostScript Printer Descriptions"
+msgstr "Descrieri de imprimantă PostScript cunoscute"
+
+#: liba2ps/prange.c:284 liba2ps/prange.c:302
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "interval nevalid „%s”"
+
+#: liba2ps/printers.c:41
+msgid "Default Printer"
+msgstr "Imprimantă implicită"
+
+#: liba2ps/printers.c:42
+msgid "Unknown Printer"
+msgstr "Imprimantă necunoscută"
+
+#: liba2ps/printers.c:342 liba2ps/printers.c:359
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "nicio comandă pentru „%s” (%s%s)"
+
+#: liba2ps/printers.c:375
+msgid "sent to the standard output"
+msgstr "trimis spre ieșirea standard"
+
+#: liba2ps/printers.c:376
+msgid "sent to the default printer"
+msgstr "trimis la imprimanta implicită"
+
+#: liba2ps/printers.c:381
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "salvat în fișierul „%s”"
+
+#: liba2ps/printers.c:382
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "trimis la imprimanta „%s”"
+
+#: liba2ps/printers.c:559 liba2ps/printers.c:567
+msgid "Known Outputs (Printers, etc.)"
+msgstr "Ieșiri cunoscute (Imprimante, etc.)"
+
+#: liba2ps/prolog.c:84 liba2ps/prolog.c:169
+msgid "Known Prologues"
+msgstr "Prologuri cunoscute"
+
+#: liba2ps/prolog.c:565
+#, c-format
+msgid "font %f too big"
+msgstr "font %f prea mare"
+
+#: liba2ps/psgen.c:631
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "„%s” este un fișier binar, imprimarea a fost întreruptă"
+
+#: liba2ps/userdata.c:104
+msgid "user"
+msgstr "utilizator"
+
+#: liba2ps/userdata.c:105
+msgid "Unknown User"
+msgstr "Utilizator necunoscut"
+
+#: liba2ps/useropt.c:56
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "opțiune de utilizator necunoscută „%s”"
+
+#: liba2ps/useropt.c:67 liba2ps/useropt.c:78
+msgid "Known User Options"
+msgstr "Opțiuni de utilizator cunoscute"
+
+#: liba2ps/xbackupfile.c:44
+#, c-format
+msgid "memory exhausted"
+msgstr "memorie epuizată"
+
+#: liba2ps/xbackupfile.c:163 liba2ps/xbackupfile.c:175
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "nu se poate redenumi fișierul „%s” ca „%s”"
+
+#: liba2ps/xbackupfile.c:178
+#, c-format
+msgid "restored file `%s'"
+msgstr "s-a restaurat fișierul „%s”"
+
+#~ msgid "any type"
+#~ msgstr "orice tip"
+
+#, fuzzy
+#~ msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+#~ msgstr "Știri, actualizări și documentație la: http://www.inf.enst.fr/~demaille/a2ps/.\n"
+
+#~ msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+#~ msgstr "Raportați bug-uri la <bug-a2ps@gnu.org>.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+#~ "Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+#~ msgstr ""
+#~ "Copyright (c) 1988-1993 Miguel Santana\n"
+#~ "Copyright (c) 1995-2000 Akim Demaille, Miguel Santana"
+
+#~ msgid "unknown encoding `%s', ignored"
+#~ msgstr "codare (encoding) necunoscută `%s', ignorată"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Scris de %s.\n"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+#~ msgstr ""
+#~ "Acesta este software liber; vedeți codul sursă pentru condiții despre copiere.\n"
+#~ "Nu există nici o garanție; nici chiar pentru COMERCIALIZARE sau de POTRIVIRE\n"
+#~ "PENTRU UN SCOP ANUME.\n"
+
+#~ msgid "write error"
+#~ msgstr "eroare la scriere"
+
+#~ msgid "invalid definition for printer `%s': %s"
+#~ msgstr "definiție invalidă pentru imprimanta `%s': %s"
+
+#~ msgid "obsolete `%s' entry.  Ignored"
+#~ msgstr "intrare `%s' anacronică:  Ignorată"
+
+#~ msgid "Page %d/%d"
+#~ msgstr "Pagina %d/%d"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "invalid argument %s for `%s'"
+#~ msgstr "argument invalid %s pentru `%s'"
+
+#~ msgid "ambiguous argument %s for `%s'"
+#~ msgstr "argument ambiguu %s pentru `%s'"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Argumente valide sunt:"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Eroare de sistem necunoscută"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: opțiunea `%s' este ambiguă\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: opțiunea `--%s' nu permite un argument\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: opțiunea `%c%s' nu permite un argument\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: opțiunea `%s' necesită un argument\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: opțiune nerecunoscută `--%s'\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: opțiune nerecunoscută `%c%s'\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opțiune ilegală -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: opțiune ilegală -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: opțiunea necesită un argument -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: opțiunea `-W %s' este ambiguă\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: opțiunea `-W %s' nu permite un argument\n"

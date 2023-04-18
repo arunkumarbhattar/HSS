@@ -1,0 +1,1147 @@
+# Translation of a2ps to Thai.
+# Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the a2ps package.
+# Seksan Poltree <seksan.poltree@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: a2ps 4.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 11:28+0800\n"
+"PO-Revision-Date: 2010-03-17 14:47+0700\n"
+"Last-Translator: Seksan Poltree <seksan.poltree@gmail.com>\n"
+"Language-Team: Thai <translation-team-th@lists.sourceforge.net>\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Thai\n"
+"X-Poedit-Country: THAILAND\n"
+
+#: src/buffer.c:68
+msgid "any type"
+msgstr "ชนิดใด ๆ"
+
+#: src/delegate.c:137 confg.gperf:168 lib/encoding.c:530 lib/encoding.c:576
+#: lib/encoding.c:616 lib/output.c:302 lib/pair_ht.c:296 lib/prolog.c:146
+#, c-format
+msgid "missing argument for `%s'"
+msgstr "อาร์กิวเมนต์หายไปสำหรับ `%s'"
+
+#: src/delegate.c:260 lib/routines.c:160 lib/xbackupfile.c:248
+#: lib/xbackupfile.c:276 lib/xbackupfile.c:284
+#, c-format
+msgid "cannot create file `%s'"
+msgstr "ไม่สามารถสร้างแฟ้ม `%s'"
+
+#: src/delegate.c:269 src/select.c:193 lib/routines.c:190 lib/routines.c:196
+#, c-format
+msgid "cannot open a pipe on `%s'"
+msgstr "ไม่สามารถท่อข้อมูลบน `%s'"
+
+#: src/delegate.c:389
+#, c-format
+msgid "Delegation `%s', from %s to %s\n"
+msgstr "การทำการแทน `%s', จาก %s เป็น %s\n"
+
+#: src/delegate.c:408 src/delegate.c:430
+msgid "Applications configured for delegation"
+msgstr "โปรแกรมประยุกต์ถูกตั้งค่าเพื่อการทำการแทน"
+
+#: src/generate.c:88
+#, c-format
+msgid "`%s' is a directory"
+msgstr "`%s' เป็นไดเรกทอรี"
+
+#: src/generate.c:96 src/main.c:560 src/main.c:582 confg.gperf:192
+#: confg.gperf:355 lib/routines.c:154
+#, c-format
+msgid "cannot open file `%s'"
+msgstr "ไม่สามารถเปิดแฟ้ม `%s'"
+
+#: src/generate.c:101 lib/xbackupfile.c:224
+#, c-format
+msgid "cannot get informations on file `%s'"
+msgstr "ไม่สามารถดึงข้อมูลจากแฟ้ม `%s'"
+
+#: src/generate.c:168
+#, c-format
+msgid "[%s (%s): 1 page on 1 sheet]\n"
+msgstr "[%s (%s): 1 หน้าบน 1 แผ่น]\n"
+
+#: src/generate.c:174
+#, c-format
+msgid "[%s (%s): %d pages on 1 sheet]\n"
+msgstr "[%s (%s): %d หน้าบน 1 แผ่น]\n"
+
+#: src/generate.c:181
+#, c-format
+msgid "[%s (%s): %d pages on %d sheets]\n"
+msgstr "[%s (%s): %d หน้าบน %d แผ่น]\n"
+
+#: src/generate.c:208
+#, c-format
+msgid "[Total: 1 page on 1 sheet] %s\n"
+msgstr "[รวม: 1 หน้า 1 แผ่น] %s\n"
+
+#: src/generate.c:212
+#, c-format
+msgid "[Total: %d pages on 1 sheet] %s\n"
+msgstr "[รวม: %d หน้าบน 1 แผ่น] %s\n"
+
+#: src/generate.c:217
+#, c-format
+msgid "[Total: %d pages on %d sheets] %s\n"
+msgstr "[ทั้งหมด: %d หน้าบน %d แผ่น] %s\n"
+
+#: src/generate.c:226
+msgid "[1 line wrapped]\n"
+msgstr "[ขึ้นหน้าใหม่ 1 บรรทัด]\n"
+
+#: src/generate.c:229
+#, c-format
+msgid "[%d lines wrapped]\n"
+msgstr "[ขึ้นหน้าใหม่ %d บรรทัด ]\n"
+
+#: src/generate.c:242
+msgid "[No output produced]\n"
+msgstr "[ไม่มีการส่งออกที่ถูกสร้างขึ้น]\n"
+
+#: src/generate.c:314
+#, c-format
+msgid "%s, delegated to %s"
+msgstr "%s, ถูกทำแทนโดย %s"
+
+#: src/generate.c:322
+#, c-format
+msgid "[%s (%s): failed.  Ignored]\n"
+msgstr "[%s (%s): ล้มเหลว.  เพิกเฉย]\n"
+
+#: src/generate.c:330
+#, c-format
+msgid "[%s (unprintable): ignored]\n"
+msgstr "[%s (ไม่สามารถพิมพ์ออกได้): เพิกเฉย]\n"
+
+#: src/generate.c:339
+#, c-format
+msgid "[%s (binary): ignored]\n"
+msgstr "[%s (ไบนารี): เพิกเฉย]\n"
+
+#: src/generate.c:360
+msgid "plain"
+msgstr "ข้อความเปล่า"
+
+#: lexssh.l:348
+msgid "end-of-line in string constant"
+msgstr "ตัวจบบรรทัดในค่าคงที่สตริง"
+
+#: lexssh.l:415 src/sheets-map.l:153 src/sheets-map.l:192
+#, c-format
+msgid "end of line inside a %s"
+msgstr "ตัวจบรรทัดภายใน %s"
+
+#: src/main.c:203
+#, c-format
+msgid "received signal %d: %s"
+msgstr "ได้รับสัญญาณ %d: %s"
+
+#: src/main.c:242
+msgid "heavy"
+msgstr "หนัก"
+
+#: src/main.c:246
+msgid "normal"
+msgstr "ปกติ"
+
+#: src/main.c:250
+msgid "none"
+msgstr "ไม่เลย"
+
+#: src/main.c:324 src/main.c:328
+msgid "yes"
+msgstr "ใช่"
+
+#: src/main.c:325 src/main.c:328 src/main.c:369
+msgid "no"
+msgstr "ไม่"
+
+#: src/main.c:335
+#, c-format
+msgid "Configuration status of %s %s\n"
+msgstr "สถานะการตั้งค่าของ  %s %s\n"
+
+#: src/main.c:339 src/main.c:697
+msgid "Sheets:\n"
+msgstr "แผ่น:\n"
+
+#: src/main.c:340
+#, c-format
+msgid ""
+"  medium          = %s%s, %s\n"
+"  page layout     = %d x %d, %s\n"
+"  borders         = %s\n"
+"  file alignment  = %s\n"
+"  interior margin = %d\n"
+msgstr ""
+"  ระหว่างกลาง      = %s%s, %s\n"
+"  เค้าโครงหน้า      = %d x %d, %s\n"
+"  ขอบ             = %s\n"
+"  การจัดตำแหน่งแฟ้ม  = %s\n"
+"  ส่วนต่างภายใน     = %d\n"
+
+#: src/main.c:349
+msgid "portrait"
+msgstr "แนวตั้ง"
+
+#: src/main.c:349
+msgid "landscape"
+msgstr "แนวนอน"
+
+#: src/main.c:358
+#, c-format
+msgid "%d characters per line"
+msgstr "%d อักขระต่อบรรทัด"
+
+#: src/main.c:361
+#, c-format
+msgid "%d lines per page"
+msgstr "%d บรรทัดต่อหน้า"
+
+#: src/main.c:364
+#, c-format
+msgid "font size is %gpt"
+msgstr "ขนาดแบบอักษรคือ %gpt"
+
+#: src/main.c:373
+msgid "each line"
+msgstr "แต่ละบรรทัด"
+
+#: src/main.c:377
+#, c-format
+msgid "each %d lines"
+msgstr "แต่ละ %d บรรทัด"
+
+#: src/main.c:380 src/main.c:718
+msgid "Virtual pages:\n"
+msgstr "หน้าเสมือน:\n"
+
+#: src/main.c:381
+#, c-format
+msgid ""
+"  number lines         = %s\n"
+"  format               = %s\n"
+"  tabulation size      = %d\n"
+"  non printable format = %s\n"
+msgstr ""
+"  หมายเลขบรรทัด        = %s\n"
+"  รูปแบบ               = %s\n"
+"  ขนาดแบบตาราง        = %d\n"
+"  รูปแบบที่ไม่สามารถพิมพ์ได้ = %s\n"
+
+#: src/main.c:392
+msgid "Headers:\n"
+msgstr "ส่วนหัว:\n"
+
+#: src/main.c:393
+#, c-format
+msgid ""
+"  header       = %s\n"
+"  left footer  = %s\n"
+"  footer       = %s\n"
+"  right footer = %s\n"
+"  left title   = %s\n"
+"  center title = %s\n"
+"  right title  = %s\n"
+"  under lay    = %s\n"
+msgstr ""
+"  ส่วนหัว      = %s\n"
+"  ส่วนท้ายซ้าย  = %s\n"
+"  ส่วนท้าย     = %s\n"
+"  ส่วนท้ายขวา  = %s\n"
+"  ชื่อเรื่องซ้าย  = %s\n"
+"  ชื่อเรื่องกลาง = %s\n"
+"  ชื่อเรื่องขวา  = %s\n"
+"  ไว้ข้างใต้    = %s\n"
+
+#: src/main.c:412 src/main.c:747
+msgid "Input:\n"
+msgstr "การนำเข้า:\n"
+
+#: src/main.c:413
+#, c-format
+msgid ""
+"  truncate lines = %s\n"
+"  interpret      = %s\n"
+"  end of line    = %s\n"
+"  encoding       = %s\n"
+"  document title = %s\n"
+"  prologue       = %s\n"
+"  print anyway   = %s\n"
+"  delegating     = %s\n"
+msgstr ""
+"  ตัดบรรทัด      = %s\n"
+"  แปล          = %s\n"
+"  จบบรรทัด      = %s\n"
+"  การเข้ารหัส    = %s\n"
+"  ชื่อเรื่องเอกสาร = %s\n"
+"  ส่วนนำ        = %s\n"
+"   อย่างไรก็พิมพ์  = %s\n"
+"  ตัวแทน        = %s\n"
+
+#: src/main.c:438 src/main.c:504
+msgid "selected automatically"
+msgstr "เลือกโดยอัตโนมัติ"
+
+#: src/main.c:441 src/main.c:766
+msgid "Pretty-printing:\n"
+msgstr "การพิมพ์แบบสวยงาม:\n"
+
+#: src/main.c:442
+#, c-format
+msgid ""
+"  style sheet     = %s\n"
+"  highlight level = %s\n"
+"  strip level     = %d\n"
+msgstr ""
+"  รูปแบบแผ่น    = %s\n"
+"  ระดับการเน้น  = %s\n"
+"  ระดับเส้น     = %d\n"
+
+#: src/main.c:462
+msgid "never make backups"
+msgstr "ไม่ต้องสำรองข้อมูล"
+
+#: src/main.c:466
+msgid "simple backups of every file"
+msgstr "สำรองข้อมูลแบบง่ายของแต่ละแฟ้ม"
+
+#: src/main.c:471
+msgid ""
+"numbered backups of files already numbered,\n"
+"                            and simple of others"
+msgstr ""
+"ลำดับเลขการสำรองไฟล์ที่ได้ลำดับเลขไปแล้ว,\n"
+"                            และแบบง่ายสำหรับอื่น ๆ"
+
+#: src/main.c:476
+msgid "numbered backups of every file"
+msgstr "ลำดับเลขทุกการสำรองแฟ้ม"
+
+#: src/main.c:480 src/main.c:775
+msgid "Output:\n"
+msgstr "การส่งออก:\n"
+
+#: src/main.c:481
+#, c-format
+msgid ""
+"  destination     = %s\n"
+"  version control = %s\n"
+"  backup suffix   = %s\n"
+msgstr ""
+"  ปลายทาง           = %s\n"
+"  ควบคุมรุ่น           = %s\n"
+"  คำเสริมท้ายแฟ้มสำรอง = %s\n"
+
+#: src/main.c:494 src/main.c:786
+msgid "PostScript:\n"
+msgstr "โพสต์สคริพต์:\n"
+
+#: src/main.c:495
+#, c-format
+msgid ""
+"  magic number              = %s\n"
+"  Printer Description (PPD) = %s\n"
+"  default PPD               = %s\n"
+"  page label format         = %s\n"
+"  number of copies          = %d\n"
+"  sides per sheet           = %s\n"
+"  page device definitions   = "
+msgstr ""
+"  หมายเลขเมจิค            = %s\n"
+"  แฟ้มอธิบายเครื่องพิมพ์ (PPD) = %s\n"
+"  PPD ปริยาย              = %s\n"
+"  รูปแบบป้ายหน้า            = %s\n"
+"  จำนวนของสำเนา          = %d\n"
+"  สไลด์ต่อแผ่น              = %s\n"
+"  คำอธิบายอุปกรณ์หน้ากระดาษ  = "
+
+#: src/main.c:515
+#, c-format
+msgid "  statusdict definitions    = "
+msgstr "  คำอธิบายคำแสดงสถานะ   = "
+
+#: src/main.c:518
+#, c-format
+msgid "  page prefeed              = %s\n"
+msgstr "  เลื่อนหน้าก่อน                = %s\n"
+
+#: src/main.c:527
+msgid "Internals:\n"
+msgstr "ภายใน:\n"
+
+#: src/main.c:528
+#, c-format
+msgid ""
+"  verbosity level     = %d\n"
+"  file command        = %s\n"
+"  library path        = \n"
+msgstr ""
+"  ระดับถ้อยคำ      = %d\n"
+"  คำสั่งแฟ้ม        = %s\n"
+"  พาธของไลบรารี   = \n"
+
+#: src/main.c:653
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"\n"
+"Convert FILE(s) or standard input to PostScript.  By default, the output\n"
+"is sent to the default printer.  An output file may be specified with -o.\n"
+"\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"Long options marked with * require a yes/no argument, corresponding\n"
+"short options stand for `yes'.\n"
+msgstr ""
+"วิธีใช้: %s [OPTION]... [FILE]...\n"
+"\n"
+"แปลง FILE(s) หรือ ส่วนนำเข้ามาตรฐานไปเป็นโพสต์สคริพต์. โดยปริยาย, การส่งออก\n"
+"จะส่งไปไปยังเครื่องพิมพ์ปริยาย. ไฟล์ส่งออกอาจจะถูกระบุด้วย -o.\n"
+"\n"
+
+#: src/main.c:668
+msgid "Tasks:\n"
+msgstr "งาน:\n"
+
+#: src/main.c:669
+msgid ""
+"  --version        display version\n"
+"  --help           display this help\n"
+"  --guess          report guessed types of FILES\n"
+"  --which          report the full path of library files named FILES\n"
+"  --glob           report the full path of library files matching FILES\n"
+"  --list=defaults  display default settings and parameters\n"
+"  --list=TOPIC     detailed list on TOPIC (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+msgstr ""
+"  --version        แสดงรุ่น\n"
+"  --help           แสดงความช่วยเหลือนี้\n"
+"  --guess          รายงานชนิดที่ถูกเดาของ FILES\n"
+"  --which          รายงานพาธเต็มของแฟ้มไลบรารีที่ตั้งชื่อว่า FILES\n"
+"  --glob           รายงานพาธเต็มของแฟ้มไลบรารีที่เข้าคู่กับ FILES\n"
+"  --list=defaults  แสดงการตั้งค่าปริยายและพารามิเตอร์\n"
+"  --list=TOPIC     รายละเอียดรายการบน TOPIC  (delegations, encodings, features,\n"
+"                   variables, media, ppd, printers, prologues, style-sheets,\n"
+"                   user-options)\n"
+
+#: src/main.c:680
+msgid ""
+"After having performed the task, exit successfully.  Detailed lists may\n"
+"provide additional help on specific features.\n"
+msgstr ""
+"หลังจากทำงานเสร็จแล้ว, และออกอย่างเสร็จสมบูรณ์. รายการอย่างละเอียดอาจจะ\n"
+"ให้ความช่วยเหลือเพิ่มเติมในคุณสมบัติเฉพาะ.\n"
+
+#: src/main.c:688
+msgid "Global:\n"
+msgstr "โดยรวม:\n"
+
+#: src/main.c:689
+msgid ""
+"  -q, --quiet, --silent      be really quiet\n"
+"  -v, --verbose[=LEVEL]      set verbosity on, or to LEVEL\n"
+"  -=, --user-option=OPTION   use the user defined shortcut OPTION\n"
+"      --debug                enable debugging features\n"
+"  -D, --define=KEY[:VALUE]   unset variable KEY or set to VALUE\n"
+msgstr ""
+"  -q, --quiet, --silent      ให้เงียบจริง ๆ \n"
+"  -v, --verbose[=LEVEL]      เปิดการแสดงถ้อยความ, หรือไปที่ระดับ LEVEL\n"
+"  -=, --user-option=OPTION   ใช้ทางลัด OPTION ที่ผู้ใช้กำหนด\n"
+"      --debug                เปิดใช้คุณสมบัติการดีบัก\n"
+"  -D, --define=KEY[:VALUE]   ไม่ตั้งค่าตัวแปร KEY หรือตั้งค่าเป็น VALUE\n"
+
+#: src/main.c:698
+msgid ""
+"  -M, --medium=NAME      use output medium NAME\n"
+"  -r, --landscape        print in landscape mode\n"
+"  -R, --portrait         print in portrait mode\n"
+"      --columns=NUM      number of columns per sheet\n"
+"      --rows=NUM         number of rows per sheet\n"
+"      --major=DIRECTION  first fill (DIRECTION=) rows, or columns\n"
+"  -1, -2, ..., -9        predefined font sizes and layouts for 1.. 9 virtuals\n"
+"  -A, --file-align=MODE  align separate files according to MODE (fill, rank\n"
+"                         page, sheet, or a number)\n"
+"  -j, --borders*         print borders around columns\n"
+"      --margin[=NUM]     define an interior margin of size NUM\n"
+msgstr ""
+"  -M, --medium=NAME      ใช้สื่อการส่งออก NAME\n"
+"  -r, --landscape        พิมพ์ในแนวนอน\n"
+"  -R, --portrait         พิมพ์ในแนวตั้ง\n"
+"      --columns=NUM      จำนวนของสดมภ์ต่อแผ่น\n"
+"      --rows=NUM         จำนวนของแถวต่อแผ่น\n"
+"      --major=DIRECTION  เติม (DIRECTION=) row, หรือ column ก่อน\n"
+"  -1, -2, ..., -9        กำหนดขนาดและเค้าโครงแบบอักษรสำหรับแบบเสมือน 1.. 9\n"
+"  -A, --file-align=MODE  จัดเรียงไฟล์แยกกันตาม MODE (fill, rank\n"
+"                         page, sheet, หรือ number)\n"
+"  -j, --borders*         พิมพ์ขอบรอบสดมภ์\n"
+"      --margin[=NUM]     กำหนดค่าส่วนต่างภายในของขนาด NUM\n"
+
+#: src/main.c:711
+msgid ""
+"The options -1.. -9 affect several primitive parameters to set up predefined\n"
+"layouts with 80 columns.  Therefore the order matters: `-R -f40 -2' is\n"
+"equivalent to `-2'.  To modify the layout, use `-2Rf40', or compose primitive\n"
+"options (`--columns', `--font-size' etc.).\n"
+msgstr ""
+"ตัวเลือก -1.. -9 มีผลกับพารามิเตอร์พื้นฐานที่จะตั้งค่ากำหนดล่วงหน้า\n"
+"เค้าโครง 80 สดมภ์. เพราะฉะนั้นอันดับเป็นเรื่องสำคัญ: `-R -f40 -2' จะ\n"
+"จะมีค่าเท่ากับ `-2'.  ในการปรับเปลี่ยนเค้าโครง, ใช้ `-2Rf40', หรือประกอบ\n"
+"จากตัวเลือกพื้นฐาน(`--columns', `--font-size' ฯลฯ.).\n"
+
+#: src/main.c:719
+msgid ""
+"      --line-numbers=NUM     precede each NUM lines with its line number\n"
+"  -C                         alias for --line-numbers=5\n"
+"  -f, --font-size=SIZE       use font SIZE (float) for the body text\n"
+"  -L, --lines-per-page=NUM   scale the font to print NUM lines per virtual\n"
+"  -l, --chars-per-line=NUM   scale the font to print NUM columns per virtual\n"
+"  -m, --catman               process FILE as a man page (same as -L66)\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"      --line-numbers=NUM     พิมพ์หมายเลขข้างหน้าทุก ๆ NUM บรรทัด ด้วยเลขบรรทัดนั้น\n"
+"  -C                         นามแฝงของ --line-numbers=5\n"
+"  -f, --font-size=SIZE       ใช้รูปแบบอักษร SIZE (float) สำหรับเนื้อความ\n"
+"  -L, --lines-per-page=NUM   ปรับขนาดแบบอักษรเพื่อพิมพ์ NUM บรรทัดต่อแบบเสมือน\n"
+"  -l, --chars-per-line=NUM   ปรับขนาดแบบอักษรเพื่อพิมพ์ NUM สดมภ์ต่อแบบเสมือน\n"
+"  -m, --catman               ประมวลผล FILE เหมือนเป็น man page (เหมือนกับ -L66)\n"
+"  -T, --tabsize=NUM          ตั้งขนาดแท็บเป็น NUM\n"
+"  --non-printable-format=FMT ระบุว่าจะพิมพ์อักระที่ไม่สามารถพิมพ์ได้อย่างไร\n"
+
+#: src/main.c:730
+msgid "Headings:\n"
+msgstr "ส่วนหัว:\n"
+
+#: src/main.c:732
+#, no-c-format
+msgid ""
+"  -B, --no-header        no page headers at all\n"
+"  -b, --header[=TEXT]    set page header\n"
+"  -u, --underlay[=TEXT]  print TEXT under every page\n"
+"  --center-title[=TEXT]  set page title to TITLE\n"
+"  --left-title[=TEXT]    set left and right page title to TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   set sheet footers to TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+msgstr ""
+"  -B, --no-header        ไม่มีส่วนหัวทั้งหมด\n"
+"  -b, --header[=TEXT]    ตั้งค่าส่วนหัว\n"
+"  -u, --underlay[=TEXT]  พิมพ์ TEXT ข้างใต้ทุกหน้า\n"
+"  --center-title[=TEXT]  ตั้งค่าชื่อเรื่องของหน้าเป็น TITLE\n"
+"  --left-title[=TEXT]    ตั้งค่าชื่อเรื่องของหน้าไปซ้ายและขวาเป็น TEXT\n"
+"  --right-title[=TEXT]\n"
+"  --left-footer[=TEXT]   ตั้งค่าส่วนท้ายของแผ่นเป็น TEXT\n"
+"  --footer[=TEXT]\n"
+"  --right-footer[=TEXT]\n"
+
+#: src/main.c:743
+msgid "The TEXTs may use special escapes.\n"
+msgstr " TEXTs อาจจะใช้การหนีแบบพิเศษ.\n"
+
+#: src/main.c:748
+msgid ""
+"  -a, --pages[=RANGE]        select the pages to print\n"
+"  -c, --truncate-lines*      cut long lines\n"
+"  -i, --interpret*           interpret tab, bs and ff chars\n"
+"      --end-of-line=TYPE     specify the eol char (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -t, --title=NAME           set the name of the job\n"
+"      --stdin=NAME           set the name of the input file stdin\n"
+"      --print-anyway*        force binary printing\n"
+"  -Z, --delegate*            delegate files to another application\n"
+"      --toc[=TEXT]           generate a table of content\n"
+msgstr ""
+"  -a, --pages[=RANGE]        เลือกหน้าที่จะพิมพ์\n"
+"  -c, --truncate-lines*      ตัดบรรทัดยาว\n"
+"  -i, --interpret*           แปลงอักขระ tab, bs และ ff\n"
+"      --end-of-line=TYPE     ระบุอักขระจบบรรทัด eol (TYPE: r, n, nr, rn, any)\n"
+"  -X, --encoding=NAME        ใช้รหัสอักขระการนำเข้า NAME\n"
+"  -t, --title=NAME           ตั้งค่าชื่อของงาน\n"
+"      --stdin=NAME           ตั้งค่าชื่อของแฟ้มการนำเข้า stdin\n"
+"      --print-anyway*        บังคับการพิมพ์ไบนารี\n"
+"  -Z, --delegate*            ทำการไฟล์แทนด้วยโปรแกรมประยุกต์อื่น\n"
+"      --toc[=TEXT]           สร้างสารบัญ\n"
+
+#: src/main.c:760
+msgid ""
+"When delegations are enabled, a2ps may use other applications to handle the\n"
+"processing of files that should not be printed as raw information, e.g., HTML\n"
+"PostScript, PDF etc.\n"
+msgstr ""
+"เมื่อตัวแทนได้ถูกเปิดใช้, a2ps อาจใช้โปรแกรมประยุกต์อื่นในการจัดการ\n"
+"การประมวลผลของแฟ้ม ซึ่งไม่ควรพิมพ์เป็นแบบข้อมูลดิบ เช่น HTML\n"
+"PostSccript, PDF ฯลฯ\n"
+
+#: src/main.c:767
+msgid ""
+"  -E, --pretty-print[=LANG]  enable pretty-printing (set style to LANG)\n"
+"  --highlight-level=LEVEL    set pretty printing highlight LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+msgstr ""
+"  -E, --pretty-print[=LANG]   เปิดใช้การพิมพ์แบบสวยงาม(ตั้งรูปแบบเป็น LANG)\n"
+"  --highlight-level=LEVEL    ตั้งค่าระดับการเน้นการพิมพ์แบบสวยงามเป็น LEVEL\n"
+"                             LEVEL can be none, normal or heavy\n"
+"  -g                         alias for --highlight-level=heavy\n"
+"  --strip-level=NUM          level of comments stripping\n"
+
+#: src/main.c:776
+msgid ""
+"  -o, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  --version-control=WORD     override the usual version control\n"
+"  --suffix=SUFFIX            override the usual backup suffix\n"
+"  -P, --printer=NAME         send output to printer NAME\n"
+"  -d                         send output to the default printer\n"
+"                             (this is the default behavior)\n"
+msgstr ""
+"  -o, --output=FILE          ปล่อยการนำออกไปยัง FILE.  ถ้า FILE คือ `-',\n"
+"                             ปล่อยการนำออกไปยัง stdout.\n"
+"  --version-control=WORD     แทนที่ควบคุมรุ่นปกติ\n"
+"  --suffix=SUFFIX            แทนที่ส่วนต่อท้ายปกติ suffix\n"
+"  -P, --printer=NAME         ส่งการนำออกไปยังเครื่องพืมพ์ NAME\n"
+"  -d                         ส่งการนำออกไปยังเครื่องพืมพ์ปริยาย\n"
+"                             (นี่เป็นพฤติกรรมปริยาย)\n"
+
+#: src/main.c:787
+msgid ""
+"      --prologue=FILE        include FILE.pro as PostScript prologue\n"
+"      --ppd[=KEY]            automatic PPD selection or set to KEY\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -s, --sides=MODE           set the duplex MODE (`1' or `simplex',\n"
+"                             `2' or `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  pass a page device definition to output\n"
+"      --statusdict=K[:[:]V]  pass a statusdict definition to the output\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+msgstr ""
+"      --prologue=FILE        รวม FILE.pro เป็นส่วนนำ PostScript\n"
+"      --ppd[=KEY]            เลือก PPD อัตโนมัติหรือตั้งเป็น KEY\n"
+"  -n, --copies=NUM           พิมพ์ NUM สำเนา ในแต่ละหน้า\n"
+"  -s, --sides=MODE           ตั้งค่าพิมพ์แบบสองทางเป็น MODE (`1' หรือ `simplex',\n"
+"                             `2' หรือ `duplex', `tumble')\n"
+"  -S, --setpagedevice=K[:V]  ผ่านหน้าคำอธิบายอุปกรณ์ไปยังการนำออก\n"
+"      --statusdict=K[:[:]V]  ผ่านคำอธิยาย statusdict ไปยังการนำออก\n"
+"  -k, --page-prefeed         เปิดใช้การเลื่อนหน้าก่อน\n"
+"  -K, --no-page-prefeed      ปิดใช้การเลื่อนหน้าก่อน\n"
+
+#: src/main.c:801
+msgid ""
+"By default a2ps is tuned to do what you want to, so trust it.  To pretty\n"
+"print the content of the `src' directory and a table of content, and send the\n"
+"result to the printer `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"To process the files `sample.ps' and `sample.html' and display the result,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"To process a mailbox in 4 up,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"To print as a booklet on the default printer, which is Duplex capable,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+msgstr ""
+"โดยปริยาย a2ps ได้ถูกปรับแต่งที่จะทำตามที่คุณต้องการให้เป็น, ดังนั้นมั่นใจได้. \n"
+"ในการพิมพ์แบบสวยงามของเนื้อหาไดเรกทอรี `src' แสะสารบัญ, และส่งผลลัพธ์ออกไปยัง\n"
+"เครื่องพิมพ์ `lw',\n"
+"\n"
+"    $ a2ps -P lw --toc src/*\n"
+"\n"
+"ในการประมวลผลแฟ้ม `sample.ps' และ `sample.html' และแสดงผลลัพธ์,\n"
+"\n"
+"    $ a2ps -P display sample.ps sample.html\n"
+"\n"
+"ในการประมวลผลกล่องจดหมายแบบ 4 หน้าต่อแผ่น,\n"
+"\n"
+"    $ a2ps -=mail -4 mailbox\n"
+"\n"
+"ในการพิมพ์แบบหนังสือไปยังเครื่องพิมพ์ปริยาย, ซึ่งพิมพ์สองทางได้,\n"
+"\n"
+"    $ a2ps -=book paper.dvi.gz -d\n"
+
+#: src/main.c:822
+msgid "News, updates and documentation: visit http://www.gnu.org/software/a2ps/.\n"
+msgstr "ข่าว, การปรับปรุง และเอกสาร: เยี่ยมชม http://www.gnu.org/software/a2ps/.\n"
+
+#: src/main.c:824
+msgid "Report bugs to <bug-a2ps@gnu.org>.\n"
+msgstr "รายงานข้อผิดพลาดโปรแกรมไปยัง <bug-a2ps@gnu.org>.\n"
+
+#: src/main.c:942
+msgid ""
+"Copyright (c) 1988-1993 Miguel Santana\n"
+"Copyright (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"Copyright (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+msgstr ""
+"สงานลิขสิทธิ์ (c) 1988-1993 Miguel Santana\n"
+"สงานลิขสิทธิ์ (c) 1995-2000 Akim Demaille, Miguel Santana\n"
+"สงานลิขสิทธิ์ (c) 2007- Akim Demaille, Miguel Santana and Masayuki Hatta"
+
+#: src/main.c:1173
+msgid "Table of Content"
+msgstr "สารบัญ"
+
+#: src/parsessh.y:236
+#, c-format
+msgid "cannot process `%s' which requires a2ps version %s"
+msgstr "ไม่สามารถดำเนินการ `%s' ซึ่งต้องการ a2ps รุ่น %s"
+
+#: src/sheets-map.l:111
+#, c-format
+msgid "unexpected character `%c'"
+msgstr "พบอักขระที่ไม่ต้องการ `%c'"
+
+#: src/sheets-map.l:211 lexppd.l:211
+msgid "too many includes"
+msgstr "ส่วนรวมเข้ามากเกินไป"
+
+#: src/sheets-map.l:296 src/sheets-map.l:303
+#, c-format
+msgid "no key defined for `%s'"
+msgstr "ไม่มีกุญแจกำหนดล่วงหน้าสำหรับ `%s'"
+
+#: src/select.c:122 src/ssheet.c:866 fonts.l:838 fonts.l:840 fonts.l:842
+#: lib/pathwalk.c:328 lib/pathwalk.c:414
+#, c-format
+msgid "cannot find file `%s'"
+msgstr "ไม่สามารถหาแฟ้ม `%s'"
+
+#: src/select.c:124
+msgid "automatic style selection cancelled"
+msgstr "การเลือกรูปแบบอัตโนมัติยกเลิก"
+
+#: src/ssheet.c:295
+#, c-format
+msgid "cannot compile regular expression `%s': %s"
+msgstr "ไม่สามารถคอมไพล์นิพจน์ปกติ `%s': %s"
+
+#: src/ssheet.c:974 src/ssheet.c:995
+msgid "Known Style Sheets"
+msgstr "Known Style Sheets"
+
+#: src/ssheet.c:1461
+#, c-format
+msgid "cannot find style sheet `%s': using plain style"
+msgstr "ไม่สามารถค้นหาแผ่นรูปแบบ `%s': ใช้รูปแบบข้อความเปล่า"
+
+#: src/sshread.c:453
+#, c-format
+msgid "unknown encoding `%s', ignored"
+msgstr "รหัสอักขระที่ไม่รู้จัก `%s', เพิกเฉย"
+
+#: src/version-etc.c:38
+msgid "Copyright (C) 1999 Free Software Foundation, Inc."
+msgstr "สงวนสิขสิทธิ์ (C) 1999 Free Software Foundation, Inc."
+
+#: src/version-etc.c:60
+#, c-format
+msgid "Written by %s.\n"
+msgstr "เขียนขึ้นโดย %s.\n"
+
+#: src/version-etc.c:66
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"นี่เป็นซอฟต์แวรเสรี; ดูรหัสต้นฉบับสำหรับเงื่อนไขการสำเนา. มีการ \"ไม่\" รับประกัน;\n"
+"ไม่แแม้แต่การความสามารถในเชิงพาณิชย์ หรือความเหมาะสมกับจุดประสงค์เฉพาะ.\n"
+
+#: src/versions.c:133
+#, c-format
+msgid "invalid version number `%s'"
+msgstr "หมายเลขรุ่นไม่ถูกต้อง `%s'"
+
+#: lib/caret.c:43
+msgid "space (i.e., ` ')"
+msgstr "ที่ว่าง (เช่น, ` ')"
+
+#: lib/caret.c:45
+msgid "octal (i.e., `\\001' etc.)"
+msgstr "ฐานแปด (เช่น, `\\001' ฯลฯ)"
+
+#: lib/caret.c:47
+msgid "hexadecimal (i.e., `\\x0a' etc.)"
+msgstr "ฐานสิบหก (เช่น, `\\x0a' ฯลฯ)"
+
+#: lib/caret.c:49
+msgid "caret (i.e., `^C', `M-^C' etc.)"
+msgstr "อักขระพิเศษ (เช่น, `^C', `M-^C' ฯลฯ)"
+
+#: lib/caret.c:51
+msgid "emacs (i.e., `C-c', `M-C-c' etc.)"
+msgstr "emacs (เช่น, `C-c', `M-C-c' ฯลฯ)"
+
+#: lib/caret.c:53
+msgid "question-mark (i.e., `?')"
+msgstr "ปรัศนีย์ (เช่น, `?')"
+
+#: lib/closeout.c:71 lib/closeout.c:73
+msgid "write error"
+msgstr "เกิดข้อผิดพลาดในการเขียน"
+
+#: confg.gperf:157 lib/encoding.c:638
+#, c-format
+msgid "invalid option `%s'"
+msgstr "ตัวเลือกไม่ถูกต้อง `%s'"
+
+#: confg.gperf:224 confg.gperf:231 confg.gperf:238
+#, c-format
+msgid "invalid definition for printer `%s': %s"
+msgstr "ข้อกำหนดของเครื่องพิมพ์ไม่ถูกต้อง `%s': %s"
+
+#: confg.gperf:229 confg.gperf:232 lib/printers.c:47
+msgid "Unknown Printer"
+msgstr "เครื่องพิมพ์ไม่รู้จัก"
+
+#: confg.gperf:236 confg.gperf:239 lib/printers.c:46
+msgid "Default Printer"
+msgstr "เครื่องพิมพ์ปริยาย"
+
+#: confg.gperf:292 lib/options.c:697
+#, c-format
+msgid "invalid variable identifier `%s'"
+msgstr "ตัวระบุตัวแปร `%s' ไม่ถูกต้อง "
+
+#: confg.gperf:321
+#, c-format
+msgid "obsolete `%s' entry.  Ignored"
+msgstr "ข้อมูล `%s' ล้าสมัย.  เพิกเฉย"
+
+#: lib/encoding.c:1114 lib/encoding.c:1135
+msgid "Known Encodings"
+msgstr "รหัสอักขระที่รู้จัก"
+
+#: lib/faces.c:156
+msgid "incomplete knowledge of faces"
+msgstr "ความรู้ของชื่อไม่สมบูรณ์"
+
+#: lib/filtdir.c:113
+#, c-format
+msgid "cannot close directory `%s'"
+msgstr "ไม่สามารถปิดไดเรกทอรี `%s'"
+
+#: lib/getnum.c:63 lib/getnum.c:121 lib/getnum.c:153 lib/getnum.c:221
+#, c-format
+msgid "invalid argument `%s' for `%s'"
+msgstr "อาร์กิวเมนต์ `%s' สำหรับ `%s' ไม่ถูกต้อง"
+
+#: lib/getnum.c:123
+#, c-format
+msgid "Valid arguments are integers n such that: %s\n"
+msgstr "อาร์กิวเมนต์ที่ถูกต้องเป็น integer n เช่น: %s\n"
+
+#: lib/getnum.c:223
+#, c-format
+msgid "Valid arguments are floats f such that: %s\n"
+msgstr "อาร์กิวเมนต์ที่ถูกต้องเป็น floats f เช่น: %s\n"
+
+#: lib/jobs.c:308
+#, c-format
+msgid "unknown encoding `%s'"
+msgstr "ไม่รู้จักรหัสอักขระ `%s'"
+
+#: lib/madir.c:59
+msgid "rows first"
+msgstr "แถวก่อน"
+
+#: lib/madir.c:62
+msgid "columns first"
+msgstr "สดมภ์ก่อน"
+
+#: lib/media.c:173
+#, c-format
+msgid "unknown medium `%s'"
+msgstr "ไม่รู้จักสื่อ `%s'"
+
+#: lib/media.c:208 lib/media.c:237
+msgid "Known Media"
+msgstr "สื่อที่รู้จัก"
+
+#: lib/media.c:211
+msgid "Name"
+msgstr "ชื่อ"
+
+#: lib/media.c:212
+msgid "dimensions"
+msgstr "มิติ"
+
+#: lib/metaseq.c:104 lib/metaseq.c:113
+#, c-format
+msgid "Known Variables"
+msgstr "ตัวแปรที่รู้จัก"
+
+#: lib/metaseq.c:162 lib/metaseq.c:531 lib/metaseq.c:548 lib/metaseq.c:608
+#: lib/metaseq.c:951 lib/metaseq.c:972
+#, c-format
+msgid "%s: missing `%c' for %s%c escape"
+msgstr "%s: ไม่พบ `%c' สำหรับทางหนี %s%c "
+
+#: lib/metaseq.c:288 lib/metaseq.c:300
+#, c-format
+msgid "Printed by %s"
+msgstr "พิมพ์โดย %s"
+
+#: lib/metaseq.c:298
+#, c-format
+msgid "Printed by %s from %s"
+msgstr "พิมพ์โดย %s จาก %s"
+
+#: lib/metaseq.c:308 lib/metaseq.c:327
+msgid "cannot get current working directory"
+msgstr "ไม่สามารถหาไดเรกทอรีที่ทำงานปัจจุบัน"
+
+#: lib/metaseq.c:341 lib/metaseq.c:534 lib/metaseq.c:563 lib/metaseq.c:652
+#: lib/metaseq.c:954 lib/metaseq.c:987
+#, c-format
+msgid "%s: too long argument for %s escape"
+msgstr "%s: อาร์กิวเมนต์ยาวเกินไปสำหรับการหนี %s"
+
+#: lib/metaseq.c:364 lib/metaseq.c:675
+msgid "%b %d, %y"
+msgstr "%b %d, %y"
+
+#: lib/metaseq.c:373 lib/metaseq.c:684
+msgid "%A %B %d, %Y"
+msgstr "%A %B %d, %Y"
+
+#: lib/metaseq.c:419 lib/metaseq.c:448 lib/metaseq.c:491 lib/metaseq.c:724
+#: lib/metaseq.c:808 lib/metaseq.c:867 lib/metaseq.c:922 lib/metaseq.c:1099
+#: lib/metaseq.c:1234 lib/metaseq.c:1246 lib/metaseq.c:1289
+#, c-format
+msgid "%s: unknown `%s' escape `%c' (%d)"
+msgstr "%s: ไม่รู้จัก `%s' ทางหนี `%c' (%d)"
+
+#: lib/metaseq.c:426 lib/metaseq.c:815
+#, c-format
+msgid "Page %d"
+msgstr "หน้า %d"
+
+#: lib/metaseq.c:431 lib/metaseq.c:826
+#, c-format
+msgid "Page %d/%c"
+msgstr "หน้า %d/%c"
+
+#: lib/metaseq.c:593 lib/metaseq.c:1021
+#, c-format
+msgid "%s: invalid separator `%s%c' for `%s' escape"
+msgstr "%s: ตัวแบ่งไม่ถูกต้อง `%s%c' สำหรับทางหนี `%s'"
+
+#: lib/metaseq.c:601 lib/metaseq.c:611
+#, c-format
+msgid "%s: invalid argument for %s%c escape"
+msgstr "%s: อาร์กิวเมนต์ไม่ถูกต้องสำหรับทางหนี %s%c"
+
+#: lib/metaseq.c:822
+#, c-format
+msgid "Page %d/%d"
+msgstr "หน้า %d/%d"
+
+#: lib/metaseq.c:1266
+msgid "output command"
+msgstr "คำสั่งนำออก"
+
+#: lib/options.c:302
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "ลองใช้ `%s --help' เพื่อแสดงข้อมูลมากขึ้น.\n"
+
+#: lib/output.c:466
+#, c-format
+msgid "invalid face `%s'"
+msgstr "ชื่อไม่ถูกต้อง `%s'"
+
+#: lib/output.c:538
+#, c-format
+msgid "`%s' with no matching `%s'"
+msgstr "`%s' ไม่เข้าคู่กันกับ `%s'"
+
+#: lib/ppd.c:108
+msgid "Known Fonts"
+msgstr "แบบอักษรที่รู้จัก"
+
+#: lib/ppd.c:111
+msgid ""
+"\n"
+"  None.\n"
+msgstr ""
+"\n"
+"  ไม่มีเลย.\n"
+
+#: lib/ppd.c:149 lib/ppd.c:165
+msgid "Known PostScript Printer Descriptions"
+msgstr "อธิบายเครื่องพิมพ์โพสต์สคริพต์ที่รู้จัก"
+
+#: lib/prange.c:305 lib/prange.c:323
+#, c-format
+msgid "invalid interval `%s'"
+msgstr "ช่วงไม่ถูกต้อง `%s'"
+
+#: lib/printers.c:396 lib/printers.c:413
+#, c-format
+msgid "no command for the `%s' (%s%s)"
+msgstr "ไม่มีคำสั่งสำหรับ `%s' (%s%s)"
+
+#: lib/printers.c:429
+msgid "sent to the standard output"
+msgstr "ส่งไปยังการนำออกมาตรฐาน"
+
+#: lib/printers.c:430
+msgid "sent to the default printer"
+msgstr "ส่งไปยังเครื่องพิมพ์ปริยาย"
+
+#: lib/printers.c:435
+#, c-format
+msgid "saved into the file `%s'"
+msgstr "บันทึกไปยังแฟ้ม `%s'"
+
+#: lib/printers.c:436
+#, c-format
+msgid "sent to the printer `%s'"
+msgstr "ส่งไปยังเครื่องพิมพ์ `%s'"
+
+#: lib/printers.c:613 lib/printers.c:621
+msgid "Known Outputs (Printers, etc.)"
+msgstr "การนำออกที่รู้จัก (เครื่องพิมพ์, ฯลฯ)"
+
+#: lib/prolog.c:98 lib/prolog.c:181
+msgid "Known Prologues"
+msgstr "ส่วนนึที่รู้จัก"
+
+#: lib/prolog.c:579
+#, c-format
+msgid "font %f too big"
+msgstr "แบบอักษร %f ใหญ่เกินไป"
+
+#: lib/psgen.c:662
+#, c-format
+msgid "`%s' is a binary file, printing aborted"
+msgstr "`%s' เป็นแฟ้มไบนารี, การพิมพ์ถูกยกเลิก"
+
+#: lib/quotearg.c:200
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:203
+msgid "'"
+msgstr "'"
+
+#: lib/userdata.c:129
+msgid "user"
+msgstr "ผู้ใช้"
+
+#: lib/userdata.c:130
+msgid "Unknown User"
+msgstr "ผู้ใช้ที่ไม่รู้จัก"
+
+#: lib/useropt.c:75
+#, c-format
+msgid "unknown user option `%s'"
+msgstr "ไม่รู้จักตัวเลือกผู้ใช้ `%s'"
+
+#: lib/useropt.c:86 lib/useropt.c:97
+msgid "Known User Options"
+msgstr "ตัวเลือกผู้ใช้ที่รู้จัก"
+
+#: lib/xbackupfile.c:105 lib/xmalloc.c:66
+msgid "Memory exhausted"
+msgstr "หน่วยความจำถูกใช้จนหมดแล้ว"
+
+#: lib/xbackupfile.c:240 lib/xbackupfile.c:252
+#, c-format
+msgid "cannot rename file `%s' as `%s'"
+msgstr "ไม่สามารถเปลี่ยนชื่อแฟ้ม `%s' เป็น `%s'"
+
+#: lib/xbackupfile.c:255
+#, c-format
+msgid "restored file `%s'"
+msgstr "กู้คืนแฟ้ม `%s'"
+
+#: lib/argmatch.c:159
+#, c-format
+msgid "invalid argument %s for `%s'"
+msgstr "อาร์กิวเมนต์ %s ไม่ถูกต้อง สำหรับ `%s'"
+
+#: lib/argmatch.c:160
+#, c-format
+msgid "ambiguous argument %s for `%s'"
+msgstr "อาร์กิวเมนต์ %s กำกวมไม่ชัดเจน สำหรับ `%s'"
+
+#: lib/argmatch.c:178
+#, c-format
+msgid "Valid arguments are:"
+msgstr "อาร์กิวเมมนต์ที่ถูกต้องได้แก่:"
+
+#: lib/error.c:102
+msgid "Unknown system error"
+msgstr "เกิดความผิดพลาดของระบบที่ไม่รู้จักขึ้น"
+
+#: lib/getopt.c:675
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: ตัวเลือก `%s' is กำกวมไม่ชัดเจน\n"
+
+#: lib/getopt.c:700
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: ตัวเลือก `--%s' ไม่อนุญาตให้มีอาร์กิวเมนต์\n"
+
+#: lib/getopt.c:705
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: ตัวเลือก `%c%s' ไม่อนุญาตให้มีอาร์กิวเมนต์\n"
+
+#: lib/getopt.c:723 lib/getopt.c:896
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: ตัวเลือก `%s' ต้องการอาร์กิวเมนต์\n"
+
+#: lib/getopt.c:752
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s:  ไม่สามารถจดจำตัวเลือก `--%s' \n"
+
+#: lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s:  ไม่สามารถจดจำตัวเลือก  `%c%s'\n"
+
+#: lib/getopt.c:782
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: ตัวเลือกผิดกฎ -- %c\n"
+
+#: lib/getopt.c:785
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: ตัวเลือกผิดกฎ -- %c\n"
+
+#: lib/getopt.c:815 lib/getopt.c:945
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: ตัวเลือกต้องการอาร์กิวเมนต์ -- %c\n"
+
+#: lib/getopt.c:862
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: ตัวเลือก `-W %s' กำกวมไม่ชัดเจน\n"
+
+#: lib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: ตัวเลือก `-W %s' ไม่อนุญาตให้มีอาร์กิวเมนต์\n"

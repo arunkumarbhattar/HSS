@@ -1,0 +1,13 @@
+In file --> src/common/unzip.c The memory allocated here -->1267 is Not Released at Exit--> 1322
+In file --> src/main/extractor.c The memory allocated here -->641 is Not Released at Exit--> 668
+In file --> src/main/extractor_datasource.c The memory allocated here -->1278 is Not Released at Exit--> 1305
+In file --> src/main/extractor_datasource.c The memory allocated here -->1224 is Not Released at Exit--> 1254
+In file --> src/main/extractor_ipc_gnu.c The memory allocated here -->543 is Not Released at Exit--> 578
+In file --> src/main/extractor_plugins.c The memory allocated here -->218 is Not Released at Exit--> 240
+In file --> src/main/extractor_plugins.c The memory allocated here -->218 is Not Released at Exit--> 225
+In file --> src/main/extractor_plugins.c The memory allocated here -->218 is Not Released at Exit--> 231
+In file --> src/main/extractor_plugpath.c The memory allocated here -->127 is Not Released at Exit--> 155
+In file --> src/main/extractor_plugpath.c The memory allocated here -->378 is Not Released at Exit--> 391
+In file --> src/main/extractor_plugpath.c The memory allocated here -->356 is Not Released at Exit--> 371
+In file --> src/plugins/ps_extractor.c The memory allocated here -->173 is Not Released at Exit--> 207
+In file --> src/plugins/ps_extractor.c The memory allocated here -->173 is Not Released at Exit--> 215
